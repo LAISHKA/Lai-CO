@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid104" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <marker id="arr104" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid104)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера № 8: коридор кассового узла и разгрузочный двор</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Пульт видеонаблюдения, регистратор № 1, каналы 8 и 3. Копия снята 27.09 в 10:40, оператор Гонтовая М. В.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="430" fill="#16202b"/>
+    <rect x="72" y="152" width="776" height="406" fill="#243444"/>
+
+    <path d="M72 152 L 680 248 L 820 248 L 848 152 Z" fill="#1d2b38"/>
+    <path d="M72 558 L 680 472 L 820 472 L 848 558 Z" fill="#2f4258"/>
+    <path d="M72 152 L 680 248 L 680 472 L 72 558 Z" fill="#243444" stroke="#4a6076" stroke-width="1.6"/>
+    <rect x="680" y="248" width="140" height="224" fill="#33465c" stroke="#8fa3b5" stroke-width="1.6"/>
+    <rect x="712" y="286" width="76" height="186" fill="#1d2b38" stroke="#8fa3b5" stroke-width="2"/>
+    <text x="686" y="278" font-size="12" fill="#c9d4de">служебный тамбур</text>
+
+    <path d="M150 224 L 300 258 L 300 470 L 150 502 Z" fill="#1d2b38" stroke="#8fa3b5" stroke-width="3"/>
+    <path d="M300 258 L 316 262 L 316 470 L 300 470 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.4"/>
+    <text x="120" y="212" font-size="13" fill="#c9d4de">дверь подсобки невостребованных выплат</text>
+    <g stroke="#f2e6c8" stroke-width="1.4">
+      <path d="M308 300 h 12 M308 340 h 12 M308 380 h 12 M308 420 h 12"/>
+    </g>
+    <text x="240" y="292" font-size="12" fill="#f2e6c8">метки роста на косяке</text>
+
+    <rect x="330" y="356" width="24" height="18" fill="#1d2b38" stroke="#e08a2e" stroke-width="2"/>
+    <text x="322" y="346" font-size="12" fill="#e08a2e">считыватель, 145 см</text>
+
+    <g>
+      <circle cx="404" cy="322" r="15" fill="#3a4f66" stroke="#e08a2e" stroke-width="2"/>
+      <path d="M392 340 h 26 l 8 78 h -44 Z" fill="#3a4f66" stroke="#e08a2e" stroke-width="2"/>
+      <path d="M396 352 L 356 362" stroke="#e08a2e" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="352" cy="363" r="4" fill="none" stroke="#f2e6c8" stroke-width="1.6"/>
+      <path d="M396 418 l -4 52 M416 418 l 4 52" stroke="#3a4f66" stroke-width="9" stroke-linecap="round"/>
+      <text x="428" y="318" font-size="12" fill="#e08a2e">21:20:37 — серый пиджак, карта в правой руке</text>
+      <text x="428" y="336" font-size="12" fill="#f2e6c8">кольцо на безымянном пальце; левая сторона лица к стене</text>
+    </g>
+
+    <g>
+      <path d="M520 500 v -96" stroke="#8fa3b5" stroke-width="3"/>
+      <path d="M500 404 h 40" stroke="#8fa3b5" stroke-width="3"/>
+      <path d="M504 408 l 32 0 l 6 60 l -44 0 Z" fill="#8fa3b5" stroke="#c9d4de" stroke-width="1.2" opacity=".9"/>
+      <text x="470" y="524" font-size="12" fill="#c9d4de">вешалка: серое пальто</text>
+    </g>
+    <g>
+      <rect x="596" y="424" width="40" height="76" fill="#33465c" stroke="#8fa3b5" stroke-width="1.6"/>
+      <rect x="604" y="392" width="24" height="34" rx="4" fill="#2f6183" stroke="#8fa3b5" stroke-width="1.4"/>
+      <text x="592" y="520" font-size="12" fill="#c9d4de">кулер</text>
+    </g>
+
+    <path d="M120 542 h 180" stroke="#f2e6c8" stroke-width="1.4"/>
+    <path d="M120 536 v 12 M300 536 v 12" stroke="#f2e6c8" stroke-width="1.4"/>
+    <text x="120" y="530" font-size="12" fill="#f2e6c8">ширина коридора 1,8 м</text>
+
+    <g>
+      <rect x="556" y="166" width="284" height="168" fill="#1d2b38" stroke="#8fa3b5" stroke-width="2"/>
+      <text x="568" y="186" font-size="12" fill="#e8e2d4">канал 3 · разгрузочный двор · 21:31:35</text>
+      <path d="M556 300 h 284" stroke="#4a6076" stroke-width="1.4"/>
+      <g>
+        <circle cx="612" cy="228" r="11" fill="#3a4f66" stroke="#e08a2e" stroke-width="1.8"/>
+        <path d="M602 242 h 22 l 6 50 h -34 Z" fill="#3a4f66" stroke="#e08a2e" stroke-width="1.8"/>
+        <path d="M606 292 l -2 26" stroke="#3a4f66" stroke-width="7" stroke-linecap="round"/>
+        <path d="M620 292 l 16 22 l 12 2" stroke="#3a4f66" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <text x="576" y="330" font-size="11" fill="#c9d4de">левая нога в шаге не сгибается</text>
+      </g>
+      <g>
+        <rect x="712" y="262" width="104" height="34" rx="6" fill="#2f4258" stroke="#8fa3b5" stroke-width="1.4"/>
+        <circle cx="716" cy="288" r="4" fill="#a8321f"/>
+        <circle cx="812" cy="288" r="4" fill="#a8321f"/>
+        <text x="700" y="254" font-size="11" fill="#c9d4de">машина с габаритами</text>
+      </g>
+    </g>
+
+    <text x="88" y="182" font-size="16" fill="#e8e2d4">26.09.2026  21:20:37</text>
+    <circle cx="826" cy="538" r="7" fill="#a8321f"/>
+    <text x="776" y="534" font-size="14" fill="#a8321f">кадр 4</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Ход кадра по меткам архиватора</text>
+    <line x1="920" y1="196" x2="920" y2="628" stroke="#16202b" stroke-width="2"/>
+    <g font-size="13" fill="#3b4652">
+      <circle cx="920" cy="208" r="4.5" fill="#2f4258"/>
+      <text x="938" y="212">21:15:47 — в коридоре пусто, горит дежурный свет</text>
+      <circle cx="920" cy="244" r="4.5" fill="#2f4258"/>
+      <text x="938" y="248">21:18:31 — Тюльпанова с сумкой отпирает дверь, входит; полотно не защёлкивается</text>
+      <circle cx="920" cy="280" r="4.5" fill="#2f4258"/>
+      <text x="938" y="284">21:19:40 — Лимончиков с папкой проходит мимо двери подсобки к архиву выплат</text>
+      <circle cx="920" cy="316" r="4.5" fill="#a8321f"/>
+      <text x="938" y="320" fill="#16202b">21:20:37 — мужчина в сером пиджаке прикладывает карту к считывателю</text>
+      <circle cx="920" cy="352" r="4.5" fill="#a8321f"/>
+      <text x="938" y="356" fill="#16202b">21:20:41 — дверь открывается; полотно открыто четыре секунды и защёлкивается</text>
+      <circle cx="920" cy="388" r="4.5" fill="#a8321f"/>
+      <text x="938" y="392" fill="#16202b">21:21:19—21:22:11 — полотно мелко дрожит: за стеной идёт печать</text>
+      <circle cx="920" cy="424" r="4.5" fill="#2f4258"/>
+      <text x="938" y="428">21:22:05 — датчик двери не сработал, в журнале пульта против минуты прочерк</text>
+      <circle cx="920" cy="460" r="4.5" fill="#a8321f"/>
+      <text x="938" y="464" fill="#16202b">21:29:58 — тот же мужчина выходит со связкой ключей, идёт к тамбуру; пальто нет</text>
+      <circle cx="920" cy="496" r="4.5" fill="#a8321f"/>
+      <text x="938" y="500" fill="#16202b">21:31:35 — канал 3: серый силуэт выходит из тамбура к воротам, приволакивая ногу</text>
+      <circle cx="920" cy="532" r="4.5" fill="#2f4258"/>
+      <text x="938" y="536">21:33:20 — силуэт у ворот говорит с вахтёром, стоит спиной к камере</text>
+      <circle cx="920" cy="568" r="4.5" fill="#2f4258"/>
+      <text x="938" y="572">22:03:46 — Лимончиков открывает ящик кассы № 2</text>
+      <circle cx="920" cy="604" r="4.5" fill="#2f4258"/>
+      <text x="938" y="608">22:05:12 — в коридоре люди, дверь подсобки открыта ключом из резервного комплекта</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="648" x2="860" y2="648" stroke="#16202b" stroke-width="2"/>
+  <line x1="900" y1="648" x2="1560" y2="648" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="686" font-size="19" font-weight="600" fill="#16202b">Привязка кадра</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="718">Коридор 1,8 м: слева дверь подсобки, в метре от неё считыватель на высоте 145 см,</text>
+      <text x="60" y="742">справа кулер и напольная вешалка; в конце коридора — служебный тамбур во двор.</text>
+      <text x="60" y="766">Рост по метке на косяке — около 176 см; карта приложена рукой без перчатки.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="60" y="802">На вешалке в начале интервала висит серое пальто; в 21:29:58 его нет.</text>
+      <text x="60" y="826">Фрагмент снят во дворе, где стояла машина с включёнными габаритами.</text>
+      <text x="60" y="850">На увеличении читается кольцо на безымянном пальце правой руки.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="686" font-size="19" font-weight="600" fill="#16202b">Служебная часть канала</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="900" y="718">Камера № 8 питается от отдельного ввода и в число шести обесточенных не входила.</text>
+      <text x="900" y="742">Метки каналов 8 и 3 наносит один архиватор пульта: секунды на обоих совпадают.</text>
+      <text x="900" y="766">Редактирования каналов в журнале пульта 26.09 не значится.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="900" y="802">В 21:12:00—21:15:19 на канале 3 нет кадров из-за грозы; канал 8 работал всё время.</text>
+      <text x="900" y="826">Отсмотр следователем 27.09, 28.09 и 02.10: в трёх сеансах замер роста дал 175—177 см.</text>
+      <text x="900" y="850">Контрольная сумма с носителя снималась один раз, копия — при понятых.</text>
+    </g>
+  </g>
+</svg>

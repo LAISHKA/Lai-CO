@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid03" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid03)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Квартира 41, дом 7 по Мельничной: позиции съёмки</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Фототаблица от 15.01.2026, 10:15. Объектив 35 мм, понятая Плетнёва Л. А. Восемь кадров, все в деле.</text>
+
+  <g>
+    <text x="60" y="164" font-size="19" font-weight="600" fill="#16202b">План квартиры</text>
+    <rect x="60" y="186" width="640" height="360" fill="none" stroke="#16202b" stroke-width="3"/>
+    <path d="M360 186 V546" stroke="#16202b" stroke-width="2"/>
+    <path d="M60 400 H360" stroke="#16202b" stroke-width="2"/>
+    <text x="80" y="220" font-size="16" fill="#3b4652">кухня</text>
+    <text x="420" y="220" font-size="16" fill="#3b4652">комната</text>
+    <text x="80" y="440" font-size="16" fill="#3b4652">кладовая</text>
+    <text x="420" y="440" font-size="16" fill="#3b4652">прихожая</text>
+
+    <rect x="300" y="192" width="60" height="0" stroke="#16202b" stroke-width="0"/>
+    <g stroke="#a8321f" stroke-width="2" fill="none">
+      <path d="M120 186 h 90"/>
+      <path d="M634 300 v 80"/>
+    </g>
+    <text x="120" y="180" font-size="14" fill="#a8321f">окно кухни</text>
+    <text x="648" y="348" font-size="14" fill="#a8321f" transform="rotate(90 648 348)">входная дверь</text>
+
+    <g font-size="15" fill="#16202b">
+      <circle cx="150" cy="250" r="15" fill="#2f4258"/>
+      <text x="145" y="256" fill="#e8e2d4">2</text>
+      <circle cx="250" cy="300" r="15" fill="#2f4258"/>
+      <text x="245" y="306" fill="#e8e2d4">3</text>
+      <circle cx="180" cy="350" r="15" fill="#2f4258"/>
+      <text x="175" y="356" fill="#e8e2d4">4</text>
+      <circle cx="320" cy="480" r="15" fill="#2f4258"/>
+      <text x="315" y="486" fill="#e8e2d4">5</text>
+      <circle cx="220" cy="246" r="15" fill="#a8321f"/>
+      <text x="215" y="252" fill="#e8e2d4">6</text>
+      <circle cx="120" cy="500" r="15" fill="#2f4258"/>
+      <text x="115" y="506" fill="#e8e2d4">7</text>
+      <circle cx="560" cy="500" r="15" fill="#2f4258"/>
+      <text x="555" y="506" fill="#e8e2d4">8</text>
+      <circle cx="470" cy="250" r="15" fill="#2f4258"/>
+      <text x="465" y="256" fill="#e8e2d4">1</text>
+    </g>
+
+    <g stroke="#3b4652" stroke-width="2" fill="none">
+      <path d="M300 520 h 70 v -34 h -70"/>
+      <path d="M120 520 h 60 v -30 h -60"/>
+      <path d="M200 210 h 120 v 26 h -120 Z"/>
+    </g>
+    <text x="200" y="252" font-size="14" fill="#3b4652">стол у окна, тетрадь</text>
+    <text x="120" y="540" font-size="14" fill="#3b4652">буржуйка, топка открыта</text>
+    <text x="300" y="540" font-size="14" fill="#3b4652">диван, плед на полу</text>
+  </g>
+
+  <g>
+    <text x="760" y="164" font-size="19" font-weight="600" fill="#16202b">Кадр 6: вид из окна кухни</text>
+    <rect x="760" y="186" width="780" height="360" fill="#243444" stroke="#16202b" stroke-width="3"/>
+    <path d="M760 420 H1540 V546 H760 Z" fill="#2f4258"/>
+    <circle cx="1080" cy="470" r="46" fill="#33465c" stroke="#8fa3b5" stroke-width="3"/>
+    <path d="M1040 462 h 80" stroke="#8fa3b5" stroke-width="2"/>
+    <text x="1030" y="540" font-size="15" fill="#c9d4de">крышка колодца № 118</text>
+    <path d="M1330 380 h 170 v 120 h -170 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="3"/>
+    <path d="M1330 440 h 170" stroke="#8fa3b5" stroke-width="2"/>
+    <text x="1322" y="368" font-size="15" fill="#c9d4de">створ ворот бокса</text>
+    <path d="M770 200 h 120 v 90 h -120 Z" fill="#1d2b38" opacity=".7"/>
+    <text x="778" y="316" font-size="14" fill="#8fa3b5">на стекле изморозь,</text>
+    <text x="778" y="336" font-size="14" fill="#8fa3b5">внизу — край подоконника</text>
+    <text x="786" y="222" font-size="16" fill="#e8e2d4">15.01.2026  10:22</text>
+    <circle cx="1500" cy="520" r="7" fill="#a8321f"/>
+    <text x="1408" y="514" font-size="14" fill="#a8321f">кадр 6</text>
+    <g stroke="#c9d4de" stroke-width="1.6" stroke-dasharray="7 6">
+      <path d="M1080 470 L1400 440"/>
+      <path d="M1080 470 L860 300"/>
+    </g>
+    <text x="1180" y="430" font-size="14" fill="#c9d4de">41 м до ворот</text>
+    <text x="900" y="392" font-size="14" fill="#c9d4de">28 м до колодца</text>
+  </g>
+
+  <line x1="60" y1="590" x2="1540" y2="590" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="636" font-size="19" font-weight="600" fill="#16202b">Что зафиксировано в кадрах</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="674">Кадр 1 — входная дверь, щеколда изнутри. Кадр 2 — кухня общим видом, пять приборов</text>
+      <text x="60" y="696">все холодные. Кадр 3 — стол у окна, тетрадь открыта на странице за январь.</text>
+      <text x="60" y="732">Кадр 4 — осколки кружки и замёрзшая лужица у мойки. Кадр 5 — радиатор в кухне,</text>
+      <text x="60" y="754">кран закрыт до упора, на приборе налёт ржавчины.</text>
+      <text x="60" y="790">Кадр 7 — кладовая, буржуйка с открытой топкой, запас дров у стены.</text>
+      <text x="60" y="826">Кадр 8 — тапочки под столом, размер 42, правый развернут носком к окну.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="636" font-size="19" font-weight="600" fill="#16202b">Замер расстояний</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="900" y="674">На подоконнике в кадре 6 лежит рулетка 2 м. По ней специалист</text>
+      <text x="900" y="696">посчитал дальность: до крышки колодца 28 м, до створа ворот 41 м.</text>
+      <text x="900" y="732">Кадр 6 отснят дважды: со снятой шторой и с ней. В деле оба, без</text>
+      <text x="900" y="754">пометки, какой снят раньше.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="900" y="796">Угол обзора из окна закрывает колодец целиком</text>
+      <text x="900" y="818">и только левый край ворот: правая сторона створа</text>
+      <text x="900" y="840">в кадр не попадает ни в одном из двух дублей.</text>
+    </g>
+  </g>
+</svg>

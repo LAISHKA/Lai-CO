@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">План осмотра борта Н-417-ЕК, 42-я верста</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">ГАЗ «Соболь», вид сверху. Материал проверки № 714, осмотр 11.04.2025 с 22:10. Кузов развёрнут носом на восток, правые колёса на обочине.</text>
+
+  <!-- road -->
+  <rect x="120" y="620" width="1360" height="180" fill="#cfc7b4"/>
+  <line x1="120" y1="620" x2="1480" y2="620" stroke="#3b4652" stroke-width="2.5"/>
+  <line x1="120" y1="800" x2="1480" y2="800" stroke="#3b4652" stroke-width="2.5"/>
+  <line x1="120" y1="710" x2="1480" y2="710" stroke="#8d8676" stroke-width="2" stroke-dasharray="34 26"/>
+  <text x="150" y="790" font-size="17" fill="#3b4652">полоса на запад (на Ветрогорск)</text>
+  <text x="1130" y="790" font-size="17" fill="#3b4652">обочина, грунт</text>
+
+  <!-- vehicle body, top view -->
+  <g transform="translate(560,240)">
+    <rect x="0" y="0" width="520" height="200" rx="16" fill="none" stroke="#16202b" stroke-width="3"/>
+    <!-- cab -->
+    <rect x="0" y="0" width="180" height="200" rx="16" fill="url(#hatch)" stroke="#16202b" stroke-width="2.5"/>
+    <text x="20" y="34" font-size="18" fill="#16202b">кабина</text>
+    <!-- windscreen -->
+    <path d="M6 44 L6 156" stroke="#3b4652" stroke-width="6"/>
+    <!-- seats -->
+    <rect x="26" y="60" width="52" height="80" rx="6" fill="none" stroke="#3b4652" stroke-width="2"/>
+    <text x="26" y="160" font-size="15" fill="#3b4652">водитель</text>
+    <rect x="104" y="60" width="52" height="80" rx="6" fill="none" stroke="#3b4652" stroke-width="2"/>
+    <text x="104" y="160" font-size="15" fill="#3b4652">старший</text>
+    <!-- steering -->
+    <circle cx="52" cy="52" r="14" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+    <!-- dashboard with cup -->
+    <rect x="18" y="24" width="150" height="12" rx="4" fill="none" stroke="#3b4652" stroke-width="1.8"/>
+    <circle cx="120" cy="30" r="9" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+    <line x1="120" y1="30" x2="300" y2="-40" stroke="#a8321f" stroke-width="1.6"/>
+    <text x="304" y="-44" font-size="17" fill="#a8321f">стакан на панели — 2 следа Жукова</text>
+    <!-- partition -->
+    <line x1="180" y1="0" x2="180" y2="200" stroke="#16202b" stroke-width="4"/>
+    <text x="186" y="196" font-size="15" fill="#3b4652">перегородка цела</text>
+    <!-- inner handle -->
+    <rect x="188" y="92" width="10" height="34" rx="4" fill="#a8321f"/>
+    <line x1="193" y1="92" x2="330" y2="-70" stroke="#a8321f" stroke-width="1.6"/>
+    <text x="334" y="-74" font-size="17" fill="#a8321f">внутренняя ручка двери отсека:</text>
+    <text x="334" y="-52" font-size="17" fill="#a8321f">один пригодный след — указательный Губарёва</text>
+    <!-- cargo box -->
+    <rect x="200" y="14" width="306" height="172" rx="6" fill="none" stroke="#3b4652" stroke-width="2"/>
+    <text x="208" y="36" font-size="16" fill="#3b4652">отсек конвоя</text>
+    <!-- container -->
+    <rect x="238" y="46" width="230" height="108" rx="6" fill="#d9d2c1" stroke="#16202b" stroke-width="2.5"/>
+    <text x="252" y="80" font-size="18" fill="#16202b">«Кварц-2»</text>
+    <text x="252" y="104" font-size="16" fill="#3b4652">96 кг, в закреплённом положении</text>
+    <!-- straps -->
+    <line x1="238" y1="70" x2="468" y2="70" stroke="#3b4652" stroke-width="3"/>
+    <line x1="238" y1="132" x2="468" y2="132" stroke="#3b4652" stroke-width="3"/>
+    <text x="252" y="146" font-size="15" fill="#3b4652">ремни расстёгнуты</text>
+    <!-- lock side -->
+    <rect x="464" y="86" width="16" height="28" rx="3" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+    <line x1="472" y1="86" x2="612" y2="236" stroke="#a8321f" stroke-width="1.6"/>
+    <text x="510" y="258" font-size="17" fill="#a8321f">замок цел, брелок 02</text>
+  </g>
+
+  <!-- dimension line for body -->
+  <g stroke="#3b4652" stroke-width="1.6" fill="none">
+    <line x1="560" y1="212" x2="1080" y2="212"/>
+    <line x1="560" y1="204" x2="560" y2="220"/>
+    <line x1="1080" y1="204" x2="1080" y2="220"/>
+  </g>
+  <text x="770" y="204" font-size="16" fill="#3b4652">4 990 мм</text>
+
+  <!-- notes column -->
+  <g font-size="17" fill="#3b4652">
+    <text x="90" y="170" font-size="19" font-weight="600" fill="#16202b">Зафиксировано на месте</text>
+    <text x="90" y="202">1. В кабине следов борьбы нет: ни ниток на</text>
+    <text x="90" y="226">захватах, ни царапин на пластике.</text>
+    <text x="90" y="256">2. Стенки отсека без вмятин от проноса груза.</text>
+    <text x="90" y="286">3. Кровь и волосы — у правого порога кабины.</text>
+    <text x="90" y="316">4. Огнетушитель ОП-5 отсутствует в гнезде.</text>
+  </g>
+  <g font-size="17" fill="#a8321f">
+    <text x="1120" y="170" font-size="19" font-weight="600" fill="#16202b">Что не сходится</text>
+    <text x="1120" y="202">Дверь отсека открывали изнутри.</text>
+    <text x="1120" y="232">Снаружи под машиной — только следы</text>
+    <text x="1120" y="256">44-го, и все от машины, на восток.</text>
+    <text x="1120" y="292">Масса на рамке через 12 минут:</text>
+    <text x="1120" y="316">5 640 кг, затем 5 544 кг.</text>
+  </g>
+
+  <!-- scale -->
+  <g>
+    <line x1="1200" y1="560" x2="1440" y2="560" stroke="#16202b" stroke-width="2.5"/>
+    <line x1="1200" y1="550" x2="1200" y2="570" stroke="#16202b" stroke-width="2.5"/>
+    <line x1="1320" y1="552" x2="1320" y2="568" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="1440" y1="550" x2="1440" y2="570" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1240" y="544" font-size="16" fill="#3b4652">0 3 6 м — масштаб 1:50</text>
+  </g>
+
+  <text x="120" y="856" font-size="16" fill="#3b4652">Составил: следователь СО ОМВД Ветрова П. А. Понятые: Литвинов С. П., Дорохов Е. А. Схема приложения к протоколу, материал проверки № 714.</text>
+</svg>

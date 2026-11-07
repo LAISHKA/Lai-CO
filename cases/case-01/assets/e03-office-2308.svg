@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#5c7286" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+    <pattern id="win" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#3b4652" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#g20)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <!-- стены кабинета 23-08, вид сверху -->
+  <g fill="none" stroke="#16202b" stroke-width="7">
+    <path d="M200 170 H1230 V700 H200 Z"/>
+  </g>
+  <rect x="200" y="170" width="1030" height="530" fill="#ded7c6" fill-opacity=".55"/>
+
+  <!-- остекление наружной стены -->
+  <rect x="240" y="160" width="420" height="20" fill="url(#win)" stroke="#16202b" stroke-width="2.5"/>
+  <text x="240" y="146" font-size="21" fill="#3b4652">остекление, жалюзи подняты</text>
+
+  <!-- дверь -->
+  <path d="M1230 470 h-6" stroke="#16202b" stroke-width="7"/>
+  <path d="M1230 470 A96 96 0 0 0 1134 374" fill="none" stroke="#1f6f8f" stroke-width="2.6" stroke-dasharray="11 7"/>
+  <text x="1090" y="700" font-size="21" fill="#3b4652">дверь (заперта изнутри)</text>
+
+  <!-- стол -->
+  <rect x="380" y="250" width="430" height="170" rx="10" fill="#c9bfa6" stroke="#16202b" stroke-width="3.4"/>
+  <text x="392" y="240" font-size="22" fill="#16202b">стол руководительский, 2,10 м</text>
+  <!-- монитор -->
+  <rect x="500" y="288" width="150" height="20" fill="#16202b"/><rect x="560" y="308" width="30" height="26" fill="#16202b"/>
+  <text x="670" y="306" font-size="20" fill="#16202b">монитор PC-23-08: активен</text>
+  <!-- чашка -->
+  <circle cx="740" cy="380" r="17" fill="none" stroke="#a8321f" stroke-width="3"/>
+  <text x="766" y="386" font-size="20" fill="#a8321f">чай недопит, плёнка</text>
+  <!-- листок -->
+  <rect x="420" y="330" width="52" height="66" fill="#f4efe2" stroke="#16202b" stroke-width="2.4" transform="rotate(-8 446 363)"/>
+
+  <!-- ящик стола (выдвинут) -->
+  <rect x="380" y="424" width="150" height="42" fill="#ded7c6" stroke="#16202b" stroke-width="2.8"/>
+  <text x="380" y="490" font-size="20" fill="#16202b">ящик открыт 8 см:</text>
+  <text x="380" y="514" font-size="20" fill="#16202b">телефон, зарядка, пропуск</text>
+  <rect x="392" y="432" width="56" height="26" rx="5" fill="none" stroke="#1f6f8f" stroke-width="2.4"/>
+
+  <!-- вешалка с пальто -->
+  <g transform="translate(255,250)">
+    <rect x="-8" y="-8" width="16" height="16" fill="#16202b"/>
+    <path d="M-42 26 q42 -34 84 0 l-10 150 h-64 z" fill="#d9cdae" stroke="#16202b" stroke-width="3"/>
+  </g>
+  <text x="180" y="452" font-size="21" fill="#16202b">пальто шерстяное,</text>
+  <text x="180" y="476" font-size="21" fill="#a8321f">сухое, карманы пусты</text>
+
+  <!-- футляр очков -->
+  <rect x="880" y="450" width="96" height="40" rx="18" fill="none" stroke="#16202b" stroke-width="3"/>
+  <text x="880" y="516" font-size="21" fill="#16202b">футляр очков (−6,0/−6,5)</text>
+  <text x="880" y="540" font-size="21" fill="#a8321f">на столе, не в кармане</text>
+
+  <!-- кресло -->
+  <circle cx="600" cy="530" r="46" fill="none" stroke="#16202b" stroke-width="3"/>
+  <path d="M600 576 v40" stroke="#16202b" stroke-width="3"/>
+  <text x="524" y="646" font-size="21" fill="#3b4652">кресло отодвинуто</text>
+
+  <!-- сейф-картотека -->
+  <rect x="1080" y="220" width="120" height="86" fill="#c9bfa6" stroke="#16202b" stroke-width="3"/>
+  <text x="1040" y="336" font-size="21" fill="#16202b">картотека (заперта)</text>
+
+  <!-- размер -->
+  <g stroke="#1f6f8f" stroke-width="2" fill="#1f6f8f" font-size="20">
+    <line x1="200" y1="760" x2="1230" y2="760"/>
+    <line x1="200" y1="748" x2="200" y2="772"/><line x1="1230" y1="748" x2="1230" y2="772"/>
+    <text x="640" y="792">5,15 м</text>
+    <line x1="1310" y1="170" x2="1310" y2="700"/>
+    <line x1="1298" y1="170" x2="1322" y2="170"/><line x1="1298" y1="700" x2="1322" y2="700"/>
+    <text x="1330" y="440">3,90 м</text>
+  </g>
+
+  <text x="200" y="700" font-size="20" fill="#16202b">Обстановка не тронута: следов борьбы нет, ковролин сухой, свет в рабочем режиме.</text>
+
+  <!-- основная надпись -->
+  <g transform="translate(1150,822)">
+    <rect x="-410" y="-96" width="410" height="96" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="-410" y1="-50" x2="0" y2="-50" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="-260" y1="-50" x2="-260" y2="0" stroke="#16202b" stroke-width="1.8"/>
+    <text x="-396" y="-66" font-size="21" font-weight="600">Схема 2 к акту осмотра кабинета 23-08</text>
+    <text x="-396" y="-18" font-size="18">М 1:50 · 07.02.2025, 08:35</text>
+    <text x="-246" y="-18" font-size="18">УК «Аргус Финанс», 23 этаж</text>
+  </g>
+</svg>

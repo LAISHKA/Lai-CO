@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="p41" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#3b4652" stroke-width="0.6" opacity=".14"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#p41)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Участок № 41, СНТ «Глухари»: план по фототаблице</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Шесть соток, двадцать на тридцать метров. Забор — профлист 1,8 м, со стороны участка № 42 глухой.</text>
+
+  <g>
+    <rect x="70" y="150" width="800" height="620" fill="#dcd4c0" stroke="#16202b" stroke-width="3"/>
+
+    <g stroke="#3b4652" stroke-width="1.2" opacity=".7">
+      <path d="M70 300 h800 M70 460 h800 M70 620 h800 M270 150 v620 M470 150 v620 M670 150 v620"/>
+    </g>
+
+    <rect x="120" y="250" width="330" height="210" fill="#3b4652" stroke="#16202b" stroke-width="2.5"/>
+    <rect x="450" y="300" width="80" height="110" fill="#54616e" stroke="#16202b" stroke-width="2"/>
+    <text x="140" y="286" font-size="17" fill="#e8e2d4">дом 6 на 8 м, веранда с востока</text>
+    <rect x="330" y="243" width="52" height="14" fill="#a8321f"/>
+    <text x="300" y="232" font-size="15" fill="#a8321f">окно кухни</text>
+
+    <rect x="150" y="560" width="150" height="120" fill="#54616e" stroke="#16202b" stroke-width="2"/>
+    <text x="162" y="600" font-size="16" fill="#e8e2d4">баня</text>
+    <text x="162" y="622" font-size="14" fill="#c9d4de">истоплена, зола холодная</text>
+
+    <g fill="#4a5c4a" stroke="#16202b" stroke-width="2">
+      <rect x="600" y="180" width="120" height="70" rx="26"/>
+      <rect x="600" y="270" width="120" height="70" rx="26"/>
+    </g>
+    <text x="596" y="366" font-size="16" fill="#16202b">две теплицы</text>
+
+    <rect x="760" y="560" width="90" height="150" fill="#54616e" stroke="#16202b" stroke-width="2"/>
+    <text x="752" y="552" font-size="16" fill="#16202b">сарай</text>
+
+    <rect x="600" y="640" width="140" height="90" fill="none" stroke="#a8321f" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <g fill="#a8321f">
+      <circle cx="622" cy="662" r="4"/><circle cx="654" cy="662" r="4"/><circle cx="686" cy="662" r="4"/>
+      <circle cx="622" cy="694" r="4"/><circle cx="654" cy="694" r="4"/><circle cx="686" cy="694" r="4"/>
+      <circle cx="718" cy="694" r="4"/><circle cx="718" cy="662" r="4"/>
+    </g>
+    <text x="596" y="752" font-size="16" fill="#a8321f">грядка луковичных, земля не копаная</text>
+
+    <path d="M470 770 h60 v-24 h-60 Z" fill="#a8321f" stroke="#16202b" stroke-width="2"/>
+    <text x="420" y="806" font-size="17" fill="#16202b">калитка, замок на дужке, не заперт</text>
+    <path d="M60 770 h950" stroke="#16202b" stroke-width="6"/>
+    <text x="70" y="762" font-size="15" fill="#3b4652">улица товарищества</text>
+
+    <g stroke="#8a7f68" stroke-width="2" fill="none">
+      <path d="M560 770 q10 -34 0 -60 M610 770 q12 -40 0 -70 M660 770 q10 -30 0 -56"/>
+    </g>
+    <text x="556" y="700" font-size="15" fill="#3b4652">линия старых берёз, шесть метров от калитки</text>
+
+    <path d="M330 243 l -34 40 l 74 0 Z" fill="#a8321f" opacity=".22"/>
+    <text x="228" y="308" font-size="15" fill="#a8321f">след «Кама-217», 24 см, развёрнут от ворот</text>
+  </g>
+
+  <g>
+    <text x="920" y="188" font-size="19" font-weight="600" fill="#16202b">Что закрыто забором и углом</text>
+    <g stroke="#16202b" stroke-width="2" fill="none">
+      <path d="M920 240 h300 v220 h-300 Z"/>
+      <rect x="1220" y="240" width="300" height="220" fill="none"/>
+    </g>
+    <rect x="920" y="240" width="300" height="220" fill="#a8321f" opacity=".13"/>
+    <text x="936" y="272" font-size="16" fill="#16202b">участок № 42, дом соседа</text>
+    <text x="936" y="296" font-size="15" fill="#3b4652">окно кухни, высота 1,45 м</text>
+    <path d="M1220 330 l -300 -46 l 0 130 Z" fill="#3b4652" opacity=".25"/>
+    <text x="1000" y="418" font-size="15" fill="#16202b">полоса двора № 41 в секторе обзора</text>
+    <text x="1240" y="272" font-size="16" fill="#16202b">полоса вдоль забора</text>
+    <text x="1240" y="296" font-size="15" fill="#a8321f">сорок метров слепой зоны:</text>
+    <text x="1240" y="318" font-size="15" fill="#a8321f">подход со стороны полей</text>
+    <text x="1240" y="340" font-size="15" fill="#a8321f">камерой не закрыта</text>
+    <text x="1240" y="366" font-size="15" fill="#3b4652">вторые ворота без камеры</text>
+  </g>
+
+  <line x1="920" y1="500" x2="1540" y2="500" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="920" y="548" font-size="19" font-weight="600" fill="#16202b">Отметки к кадрам 1—10</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="920" y="586">Кадр 1 — калитка: навесной замок на дужке, ключа нет.</text>
+      <text x="920" y="610">Кадр 2 — дверь веранды: щеколда изнутри, взлома нет.</text>
+      <text x="920" y="634">Кадр 4 — ваза: у трёх шляпок дно темнее, боки светлые.</text>
+      <text x="920" y="658">Кадр 6 — протектор под окном кухни, рулетка 2 м в кадре.</text>
+      <text x="920" y="682">Кадр 8 — грядка у забора, садовый метр у кромки.</text>
+      <text x="920" y="706">Кадр 10 — двор № 41 глазами соседа, снято из окна.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="920" y="748">След развёрнут от ворот: машина стояла носом к калитке.</text>
+      <text x="920" y="772">Ни с одной камеры не видно торца дома со стороны бани.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="70" y="836" font-size="16" fill="#3b4652">Масштаб условный. Основание: акт осмотра № 41-О от 25.09.2026, фототаблица к нему, акт технического обследования № 114-А от 28.09.2026.</text>
+    <text x="70" y="862" font-size="16" fill="#16202b">Калитка участка № 41 стоит в секторе камеры у въездных ворот, но под деревом; с 19:40 прибор переходит на инфракрасную подсветку.</text>
+  </g>
+</svg>

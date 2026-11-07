@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+    <pattern id="blind" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#a8321f" stroke-width="1.4" opacity=".3"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Бокс станции «Кардан»: посты, подъёмник и сектор камеры CAM 03</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Каменозаводск, улица Автомобильная, 14. Запись CAM 03, 06.10.2025. Часы регистратора синхронизированы с сервером стойки, расхождение 0 секунд.</text>
+
+  <!-- bay plan -->
+  <g>
+    <rect x="120" y="170" width="820" height="470" fill="none" stroke="#16202b" stroke-width="3.5"/>
+    <text x="136" y="200" font-size="16" fill="#3b4652">бокс, ворот Б-02</text>
+
+    <!-- posts -->
+    <g stroke="#16202b" stroke-width="2.2" fill="#ded7c6">
+      <rect x="180" y="240" width="200" height="330" rx="4"/>
+      <rect x="420" y="240" width="200" height="330" rx="4"/>
+      <rect x="660" y="240" width="200" height="330" rx="4"/>
+    </g>
+    <g font-size="17" fill="#16202b">
+      <text x="214" y="272">пост 1</text>
+      <text x="454" y="272">пост 2</text>
+      <text x="694" y="272">пост 3</text>
+    </g>
+    <g font-size="15" fill="#3b4652">
+      <text x="200" y="296">подъёмник 211</text>
+      <text x="200" y="316">циклы 1, 5, 7</text>
+      <text x="440" y="296">подъёмник 240</text>
+      <text x="440" y="316">цикл 8: 16:58:06</text>
+      <text x="680" y="296">зона разборки</text>
+      <text x="680" y="316">лист 61, УТ-118</text>
+    </g>
+
+    <!-- car on lift -->
+    <g>
+      <rect x="452" y="350" width="136" height="200" rx="16" fill="#e8e2d4" stroke="#16202b" stroke-width="2.4"/>
+      <rect x="470" y="378" width="100" height="52" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+      <rect x="470" y="470" width="100" height="52" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+      <circle cx="470" cy="530" r="15" fill="none" stroke="#a8321f" stroke-width="3"/>
+      <text x="404" y="574" font-size="15" fill="#a8321f">заднее левое</text>
+      <text x="596" y="440" font-size="15" fill="#3b4652">К 417 НР 716</text>
+      <text x="596" y="460" font-size="15" fill="#3b4652">на подъёме</text>
+    </g>
+
+    <!-- person kneeling -->
+    <g>
+      <circle cx="430" cy="512" r="13" fill="#a8321f"/>
+      <path d="M430 525 L432 556" stroke="#a8321f" stroke-width="4"/>
+      <path d="M432 556 L414 574 M432 556 L452 572" stroke="#a8321f" stroke-width="3.2" fill="none"/>
+      <text x="356" y="500" font-size="15" fill="#a8321f">17:03:41</text>
+    </g>
+
+    <!-- camera sector -->
+    <path d="M900 190 L940 620 L200 640 Z" fill="url(#hatch)" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="12 8" opacity=".55"/>
+    <text x="812" y="180" font-size="16" fill="#3b4652">CAM 03, сектор 96 градусов</text>
+
+    <!-- blind zone -->
+    <rect x="120" y="500" width="150" height="140" fill="url(#blind)" stroke="#a8321f" stroke-width="2" stroke-dasharray="9 7"/>
+    <text x="126" y="662" font-size="15" fill="#a8321f">слепая зона: угол бокса</text>
+    <text x="126" y="682" font-size="15" fill="#a8321f">и торец поста 2, 26 шагов</text>
+
+    <!-- warehouse door and route -->
+    <g>
+      <rect x="60" y="400" width="60" height="100" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/>
+      <text x="44" y="392" font-size="15" fill="#16202b">склад, Б-03</text>
+      <path d="M120 452 C 260 452, 330 500, 404 524" fill="none" stroke="#16202b" stroke-width="2" stroke-dasharray="6 6"/>
+      <text x="196" y="440" font-size="15" fill="#16202b">41 шаг, 31,5 м по рулетке</text>
+      <text x="196" y="460" font-size="15" fill="#3b4652">весь путь в секторе CAM 03</text>
+    </g>
+
+    <!-- tool cart -->
+    <g>
+      <rect x="700" y="580" width="120" height="56" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="2"/>
+      <text x="710" y="612" font-size="15" fill="#16202b">тележка</text>
+      <text x="704" y="660" font-size="15" fill="#3b4652">гайковёрт положен в 17:07:22,</text>
+      <text x="704" y="678" font-size="15" fill="#3b4652">банка без этикетки с полки</text>
+    </g>
+  </g>
+
+  <!-- tile reference -->
+  <g>
+    <rect x="1010" y="170" width="58" height="470" fill="url(#hatch)" stroke="#3b4652" stroke-width="2"/>
+    <g stroke="#3b4652" stroke-width="1.2">
+      <line x1="1010" y1="205" x2="1068" y2="205"/>
+      <line x1="1010" y1="240" x2="1068" y2="240"/>
+      <line x1="1010" y1="275" x2="1068" y2="275"/>
+      <line x1="1010" y1="310" x2="1068" y2="310"/>
+      <line x1="1010" y1="345" x2="1068" y2="345"/>
+      <line x1="1010" y1="380" x2="1068" y2="380"/>
+    </g>
+    <text x="986" y="160" font-size="15" fill="#3b4652">плитка 300 мм</text>
+    <line x1="1076" y1="212" x2="1076" y2="380" stroke="#a8321f" stroke-width="2"/>
+    <text x="1092" y="286" font-size="16" fill="#a8321f">рост по плитке: 182 см</text>
+    <text x="1092" y="308" font-size="16" fill="#a8321f">(кадр 17:03:41, стоя)</text>
+    <text x="1092" y="348" font-size="15" fill="#3b4652">лицо закрыто козырьком кепки,</text>
+    <text x="1092" y="368" font-size="15" fill="#3b4652">правый рукав надорван</text>
+  </g>
+
+  <!-- timeline -->
+  <g>
+    <line x1="1240" y1="170" x2="1240" y2="660" stroke="#16202b" stroke-width="2.5"/>
+    <g font-size="17" fill="#3b4652">
+      <text x="1262" y="196">16:47:12 — въезд К 417 НР в ворота</text>
+      <text x="1262" y="236">16:52:14 — машина заезжает в бокс</text>
+      <text x="1262" y="276">16:58:06 — подъём, цикл 8</text>
+      <text x="1262" y="298" font-size="16">начало отсчёта счётчика</text>
+      <text x="1262" y="338">17:03:41 — человек на коленях</text>
+      <text x="1262" y="360" font-size="16">у заднего левого колеса, в правой</text>
+      <text x="1262" y="380" font-size="16">руке пневмогайковёр, шланг</text>
+      <text x="1262" y="400" font-size="16">натянут через весь пост</text>
+      <text x="1262" y="440">17:07:22 — выпрямился, положил</text>
+      <text x="1262" y="462" font-size="16">гайковёрт на тележку, взял банку</text>
+      <text x="1262" y="482" font-size="16">без этикетки с полки поста 2</text>
+      <text x="1262" y="522">17:10:44 — спуск, цикл 8 закрыт</text>
+      <text x="1262" y="544" font-size="16">11 минут 40 секунд</text>
+      <text x="1262" y="584">17:41:22 — выезд машины с станции</text>
+    </g>
+    <g fill="#a8321f">
+      <circle cx="1232" cy="230" r="6"/>
+      <circle cx="1232" cy="270" r="6"/>
+      <circle cx="1232" cy="332" r="6"/>
+      <circle cx="1232" cy="434" r="6"/>
+      <circle cx="1232" cy="516" r="6"/>
+      <circle cx="1232" cy="578" r="6"/>
+    </g>
+  </g>
+
+  <!-- notes -->
+  <g>
+    <text x="60" y="762" font-size="19" font-weight="600" fill="#16202b">Что держит кадр</text>
+    <text x="60" y="794" font-size="17" fill="#3b4652">С 16:58:06 по 17:10:44 в секторе CAM 03 один человек: он входит в кадр со стороны поста и выходит из него же. За эти двенадцать минут</text>
+    <text x="60" y="818" font-size="17" fill="#3b4652">дверь бокса не открывалась, посторонних нет. Динамометрический ключ в кадре не появляется ни разу, головка 19 мм лежит в ящике верстака.</text>
+    <text x="60" y="854" font-size="17" fill="#16202b">Просмотры записи: 06.10 в 20:22 — логин PRM01 (рабочая станция приёмной), 07.10 в 10:15 — следователь при понятых.</text>
+  </g>
+  <text x="1140" y="854" font-size="16" fill="#a8321f">Расхождение часов: 0 секунд</text>
+</svg>

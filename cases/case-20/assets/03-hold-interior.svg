@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid20c" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="planks20" width="14" height="26" patternUnits="userSpaceOnUse">
+      <rect x="1" y="2" width="12" height="22" fill="none" stroke="#3b4652" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch20c" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V10" stroke="#5c7286" stroke-width="1.2" opacity=".5"/>
+    </pattern>
+    <marker id="dim20c" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 2 L10 5 L0 8 Z" fill="#3b4652"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid20c)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Грузовой отсек фуры «Н 452 ЕС 716»: план и разрез обшивки</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Осмотр 19.04 с 07:55 по 09:10, съёмка из проёма боковых ворот. Фургон промтоварный, тент на трёх ригелях.</text>
+
+  <text x="120" y="168" font-size="17" font-weight="600" fill="#16202b">Вид сверху, тент снят</text>
+
+  <rect x="120" y="190" width="900" height="300" fill="#ded7c6" stroke="#16202b" stroke-width="3.5"/>
+  <rect x="140" y="210" width="860" height="260" fill="#e8e2d4" stroke="#16202b" stroke-width="2"/>
+
+  <g stroke="#16202b" stroke-width="2" fill="none">
+    <path d="M420 190 V490 M660 190 V490 M900 190 V490" stroke-dasharray="11 7"/>
+  </g>
+  <text x="356" y="182" font-size="14" fill="#3b4652">ригель 1</text>
+  <text x="596" y="182" font-size="14" fill="#3b4652">ригель 2</text>
+  <text x="836" y="182" font-size="14" fill="#3b4652">ригель 3</text>
+  <text x="420" y="516" font-size="13" fill="#3b4652">три ригеля опущены до упора; приточные клапаны тента закрыты их положениями на 1/3 сечения</text>
+
+  <rect x="170" y="230" width="700" height="90" fill="url(#planks20)" stroke="#16202b" stroke-width="2.4"/>
+  <text x="176" y="262" font-size="15" fill="#16202b">ряд пачек у правого борта</text>
+  <rect x="170" y="392" width="700" height="66" fill="url(#planks20)" stroke="#16202b" stroke-width="2.4"/>
+  <text x="176" y="418" font-size="15" fill="#16202b">ряд пачек у левого борта</text>
+
+  <rect x="170" y="320" width="700" height="72" fill="#f0e7d2" stroke="none"/>
+  <g stroke="#3b4652" stroke-width="1.6" fill="none">
+    <path d="M880 320 V392" marker-start="url(#dim20c)" marker-end="url(#dim20c)"/>
+  </g>
+  <text x="892" y="360" font-size="15" fill="#3b4652">26 см</text>
+  <text x="182" y="348" font-size="14" fill="#3b4652">просвет между рядами у левого борта, доски уложены вручную</text>
+  <text x="182" y="368" font-size="14" fill="#3b4652">следов погрузчика в отсеке нет</text>
+
+  <g transform="translate(470 356) rotate(0)">
+    <path d="M0 0 C 20 -7 42 -5 52 4 C 59 11 57 22 46 25 C 30 30 8 27 1 19 C -4 12 -5 4 0 0 Z" fill="none" stroke="#a8321f" stroke-width="2.4"/>
+    <path d="M12 3 L40 22 M21 1 L47 18" stroke="#a8321f" stroke-width="1.3"/>
+  </g>
+  <text x="530" y="352" font-size="14" font-weight="600" fill="#a8321f">подошва ботинка 44-го размера</text>
+  <text x="530" y="372" font-size="13" fill="#a8321f">носком к задним воротам, шнурки завязаны</text>
+  <path d="M462 366 H420" stroke="#a8321f" stroke-width="1.2"/>
+
+  <g stroke="#16202b" stroke-width="3" fill="none">
+    <path d="M300 490 H470"/>
+  </g>
+  <path d="M300 490 A 170 170 0 0 1 470 560" fill="none" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="256" y="540" font-size="15" fill="#16202b">боковые ворота слева, открыты</text>
+
+  <g stroke="#16202b" stroke-width="3.4" fill="none">
+    <path d="M1000 200 V480"/>
+  </g>
+  <text x="1030" y="222" font-size="15" fill="#16202b">задние створки</text>
+  <g stroke="#a8321f" stroke-width="2.4" fill="none">
+    <path d="M988 250 H1014 M988 300 H1014 M988 350 H1014 M988 400 H1014"/>
+    <path d="M1001 240 V412"/>
+  </g>
+  <text x="1030" y="252" font-size="14" fill="#a8321f">обвязаны вязальной проволокой</text>
+  <text x="1030" y="270" font-size="14" fill="#a8321f">снаружи, диаметр 1,2 мм</text>
+  <circle cx="1001" cy="330" r="26" fill="none" stroke="#a8321f" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M1027 330 L1180 300" stroke="#a8321f" stroke-width="1.4"/>
+
+  <g>
+    <circle cx="1300" cy="250" r="112" fill="#f0e7d2" stroke="#16202b" stroke-width="2.4"/>
+    <text x="1300" y="172" font-size="15" font-weight="600" fill="#16202b" text-anchor="middle">Узел на створках</text>
+    <g stroke="#3b4652" stroke-width="5" fill="none" opacity=".5">
+      <path d="M1246 210 H1354"/>
+    </g>
+    <g stroke="#a8321f" stroke-width="3" fill="none">
+      <path d="M1236 236 c 14 -22 34 -22 48 0 c 14 22 34 22 48 0 c 14 -22 34 -22 48 0"/>
+      <path d="M1252 258 c 14 -20 32 -20 46 0 c 14 20 32 20 46 0"/>
+      <path d="M1330 268 q 22 12 12 30 q -10 16 -28 6"/>
+    </g>
+    <text x="1300" y="322" font-size="14" fill="#3b4652" text-anchor="middle">двойной штык, витки вправо,</text>
+    <text x="1300" y="342" font-size="14" fill="#3b4652" text-anchor="middle">конец загнут в петлю</text>
+  </g>
+
+  <text x="120" y="628" font-size="17" font-weight="600" fill="#16202b">Разрез внутренней обшивки левого борта</text>
+  <rect x="120" y="650" width="900" height="180" fill="url(#hatch20c)" stroke="#16202b" stroke-width="2.6"/>
+  <text x="120" y="642" font-size="13" fill="#3b4652">ламинированная фанера, светло-жёлтый лак слоя 2019 года</text>
+  <g stroke="#a8321f" stroke-width="2.2" fill="none">
+    <path d="M250 700 h 96"/>
+    <path d="M300 716 h 150"/>
+    <path d="M360 734 h 64"/>
+    <path d="M430 752 h 128"/>
+    <path d="M520 770 h 74"/>
+    <path d="M600 706 h 168"/>
+    <path d="M660 740 h 110"/>
+  </g>
+  <text x="792" y="770" font-size="14" fill="#a8321f">поле параллельных царапин,</text>
+  <text x="792" y="788" font-size="14" fill="#a8321f">длина каждой 4—17 см</text>
+  <g stroke="#3b4652" stroke-width="1.6" fill="none">
+    <path d="M1060 650 V830" marker-start="url(#dim20c)" marker-end="url(#dim20c)"/>
+  </g>
+  <text x="1076" y="700" font-size="14" fill="#3b4652">поле по высоте</text>
+  <text x="1076" y="718" font-size="14" fill="#3b4652">от 0,9 до 1,4 м</text>
+  <text x="1076" y="760" font-size="14" fill="#3b4652">от пола отсека</text>
+
+  <g>
+    <text x="1200" y="628" font-size="17" font-weight="600" fill="#16202b">Запирание</text>
+    <g font-size="14" fill="#3b4652">
+      <text x="1200" y="656">Навесной замок задних ворот</text>
+      <text x="1200" y="674">снят, дужка не перерезана,</text>
+      <text x="1200" y="692">ключ у водителя Бурыкина.</text>
+      <text x="1200" y="726">В бороздах обшивки — светлый</text>
+      <text x="1200" y="744">лак; чешуйки того же лака</text>
+      <text x="1200" y="762">найдены на ригеле и под</text>
+      <text x="1200" y="780">ногтями погибшего.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid11" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid11)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Узел задвижки 30Ч-650-Т в колодце № 118</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Схема к акту № 118-П от 16.01.2026 и к фототаблице кадров 4, 5, 6, 9. Проверка без вскрытия траншеи.</text>
+
+  <g>
+    <text x="60" y="164" font-size="19" font-weight="600" fill="#16202b">Кинематика привода</text>
+
+    <g stroke="#16202b" stroke-width="3" fill="#33465c">
+      <circle cx="240" cy="300" r="86"/>
+    </g>
+    <g stroke="#8fa3b5" stroke-width="3" fill="none">
+      <circle cx="240" cy="300" r="62"/>
+      <path d="M240 214 V386 M154 300 H326 M179 239 L301 361 M301 239 L179 361"/>
+    </g>
+    <circle cx="240" cy="300" r="14" fill="#16202b"/>
+    <text x="150" y="424" font-size="17" fill="#16202b">маховик ручного привода</text>
+    <text x="150" y="446" font-size="15" fill="#a8321f">на спицах свежий металл, на ободе грунт</text>
+
+    <rect x="420" y="256" width="200" height="90" fill="#3a4f66" stroke="#16202b" stroke-width="3"/>
+    <text x="436" y="292" font-size="16" fill="#e8e2d4">электропривод</text>
+    <text x="436" y="314" font-size="15" fill="#c9d4de">Belimo NR24A-SR</text>
+    <text x="436" y="334" font-size="15" fill="#c9d4de">ток 2,6 А под нагрузкой</text>
+
+    <rect x="640" y="272" width="120" height="58" fill="#2f4258" stroke="#16202b" stroke-width="3"/>
+    <text x="648" y="306" font-size="15" fill="#e8e2d4">редуктор</text>
+    <path d="M760 301 H860" stroke="#16202b" stroke-width="8"/>
+    <text x="778" y="288" font-size="15" fill="#16202b">вал 30 мм</text>
+
+    <g>
+      <rect x="860" y="266" width="66" height="70" fill="none" stroke="#a8321f" stroke-width="3"/>
+      <path d="M860 266 l 22 -22 M926 336 l -22 22" stroke="#a8321f" stroke-width="3"/>
+      <text x="836" y="392" font-size="15" fill="#a8321f">флажковая полумуфта:</text>
+      <text x="836" y="412" font-size="15" fill="#a8321f">флажок стальной 6 мм</text>
+      <text x="836" y="432" font-size="15" fill="#a8321f">отсутствует, на шпонке два</text>
+      <text x="836" y="452" font-size="15" fill="#a8321f">фрагмента, кромки ровные</text>
+    </g>
+
+    <rect x="980" y="278" width="60" height="46" fill="#33465c" stroke="#16202b" stroke-width="3"/>
+    <text x="962" y="356" font-size="15" fill="#16202b">гайка хода</text>
+    <path d="M1040 301 H1320" stroke="#16202b" stroke-width="10"/>
+    <g stroke="#3b4652" stroke-width="2">
+      <path d="M1060 292 l 12 18 M1090 292 l 12 18 M1120 292 l 12 18 M1150 292 l 12 18 M1180 292 l 12 18"/>
+    </g>
+    <text x="1110" y="284" font-size="15" fill="#16202b">шток затвора — неподвижен до упора</text>
+
+    <path d="M1320 250 v 104" stroke="#16202b" stroke-width="6"/>
+    <path d="M1320 250 h 110 v 104 h -110" fill="#3a4f66" stroke="#16202b" stroke-width="3"/>
+    <text x="1342" y="308" font-size="15" fill="#e8e2d4">затвор</text>
+    <path d="M1430 300 h 90" stroke="#16202b" stroke-width="12"/>
+    <text x="1408" y="382" font-size="15" fill="#3b4652">труба Ду 219</text>
+
+    <g stroke="#a8321f" stroke-width="2.4" stroke-dasharray="8 6" fill="none">
+      <path d="M240 386 C 240 470 700 470 890 344"/>
+    </g>
+    <text x="420" y="492" font-size="16" fill="#a8321f">ручное закрытие передаётся на маховик, но не на шток, пока муфта разомкнута</text>
+
+    <g stroke="#16202b" stroke-width="2" fill="none">
+      <path d="M860 200 h 66 v 44"/>
+    </g>
+    <circle cx="893" cy="188" r="12" fill="#2f4258" stroke="#16202b" stroke-width="2"/>
+    <text x="800" y="164" font-size="15" fill="#16202b">потенциометр обратной связи на валу редуктора</text>
+  </g>
+
+  <line x1="60" y1="540" x2="1540" y2="540" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="586" font-size="19" font-weight="600" fill="#16202b">Что показал проворот 16.01</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="624">От полностью открытого до полностью закрытого положения — 27 оборотов</text>
+      <text x="60" y="646">маховика. Столько же записано сервером 14.01 в 23:52:14.</text>
+      <text x="60" y="682">При команде «закрытие» привод вращается вхолостую: ток 0,9 А вместо</text>
+      <text x="60" y="704">2,6 А, обратная связь при этом доходит до 100 %.</text>
+      <text x="60" y="740">Кожух полумуфты снят: четыре болта откручены ключом, следы на гранях</text>
+      <text x="60" y="762">свежие. На гайках штока — следы разводного ключа.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="586" font-size="19" font-weight="600" fill="#16202b">Судьба девяти кадров</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="900" y="624">В акте девять фотографий узла. В электронной папке участка</text>
+      <text x="900" y="646">лежат только три: кадр 4, кадр 5 и кадр 9.</text>
+      <text x="900" y="682">Кадры 1, 2, 3, 6, 7, 8 в деле следственного отдела числятся</text>
+      <text x="900" y="704">приложениями, но файлов с такими именами в папке нет.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="900" y="748">Позиция начальника участка по акту —</text>
+      <text x="900" y="770">«эксплуатационный износ». Специалист</text>
+      <text x="900" y="792">с этим в акте не согласился и потребовал</text>
+      <text x="900" y="814">экспертизу характера реза.</text>
+    </g>
+  </g>
+</svg>

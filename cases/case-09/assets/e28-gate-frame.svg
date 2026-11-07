@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid28" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid28)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера № 1 у въездных ворот СНТ «Глухари»</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Объектив 2,8 мм, угол широкий, инфракрасная подсветка, запись по движению, 12 кадров в секунду.</text>
+
+  <g>
+    <rect x="60" y="140" width="760" height="400" fill="#16202b" stroke="#16202b" stroke-width="3"/>
+    <rect x="72" y="152" width="736" height="376" fill="#243444"/>
+    <path d="M72 372 L808 340 L808 528 L72 528 Z" fill="#2f4258"/>
+    <path d="M300 340 L360 528 L470 528 L420 340 Z" fill="#33465c"/>
+
+    <g stroke="#8fa3b5" stroke-width="3" fill="none">
+      <path d="M120 176 v300 M690 176 v300"/>
+      <path d="M120 200 h570 M120 240 h570 M120 280 h570"/>
+    </g>
+    <rect x="660" y="150" width="46" height="34" fill="#1d2b38" stroke="#8fa3b5" stroke-width="2"/>
+    <text x="596" y="142" font-size="14" fill="#8fa3b5">будка сторожа</text>
+
+    <g>
+      <path d="M330 396 h200 v54 h-200 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M368 396 v-30 h124 v30" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="366" cy="462" r="19" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="494" cy="462" r="19" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <text x="316" y="376" font-size="15" fill="#c9d4de">У 137 ОС 716, фары включены</text>
+    </g>
+
+    <g>
+      <path d="M584 404 h74 v58 h-74 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M584 404 l 34 -22 l 40 22" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M612 462 l 30 -18 v 18 Z" fill="#5c7286"/>
+      <text x="560" y="492" font-size="14" fill="#c9d4de">калитка № 41, под деревом</text>
+      <path d="M648 366 q 26 -34 52 0 l 6 96 q -34 14 -64 0 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M660 320 h 34 v 40 h -34 Z" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+    </g>
+
+    <text x="86" y="180" font-size="17" fill="#e8e2d4">24.09.2026  19:31:07</text>
+    <text x="86" y="204" font-size="14" fill="#8fa3b5">канал 1, ворота, движение</text>
+    <circle cx="782" cy="506" r="7" fill="#a8321f"/>
+    <text x="700" y="502" font-size="14" fill="#a8321f">шкала камеры</text>
+  </g>
+
+  <g>
+    <text x="870" y="176" font-size="19" font-weight="600" fill="#16202b">Шкала и то, что под шкалой</text>
+    <text x="870" y="204" font-size="16" fill="#3b4652">При сверке 28.09: эталон 18:04:20, на шкале 18:10:32.</text>
+    <text x="870" y="226" font-size="16" fill="#3b4652">Канал спешит на 6 минут 12 секунд: сеть времени отключена,</text>
+    <text x="870" y="248" font-size="16" fill="#3b4652">ход по внутреннему будильнику. Отметки читают за вычетом.</text>
+
+    <g font-size="16">
+      <text x="870" y="292" fill="#16202b" font-weight="600">отметка на шкале</text>
+      <text x="1150" y="292" fill="#16202b" font-weight="600">поясное время</text>
+      <line x1="870" y1="302" x2="1520" y2="302" stroke="#16202b" stroke-width="1.5"/>
+
+      <text x="870" y="332" fill="#3b4652">15:08:20  въезд У 137 ОС 716</text>
+      <text x="1190" y="332" fill="#3b4652">15:02:08</text>
+      <text x="870" y="362" fill="#3b4652">16:11:30  автобус у поворота</text>
+      <text x="1190" y="362" fill="#3b4652">16:05:18</text>
+      <text x="870" y="392" fill="#16202b">19:31:07  въезд, фары включены</text>
+      <text x="1190" y="392" fill="#a8321f">19:24:55</text>
+      <text x="870" y="422" fill="#16202b">19:33:50  идёт к № 41, в руках свёрток</text>
+      <text x="1190" y="422" fill="#a8321f">19:27:38</text>
+      <text x="870" y="452" fill="#16202b">20:22:40  возвращается, свёртка нет</text>
+      <text x="1190" y="452" fill="#a8321f">20:16:28</text>
+      <text x="870" y="482" fill="#16202b">20:25:16  У 137 ОС 716 выезжает</text>
+      <text x="1190" y="482" fill="#a8321f">20:19:04</text>
+      <text x="870" y="512" fill="#3b4652">20:54:03  Е 662 ВК 716 у калитки</text>
+      <text x="1190" y="512" fill="#3b4652">20:47:51</text>
+      <text x="870" y="542" fill="#3b4652">00:24:18  трое у машины, носилки</text>
+      <text x="1190" y="542" fill="#3b4652">00:18:06</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="580" x2="1540" y2="580" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="626" font-size="19" font-weight="600" fill="#16202b">Соседние кадры того же вечера</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="664">15:12:04 — Мелитонов идёт вдоль забора № 41, во двор не заезжает</text>
+      <text x="60" y="690">15:36:41 — возвращается к машине; 15:41:12 — выезжает из ворот</text>
+      <text x="60" y="716">19:33:50 — между калиткой и домом камера теряет его за деревом</text>
+      <text x="60" y="742">20:49:02 — тот же вечер, домашний регистратор: Батюшков во дворе</text>
+      <text x="60" y="768">00:52:40 — автомобиль скорой помощи въезжает в ворота</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="60" y="810">Между 19:33:50 и 20:22:40 по этому каналу</text>
+      <text x="60" y="832">нет ни одного кадра с движением у ворот.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="626" font-size="19" font-weight="600" fill="#16202b">Чего этот канал не видит</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="900" y="664">Вторые, технологические ворота со стороны полей:</text>
+      <text x="900" y="686">камера снята в 2024 году, в щитке пустое гнездо.</text>
+      <text x="900" y="722">Полоса вдоль забора участков № 40 — 42,</text>
+      <text x="900" y="744">около сорока метров слепой зоны.</text>
+      <text x="900" y="780">Торец дома со стороны бани и весь огород</text>
+      <text x="900" y="802">не попадают ни в один сектор: камер четыре.</text>
+      <text x="900" y="838">Удалённый просмотр не настроен, ключ от щитка</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="1180" y="838">у председателя и у сторожа.</text>
+    </g>
+  </g>
+</svg>

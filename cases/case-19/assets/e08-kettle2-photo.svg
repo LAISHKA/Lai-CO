@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1908" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".14"/>
+    </pattern>
+    <pattern id="wet1908" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="1.3" fill="#7e8b98" opacity=".45"/>
+      <circle cx="9" cy="9" r="1" fill="#7e8b98" opacity=".35"/>
+    </pattern>
+    <pattern id="grit1908" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <path d="M0 5h10" stroke="#8a7f6a" stroke-width="1.6" opacity=".5"/>
+    </pattern>
+    <pattern id="tread1908" width="16" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 0h16v5H0z" fill="#5d6a76" opacity=".55"/>
+    </pattern>
+    <marker id="arr1908" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#a8321f"/>
+    </marker>
+    <marker id="arr1908o" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1908)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="72" font-size="25" font-weight="600" style="fill:var(--paper-ink,#16202b)">Чан № 2 и площадка у люка: шесть снимков группы с масштабной линейкой</text>
+  <text x="60" y="100" font-size="18" style="fill:var(--fg-dim,#3b4652)">Схема к материалу от 14.03. Объективы 35 и 100 миллиметров, вспышка. На каждом кадре — линейка; деление крупного ряда 100 миллиметров.</text>
+
+  <g>
+    <rect x="60" y="124" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="74" y="150" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 1 — кромка заторного люка</text>
+    <path d="M96 330a150 46 0 0 1 300 0" fill="none" stroke="#16202b" stroke-width="3"/>
+    <path d="M96 330a150 46 0 0 0 300 0" fill="none" stroke="#16202b" stroke-width="2" stroke-dasharray="7 5"/>
+    <ellipse cx="246" cy="330" rx="86" ry="26" fill="#b9b1a1" stroke="#16202b" stroke-width="2.4"/>
+    <ellipse cx="246" cy="330" rx="62" ry="18" fill="#8a8474" stroke="#16202b" stroke-width="1.6"/>
+    <text x="150" y="392" font-size="14" style="fill:var(--fg-dim,#3b4652)">люк 66 сантиметров, крышка отведена</text>
+    <g>
+      <rect x="316" y="286" width="72" height="20" rx="6" fill="#5d6a76" stroke="#16202b" stroke-width="1.6" transform="rotate(-24 352 296)"/>
+      <text x="332" y="266" font-size="14" style="fill:var(--paper-ink,#16202b)">блокировочный язычок</text>
+      <text x="332" y="284" font-size="14" style="fill:var(--paper-ink,#16202b)">отведён до упора</text>
+      <path d="M392 300h44" stroke="#a8321f" stroke-width="2" marker-end="url(#arr1908)"/>
+    </g>
+    <g>
+      <rect x="120" y="236" width="150" height="14" fill="url(#grit1908)" stroke="#16202b" stroke-width="1.2"/>
+      <path d="M196 234v-40" stroke="#a8321f" stroke-width="2" marker-end="url(#arr1908)"/>
+      <text x="96" y="222" font-size="14" style="fill:#a8321f">свежая полоса смазки,</text>
+      <text x="96" y="204" font-size="14" style="fill:#a8321f">снята в направлении вверх</text>
+    </g>
+    <rect x="96" y="416" width="400" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M96 416v16M196 416v11M296 416v16M396 416v11M496 416v16"/>
+    </g>
+    <text x="96" y="450" font-size="13" style="fill:var(--fg-dim,#3b4652)">0 — 100 — 200 — 300 — 400 миллиметров</text>
+  </g>
+
+  <g>
+    <rect x="560" y="124" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="574" y="150" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 2 — ладонь на борту люка</text>
+    <path d="M600 336a150 40 0 0 1 300 0" fill="none" stroke="#16202b" stroke-width="2.6"/>
+    <g fill="#a8321f" opacity=".28" stroke="#a8321f" stroke-width="1.6">
+      <path d="M700 300c-6-30-4-58 6-70 8-10 20-8 24 4 4-12 16-14 22-4 4-10 16-10 20 0 4-8 14-6 16 4 4 16 2 44-4 64z"/>
+      <path d="M690 306c-16 6-30 4-36-6-6-12 4-24 20-24 10 0 18 4 22 10"/>
+    </g>
+    <g fill="none" stroke="#a8321f" stroke-width="1.2" stroke-dasharray="4 4" opacity=".8">
+      <path d="M688 312c-8-34-2-66 10-80 10-12 26-10 32 4 6-14 20-16 28-4 6-12 20-12 26 0 4-8 16-8 20 4 4 18 0 48-6 70"/>
+    </g>
+    <text x="600" y="372" font-size="14" style="fill:#a8321f">четыре пальца вместе, большой палец отдельно</text>
+    <text x="600" y="392" font-size="14" style="fill:#a8321f">край оттиска размыт — рука была мокрая</text>
+    <g>
+      <path d="M772 214h120" stroke="#16202b" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <path d="M772 210v8M892 210v8" stroke="#16202b" stroke-width="1.4"/>
+      <text x="776" y="202" font-size="14" style="fill:var(--paper-ink,#16202b)">205 миллиметров по большому пальцу</text>
+    </g>
+    <path d="M900 300h60" stroke="#e08a2e" stroke-width="2" marker-end="url(#arr1908o)"/>
+    <text x="886" y="326" font-size="14" fill="#8a5a12">сторона тамбура</text>
+    <rect x="600" y="416" width="400" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M600 416v16M700 416v11M800 416v16M900 416v11M1000 416v16"/>
+    </g>
+    <text x="600" y="450" font-size="13" style="fill:var(--fg-dim,#3b4652)">ладонь правая, на борту со стороны пролёта</text>
+  </g>
+
+  <g>
+    <rect x="1060" y="124" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="1074" y="150" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 3 — след колодки на настиле</text>
+    <rect x="1092" y="196" width="360" height="200" fill="url(#wet1908)"/>
+    <g fill="#8a8474" opacity=".85">
+      <path d="M1230 210c22-6 44 2 50 22 6 20 0 42-6 62-6 20-4 40 4 56 8 16 2 34-14 40-18 6-36-2-42-18-6-18-2-38 2-58 4-22 2-44-8-62-8-16-4-36 14-42z"/>
+    </g>
+    <g fill="none" stroke="#a8321f" stroke-width="1.8">
+      <path d="M1216 342c8 18 34 26 54 18"/>
+    </g>
+    <text x="1100" y="188" font-size="14" style="fill:#a8321f">каблук читается,</text>
+    <text x="1100" y="208" font-size="14" style="fill:#a8321f">рисунок носка смазан водой</text>
+    <g>
+      <path d="M1300 214v136" stroke="#16202b" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <path d="M1294 214h12M1294 350h12" stroke="#16202b" stroke-width="1.4"/>
+      <text x="1312" y="290" font-size="15" style="fill:var(--paper-ink,#16202b)">44-й размер</text>
+      <text x="1312" y="310" font-size="14" style="fill:var(--fg-dim,#3b4652)">глубина 3 миллиметра</text>
+    </g>
+    <text x="1100" y="372" font-size="14" style="fill:var(--fg-dim,#3b4652)">настил мокрый, оттиск у борта, носок развёрнут к тамбуру</text>
+    <rect x="1092" y="416" width="400" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M1092 416v16M1192 416v11M1292 416v16M1392 416v11M1492 416v16"/>
+    </g>
+    <text x="1092" y="450" font-size="13" style="fill:var(--fg-dim,#3b4652)">масштабная линейка в кадре</text>
+  </g>
+
+  <g>
+    <rect x="60" y="480" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="74" y="506" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 4 — осколок рассеивателя в сусле</text>
+    <path d="M120 560v200h340V560" fill="#b09a63" stroke="#16202b" stroke-width="2.4"/>
+    <path d="M120 596h340" stroke="#e6dfd0" stroke-width="2"/>
+    <g fill="#e6dfd0" opacity=".75">
+      <circle cx="160" cy="590" r="7"/><circle cx="196" cy="586" r="9"/><circle cx="236" cy="592" r="6"/>
+      <circle cx="286" cy="588" r="8"/><circle cx="330" cy="592" r="6"/><circle cx="374" cy="586" r="9"/>
+      <circle cx="424" cy="590" r="7"/>
+    </g>
+    <text x="128" y="556" font-size="14" style="fill:var(--fg-dim,#3b4652)">плёнка пены на поверхности</text>
+    <path d="M262 640l34-16 12 30-40 14z" fill="#cfd8de" stroke="#16202b" stroke-width="1.8"/>
+    <text x="316" y="654" font-size="14" style="fill:var(--paper-ink,#16202b)">осколок,</text>
+    <text x="316" y="672" font-size="14" style="fill:var(--paper-ink,#16202b)">3 сантиметра</text>
+    <text x="316" y="690" font-size="14" style="fill:var(--paper-ink,#16202b)">от поверхности</text>
+    <path d="M240 616v26" stroke="#a8321f" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <text x="120" y="792" font-size="14" style="fill:#a8321f">осколок лежит под плёнкой пены, а не на ней</text>
+    <rect x="120" y="722" width="340" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M120 722v16M205 722v11M290 722v16M375 722v11M460 722v16"/>
+    </g>
+    <text x="120" y="764" font-size="13" style="fill:var(--fg-dim,#3b4652)">срез борта чана № 2, уровень сусла по метке датчика</text>
+  </g>
+
+  <g>
+    <rect x="560" y="480" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="574" y="506" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 5 — нить ткани на нижнем прутке</text>
+    <g stroke="#5d6a76" stroke-width="9" stroke-linecap="round">
+      <path d="M600 580h400"/>
+      <path d="M600 690h400"/>
+    </g>
+    <g stroke="#5d6a76" stroke-width="7">
+      <path d="M640 580v110M900 580v110"/>
+    </g>
+    <path d="M700 690c30-14 60 12 92-2 26-12 44 6 66-4" fill="none" stroke="#2f4a7a" stroke-width="4"/>
+    <path d="M700 690c-24 10-40 30-46 54" fill="none" stroke="#2f4a7a" stroke-width="3" stroke-dasharray="7 6"/>
+    <g stroke="#2f4a7a" stroke-width="1.4" opacity=".8">
+      <path d="M858 684l16-10M864 692l18-6M870 700l18-2"/>
+    </g>
+    <text x="596" y="556" font-size="14" style="fill:var(--fg-dim,#3b4652)">ограждение платформы у чана № 2, два прутка</text>
+    <text x="612" y="770" font-size="14" style="fill:#2f4a7a">нить тёмно-синей ткани защемлена нижним прутком</text>
+    <path d="M648 744h-6v-50" stroke="#a8321f" stroke-width="1.8" fill="none" marker-end="url(#arr1908)"/>
+    <text x="900" y="744" font-size="14" style="fill:#a8321f">обрыв со стороны платформы</text>
+    <rect x="600" y="722" width="400" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M600 722v16M700 722v11M800 722v16M900 722v11M1000 722v16"/>
+    </g>
+    <text x="600" y="786" font-size="13" style="fill:var(--fg-dim,#3b4652)">макро, объектив 100 миллиметров</text>
+  </g>
+
+  <g>
+    <rect x="1060" y="480" width="480" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="1074" y="506" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 6 — обувь погибшего и след с настила</text>
+    <g>
+      <path d="M1150 560c30-10 60 4 68 30 8 26 2 54-6 80-8 26-6 52 6 70 10 16 4 36-16 42-22 6-44-4-52-24-8-22-2-46 4-68 6-24 4-48-8-66-10-16-6-56 4-64z" fill="#8fa3b5" stroke="#16202b" stroke-width="2.2"/>
+      <path d="M1150 560c30-10 60 4 68 30 8 26 2 54-6 80-8 26-6 52 6 70 10 16 4 36-16 42-22 6-44-4-52-24-8-22-2-46 4-68 6-24 4-48-8-66-10-16-6-56 4-64z" fill="url(#tread1908)" opacity=".5"/>
+      <text x="1240" y="600" font-size="15" style="fill:var(--paper-ink,#16202b)">подошва целая,</text>
+      <text x="1240" y="622" font-size="15" style="fill:var(--paper-ink,#16202b)">42-й размер</text>
+      <text x="1240" y="648" font-size="14" style="fill:var(--fg-dim,#3b4652)">протектор без выломов</text>
+    </g>
+    <g>
+      <path d="M1330 700c22-8 46 2 52 24 6 20 0 42-6 62-6 18-4 36 4 50" fill="none" stroke="#a8321f" stroke-width="2.4" stroke-dasharray="8 6"/>
+      <path d="M1330 700c-14 16-16 44-8 66 8 22 8 44 0 60" fill="none" stroke="#a8321f" stroke-width="2.4" stroke-dasharray="8 6"/>
+      <text x="1394" y="742" font-size="14" style="fill:#a8321f">след</text>
+      <text x="1394" y="760" font-size="14" style="fill:#a8321f">с настила</text>
+    </g>
+    <text x="1092" y="546" font-size="14" style="fill:var(--fg-dim,#3b4652)">оттиск колодки 44-го размера рядом — контуры не совпадают</text>
+    <rect x="1092" y="800" width="400" height="16" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M1092 800v16M1192 800v11M1292 800v16M1392 800v11M1492 800v16"/>
+    </g>
+    <text x="1092" y="778" font-size="13" style="fill:var(--fg-dim,#3b4652)">оба предмета в одном кадре, линейка между ними</text>
+  </g>
+
+  <text x="60" y="864" font-size="17" style="fill:var(--fg-dim,#3b4652)">Кромка люка, борт, настил, сусло, ограждение и обувь сняты 14.03 в составе одного выезда группы; каждый кадр продублирован с линейкой без изменения масштаба.</text>
+</svg>

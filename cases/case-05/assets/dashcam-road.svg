@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Регистратор мусоровоза: сорок секунд до удара</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Камера кабины, автомобиль С 118 ОК 716, четвёртый километр трассы на Каширу, 06.10.2025. Часы регистратора отстают от серверных на 4 секунды.</text>
+
+  <!-- road plan -->
+  <g>
+    <text x="60" y="176" font-size="19" font-weight="600" fill="#16202b">Схема участка</text>
+    <path d="M60 380 C 380 372, 700 350, 980 300" stroke="#16202b" stroke-width="3.4" fill="none"/>
+    <path d="M60 470 C 380 462, 700 440, 1000 392" stroke="#16202b" stroke-width="3.4" fill="none"/>
+    <path d="M70 425 C 380 417, 700 395, 990 346" stroke="#3b4652" stroke-width="1.8" stroke-dasharray="26 22" fill="none"/>
+    <text x="62" y="516" font-size="16" fill="#3b4652">асфальт сухой, обочина укатанная, обочина без следа торможения</text>
+
+    <!-- truck -->
+    <g transform="translate(120 392)">
+      <rect x="0" y="0" width="112" height="54" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+      <rect x="112" y="10" width="44" height="44" rx="6" fill="#2f4258" stroke="#16202b" stroke-width="2.4"/>
+      <circle cx="30" cy="60" r="11" fill="#16202b"/>
+      <circle cx="126" cy="60" r="11" fill="#16202b"/>
+      <text x="4" y="-12" font-size="16" fill="#16202b">С 118 ОК 716</text>
+    </g>
+    <path d="M300 420 H 470" stroke="#a8321f" stroke-width="2.6" fill="none"/>
+    <path d="M458 410 l 16 10 l -16 10" fill="none" stroke="#a8321f" stroke-width="2.6"/>
+    <text x="312" y="404" font-size="16" fill="#a8321f">88 км/ч, ровный ход</text>
+
+    <!-- parked car -->
+    <g transform="translate(560 436)">
+      <rect x="0" y="0" width="96" height="40" rx="12" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/>
+      <rect x="18" y="6" width="56" height="16" rx="4" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+      <circle cx="20" cy="42" r="10" fill="none" stroke="#a8321f" stroke-width="3" stroke-dasharray="6 5"/>
+      <text x="0" y="76" font-size="16" fill="#16202b">К 417 НР 716 стоит у правого края</text>
+      <text x="0" y="96" font-size="16" fill="#a8321f">заднее левое колесо отсутствует</text>
+    </g>
+
+    <!-- impact and skid -->
+    <g>
+      <circle cx="656" cy="452" r="15" fill="none" stroke="#a8321f" stroke-width="3"/>
+      <path d="M646 442 l 20 20 M666 442 l -20 20" stroke="#a8321f" stroke-width="2.4"/>
+      <text x="600" y="330" font-size="16" fill="#a8321f">18:26:33 — одиночный звук</text>
+      <line x1="656" y1="348" x2="656" y2="436" stroke="#a8321f" stroke-width="1.4" stroke-dasharray="7 6"/>
+      <path d="M656 456 C 720 470, 790 488, 844 508" stroke="#16202b" stroke-width="7" fill="none" opacity=".55"/>
+      <text x="700" y="540" font-size="16" fill="#16202b">след заноса колеса 19,4 м</text>
+      <circle cx="872" cy="520" r="14" fill="none" stroke="#16202b" stroke-width="3"/>
+      <text x="812" y="576" font-size="16" fill="#16202b">колесо найдено в 46 м от машины</text>
+    </g>
+
+    <!-- distance ruler -->
+    <g stroke="#3b4652" stroke-width="1.4">
+      <line x1="656" y1="612" x2="656" y2="628"/>
+      <line x1="844" y1="612" x2="844" y2="628"/>
+      <line x1="872" y1="612" x2="872" y2="628"/>
+      <line x1="656" y1="620" x2="872" y2="620"/>
+    </g>
+    <text x="700" y="646" font-size="15" fill="#3b4652">19,4 м заноса, затем 2,6 м до остановки</text>
+  </g>
+
+  <!-- channel + speed -->
+  <g>
+    <text x="1040" y="176" font-size="19" font-weight="600" fill="#16202b">Дорожка звука и скорость</text>
+    <rect x="1040" y="200" width="480" height="90" fill="none" stroke="#16202b" stroke-width="2.4"/>
+    <path d="M1050 245 h 30 M1086 232 v 26 M1096 238 v 14 M1106 226 v 38 M1116 240 v 10 M1128 236 v 18"
+          stroke="#3b4652" stroke-width="1.8" fill="none"/>
+    <path d="M1150 245 h 60 M1216 240 v 10 M1226 232 v 26" stroke="#3b4652" stroke-width="1.8" fill="none"/>
+    <path d="M1250 245 h 24" stroke="#3b4652" stroke-width="1.8"/>
+    <path d="M1280 208 v 74 M1288 214 v 62 M1296 206 v 78 M1304 216 v 58 M1312 222 v 46" stroke="#a8321f" stroke-width="3.2" fill="none"/>
+    <path d="M1330 245 h 40 M1376 238 v 14 M1386 242 v 6" stroke="#3b4652" stroke-width="1.8" fill="none"/>
+    <path d="M1410 245 h 100" stroke="#3b4652" stroke-width="1.8"/>
+    <text x="1266" y="312" font-size="16" fill="#a8321f">удар: 18:26:33</text>
+    <text x="1050" y="312" font-size="15" fill="#3b4652">шум дороги</text>
+    <text x="1420" y="312" font-size="15" fill="#3b4652">скрежет</text>
+
+    <!-- speed curve -->
+    <g>
+      <line x1="1040" y1="470" x2="1520" y2="470" stroke="#16202b" stroke-width="2.2"/>
+      <line x1="1040" y1="350" x2="1040" y2="470" stroke="#16202b" stroke-width="2.2"/>
+      <g font-size="14" fill="#3b4652">
+        <text x="1000" y="356">100</text>
+        <text x="1006" y="412">70</text>
+        <text x="1014" y="474">0</text>
+      </g>
+      <line x1="1040" y1="408" x2="1520" y2="408" stroke="#5c7286" stroke-width="1" stroke-dasharray="6 6"/>
+      <path d="M1046 412 C 1160 410, 1270 406, 1286 404 C 1400 402, 1470 404, 1514 406"
+            fill="none" stroke="#a8321f" stroke-width="3"/>
+      <text x="1436" y="392" font-size="15" fill="#a8321f">88 км/ч</text>
+      <g stroke="#3b4652" stroke-width="1.2">
+        <line x1="1286" y1="404" x2="1286" y2="470"/>
+      </g>
+      <g font-size="14" fill="#3b4652">
+        <text x="1046" y="490">18:25:53</text>
+        <text x="1252" y="490">18:26:33</text>
+        <text x="1460" y="490">18:26:33+</text>
+      </g>
+      <text x="1040" y="524" font-size="16" fill="#3b4652">Скорость на всём отрезке ровная, полосы торможения нет:</text>
+      <text x="1040" y="546" font-size="16" fill="#3b4652">водитель не видел препятствия до звука под колесом.</text>
+    </g>
+  </g>
+
+  <!-- frames strip -->
+  <g>
+    <text x="60" y="704" font-size="19" font-weight="600" fill="#16202b">Отсчёт по кадрам</text>
+    <line x1="60" y1="740" x2="1000" y2="740" stroke="#16202b" stroke-width="2.4"/>
+    <g fill="#a8321f">
+      <circle cx="120" cy="740" r="6"/>
+      <circle cx="380" cy="740" r="6"/>
+      <circle cx="640" cy="740" r="6"/>
+      <circle cx="900" cy="740" r="6"/>
+    </g>
+    <g font-size="16" fill="#3b4652">
+      <text x="76" y="772">18:25:53, 40 с</text>
+      <text x="76" y="794">до удара: обочина</text>
+      <text x="76" y="816">пустая, машин нет</text>
+      <text x="336" y="772">18:26:13, 20 с</text>
+      <text x="336" y="794">впереди у правого</text>
+      <text x="336" y="816">края стоит Солярис</text>
+      <text x="596" y="772">18:26:33, удар</text>
+      <text x="596" y="794">одиночный, короткий,</text>
+      <text x="596" y="816">сразу за ним скрежет</text>
+      <text x="856" y="772">18:26:36</text>
+      <text x="856" y="794">колосьевидный предмет</text>
+      <text x="856" y="816">проходит под кабиной</text>
+    </g>
+    <text x="1040" y="704" font-size="19" font-weight="600" fill="#16202b">Что зафиксировано</text>
+    <text x="1040" y="736" font-size="16" fill="#3b4652">Файл 0647.mp4, 1280 на 720, 30 кадров в секунду,</text>
+    <text x="1040" y="758" font-size="16" fill="#3b4652">циклическая запись, перезаписи за 6 октября нет.</text>
+    <text x="1040" y="790" font-size="16" fill="#3b4652">На кадрах удара левая задняя часть машины</text>
+    <text x="1040" y="812" font-size="16" fill="#3b4652">в кадре не перекрывается: колесо уходит вправо,</text>
+    <text x="1040" y="834" font-size="16" fill="#3b4652">машина стоит на месте, людей у неё нет.</text>
+  </g>
+</svg>

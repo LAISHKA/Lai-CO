@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g7" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#7f97a4" stroke-opacity=".1" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch7" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#cfe3e8" stroke-width="2" stroke-opacity=".45"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect width="1600" height="900" fill="url(#g7)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3d4e5c" stroke-width="2.5"/>
+
+  <polygon points="18,180 900,420 900,860 18,860" fill="#cfe3e8" fill-opacity=".045"/>
+  <text x="60" y="70" font-size="25" fill="#cfe3e8">Схема 6 · контейнер № 3 в зоне разгрузки, −1 этаж</text>
+  <text x="60" y="100" font-size="19" fill="#7f97a4">разрез, вид с запада · изъято 07.02.2025, 07:35 · рядом лежат контейнеры № 1, № 2 и № 4 (пустые)</text>
+
+  <!-- пол -->
+  <line x1="60" y1="812" x2="1540" y2="812" stroke="#cfe3e8" stroke-width="3.4"/>
+  <g stroke="#7f97a4" stroke-width="2" stroke-opacity=".6">
+    <line x1="150" y1="812" x2="110" y2="856"/><line x1="430" y1="812" x2="390" y2="856"/>
+    <line x1="710" y1="812" x2="670" y2="856"/><line x1="990" y1="812" x2="950" y2="856"/>
+    <line x1="1270" y1="812" x2="1230" y2="856"/>
+  </g>
+
+  <!-- контейнер -->
+  <g fill="none" stroke="#cfe3e8" stroke-width="3.4">
+    <path d="M300 470 L360 812 H1160 L1220 470"/>
+    <line x1="300" y1="470" x2="1220" y2="470"/>
+    <path d="M300 470 l-70 -30 M1220 470 l70 -30"/>
+  </g>
+  <text x="1176" y="870" font-size="19" fill="#7f97a4">бетонный, 1,1 м</text>
+  <text x="180" y="870" font-size="19" fill="#7f97a4">пол бетонный, сухой</text>
+
+  <!-- жилет -->
+  <path d="M420 470 l60 -132 l80 -26 l80 26 l60 132 l-54 14 l-26 -70 l-34 84 l-52 0 l-34 -84 l-26 70 z"
+        fill="#1f3d5c" fill-opacity=".85" stroke="#cfe3e8" stroke-width="2.6"/>
+  <g stroke="#cfe3e8" stroke-width="2" stroke-opacity=".45">
+    <line x1="500" y1="372" x2="620" y2="372"/><line x1="492" y1="404" x2="628" y2="404"/>
+  </g>
+  <text x="356" y="300" font-size="20" fill="#cfe3e8">1 — жилет сигнальный,</text>
+  <text x="356" y="326" font-size="20" fill="#cfe3e8">размер L, бейдж «РСМ»</text>
+
+  <!-- пуховик -->
+  <path d="M700 470 q-36 -152 46 -196 q76 -34 142 22 q46 42 18 174 z" fill="#8e2b1c" stroke="#cfe3e8" stroke-width="2.6"/>
+  <ellipse cx="792" cy="290" rx="56" ry="34" fill="#6d2115" stroke="#cfe3e8" stroke-width="2.4"/>
+  <text x="936" y="262" font-size="20" fill="#cfe3e8">2 — пуховик красный, р. 50</text>
+  <text x="936" y="288" font-size="20" fill="#cfe3e8">капюшон и плечи мокрые,</text>
+  <text x="936" y="314" font-size="20" fill="#cfe3e8">подкладка сухая</text>
+
+  <!-- огнетушитель -->
+  <g transform="translate(1000,330) rotate(24)">
+    <rect x="0" y="0" width="92" height="230" rx="42" fill="#b8352a" stroke="#cfe3e8" stroke-width="2.6"/>
+    <rect x="26" y="-30" width="40" height="34" rx="8" fill="#3d4e5c" stroke="#cfe3e8" stroke-width="2.2"/>
+    <path d="M84 96 q22 24 0 50" fill="none" stroke="#cfe3e8" stroke-width="2.6"/>
+    <text x="10" y="140" font-size="19" fill="#cfe3e8" opacity=".8">ОП-5</text>
+  </g>
+  <text x="1108" y="352" font-size="20" fill="#cfe3e8">3 — ОП-5: вмятина 6 см,</text>
+  <text x="1108" y="378" font-size="20" fill="#cfe3e8">пломба сорвана,</text>
+  <text x="1108" y="404" font-size="20" fill="#cfe3e8">на резьбе бурое</text>
+  <g stroke="#cfe3e8" stroke-width="1.8">
+    <line x1="1100" y1="362" x2="1064" y2="386"/><line x1="1100" y1="392" x2="1074" y2="418"/>
+  </g>
+
+  <!-- пропуск -->
+  <rect x="640" y="516" width="112" height="70" rx="8" fill="#16202b" stroke="#cfe3e8" stroke-width="2.4" transform="rotate(-12 696 551)"/>
+  <text x="500" y="646" font-size="20" fill="#cfe3e8">4 — транспортный пропуск</text>
+  <text x="500" y="672" font-size="20" fill="#cfe3e8">С-0007, в чехле, под пакетами</text>
+
+  <!-- снег на крышке -->
+  <g fill="#cfe3e8" fill-opacity=".3">
+    <circle cx="250" cy="430" r="4"/><circle cx="286" cy="452" r="3"/><circle cx="1280" cy="440" r="4"/>
+    <circle cx="1316" cy="466" r="3"/><circle cx="232" cy="470" r="3"/>
+  </g>
+  <text x="1246" y="200" font-size="20" fill="#7f97a4">снег на кромке крышки</text>
+  <text x="1246" y="226" font-size="20" fill="#7f97a4">ссыпан с правой стороны —</text>
+  <text x="1246" y="252" font-size="20" fill="#7f97a4">крышку поднимали после 21:10</text>
+
+  <text x="60" y="756" font-size="21" fill="#cfe3e8">Порядок укладки: сверху жилет, под ним пуховик, баллон и пропуск — на дне, под пакетами со сметом.</text>
+  <text x="60" y="786" font-size="21" fill="#cfe3e8">Все четыре предмета изъяты и упакованы отдельно; на корпусе ОП-5 — следы стирания рукавом.</text>
+</svg>

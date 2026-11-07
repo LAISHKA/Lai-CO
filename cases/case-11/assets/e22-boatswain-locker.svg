@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1122" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="dust1122" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 8 L8 0" stroke="#8fa3b5" stroke-width="0.8" opacity=".5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1122)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Рундук № 7, жилая палуба правого борта: семь кадров фототаблицы</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема к снимкам 23.10, 13:20 — 13:55. Рундук открыт, крышка на петлях, замок цел. Тент трюма № 2 до съёмки не перекладывали.</text>
+
+  <g>
+    <rect x="60" y="140" width="760" height="560" fill="#e7dcc6" stroke="#16202b" stroke-width="3"/>
+    <rect x="60" y="140" width="760" height="42" fill="#cbbfa8" stroke="#16202b" stroke-width="3"/>
+    <text x="78" y="168" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">кадр 1 · крышка на петлях, замок цел</text>
+
+    <path d="M60 300 H820 M60 452 H820" style="stroke:var(--paper-ink,#16202b)" stroke-width="3"/>
+
+    <g>
+      <g stroke="#16202b" stroke-width="3" fill="none">
+        <path d="M150 200 v 44 a 12 12 0 0 0 24 0"/>
+        <path d="M330 200 v 44 a 12 12 0 0 0 24 0"/>
+        <path d="M510 200 v 44 a 12 12 0 0 0 24 0"/>
+      </g>
+      <ellipse cx="342" cy="266" rx="60" ry="24" fill="url(#dust1122)" stroke="#a8321f" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="120" y="306" font-size="15" style="fill:var(--danger,#a8321f)">средний крючок свободен:</text>
+      <text x="120" y="326" font-size="15" style="fill:var(--danger,#a8321f)">светлый овал, пыль по контуру</text>
+      <text x="126" y="240" font-size="14" style="fill:var(--fg-dim,#3b4652)">кадр 2 · три крючка</text>
+
+      <g>
+        <path d="M620 210 l 60 0 l 14 66 l -88 0 Z" fill="#4a5a44" stroke="#16202b" stroke-width="2.4" opacity=".9"/>
+        <path d="M640 214 v -14" stroke="#16202b" stroke-width="2"/>
+        <circle cx="640" cy="196" r="6" fill="none" stroke="#16202b" stroke-width="2"/>
+        <rect x="628" y="252" width="26" height="20" rx="3" fill="none" stroke="#16202b" stroke-width="2" stroke-dasharray="4 4"/>
+        <text x="600" y="292" font-size="14" style="fill:var(--fg-dim,#3b4652)">кадр 3 · штормовка</text>
+      </g>
+    </g>
+
+    <g>
+      <path d="M120 328 c 0 -18 22 -22 40 -22 h 30 v 60 h -84 Z" fill="#3a2f28" stroke="#16202b" stroke-width="2.4"/>
+      <path d="M120 366 h 70 v 14 h -70 Z" fill="#c9b48f" stroke="#16202b" stroke-width="1.8"/>
+      <path d="M210 328 c 0 -18 22 -22 40 -22 h 30 v 60 h -84 Z" fill="#3a2f28" stroke="#16202b" stroke-width="2.4"/>
+      <path d="M210 366 h 70 v 14 h -70 Z" fill="#c9b48f" stroke="#16202b" stroke-width="1.8"/>
+      <text x="118" y="410" font-size="15" style="fill:var(--paper-ink,#16202b)">кадр 4 · ботинки 43-го на полке</text>
+      <text x="118" y="432" font-size="15" style="fill:var(--danger,#a8321f)">подошвы сухие, правый каблук стёрт изнутри,</text>
+      <text x="118" y="450" font-size="15" style="fill:var(--danger,#a8321f)">в голенищах ни ила, ни песка</text>
+
+      <g>
+        <rect x="470" y="322" width="270" height="112" rx="6" fill="#d8cbb0" stroke="#16202b" stroke-width="2.4"/>
+        <path d="M492 348 h 96 M492 366 h 60" stroke="#16202b" stroke-width="2"/>
+        <rect x="492" y="382" width="66" height="34" rx="3" fill="#b6472f" stroke="#16202b" stroke-width="2"/>
+        <text x="568" y="406" font-size="14" style="fill:var(--paper-ink,#16202b)">«Прима», 4 папиросы</text>
+        <path d="M600 340 h 116 v 26 h -116 Z" fill="#8c7a58" stroke="#16202b" stroke-width="2"/>
+        <text x="612" y="358" font-size="13" fill="#f2e6c8">трюмная книга</text>
+        <text x="470" y="312" font-size="14" style="fill:var(--fg-dim,#3b4652)">кадр 5 · съёмный лоток</text>
+        <text x="470" y="446" font-size="14" style="fill:var(--danger,#a8321f)">карманы штормовки вывернуты, ткань сухая</text>
+      </g>
+    </g>
+
+    <g>
+      <path d="M120 480 h 200 v 96 h -200 Z" fill="#2f4258" stroke="#16202b" stroke-width="2.4" opacity=".9"/>
+      <path d="M138 496 l 26 26 l -26 26 l -8 -8 l 18 -18 l -18 -18 Z" fill="#dfe6ea" stroke="#16202b" stroke-width="1.6"/>
+      <text x="182" y="518" font-size="14" fill="#f2e6c8">тельняшка</text>
+      <path d="M244 500 a 28 20 0 0 1 56 0 v 14 h -56 Z" fill="#e08a2e" stroke="#16202b" stroke-width="2"/>
+      <text x="238" y="546" font-size="14" fill="#f2e6c8">каска</text>
+
+      <g>
+        <circle cx="430" cy="524" r="26" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="3"/>
+        <path d="M430 550 v 44 M418 578 h 24" style="stroke:var(--paper-ink,#16202b)" stroke-width="4" fill="none"/>
+        <rect x="452" y="498" width="150" height="34" rx="4" fill="#f2e6c8" stroke="#16202b" stroke-width="2"/>
+        <text x="462" y="522" font-size="15" style="fill:var(--paper-ink,#16202b)">щит грузовой</text>
+        <text x="372" y="600" font-size="15" style="fill:var(--danger,#a8321f)">кадр 6 · ключ на кольце, следов снятия нет</text>
+      </g>
+      <text x="600" y="546" font-size="14" style="fill:var(--fg-dim,#3b4652)">кадр 7 · ключ от замка</text>
+      <text x="600" y="566" font-size="14" style="fill:var(--fg-dim,#3b4652)">в кармане тельняшки</text>
+    </g>
+
+    <g stroke-width="2.6" style="stroke:var(--danger,#a8321f)" fill="none">
+      <path d="M342 266 C 470 190 640 180 700 214"/>
+    </g>
+    <text x="70" y="736" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">Головного убора боцмана в рундуке нет: фуражку и шапку не нашли ни в рундуке, ни в трюме, ни на причале</text>
+  </g>
+
+  <g>
+    <text x="880" y="176" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что должно быть на человеке, сошедшем ночью на берег</text>
+    <g stroke-width="2" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="880" y="198" width="600" height="196"/>
+      <path d="M880 247 H1480 M880 296 H1480 M880 345 H1480"/>
+      <path d="M1180 198 V394"/>
+    </g>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="898" y="228">предмет</text>
+      <text x="1200" y="228">в рундуке</text>
+      <text x="898" y="277">обувь 43-го размера</text>
+      <text x="1200" y="277">на полке, сухая</text>
+      <text x="898" y="326">штормовка боцмана</text>
+      <text x="1200" y="326">на вешалке, сухая</text>
+      <text x="898" y="375">головной убор</text>
+      <text x="1200" y="375">отсутствует</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="898" y="432">На теле 23.10 обуви, штормовки и головного убора не было;</text>
+      <text x="898" y="454">в дыхательных путях воды ноль, песка и ила нет</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="880" y="510" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Запах, вещи, изъятое</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="880" y="548">в отсеке табачный дым и мазут, отсыревших вещей нет</text>
+      <text x="880" y="574">на левом плече штормовки пятно смолы, подкладка сухая</text>
+      <text x="880" y="600">ключ от щита лебёдки изъят пакетом № 7, изъятие — с кольца</text>
+      <text x="880" y="626">понятые при съёмке: второй помощник, матрос смены</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="880" y="670">Сухая обувь и сухая штормовка при человеке, который</text>
+      <text x="880" y="694">«сошёл по своей просьбе на илистый берег в туман»,</text>
+      <text x="880" y="718">означают: на берег он не доходил и в обуви не ходил</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="880" y="770" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Рост и походка владельца вещей</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="880" y="806">Носырев — 168 сантиметров, обувь 43, правша,</text>
+      <text x="880" y="830">ходит, разворачивая носки наружу; по заключению — артроз</text>
+      <text x="880" y="854">правого голеностопного сустава, правую ногу щадит</text>
+    </g>
+  </g>
+</svg>

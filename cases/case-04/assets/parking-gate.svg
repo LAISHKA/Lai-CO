@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Подземный паркинг отеля: места 07 и 14, ворота под шлагбаумом</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Камера 02, чтение государственных знаков. Регистратор Hybrid, архив 14 суток, сектор после 23:30 переписан повторно.</text>
+
+  <!-- deck -->
+  <g>
+    <rect x="140" y="170" width="900" height="500" fill="#f2ecdf" stroke="#16202b" stroke-width="4"/>
+    <rect x="140" y="470" width="900" height="120" fill="#ded7c6"/>
+    <line x1="140" y1="470" x2="1040" y2="470" stroke="#3b4652" stroke-width="2"/>
+    <line x1="140" y1="590" x2="1040" y2="590" stroke="#3b4652" stroke-width="2"/>
+    <line x1="140" y1="530" x2="1040" y2="530" stroke="#8d8676" stroke-width="2" stroke-dasharray="30 24"/>
+    <g stroke="#3b4652" stroke-width="2">
+      <line x1="140" y1="290" x2="1040" y2="290"/>
+      <line x1="260" y1="290" x2="260" y2="470"/>
+      <line x1="380" y1="290" x2="380" y2="470"/>
+      <line x1="500" y1="290" x2="500" y2="470"/>
+      <line x1="620" y1="290" x2="620" y2="470"/>
+      <line x1="740" y1="290" x2="740" y2="470"/>
+      <line x1="860" y1="290" x2="860" y2="470"/>
+      <line x1="980" y1="290" x2="980" y2="470"/>
+    </g>
+    <!-- place 07 -->
+    <rect x="262" y="292" width="116" height="176" fill="#a8321f" opacity=".12" stroke="#a8321f" stroke-width="3"/>
+    <text x="278" y="326" font-size="20" fill="#a8321f">место 07</text>
+    <g transform="translate(282,342)">
+      <rect x="0" y="0" width="76" height="112" rx="12" fill="none" stroke="#16202b" stroke-width="3"/>
+      <rect x="8" y="20" width="60" height="30" rx="6" fill="none" stroke="#3b4652" stroke-width="2"/>
+      <rect x="8" y="66" width="60" height="26" rx="6" fill="none" stroke="#3b4652" stroke-width="2"/>
+    </g>
+    <text x="278" y="452" font-size="15" fill="#16202b">тёмный внедорожник,</text>
+    <text x="278" y="470" font-size="15" fill="#16202b">без опознавательных знаков</text>
+    <text x="180" y="252" font-size="15" fill="#3b4652">приказ 12-К от 03.02.2025: место 07 закреплено за управляющей</text>
+    <!-- place 14 -->
+    <rect x="742" y="292" width="116" height="176" fill="none" stroke="#a8321f" stroke-width="3" stroke-dasharray="9 7"/>
+    <text x="758" y="326" font-size="20" fill="#a8321f">место 14</text>
+    <text x="758" y="356" font-size="15" fill="#3b4652">серебристый</text>
+    <text x="758" y="376" font-size="15" fill="#3b4652">кроссовер гостьи</text>
+    <text x="758" y="396" font-size="15" fill="#3b4652">номера 509</text>
+    <!-- service stair -->
+    <rect x="140" y="590" width="200" height="80" fill="url(#hatch)" stroke="#16202b" stroke-width="3"/>
+    <text x="156" y="622" font-size="16" fill="#16202b">служебный тамбур</text>
+    <text x="156" y="646" font-size="15" fill="#3b4652">лестница на первый этаж</text>
+    <!-- gate -->
+    <rect x="900" y="470" width="140" height="120" fill="url(#hatch)" stroke="#16202b" stroke-width="3"/>
+    <text x="912" y="500" font-size="16" fill="#16202b">ворота</text>
+    <line x1="906" y1="530" x2="1034" y2="530" stroke="#a8321f" stroke-width="5"/>
+    <text x="912" y="560" font-size="15" fill="#3b4652">шлагбаум, пульт</text>
+    <path d="M1040 530 L1120 530" stroke="#16202b" stroke-width="3"/>
+    <text x="1044" y="518" font-size="15" fill="#16202b">на улицу</text>
+    <!-- camera -->
+    <circle cx="200" cy="200" r="9" fill="none" stroke="#a8321f" stroke-width="2.6"/>
+    <path d="M200 200 L980 290 L980 470 L200 300 z" fill="#a8321f" opacity=".06"/>
+    <text x="218" y="196" font-size="16" fill="#a8321f">камера 02: сектор — вся проезжая часть и ворота</text>
+  </g>
+
+  <!-- timeline -->
+  <g>
+    <line x1="1130" y1="170" x2="1130" y2="640" stroke="#16202b" stroke-width="2.5"/>
+    <g font-size="17" fill="#3b4652">
+      <text x="1150" y="200" font-size="19" font-weight="600" fill="#16202b">Журнал ворот</text>
+      <text x="1150" y="236">19:31:40 — с места 14 съезжает</text>
+      <text x="1150" y="258">серебристый кроссовер; за рулём</text>
+      <text x="1150" y="280">женщина, знак читается частично.</text>
+      <text x="1150" y="316">23:52:10 — с места 07 уезжает</text>
+      <text x="1150" y="338">тёмный внедорожник; ворота</text>
+      <text x="1150" y="360">открыты кнопкой с пульта.</text>
+      <text x="1150" y="396">00:22:41 — тот же внедорожник</text>
+      <text x="1150" y="418">возвращается со стороны Выгонной.</text>
+      <text x="1150" y="440">00:23:05 — из машины выходит</text>
+      <text x="1150" y="462">женщина в пиджаке; 00:23:20 —</text>
+      <text x="1150" y="484">она в служебном тамбуре.</text>
+      <text x="1150" y="520">02:05:33 — та же женщина уходит</text>
+      <text x="1150" y="542">от тамбура к машине;</text>
+      <text x="1150" y="564">02:06:10 — ворота открыты, выезд.</text>
+    </g>
+    <g fill="#a8321f">
+      <circle cx="1122" cy="230" r="6"/>
+      <circle cx="1122" cy="310" r="6"/>
+      <circle cx="1122" cy="390" r="6"/>
+      <circle cx="1122" cy="514" r="6"/>
+    </g>
+  </g>
+
+  <g font-size="17" fill="#16202b">
+    <text x="60" y="740" font-size="19" font-weight="600">Отметки журнала ворот и тамбура</text>
+  </g>
+  <g font-size="17" fill="#3b4652">
+    <text x="60" y="772">Между 23:52:10 и 00:22:41 — 30 минут 31 секунда. На всех кадрах этого интервала места 07 и 14 свободны, чужих машин у ворот нет.</text>
+    <text x="60" y="800">Ворота в 23:52:10 и в 02:06:10 открывали кнопкой с пульта вручную, не по расписанию; пульт лежит в ящике стойки, ключа от ящика у горничной нет.</text>
+    <text x="60" y="828">Отметка тамбура в 00:23:20 — «приём», в 02:05:33 — «вынос»; между ними дверь тамбура срабатывала ещё один раз, в 01:52:06.</text>
+  </g>
+  <text x="60" y="864" font-size="16" fill="#3b4652">Выгрузка из регистратора камеры 02 за 14—15.10.2025 приложена к материалу проверки; кадры 23:52:10 и 00:22:41 переданы копиями без сжатия.</text>
+</svg>

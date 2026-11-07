@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Лифт Б: шахта, этажи и события ночи</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Отель «Мезонин», Зарецк. Кабина грузоподъёмностью 630 кг, камера салона 1080p, часы регистратора синхронизированы с сервером стойки.</text>
+
+  <!-- shaft -->
+  <g>
+    <rect x="300" y="150" width="220" height="620" fill="none" stroke="#16202b" stroke-width="3.5"/>
+    <rect x="300" y="150" width="220" height="620" fill="url(#grid)"/>
+    <!-- floors -->
+    <g stroke="#16202b" stroke-width="2.5">
+      <line x1="300" y1="274" x2="1080" y2="274"/>
+      <line x1="300" y1="398" x2="1080" y2="398"/>
+      <line x1="300" y1="522" x2="1080" y2="522"/>
+      <line x1="300" y1="646" x2="1080" y2="646"/>
+    </g>
+    <g font-size="18" fill="#16202b">
+      <text x="240" y="180">5-й</text>
+      <text x="240" y="304">4-й</text>
+      <text x="240" y="428">3-й</text>
+      <text x="240" y="552">2-й</text>
+      <text x="248" y="676">1-й</text>
+      <text x="228" y="756">подвал</text>
+    </g>
+    <text x="316" y="200" font-size="16" fill="#3b4652">жилые номера, 507 — второй дверь от лифта</text>
+    <text x="316" y="700" font-size="16" fill="#3b4652">лобби, стойка, служебный проход</text>
+    <!-- cabin at 5 -->
+    <rect x="330" y="176" width="160" height="84" rx="6" fill="#ded7c6" stroke="#a8321f" stroke-width="3"/>
+    <text x="344" y="212" font-size="16" fill="#a8321f">кабина</text>
+    <text x="344" y="236" font-size="16" fill="#a8321f">23:11:06</text>
+    <!-- guide rails -->
+    <line x1="316" y1="150" x2="316" y2="770" stroke="#3b4652" stroke-width="1.4" stroke-dasharray="10 8"/>
+    <line x1="504" y1="150" x2="504" y2="770" stroke="#3b4652" stroke-width="1.4" stroke-dasharray="10 8"/>
+  </g>
+
+  <!-- tile height reference -->
+  <g>
+    <rect x="600" y="150" width="60" height="620" fill="url(#hatch)" stroke="#3b4652" stroke-width="2"/>
+    <g stroke="#3b4652" stroke-width="1.2">
+      <line x1="600" y1="180" x2="660" y2="180"/>
+      <line x1="600" y1="210" x2="660" y2="210"/>
+      <line x1="600" y1="240" x2="660" y2="240"/>
+      <line x1="600" y1="270" x2="660" y2="270"/>
+      <line x1="600" y1="300" x2="660" y2="300"/>
+    </g>
+    <text x="574" y="140" font-size="15" fill="#3b4652">плитка 300 мм</text>
+    <line x1="668" y1="186" x2="668" y2="300" stroke="#a8321f" stroke-width="2"/>
+    <text x="682" y="250" font-size="16" fill="#a8321f">рост по плитке: 168 см</text>
+    <text x="682" y="272" font-size="16" fill="#a8321f">(кадры 23:11:12, 23:34:12)</text>
+  </g>
+
+  <!-- timeline -->
+  <g>
+    <line x1="900" y1="150" x2="900" y2="790" stroke="#16202b" stroke-width="2.5"/>
+    <g font-size="17" fill="#3b4652">
+      <text x="920" y="176">22:09:31 — кабина идёт вверх, внутри женщина в пиджаке</text>
+      <text x="920" y="198" font-size="16">с подносом: графин, бокал, стакан со льдом. Едет выше 4-го.</text>
+      <text x="920" y="238">23:10:47 — вызов с 5-го этажа (кнопка «вверх» на площадке)</text>
+      <text x="920" y="260" font-size="16">23:11:06 — кабина на 5-м, дверь открыта 14 секунд.</text>
+      <text x="920" y="292">23:11:12 — выходит одна, без подноса, в руке белый платок,</text>
+      <text x="920" y="314" font-size="16">прижимает его к лицу; идёт вдоль стены, к 507.</text>
+      <text x="920" y="354">23:33:44 — вызов с 5-го; 23:34:12 — спускается одна,</text>
+      <text x="920" y="376" font-size="16">правая рука свободна, в левой скомканный платок.</text>
+      <text x="920" y="416">00:05:10 — кабина занимает 1-й, выпускает медиков.</text>
+      <text x="920" y="456">00:43:18 — поднимаются двое: старшая в пиджаке,</text>
+      <text x="920" y="478" font-size="16">младшая в халате стойки с оторванной пуговицей.</text>
+      <text x="920" y="518">00:57:40 — вниз; у старшей в руке плотный пакет,</text>
+      <text x="920" y="540" font-size="16">младшая идёт с пустыми руками, смотрит в пол.</text>
+      <text x="920" y="580">01:52:06 — кабина поднимается на 3-й, служебный этаж.</text>
+    </g>
+    <g fill="#a8321f">
+      <circle cx="892" cy="170" r="6"/>
+      <circle cx="892" cy="232" r="6"/>
+      <circle cx="892" cy="348" r="6"/>
+      <circle cx="892" cy="450" r="6"/>
+      <circle cx="892" cy="512" r="6"/>
+    </g>
+  </g>
+
+  <!-- notes -->
+  <g font-size="17" fill="#16202b">
+    <text x="60" y="820" font-size="19" font-weight="600">Из журнала лифта</text>
+  </g>
+  <g font-size="17" fill="#3b4652">
+    <text x="60" y="850">Дверь 5-го этажа без вызова не открывалась ни разу. Промежуточных остановок между 1-м и 5-м в 23:11 и 23:34 нет.</text>
+    <text x="60" y="876">События 00:43 и 00:57 записаны как «групповой вызов», кабина держала двери открытыми 46 и 39 секунд.</text>
+  </g>
+  <text x="1120" y="850" font-size="16" fill="#a8321f">Часы регистратора: серверное время, расхождение 0 секунд</text>
+</svg>

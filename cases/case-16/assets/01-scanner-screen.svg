@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid161" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <linearGradient id="glare161" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7fa" stop-opacity=".42"/>
+      <stop offset=".6" stop-color="#f4f7fa" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid161)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Снимок экрана терминала сбора данных ТСД-11</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Файл 031944 с телефона Тещука Б. В.; приобщён при выемке 06.06 в 11:48. Часы телефона сетевые.</text>
+
+  <g>
+    <rect x="70" y="146" width="470" height="490" rx="28" fill="#2b3a48" stroke="#16202b" stroke-width="3"/>
+    <rect x="86" y="162" width="438" height="458" rx="20" fill="#33465c"/>
+    <rect x="112" y="188" width="386" height="286" fill="#0f1a22" stroke="#8fa3b5" stroke-width="2.5"/>
+    <rect x="112" y="188" width="386" height="286" fill="url(#glare161)"/>
+
+    <text x="126" y="216" font-size="15" fill="#9fe0b0">журнал расхождений · ТСД-11</text>
+    <line x1="126" y1="228" x2="484" y2="228" stroke="#4a6076" stroke-width="1.2"/>
+    <text x="126" y="252" font-size="14" fill="#c9d4de">наряд 4471 · смена 05—06.06</text>
+
+    <rect x="122" y="266" width="366" height="86" fill="#16202b" stroke="#e08a2e" stroke-width="2.5"/>
+    <text x="134" y="290" font-size="17" font-weight="600" fill="#f2e6c8">03:19:37   С-14-03   П-2207</text>
+    <text x="134" y="314" font-size="14" fill="#c9d4de">паллет сверх задания,</text>
+    <text x="134" y="334" font-size="14" fill="#c9d4de">в наряде не значится</text>
+    <text x="134" y="382" font-size="14" fill="#e08a2e">статус строки: без гашения</text>
+    <text x="134" y="404" font-size="14" fill="#c9d4de">кладовщик: Тещук Б. В., карта 12</text>
+    <text x="134" y="430" font-size="13" fill="#7f95a8">строк в журнале терминала: 13</text>
+    <text x="134" y="452" font-size="13" fill="#7f95a8">последняя синхронизация: 03:19:41</text>
+
+    <g fill="#1d2b38" stroke="#8fa3b5" stroke-width="1.6">
+      <rect x="126" y="496" width="86" height="52" rx="8"/>
+      <rect x="226" y="496" width="86" height="52" rx="8"/>
+      <rect x="326" y="496" width="172" height="52" rx="8"/>
+    </g>
+    <g font-size="14" fill="#c9d4de">
+      <text x="150" y="528"> Esc</text>
+      <text x="252" y="528"> ввод</text>
+      <text x="352" y="528"> внести строку</text>
+    </g>
+    <text x="200" y="606" font-size="13" fill="#8fa3b5">корпус терминала, инвентарный номер 511</text>
+    <rect x="196" y="620" width="60" height="8" rx="4" fill="#8fa3b5" opacity=".6"/>
+  </g>
+
+  <g>
+    <path d="M96 646 q 46 -26 96 -8 q 40 14 44 46 q 4 40 -40 52 q -56 16 -104 -6 Z" fill="#c9a888" stroke="#16202b" stroke-width="2" opacity=".92"/>
+    <path d="M176 640 q 22 -12 40 2 q 14 12 4 26 q -14 16 -38 6 Z" fill="#b48f6d" stroke="#16202b" stroke-width="1.6"/>
+    <path d="M186 646 q 14 -8 24 0 q 8 8 -2 14 q -14 8 -24 -2 Z" fill="#e6d7c4" stroke="#16202b" stroke-width="1.2"/>
+    <text x="250" y="676" font-size="14" fill="#a8321f">большой палец левой руки, ноготь сколот у края</text>
+    <text x="250" y="698" font-size="14" fill="#3b4652">палец лежит на корпусе, клавиша «внести» не нажата в момент съёмки</text>
+    <path d="M600 146 L 470 636" stroke="#f4f7fa" stroke-width="54" opacity=".22"/>
+    <text x="540" y="180" font-size="14" fill="#3b4652">полоса света от лампы тамбура: экран залит сверху вниз</text>
+  </g>
+
+  <line x1="60" y1="736" x2="1540" y2="736" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="774" font-size="19" font-weight="600" fill="#16202b">Что зафиксировано на снимке</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="806">Время в строке журнала — 03:19:37; файл телефона назван 031944, то есть съёмка через семь секунд.</text>
+      <text x="60" y="830">Строка внесена с этого терминала: номер ячейки, номер паллета и фамилия кладовщика совпадают с журналом.</text>
+      <text x="60" y="854">Статус строки на экран ещё не проставлен: гашение будет проведено позже, ночью.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="880" y="774" font-size="19" font-weight="600" fill="#16202b">Служебные отметки приобщения</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="880" y="806">Второго снимка экрана в галерее нет; удаления файлов за ночь телефон не зафиксировал.</text>
+      <text x="880" y="830">Файл никуда не отправлялся: переписка и мессенджеры пусты с 23:41 предыдущего дня.</text>
+    </g>
+    <text x="880" y="854" font-size="15" fill="#a8321f">Геометка не проставлена: определение места на телефоне было выключено.</text>
+  </g>
+</svg>

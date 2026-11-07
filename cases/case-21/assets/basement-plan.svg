@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridFloor21" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#16202b" stroke-width="0.4" opacity="0.12"/>
+    </pattern>
+    <pattern id="hatchIce21" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#4e7fa6" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridFloor21)"/>
+  <text x="60" y="56" font-size="26" font-weight="600" fill="#16202b">План подвала корпуса Б: венткабина, приямок, трап, кладовая</text>
+  <text x="60" y="86" font-size="18" fill="#3b4652">Обмеры 24.02.2026, рулетка 5 м; отметка пола −2,10 м; крышка показана там, где она лежала при осмотре</text>
+
+  <g fill="none" stroke="#16202b" stroke-width="4">
+    <rect x="120" y="140" width="900" height="600"/>
+  </g>
+  <g fill="none" stroke="#16202b" stroke-width="3">
+    <path d="M560 140 L560 460"/>
+    <path d="M560 460 L1020 460"/>
+    <path d="M120 560 L360 560"/>
+    <path d="M360 560 L360 740"/>
+  </g>
+
+  <g font-size="18" fill="#16202b" font-weight="600">
+    <text x="180" y="196">венткабина</text>
+    <text x="640" y="196">кладовая</text>
+    <text x="180" y="616">трап, спуск из тамбура</text>
+    <text x="640" y="516">проход к узлу</text>
+  </g>
+
+  <g>
+    <rect x="200" y="240" width="200" height="260" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <g stroke="#8d99a6" stroke-width="1.5">
+      <path d="M200 305 L400 305"/><path d="M200 370 L400 370"/><path d="M200 435 L400 435"/>
+      <path d="M266 240 L266 500"/><path d="M333 240 L333 500"/>
+    </g>
+    <text x="208" y="232" font-size="15" fill="#3b4652">вентиляционное оборудование</text>
+  </g>
+
+  <g>
+    <rect x="440" y="270" width="160" height="120" fill="#0d141b" stroke="#a8321f" stroke-width="4"/>
+    <text x="418" y="416" font-size="16" fill="#a8321f"> приямок 0,6 × 0,8 м</text>
+    <text x="418" y="440" font-size="15" fill="#a8321f">глубина 1,10 м, крышка снята</text>
+    <g stroke="#a8321f" stroke-width="2">
+      <path d="M440 270 L424 254"/><path d="M600 270 L616 254"/>
+      <path d="M440 390 L424 406"/><path d="M600 390 L616 406"/>
+    </g>
+    <text x="452" y="262" font-size="14" fill="#a8321f">болты сняты, по кромке сурик</text>
+  </g>
+
+  <g>
+    <rect x="700" y="620" width="180" height="90" fill="none" stroke="#16202b" stroke-width="2.5" stroke-dasharray="10 6"/>
+    <text x="676" y="734" font-size="15" fill="#3b4652">ревизионная крышка 0,7 × 0,9 м</text>
+    <text x="676" y="756" font-size="15" fill="#3b4652">у южной стены, кромкой вверх</text>
+    <path d="M600 390 L700 640" stroke="#3b4652" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <text x="612" y="520" font-size="15" fill="#3b4652">2,4 м</text>
+  </g>
+
+  <g>
+    <rect x="700" y="240" width="240" height="160" fill="none" stroke="#16202b" stroke-width="2"/>
+    <g stroke="#8d99a6" stroke-width="1.4">
+      <path d="M700 293 L940 293"/><path d="M700 346 L940 346"/>
+      <path d="M780 240 L780 400"/><path d="M860 240 L860 400"/>
+    </g>
+    <text x="708" y="232" font-size="15" fill="#3b4652">стеллаж с красками</text>
+    <circle cx="900" cy="372" r="12" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+    <path d="M900 360 L900 344" stroke="#a8321f" stroke-width="2.5"/>
+    <text x="820" y="424" font-size="15" fill="#a8321f">конус со складной юбкой</text>
+    <text x="708" y="446" font-size="15" fill="#a8321f">сигнальная лента в том же ящике</text>
+    <text x="708" y="468" font-size="15" fill="#a8321f">переносных светильников нет</text>
+  </g>
+
+  <g>
+    <rect x="150" y="590" width="180" height="130" fill="url(#hatchIce21)" opacity="0.5" stroke="none"/>
+    <g stroke="#16202b" stroke-width="2.5">
+      <path d="M150 604 L330 604"/><path d="M150 618 L330 618"/><path d="M150 632 L330 632"/>
+      <path d="M150 646 L330 646"/><path d="M150 660 L330 660"/><path d="M150 674 L330 674"/>
+      <path d="M150 688 L330 688"/><path d="M150 702 L330 702"/><path d="M150 716 L330 716"/>
+    </g>
+    <text x="150" y="584" font-size="15" fill="#3b4652">9 ступеней, с 3-й по 7-ю наледь</text>
+    <path d="M340 632 L392 632" stroke="#a8321f" stroke-width="2.5"/>
+    <circle cx="398" cy="632" r="6" fill="#a8321f"/>
+    <text x="344" y="622" font-size="15" fill="#a8321f">красно-бурый налёт: 3-я, 4-я ступени,</text>
+    <text x="344" y="676" font-size="15" fill="#a8321f">нижняя площадка (сурик)</text>
+  </g>
+
+  <g>
+    <path d="M210 740 L210 800 L330 800" fill="none" stroke="#16202b" stroke-width="3"/>
+    <text x="222" y="786" font-size="16" fill="#16202b">лестница из тамбура</text>
+    <text x="222" y="812" font-size="15" fill="#3b4652">проёмы и размеры нанесены по обмерам 24.02.2026</text>
+  </g>
+
+  <g>
+    <path d="M960 700 L1010 700" stroke="#16202b" stroke-width="3"/>
+    <path d="M960 692 L960 708 M1010 692 L1010 708" stroke="#16202b" stroke-width="3"/>
+    <text x="944" y="734" font-size="15" fill="#3b4652">масштабная линейка: 1 м</text>
+    <g stroke="#16202b" stroke-width="2" fill="none">
+      <path d="M1040 176 L1040 128"/>
+      <path d="M1028 148 L1040 128 L1052 148"/>
+    </g>
+    <text x="1030" y="200" font-size="15" fill="#16202b">С</text>
+  </g>
+
+  <g>
+    <rect x="1060" y="140" width="480" height="600" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1084" y="182" font-size="20" font-weight="600" fill="#16202b">Размеры по обмерам</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="1084" y="220">Приямок ............ 0,6 × 0,8 м</text>
+      <text x="1084" y="246">Глубина приямка .... 1,10 м</text>
+      <text x="1084" y="272">Крышка ............. 0,7 × 0,9 м</text>
+      <text x="1084" y="298">Зазор кромка—крышка  4 см</text>
+      <text x="1084" y="324">Крышка от приямка .. 2,4 м</text>
+      <text x="1084" y="350">Трап .............. 9 ступеней</text>
+      <text x="1084" y="376">Отметка пола ...... −2,10 м</text>
+      <text x="1084" y="402">Температура ......... +4 °C</text>
+    </g>
+    <line x1="1084" y1="426" x2="1516" y2="426" stroke="#16202b" stroke-width="1"/>
+    <text x="1084" y="462" font-size="20" font-weight="600" fill="#16202b">Условные знаки</text>
+    <g font-size="15" fill="#3b4652">
+      <rect x="1084" y="482" width="26" height="18" fill="none" stroke="#a8321f" stroke-width="3"/>
+      <text x="1122" y="497">открытое отверстие без крышки</text>
+      <rect x="1084" y="516" width="26" height="18" fill="url(#hatchIce21)" stroke="#4e7fa6" stroke-width="1.5"/>
+      <text x="1122" y="531">наледь на ступенях</text>
+      <circle cx="1097" cy="560" r="9" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+      <text x="1122" y="565">предмет в кладовой (конус, лента)</text>
+      <path d="M1084 594 L1110 594" stroke="#a8321f" stroke-width="3"/>
+      <text x="1122" y="599">налёт грунтовки по кромке и болтам</text>
+    </g>
+    <line x1="1084" y1="624" x2="1516" y2="624" stroke="#16202b" stroke-width="1"/>
+    <g font-size="15" fill="#3b4652">
+      <text x="1084" y="656">Фотофиксацию выполнил мастер</text>
+      <text x="1084" y="678">производственного обучения 24.02.2026.</text>
+      <text x="1084" y="706">Снимки 1—3: приямок и кромка.</text>
+      <text x="1084" y="728">Снимок 4: трап. Снимки 5—8: кладовая.</text>
+    </g>
+  </g>
+  <text x="120" y="820" font-size="16" fill="#16202b">План составлен к фототаблице, л. д. 31—33. Переносных светильников в кладовой нет, камера № 4 в венткабине не установлена.</text>
+</svg>

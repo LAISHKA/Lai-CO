@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridPlan15" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <marker id="arrowPlan15" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#16202b"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridPlan15)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="56" y="72" font-size="26" font-weight="600" fill="#16202b">Схема полигона артели: расстояния по зимнику и углы четырёх каналов</text>
+  <text x="56" y="102" font-size="18" fill="#3b4652">Схема специалиста ЧОО «Оттиск» по паспорту полигона 2025 года. Расстояния — по паспорту объекта, углы обзора — по паспортам камер. Планерная сетка 40 на 40 метров.</text>
+
+  <path d="M120 240 L520 214 L760 262 L1010 322 L1250 300" fill="none" stroke="#16202b" stroke-width="3" stroke-dasharray="16 10"/>
+  <text x="330" y="200" font-size="15" fill="#3b4652">зимник на Парму</text>
+  <text x="1120" y="290" font-size="15" fill="#3b4652">старый северный лаз</text>
+
+  <g>
+    <path d="M214 616 L120 512 A150 150 0 0 1 322 494 Z" fill="#a8321f" opacity=".13"/>
+    <path d="M214 616 L120 512" stroke="#a8321f" stroke-width="1.6"/>
+    <path d="M214 616 L322 494" stroke="#a8321f" stroke-width="1.6"/>
+    <rect x="176" y="610" width="76" height="52" fill="#f3efe4" stroke="#16202b" stroke-width="2.5"/>
+    <text x="214" y="642" font-size="15" font-weight="600" fill="#16202b" text-anchor="middle">КПП</text>
+    <text x="214" y="690" font-size="14" fill="#16202b" text-anchor="middle">ворота, читатель КПП-1</text>
+    <text x="214" y="712" font-size="13" fill="#3b4652" text-anchor="middle">пост «Оттиск»</text>
+    <text x="214" y="586" font-size="14" fill="#a8321f" text-anchor="middle">камера № 1 · 96°</text>
+    <text x="214" y="564" font-size="12" fill="#3b4652" text-anchor="middle">подсветка до 18 м</text>
+  </g>
+
+  <g>
+    <path d="M392 700 L318 782 A122 122 0 0 0 470 786 Z" fill="#a8321f" opacity=".13"/>
+    <rect x="352" y="668" width="80" height="34" fill="none" stroke="#16202b" stroke-width="2"/>
+    <path d="M352 685 h80" stroke="#16202b" stroke-width="1"/>
+    <text x="392" y="660" font-size="14" font-weight="600" fill="#16202b" text-anchor="middle">АВ</text>
+    <text x="392" y="746" font-size="13" fill="#16202b" text-anchor="middle">автовесы Тензо-ГК № 204</text>
+    <text x="392" y="766" font-size="13" fill="#3b4652" text-anchor="middle">под шлагбаумом</text>
+    <text x="500" y="742" font-size="14" fill="#a8321f">камера № 2 · 74°</text>
+    <text x="500" y="762" font-size="12" fill="#3b4652">табло массы читается, лица в кабине — нет</text>
+  </g>
+
+  <g>
+    <rect x="150" y="330" width="150" height="76" fill="#f3efe4" stroke="#16202b" stroke-width="2"/>
+    <path d="M150 356 h150 M150 382 h150" stroke="#16202b" stroke-width="1"/>
+    <text x="225" y="322" font-size="14" font-weight="600" fill="#16202b" text-anchor="middle">Г · Г — бытовки 90 м</text>
+    <text x="225" y="432" font-size="13" fill="#16202b" text-anchor="middle">гаражный бокс ТЦ-7</text>
+    <text x="225" y="452" font-size="12" fill="#a8321f" text-anchor="middle">вне кадров всех четырёх каналов</text>
+  </g>
+
+  <g>
+    <path d="M920 330 L836 232 A142 142 0 0 1 1022 226 Z" fill="#a8321f" opacity=".13"/>
+    <rect x="864" y="326" width="120" height="86" fill="#f3efe4" stroke="#16202b" stroke-width="2.5"/>
+    <text x="924" y="360" font-size="15" font-weight="600" fill="#16202b" text-anchor="middle">Д</text>
+    <text x="924" y="384" font-size="12" fill="#16202b" text-anchor="middle">драга № 2</text>
+    <rect x="996" y="352" width="54" height="38" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="1023" y="378" font-size="11" fill="#16202b" text-anchor="middle">ШВУ-1</text>
+    <text x="924" y="440" font-size="13" fill="#3b4652" text-anchor="middle">приёмный бункер, весовая будка</text>
+    <text x="924" y="300" font-size="14" fill="#a8321f" text-anchor="middle">камера № 3 · 118°</text>
+    <rect x="1052" y="392" width="86" height="26" fill="#16202b" opacity=".16"/>
+    <text x="1095" y="410" font-size="11" fill="#16202b" text-anchor="middle">слепые 12 м</text>
+  </g>
+
+  <g>
+    <rect x="1122" y="470" width="196" height="98" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M1122 568 l40 -60 34 40 40 -66 82 86" fill="none" stroke="#16202b" stroke-width="1.6"/>
+    <text x="1220" y="462" font-size="15" font-weight="600" fill="#16202b" text-anchor="middle">О · отвал южного борта</text>
+    <text x="1220" y="594" font-size="13" fill="#16202b" text-anchor="middle">карта № 1, два тела в 420 м</text>
+    <text x="1220" y="616" font-size="12" fill="#a8321f" text-anchor="middle">прожекторами не освещается</text>
+    <path d="M1030 400 L1150 486" stroke="#a8321f" stroke-width="2" marker-end="url(#arrowPlan15)"/>
+    <text x="1010" y="470" font-size="13" fill="#a8321f">420 м по целине</text>
+    <text x="1010" y="490" font-size="12" fill="#3b4652">азимут 236°, перепад 14 м</text>
+    <text x="1010" y="508" font-size="12" fill="#3b4652">наст 42 см</text>
+  </g>
+
+  <g>
+    <rect x="1310" y="356" width="72" height="54" fill="#f3efe4" stroke="#16202b" stroke-width="2"/>
+    <text x="1346" y="390" font-size="13" font-weight="600" fill="#16202b" text-anchor="middle">Б-3</text>
+    <path d="M1046 366 L1304 378" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="7 7"/>
+    <text x="1120" y="352" font-size="12" fill="#3b4652">2,1 км по льду карьера, вне зимника</text>
+    <text x="1346" y="436" font-size="12" fill="#16202b" text-anchor="middle">будка на льду</text>
+  </g>
+
+  <g>
+    <rect x="1266" y="150" width="96" height="58" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="1314" y="186" font-size="14" font-weight="600" fill="#16202b" text-anchor="middle">У</text>
+    <text x="1314" y="132" font-size="12" fill="#3b4652" text-anchor="middle">урочище, тайник</text>
+    <text x="1314" y="232" font-size="12" fill="#a8321f" text-anchor="middle">4,1 км за периметром</text>
+  </g>
+
+  <g>
+    <circle cx="1440" cy="612" r="40" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M1440 572 V652 M1400 612 H1480" stroke="#16202b" stroke-width="1.6"/>
+    <text x="1440" y="684" font-size="13" font-weight="600" fill="#16202b" text-anchor="middle">В · вертолещадка «Ключ»</text>
+    <text x="1440" y="704" font-size="12" fill="#3b4652" text-anchor="middle">камера № 4 · 90°, по графику борта</text>
+    <text x="1440" y="724" font-size="12" fill="#16202b" text-anchor="middle">борт по вторникам и четвергам</text>
+  </g>
+
+  <g>
+    <path d="M252 662 C420 470 700 392 900 372" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="470" y="520" font-size="16" font-weight="600" fill="#16202b">КПП — драга № 2 · 6,8 км по зимнику</text>
+    <text x="470" y="544" font-size="13" fill="#3b4652">дорога укатана, подъём 4 %, два поворота у ручья</text>
+    <path d="M256 646 L296 620" stroke="#16202b" stroke-width="1.6"/>
+  </g>
+
+  <g>
+    <text x="56" y="790" font-size="16" font-weight="600" fill="#16202b">Расстояния по зимнику</text>
+    <text x="56" y="818" font-size="14" fill="#16202b">КПП — заимка Крестовская · 9,4 км, из них 4,1 км за периметром по старому промытому лазу</text>
+    <text x="56" y="842" font-size="14" fill="#16202b">КПП — вертолещадка «Ключ» · 14 км · КПП — драга № 2 · 6,8 км · драга — отвал · 420 м</text>
+    <text x="56" y="866" font-size="13" fill="#3b4652">Погрузка вездехода по паспорту полигона производится у бункера, а не на весовой площадке.</text>
+  </g>
+
+  <g>
+    <text x="1160" y="758" font-size="13" fill="#3b4652">Масштаб условный</text>
+    <path d="M1160 778 h180" stroke="#16202b" stroke-width="2"/>
+    <path d="M1160 770 v16 M1250 770 v16 M1340 770 v16" stroke="#16202b" stroke-width="2"/>
+    <text x="1160" y="800" font-size="12" fill="#16202b">0</text>
+    <text x="1240" y="800" font-size="12" fill="#16202b">2 км</text>
+    <text x="1320" y="800" font-size="12" fill="#16202b">4 км</text>
+  </g>
+</svg>

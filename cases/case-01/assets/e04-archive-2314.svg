@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#5c7286" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch4" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#a8321f" stroke-width="2.2" stroke-opacity=".8"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#g4)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <!-- помещение 23-14 -->
+  <path d="M250 190 H1200 V690 H250 Z" fill="#ded7c6" fill-opacity=".5" stroke="#16202b" stroke-width="7"/>
+  <text x="250" y="170" font-size="23" fill="#16202b">Помещение 23-14 · архивная ниша · 4,4 × 2,6 м · свет включён</text>
+
+  <!-- стеллажи -->
+  <g fill="#c9bfa6" stroke="#16202b" stroke-width="3">
+    <rect x="250" y="240" width="180" height="120"/><rect x="250" y="420" width="180" height="120"/>
+    <rect x="600" y="240" width="180" height="120"/><rect x="600" y="420" width="180" height="120"/>
+    <rect x="950" y="240" width="180" height="120"/><rect x="950" y="420" width="180" height="120"/>
+  </g>
+  <g font-size="20" fill="#3b4652">
+    <text x="300" y="308">стеллаж 1</text><text x="300" y="488">стеллаж 2</text>
+    <text x="650" y="308">стеллаж 3</text><text x="650" y="488">стеллаж 4</text>
+    <text x="1000" y="308">стеллаж 5</text><text x="1000" y="488">стеллаж 6</text>
+  </g>
+
+  <!-- проход -->
+  <path d="M470 580 H880" stroke="#1f6f8f" stroke-width="2.4" stroke-dasharray="12 8"/>
+  <text x="500" y="566" font-size="20" fill="#1f6f8f">проход 0,9 м</text>
+
+  <!-- пятно крови у стеллажа 3 -->
+  <ellipse cx="700" cy="600" rx="86" ry="52" fill="url(#hatch4)" stroke="#a8321f" stroke-width="2.6"/>
+  <text x="612" y="678" font-size="21" fill="#a8321f">пятно 30 × 18 см, форма с потёком</text>
+
+  <!-- мазки к двери -->
+  <g stroke="#a8321f" stroke-width="2.6" fill="none" stroke-dasharray="22 12">
+    <path d="M780 610 q130 22 250 30"/><path d="M786 636 q130 20 244 26"/>
+  </g>
+  <text x="812" y="700" font-size="21" fill="#a8321f">мазки в сторону двери (6 шт.)</text>
+
+  <!-- правый проход + запонка -->
+  <path d="M890 580 H940" stroke="#1f6f8f" stroke-width="2.4"/>
+  <circle cx="920" cy="546" r="9" fill="none" stroke="#16202b" stroke-width="2.8"/>
+  <line x1="920" y1="530" x2="920" y2="452" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="856" y="432" font-size="21" fill="#16202b">запонка серебряная,</text>
+  <text x="856" y="456" font-size="21" fill="#16202b">под третьим стеллажом</text>
+
+  <!-- стена со вторым кронштейном -->
+  <line x1="250" y1="760" x2="1330" y2="760" stroke="#16202b" stroke-width="7"/>
+  <text x="250" y="800" font-size="22" fill="#16202b">перегородка с двумя кронштейнами ОП-5</text>
+  <g transform="translate(980,760)">
+    <rect x="-20" y="-30" width="40" height="30" fill="none" stroke="#a8321f" stroke-width="3"/>
+    <text x="-16" y="-40" font-size="18" fill="#a8321f">пусто, потёки</text>
+  </g>
+  <g transform="translate(1140,760)">
+    <rect x="-20" y="-30" width="40" height="30" fill="none" stroke="#16202b" stroke-width="3"/>
+    <text x="-24" y="-40" font-size="18" fill="#16202b">ОП-10, пломба цела</text>
+  </g>
+
+  <!-- дверь 23-го этажа -->
+  <path d="M1200 460 A86 86 0 0 1 1114 374" fill="none" stroke="#1f6f8f" stroke-width="2.6" stroke-dasharray="11 7"/>
+  <rect x="1200" y="300" width="200" height="300" fill="none" stroke="#16202b" stroke-width="3" stroke-dasharray="18 12"/>
+  <text x="1206" y="628" font-size="21" fill="#16202b">дверь на 23-й этаж</text>
+  <!-- стопор у двери -->
+  <path d="M1200 590 l24 6 l-24 6 z" fill="#16202b"/>
+  <text x="1240" y="600" font-size="21" fill="#16202b">магнитный стопор,</text>
+  <text x="1240" y="624" font-size="21" fill="#16202b">волокна синего жилета</text>
+
+  <!-- размер -->
+  <g stroke="#1f6f8f" stroke-width="2" fill="#1f6f8f" font-size="20">
+    <line x1="250" y1="716" x2="1200" y2="716"/>
+    <line x1="250" y1="704" x2="250" y2="728"/><line x1="1200" y1="704" x2="1200" y2="728"/>
+    <text x="660" y="742">4,40 м</text>
+  </g>
+
+  <!-- метки -->
+  <g font-size="24" font-weight="600" text-anchor="middle">
+    <path d="M660 560 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="680" y="556" fill="#16202b">1</text>
+    <path d="M900 500 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="920" y="496" fill="#16202b">2</text>
+    <path d="M1180 552 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="1200" y="548" fill="#16202b">3</text>
+    <path d="M960 690 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="980" y="686" fill="#16202b">4</text>
+  </g>
+
+  <text x="250" y="846" font-size="20" fill="#16202b">Следов взлома нет. Дверь закрывалась вручную, без характерного щелчка доводчика.</text>
+
+  <!-- основная надпись -->
+  <g transform="translate(1150,822)">
+    <rect x="-410" y="-96" width="410" height="96" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="-410" y1="-50" x2="0" y2="-50" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="-260" y1="-50" x2="-260" y2="0" stroke="#16202b" stroke-width="1.8"/>
+    <text x="-396" y="-66" font-size="21" font-weight="600">Схема 3 к акту осмотра 23-14</text>
+    <text x="-396" y="-18" font-size="18">М 1:50 · 07.02.2025, 08:10</text>
+    <text x="-246" y="-18" font-size="18">1 — кровь, 2 — запонка, 3 — стопор</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g5" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#7f97a4" stroke-opacity=".1" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch5" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#cfe3e8" stroke-width="2" stroke-opacity=".4"/>
+    </pattern>
+    <clipPath id="cuff5"><circle cx="1290" cy="300" r="126"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect width="1600" height="900" fill="url(#g5)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3d4e5c" stroke-width="2.5"/>
+
+  <polygon points="300,80 900,80 1240,760 60,760" fill="#cfe3e8" fill-opacity=".05"/>
+  <text x="60" y="70" font-size="26" fill="#cfe3e8">Схема 4 · кадр камеры W-14, холл 23 этажа</text>
+  <text x="60" y="102" font-size="19" fill="#7f97a4">схема по записи, масштаб условный · конус обзора выделен светлым сектором</text>
+
+  <!-- стена и дверь 23-14 -->
+  <line x1="60" y1="400" x2="1540" y2="400" stroke="#cfe3e8" stroke-width="4"/>
+  <g fill="#101820" stroke="#cfe3e8" stroke-width="3">
+    <rect x="150" y="180" width="240" height="220"/>
+  </g>
+  <path d="M390 400 L470 296" stroke="#cfe3e8" stroke-width="3.4"/>
+  <text x="176" y="440" font-size="20" fill="#cfe3e8">дверь 23-14 приоткрыта</text>
+  <text x="176" y="466" font-size="20" fill="#7f97a4">зазор 34 см, доводчик не сработал</text>
+
+  <!-- стеллажи в проёме -->
+  <g stroke="#cfe3e8" stroke-width="2" stroke-opacity=".6" fill="none">
+    <rect x="196" y="238" width="60" height="150"/><rect x="278" y="238" width="60" height="150"/>
+  </g>
+
+  <!-- кронштейн ОП-5 -->
+  <g stroke="#cfe3e8" stroke-width="2.6" fill="none">
+    <path d="M690 214 h56 v40 h-56 z"/>
+    <line x1="718" y1="254" x2="718" y2="286"/>
+  </g>
+  <text x="760" y="240" font-size="20" fill="#cfe3e8">кронштейн ОП-5 пуст</text>
+  <text x="760" y="266" font-size="20" fill="#a8321f">на стене потёки, ворс синей ткани</text>
+
+  <!-- фигура -->
+  <g transform="translate(880,150)">
+    <path d="M-70 196 q-22 -180 70 -196 q92 16 70 196 z" fill="#1f3d5c" stroke="#cfe3e8" stroke-width="2.8"/>
+    <path d="M-70 196 h140 l8 216 h-156 z" fill="#22303d" stroke="#cfe3e8" stroke-width="2.8"/>
+    <path d="M-40 4 q40 -46 80 -4 q10 50 -40 58 q-50 -8 -40 -54 z" fill="#2d3d4d" stroke="#cfe3e8" stroke-width="2.6"/>
+    <circle cx="0" cy="42" r="34" fill="#101820" stroke="#cfe3e8" stroke-width="2.6"/>
+    <path d="M-70 210 q-40 74 -30 148" fill="none" stroke="#cfe3e8" stroke-width="3"/>
+    <path d="M70 210 q40 80 26 162" fill="none" stroke="#cfe3e8" stroke-width="3"/>
+    <circle cx="96" cy="378" r="16" fill="none" stroke="#cfe3e8" stroke-width="2.6"/>
+  </g>
+
+  <!-- рука с предметом -->
+  <path d="M906 662 L960 764" stroke="#cfe3e8" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <rect x="944" y="752" width="48" height="126" rx="22" fill="#22303d" stroke="#cfe3e8" stroke-width="3"/>
+  <text x="1006" y="796" font-size="20" fill="#cfe3e8">предмет цилиндрической</text>
+  <text x="1006" y="822" font-size="20" fill="#cfe3e8">формы, свисает вниз</text>
+
+  <!-- жилет без рукавов -->
+  <path d="M812 356 l136 0 l-10 216 l-116 0 z" fill="url(#hatch5)" stroke="#cfe3e8" stroke-width="2.4"/>
+  <text x="1042" y="424" font-size="20" fill="#cfe3e8">жилет подрядчика без</text>
+  <text x="1042" y="450" font-size="20" fill="#cfe3e8">рукавов, поверх куртки</text>
+  <text x="1042" y="476" font-size="20" fill="#cfe3e8">с капюшоном; лицо скрыто</text>
+
+  <!-- выноска на врезку -->
+  <line x1="846" y1="376" x2="1176" y2="316" stroke="#cfe3e8" stroke-width="2" stroke-dasharray="10 8"/>
+  <circle cx="1290" cy="300" r="126" fill="#101820" stroke="#cfe3e8" stroke-width="3"/>
+  <g clip-path="url(#cuff5)">
+    <path d="M1180 264 h100 v96 h-100 z" fill="#22303d" stroke="#cfe3e8" stroke-width="2.6"/>
+    <ellipse cx="1290" cy="300" rx="26" ry="18" fill="#8a8f96" stroke="#cfe3e8" stroke-width="2.4"/>
+    <path d="M1290 288 v24 M1278 300 h24" stroke="#101820" stroke-width="2.6"/>
+    <path d="M1320 258 q48 -12 78 22 q-32 26 -78 20 z" fill="#a8321f" fill-opacity=".8" stroke="none"/>
+    <path d="M1180 360 q60 12 120 4" fill="none" stroke="#a8321f" stroke-width="7" stroke-opacity=".75"/>
+  </g>
+  <text x="1156" y="464" font-size="20" fill="#cfe3e8">увеличение: левый манжет</text>
+  <text x="1156" y="490" font-size="20" fill="#a8321f">запонка округлая, серебро</text>
+  <text x="1156" y="516" font-size="20" fill="#a8321f">пятно 4 × 2 см по краю манжеты</text>
+
+  <!-- пол, разметка -->
+  <g stroke="#cfe3e8" stroke-width="2" stroke-opacity=".5">
+    <path d="M60 640 L1540 640" stroke-dasharray="18 12"/>
+    <path d="M240 760 L1360 760" stroke-dasharray="18 12"/>
+  </g>
+  <text x="60" y="632" font-size="18" fill="#7f97a4">ковролин синий, влажных следов нет</text>
+
+  <!-- конус и положение камеры -->
+  <g stroke="#cfe3e8" stroke-width="2" stroke-opacity=".6" fill="none">
+    <path d="M300 80 L60 760 M900 80 L1540 760"/>
+    <rect x="540" y="40" width="120" height="50" rx="12"/>
+    <text x="556" y="150" font-size="18" fill="#7f97a4" stroke="none">W-14</text>
+  </g>
+  <g stroke="#cfe3e8" stroke-width="2.2" stroke-opacity=".45" fill="none">
+    <line x1="120" y1="120" x2="170" y2="120"/><line x1="1455" y1="120" x2="1505" y2="120"/>
+    <line x1="120" y1="726" x2="170" y2="726"/><line x1="1455" y1="726" x2="1505" y2="726"/>
+  </g>
+
+  <text x="60" y="136" font-size="20" fill="#cfe3e8">Человек выходит из 23-14, закрывает дверь рукой, без щелчка. Левая рука согнута и поднята к груди.</text>
+  <text x="60" y="162" font-size="20" fill="#7f97a4">Следом за ним в кадре — никто. Дверь остаётся приоткрытой до 22:20.</text>
+</svg>

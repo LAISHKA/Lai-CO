@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridG12" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridG12)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера PO-014: служебный въезд, тамбур и гараж патологоанатомического отделения</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">План двора с отметками кадров. Козырёк над тамбуром, высота 3,4 м, угол вниз 12 градусов. Поле — тамбур, восемь мест стоянки, грузовые ворота.</text>
+
+  <g>
+    <rect x="60" y="150" width="820" height="520" fill="#c9d4de" stroke="#16202b" stroke-width="3"/>
+
+    <rect x="60" y="150" width="300" height="150" fill="#33465c" stroke="#16202b" stroke-width="3"/>
+    <text x="210" y="212" font-size="19" fill="#dfe6ea" text-anchor="middle">Приёмный тамбур</text>
+    <text x="210" y="238" font-size="15" fill="#8fa3b5" text-anchor="middle">дверь, карта 1174</text>
+    <rect x="340" y="250" width="20" height="50" fill="#e08a2e" stroke="#16202b" stroke-width="2"/>
+
+    <rect x="360" y="150" width="240" height="110" fill="#2f4258" stroke="#16202b" stroke-width="3"/>
+    <text x="480" y="200" font-size="17" fill="#dfe6ea" text-anchor="middle">Блок боксов № 1—5</text>
+    <text x="480" y="226" font-size="15" fill="#8fa3b5" text-anchor="middle">карты 1174 и 1191</text>
+
+    <rect x="600" y="150" width="280" height="110" fill="#3b4652" stroke="#16202b" stroke-width="3"/>
+    <text x="740" y="200" font-size="17" fill="#dfe6ea" text-anchor="middle">Гараж, рампа</text>
+    <text x="740" y="226" font-size="15" fill="#8fa3b5" text-anchor="middle">М 315 ЕР 716</text>
+
+    <g stroke="#8fa3b5" stroke-width="2" fill="none">
+      <line x1="100" y1="520" x2="100" y2="600"/>
+      <line x1="190" y1="520" x2="190" y2="600"/>
+      <line x1="280" y1="520" x2="280" y2="600"/>
+      <line x1="370" y1="520" x2="370" y2="600"/>
+      <line x1="460" y1="520" x2="460" y2="600"/>
+      <line x1="550" y1="520" x2="550" y2="600"/>
+      <line x1="640" y1="520" x2="640" y2="600"/>
+      <line x1="730" y1="520" x2="730" y2="600"/>
+      <line x1="100" y1="520" x2="730" y2="520"/>
+      <line x1="100" y1="600" x2="730" y2="600"/>
+    </g>
+    <text x="415" y="500" font-size="15" fill="#3b4652" text-anchor="middle">Служебная стоянка, восемь мест</text>
+
+    <rect x="286" y="528" width="90" height="64" rx="10" fill="#dfe6ea" stroke="#16202b" stroke-width="3"/>
+    <circle cx="304" cy="596" r="8" fill="#16202b"/>
+    <circle cx="358" cy="596" r="8" fill="#16202b"/>
+    <text x="331" y="566" font-size="14" fill="#16202b" text-anchor="middle">О 092 МН 716</text>
+    <text x="331" y="482" font-size="15" fill="#a8321f" text-anchor="middle">место 3</text>
+    <line x1="331" y1="490" x2="331" y2="524" stroke="#a8321f" stroke-width="1.5"/>
+    <text x="331" y="636" font-size="15" fill="#a8321f" text-anchor="middle">бампер справа отогнут</text>
+
+    <rect x="646" y="440" width="120" height="70" rx="8" fill="#8fa3b5" stroke="#16202b" stroke-width="3"/>
+    <text x="706" y="480" font-size="14" fill="#16202b" text-anchor="middle">М 315 ЕР 716</text>
+
+    <rect x="770" y="300" width="110" height="200" fill="#4a6076" stroke="#16202b" stroke-width="3"/>
+    <line x1="770" y1="330" x2="880" y2="330" stroke="#16202b" stroke-width="1.5"/>
+    <line x1="770" y1="470" x2="880" y2="470" stroke="#16202b" stroke-width="1.5"/>
+    <text x="825" y="404" font-size="15" fill="#dfe6ea" text-anchor="middle">Грузовые</text>
+    <text x="825" y="424" font-size="15" fill="#dfe6ea" text-anchor="middle">ворота</text>
+    <text x="825" y="264" font-size="15" fill="#16202b" text-anchor="middle">Улица</text>
+    <path d="M825 470 L825 300" stroke="#e08a2e" stroke-width="3" stroke-dasharray="9 7"/>
+
+    <g fill="#4a6076" stroke="#16202b" stroke-width="2">
+      <rect x="620" y="360" width="46" height="34"/>
+      <rect x="672" y="360" width="46" height="34"/>
+    </g>
+    <text x="669" y="418" font-size="14" fill="#a8321f" text-anchor="middle">Слепая зона</text>
+    <text x="669" y="436" font-size="14" fill="#a8321f" text-anchor="middle">за баками</text>
+
+    <path d="M350 268 L120 640 L640 640 Z" fill="#e08a2e" opacity=".14"/>
+    <text x="150" y="662" font-size="14" fill="#3b4652">Поле зрения камеры с козырька: тамбур, стоянка, ворота</text>
+    <circle cx="350" cy="268" r="7" fill="#e08a2e" stroke="#16202b" stroke-width="2"/>
+  </g>
+
+  <g>
+    <text x="920" y="172" font-size="19" font-weight="600" fill="#16202b">Ночь четвёртого февраля: чехол и незаписанная поездка</text>
+    <line x1="920" y1="184" x2="1540" y2="184" stroke="#8fa3b5" stroke-width="1.5"/>
+
+    <g font-size="16" fill="#3b4652">
+      <text x="920" y="214">03.02 06:38</text>
+      <text x="1080" y="214">М 315 у рампы, выгрузка одного чехла, рядом участковый</text>
+      <text x="920" y="244">03.02 09:15</text>
+      <text x="1080" y="244">второй чехол; рост выгружающего 179 см, куртка с полосой</text>
+      <text x="920" y="274">03.02 18:26</text>
+      <text x="1080" y="274">О 092 МН 716 встаёт третьим в ряду и стоит до ночи</text>
+      <text x="920" y="304">03.02 23:50</text>
+      <text x="1080" y="304">кабина М 315 пуста, дверь нараспашку, ключа в замке нет</text>
+      <text x="920" y="334">04.02 00:22</text>
+      <text x="1080" y="334">от тамбура к машине несут чехол ПХ-Т: первый — 168 см,</text>
+      <text x="1080" y="358">за передние углы; второй — 179 см, сзади</text>
+      <text x="920" y="388">04.02 00:34</text>
+      <text x="1080" y="388">морговозка за ворота, в кузове второй чехол по отблеску</text>
+      <text x="920" y="418">04.02 00:41</text>
+      <text x="1080" y="418">машина возвращается, ворота закрывают в 00:44</text>
+    </g>
+    <text x="920" y="446" font-size="16" fill="#a8321f">Путевые листы за 03.02 закрыты в 21:05: рейса 00:34—00:41 в листе нет.</text>
+
+    <text x="920" y="498" font-size="19" font-weight="600" fill="#16202b">Ночь одиннадцатого февраля: одна машина, два адреса</text>
+    <line x1="920" y1="510" x2="1540" y2="510" stroke="#8fa3b5" stroke-width="1.5"/>
+
+    <g font-size="16" fill="#3b4652">
+      <text x="920" y="540">11.02 18:31</text>
+      <text x="1080" y="540">карта 1174 — выход, заведующая покинула отделение</text>
+      <text x="920" y="570">11.02 21:04</text>
+      <text x="1080" y="570">женщина в тёмном полупальто прикладывает карту к тамбуру</text>
+      <text x="920" y="600">11.02 22:12</text>
+      <text x="1080" y="600">та же выходит без верхней одежды, садится в О 092 МН 716</text>
+      <text x="920" y="630">11.02 22:16</text>
+      <text x="1080" y="630">автомобиль уходит за грузовые ворота</text>
+      <text x="920" y="660">11.02 23:37</text>
+      <text x="1080" y="660">автомобиль встаёт на своё место; в руках смотанный шнур</text>
+      <text x="920" y="690">11.02 23:38</text>
+      <text x="1080" y="690">карта 1174 — вход в тамбур, выход в 00:02</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="60" y="716" font-size="19" font-weight="600" fill="#16202b">Две отметки одной машины в одну ночь</text>
+    <line x1="60" y1="728" x2="1540" y2="728" stroke="#8fa3b5" stroke-width="1.5"/>
+
+    <line x1="80" y1="800" x2="1300" y2="800" stroke="#16202b" stroke-width="2.5"/>
+    <g stroke="#16202b" stroke-width="1.5">
+      <line x1="80" y1="790" x2="80" y2="810"/>
+      <line x1="253" y1="790" x2="253" y2="810"/>
+      <line x1="427" y1="790" x2="427" y2="810"/>
+      <line x1="600" y1="790" x2="600" y2="810"/>
+      <line x1="773" y1="790" x2="773" y2="810"/>
+      <line x1="947" y1="790" x2="947" y2="810"/>
+      <line x1="1120" y1="790" x2="1120" y2="810"/>
+      <line x1="1300" y1="790" x2="1300" y2="810"/>
+    </g>
+    <g font-size="15" fill="#3b4652" text-anchor="middle">
+      <text x="80" y="834">18:00</text>
+      <text x="253" y="834">19:00</text>
+      <text x="427" y="834">20:00</text>
+      <text x="600" y="834">21:00</text>
+      <text x="773" y="834">22:00</text>
+      <text x="947" y="834">23:00</text>
+      <text x="1120" y="834">23:30</text>
+      <text x="1300" y="834">00:30</text>
+    </g>
+
+    <circle cx="154" cy="800" r="8" fill="#4a6076"/>
+    <text x="154" y="768" font-size="15" fill="#16202b" text-anchor="middle">18:26 стоянка, место 3</text>
+
+    <circle cx="618" cy="800" r="8" fill="#33465c"/>
+    <text x="618" y="762" font-size="15" fill="#16202b" text-anchor="middle">21:04 карта 1174</text>
+    <text x="618" y="744" font-size="15" fill="#3b4652" text-anchor="middle">тамбур</text>
+
+    <circle cx="809" cy="800" r="8" fill="#33465c"/>
+    <text x="809" y="744" font-size="15" fill="#16202b" text-anchor="middle">22:12 выход к машине</text>
+
+    <circle cx="845" cy="800" r="9" fill="#a8321f"/>
+    <text x="845" y="768" font-size="15" font-weight="600" fill="#a8321f" text-anchor="middle">22:16 за ворота</text>
+
+    <path d="M845 800 L1206 800" stroke="#a8321f" stroke-width="3" stroke-dasharray="10 6"/>
+    <text x="1025" y="778" font-size="15" fill="#a8321f" text-anchor="middle">Отсутствует в поле камеры: 1 час 21 минута</text>
+
+    <circle cx="1206" cy="800" r="9" fill="#a8321f"/>
+    <text x="1206" y="768" font-size="15" font-weight="600" fill="#a8321f" text-anchor="middle">23:37 возврат</text>
+
+    <circle cx="1250" cy="800" r="7" fill="#4a6076"/>
+    <text x="1290" y="768" font-size="15" fill="#3b4652" text-anchor="middle">23:38 тамбур</text>
+
+    <text x="60" y="866" font-size="16" fill="#16202b">Камера двора на Пивоварной, 6 пишет тот же номер во дворе в 22:22 и уезжающим в 23:33. Ни одна другая машина в эту ночь за ворота не выходила.</text>
+  </g>
+</svg>

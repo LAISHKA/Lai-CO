@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кернопробы из тела плиты секции № 3: разрез и прочность</text>
+  <text x="60" y="104" font-size="18" style="fill:var(--fg-dim,#3b4652)">Схема по кадрам 1 — 8 фототаблицы лаборатории стройконтроля. Диаметр керна 102 мм, отбор перфоратором с алмазной коронкой 13.12, испытания 14.12.</text>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6">
+    <path d="M110 640 H240"/>
+    <path d="M110 440 V640" />
+  </g>
+  <g style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.2">
+    <path d="M102 620 H110 M102 600 H110 M102 580 H110 M102 560 H110 M102 540 H110 M102 520 H110 M102 500 H110 M102 480 H110 M102 460 H110"/>
+    <path d="M96 640 H110 M96 540 H110 M96 440 H110"/>
+  </g>
+  <g font-size="14" style="fill:var(--fg-dim,#3b4652)">
+    <text x="60" y="646">0 мм</text><text x="56" y="546">100</text><text x="56" y="446">200</text>
+  </g>
+  <text x="60" y="420" font-size="15" style="fill:var(--fg-dim,#3b4652)">масштабная линейка,</text>
+  <text x="60" y="438" font-size="15" style="fill:var(--fg-dim,#3b4652)">в каждом кадре съёмки</text>
+
+  <path d="M110 440 H1290" style="stroke:var(--danger,#a8321f)" stroke-width="2" stroke-dasharray="10 6" fill="none"/>
+  <text x="1140" y="432" font-size="15" font-weight="600" style="fill:var(--danger,#a8321f)">проектная толщина 200 мм</text>
+
+  <g>
+    <rect x="140" y="472" width="102" height="168" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.4"/>
+    <rect x="140" y="472" width="102" height="52" fill="#b6c3ca" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <rect x="140" y="562" width="102" height="16" fill="#4c5a63" opacity=".85"/>
+    <path d="M140 626 h 12 l 6 8 l 10 -10 l 8 12 l 12 -8 l 10 10 l 12 -12 l 8 14 l 12 -6 h 0 v 6 h -102 Z" fill="#7d8a93" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <g fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4">
+      <circle cx="168" cy="612" r="6"/><circle cx="204" cy="618" r="5"/><circle cx="226" cy="606" r="4"/>
+    </g>
+    <text x="140" y="670" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">Керн 1 — у края откола</text>
+    <text x="140" y="692" font-size="15" style="fill:var(--fg-dim,#3b4652)">высота 168 мм</text>
+    <text x="140" y="712" font-size="15" style="fill:var(--fg-dim,#3b4652)">тёмная прожилка по нижней трети,</text>
+    <text x="140" y="730" font-size="15" style="fill:var(--fg-dim,#3b4652)">внизу выкрашивание, пустоты до 12 мм</text>
+  </g>
+
+  <g>
+    <rect x="470" y="469" width="102" height="171" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.4"/>
+    <rect x="470" y="469" width="102" height="54" fill="#b6c3ca" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <rect x="470" y="566" width="102" height="9" fill="#5f6d76" opacity=".7"/>
+    <path d="M470 630 h 14 l 8 6 l 10 -8 l 12 10 l 10 -6 l 14 8 l 10 -10 h 0 v 4 h -92 Z" fill="#7d8a93" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <circle cx="512" cy="614" r="4" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <text x="470" y="670" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">Керн 2 — середина плиты</text>
+    <text x="470" y="692" font-size="15" style="fill:var(--fg-dim,#3b4652)">высота 171 мм</text>
+    <text x="470" y="712" font-size="15" style="fill:var(--fg-dim,#3b4652)">прожилка слабее, пустот меньше,</text>
+    <text x="470" y="730" font-size="15" style="fill:var(--fg-dim,#3b4652)">верхний слой плотный</text>
+  </g>
+
+  <g>
+    <rect x="800" y="471" width="102" height="169" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.4"/>
+    <rect x="800" y="471" width="102" height="52" fill="#b6c3ca" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+    <rect x="800" y="560" width="102" height="14" fill="#4c5a63" opacity=".8"/>
+    <g style="stroke:#8fa9b8" stroke-width="1.6" fill="none">
+      <path d="M812 596 l 8 -12 l 6 12 M846 604 l 7 -10 l 5 10 M876 592 l 6 -9 l 6 9"/>
+    </g>
+    <path d="M890 471 v 169" style="stroke:#8fa9b8" stroke-width="4" opacity=".7" fill="none"/>
+    <text x="800" y="670" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">Керн 3 — у оси 4</text>
+    <text x="800" y="692" font-size="15" style="fill:var(--fg-dim,#3b4652)">высота 169 мм</text>
+    <text x="800" y="712" font-size="15" style="fill:var(--fg-dim,#3b4652)">следы льда в порах,</text>
+    <text x="800" y="730" font-size="15" style="fill:var(--fg-dim,#3b4652)">корка оттаивания по грани</text>
+  </g>
+
+  <g font-size="15" style="fill:var(--fg-dim,#3b4652)">
+    <path d="M242 490 H268 M268 472 V508" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.2" fill="none"/>
+    <text x="274" y="500">168 мм</text>
+    <path d="M572 490 H598 M598 469 V508" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.2" fill="none"/>
+    <text x="604" y="500">171 мм</text>
+    <path d="M902 490 H928 M928 471 V508" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.2" fill="none"/>
+    <text x="934" y="500">169 мм</text>
+  </g>
+  <text x="140" y="466" font-size="15" style="fill:var(--fg-dim,#3b4652)">верхний плотный слой</text>
+  <text x="600" y="556" font-size="15" style="fill:var(--danger,#a8321f)">нижняя зона рыхлая, прожилки и следы замерзания</text>
+
+  <g>
+    <text x="1020" y="200" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Прочность по трём кернам</text>
+    <g style="stroke:var(--paper-line,#cbbfa8)" stroke-width="1.4">
+      <path d="M1020 560 H1540"/>
+    </g>
+    <g style="stroke:var(--paper-line,#cbbfa8)" stroke-width="1.2">
+      <path d="M1020 420 V560 M1221 420 V560 M1422 420 V560"/>
+    </g>
+    <path d="M1020 560 V420" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <g font-size="15" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1006" y="584">0</text><text x="1204" y="584">10</text><text x="1405" y="584">20</text><text x="1512" y="584">МПа</text>
+    </g>
+    <rect x="1020" y="470" width="253" height="42" fill="#a9bccb" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="1030" y="496" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">факт по кернам 14,6</text>
+    <path d="M1242 456 v 70" style="stroke:var(--danger,#a8321f)" stroke-width="3" fill="none"/>
+    <text x="1150" y="448" font-size="15" style="fill:var(--danger,#a8321f)">разброс 1,2 МПа</text>
+    <path d="M1526 420 v 130" style="stroke:var(--danger,#a8321f)" stroke-width="2.4" stroke-dasharray="8 5" fill="none"/>
+    <text x="1252" y="412" font-size="16" font-weight="600" style="fill:var(--danger,#a8321f)">проектные 29,8 МПа, класс В22,5</text>
+    <path d="M1020 528 H1526" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.4" stroke-dasharray="4 4" fill="none"/>
+    <text x="1020" y="618" font-size="16" style="fill:var(--fg-dim,#3b4652)">Керн 1 — у края откола: прожилка по нижней трети,</text>
+    <text x="1020" y="640" font-size="16" style="fill:var(--fg-dim,#3b4652)">внизу выкрашивание, пустоты до 12 мм</text>
+    <text x="1020" y="666" font-size="16" style="fill:var(--fg-dim,#3b4652)">Керн 2 — середина, прожилка слабее; керн 3 — следы льда</text>
+  </g>
+
+  <line x1="60" y1="760" x2="1540" y2="760" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="800" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Снимки 7 и 8: граница зоны откола и привязка к бытовке</text>
+    <rect x="60" y="816" width="560" height="52" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <path d="M500 816 v 52" style="stroke:var(--danger,#a8321f)" stroke-width="2.6" stroke-dasharray="7 4" fill="none"/>
+    <g style="stroke:#8a5a2b" stroke-width="3" fill="none">
+      <path d="M512 832 H640 M512 852 H640"/>
+    </g>
+    <g fill="#8a5a2b">
+      <circle cx="536" cy="832" r="5"/><circle cx="580" cy="832" r="5"/><circle cx="624" cy="832" r="5"/>
+      <circle cx="536" cy="852" r="5"/><circle cx="580" cy="852" r="5"/><circle cx="624" cy="852" r="5"/>
+    </g>
+    <path d="M500 876 H640" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6" fill="none"/>
+    <path d="M500 870 V882 M640 870 V882" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+    <text x="650" y="842" font-size="16" style="fill:var(--paper-ink,#16202b)">граница откола на 2,4 м,</text>
+    <text x="650" y="864" font-size="16" style="fill:var(--paper-ink,#16202b)">арматура оголена, следов вытяжки нет</text>
+    <rect x="900" y="816" width="180" height="52" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <rect x="1080" y="816" width="14" height="52" fill="#ded6c2" style="stroke:var(--danger,#a8321f)" stroke-width="2.2"/>
+    <path d="M1094 816 v 52" style="stroke:var(--danger,#a8321f)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+    <path d="M1080 884 H1132 M1080 878 V890 M1132 878 V890" style="stroke:var(--danger,#a8321f)" stroke-width="1.4" fill="none"/>
+    <text x="1150" y="890" font-size="16" style="fill:var(--danger,#a8321f)">навис над бытовкой № 3 — 0,4 м</text>
+    <text x="900" y="800" font-size="15" style="fill:var(--fg-dim,#3b4652)">плита</text>
+    <text x="1072" y="800" font-size="15" style="fill:var(--fg-dim,#3b4652)">южная стенка</text>
+  </g>
+</svg>

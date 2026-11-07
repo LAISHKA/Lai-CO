@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7f97a4" stroke-width="0.6" opacity=".1"/>
+    </pattern>
+    <pattern id="ir" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="0.7" fill="#cfe3e8" opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3d4e5c" stroke-width="2.5"/>
+
+  <text x="60" y="72" font-size="25" fill="#cfe3e8">АПВР «ДОЛГОЕ» · 44-Я ВЕРСТА · КАМЕРЫ ВЕСА + АНПР · ИК</text>
+  <text x="60" y="102" font-size="19" fill="#7f97a4">Оператор Карпышев Н. И. Комплекс «Омега-М», свид-во о поверке № 44-25 от 27.02.2025, погрешность ±1,5 %.</text>
+
+  <circle cx="1480" cy="66" r="9" fill="#c8321f"/>
+  <text x="1400" y="106" font-size="20" fill="#cfe3e8">REC</text>
+
+  <!-- road band with sensors -->
+  <rect x="120" y="430" width="1360" height="250" fill="#182430"/>
+  <rect x="120" y="430" width="1360" height="250" fill="url(#ir)"/>
+  <line x1="120" y1="430" x2="1480" y2="430" stroke="#3d4e5c" stroke-width="2"/>
+  <line x1="120" y1="680" x2="1480" y2="680" stroke="#3d4e5c" stroke-width="2"/>
+  <g stroke="#9db4bd" stroke-width="3" opacity=".55" stroke-dasharray="40 34">
+    <line x1="120" y1="555" x2="1480" y2="555"/>
+  </g>
+  <g stroke="#c8321f" stroke-width="2" opacity=".9">
+    <line x1="560" y1="430" x2="560" y2="680"/>
+    <line x1="700" y1="430" x2="700" y2="680"/>
+    <line x1="840" y1="430" x2="840" y2="680"/>
+  </g>
+  <text x="536" y="710" font-size="16" fill="#c8321f">датчик 1</text>
+  <text x="676" y="710" font-size="16" fill="#c8321f">датчик 2</text>
+  <text x="816" y="710" font-size="16" fill="#c8321f">датчик 3</text>
+  <text x="150" y="466" font-size="17" fill="#7f97a4">направление на запад — влево</text>
+
+  <!-- Sobol on the scale, side view -->
+  <g transform="translate(520,300)">
+    <polygon points="0,150 40,40 200,26 250,96 250,150" fill="#22303c" stroke="#cfe3e8" stroke-width="2.5"/>
+    <polygon points="48,46 188,34 224,92 48,92" fill="#101820" stroke="#cfe3e8" stroke-width="1.5"/>
+    <rect x="0" y="92" width="250" height="12" fill="#3d4e5c" opacity=".85"/>
+    <polygon points="250,60 430,46 448,150 250,150" fill="#22303c" stroke="#cfe3e8" stroke-width="2.5"/>
+    <circle cx="96" cy="168" r="26" fill="#101820" stroke="#cfe3e8" stroke-width="2"/>
+    <circle cx="330" cy="168" r="26" fill="#101820" stroke="#cfe3e8" stroke-width="2"/>
+    <circle cx="392" cy="168" r="26" fill="#101820" stroke="#cfe3e8" stroke-width="2"/>
+    <text x="20" y="-14" font-size="18" fill="#cfe3e8">передняя ось на датчике 1, задняя уже сошла</text>
+  </g>
+
+  <!-- gantry cameras -->
+  <g stroke="#3d4e5c" stroke-width="6" fill="none">
+    <path d="M1420 200 L1420 430"/>
+    <path d="M1420 200 L1120 200"/>
+  </g>
+  <rect x="1080" y="186" width="52" height="30" rx="5" fill="#22303c" stroke="#cfe3e8" stroke-width="1.5"/>
+  <text x="960" y="176" font-size="17" fill="#7f97a4">камера АНПР, ракурс 22°</text>
+
+  <!-- overlay string -->
+  <g>
+    <rect x="120" y="742" width="600" height="130" fill="#0b1117" stroke="#3d4e5c" stroke-width="2"/>
+    <text x="140" y="776" font-size="22" fill="#cfe3e8">20:41:57  Н-417-ЕК  ЗАПАД</text>
+    <text x="140" y="808" font-size="22" fill="#cfe3e8">5 544 кг · 76 км/ч · ±1,5 %</text>
+    <text x="140" y="842" font-size="17" fill="#7f97a4">повторный проезд того же борта за 12 мин 45 с</text>
+  </g>
+
+  <!-- pass log -->
+  <g>
+    <rect x="760" y="742" width="720" height="130" fill="#0b1117" stroke="#3d4e5c" stroke-width="2"/>
+    <text x="782" y="770" font-size="17" fill="#7f97a4">ЖУРНАЛ ПРОЕЗДОВ, 11.04.2025 — ФРАГМЕНТ</text>
+    <g font-size="17" fill="#cfe3e8">
+      <text x="782" y="800">20:04:11  Х-305-ТК  ВОСТОК  2 980 кг</text>
+      <text x="782" y="826">20:29:12  Н-417-ЕК  ЗАПАД   5 640 кг</text>
+      <text x="782" y="852">20:31:20  Н-417-ЕК  ВОСТОК  5 640 кг</text>
+      <text x="1120" y="800">20:43:36  Х-305-ТК  ЗАПАД   3 074 кг  +94</text>
+      <text x="1120" y="826" fill="#c8321f">20:41:57  Н-417-ЕК  ЗАПАД   5 544 кг  −96</text>
+      <text x="1120" y="852" fill="#7f97a4">разница между парами — масса контейнера</text>
+    </g>
+  </g>
+</svg>

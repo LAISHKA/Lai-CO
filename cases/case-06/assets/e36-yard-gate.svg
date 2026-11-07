@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера № 2 «Двор, ворота»: 10.11.2025, вечер</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Архив регистратора № 4, хранение 23 суток. Угол 74°, ИК-подсветка выключена до 20:41, звук не пишется.</text>
+
+  <g>
+    <rect x="60" y="140" width="760" height="392" fill="#16202b" stroke="#16202b" stroke-width="3"/>
+    <rect x="72" y="152" width="736" height="368" fill="#243444"/>
+    <path d="M72 420 L808 380 L808 520 L72 520 Z" fill="#2f4258"/>
+    <g stroke="#3b4652" stroke-width="1.4" opacity=".8">
+      <path d="M180 520 L300 400"/>
+      <path d="M420 520 L470 400"/>
+      <path d="M660 512 L640 396"/>
+    </g>
+    <rect x="90" y="196" width="300" height="190" fill="#33465c" stroke="#4a6076" stroke-width="2"/>
+    <g fill="#c9d4de" opacity=".85">
+      <rect x="112" y="216" width="40" height="52"/>
+      <rect x="176" y="216" width="40" height="52"/>
+      <rect x="240" y="216" width="40" height="52"/>
+      <rect x="304" y="216" width="40" height="52"/>
+      <rect x="112" y="296" width="40" height="52"/>
+      <rect x="240" y="296" width="40" height="52"/>
+    </g>
+    <text x="96" y="186" font-size="15" fill="#8fa3b5">аптека № 14, задняя дверь хранения</text>
+    <path d="M150 386 h 66 v -46 h -66 Z" fill="#1d2b38" stroke="#8fa3b5" stroke-width="1.8"/>
+    <text x="120" y="416" font-size="14" fill="#8fa3b5">служебный проём</text>
+    <g>
+      <path d="M470 300 h 250 v 66 h -250 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M500 300 v -40 h 190 v 40" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="510" cy="378" r="18" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="680" cy="378" r="18" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <text x="470" y="286" font-size="15" fill="#c9d4de">«Дукато», А 213 ЕС 7..</text>
+    </g>
+    <g>
+      <path d="M416 316 q 16 -22 34 0 l 4 40 q -20 10 -40 0 Z" fill="#dfe6ea" stroke="#8fa3b5" stroke-width="1.6"/>
+      <circle cx="433" cy="300" r="11" fill="#dfe6ea" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M424 296 q 10 -10 20 0" fill="#3a2f2f"/>
+      <rect x="440" y="330" width="30" height="24" fill="#b9a98c" stroke="#8fa3b5" stroke-width="1.4"/>
+    </g>
+    <path d="M760 160 h 40 v 22 h -40 Z" fill="#e8e2d4" opacity=".8"/>
+    <text x="806" y="180" font-size="15" fill="#c9d4de">ворота</text>
+    <text x="88" y="176" font-size="16" fill="#e8e2d4">10.11.2025  20:47:12</text>
+    <circle cx="792" cy="504" r="7" fill="#a8321f"/>
+    <text x="700" y="500" font-size="14" fill="#a8321f">кадр 3</text>
+  </g>
+
+  <g>
+    <text x="880" y="176" font-size="19" font-weight="600" fill="#16202b">Раскадровка архива</text>
+    <line x1="900" y1="200" x2="900" y2="620" stroke="#16202b" stroke-width="2"/>
+    <g font-size="16" fill="#3b4652">
+      <circle cx="900" cy="222" r="5" fill="#2f4258"/>
+      <text x="920" y="218">20:38:11 — двор пуст, въезда нет</text>
+      <text x="920" y="240">20:44:05 — «Дукато» у ворот, фары выключены</text>
+      <circle cx="900" cy="266" r="5" fill="#a8321f"/>
+      <text x="920" y="262" fill="#16202b">20:47:12 — женщина в халате и пуховой шапке,</text>
+      <text x="920" y="284">первая коробка, ставит у заднего борта</text>
+      <circle cx="900" cy="310" r="5" fill="#2f4258"/>
+      <text x="920" y="306">20:49:40 — вторая коробка, идёт вдоль борта</text>
+      <circle cx="900" cy="336" r="5" fill="#a8321f"/>
+      <text x="920" y="332" fill="#16202b">20:52:30 — третья коробка, открывает заднюю дверь</text>
+      <circle cx="900" cy="360" r="5" fill="#2f4258"/>
+      <text x="920" y="356">20:56:40 — передаёт водителю лист бумаги</text>
+      <circle cx="900" cy="386" r="5" fill="#2f4258"/>
+      <text x="920" y="382">20:58:02 — выезд за ворота, задняя дверь закрыта</text>
+      <circle cx="900" cy="412" r="5" fill="#a8321f"/>
+      <text x="920" y="408" fill="#16202b">21:02:19 — возвращается одна, через дверь хранения,</text>
+      <text x="920" y="430">халат расстёгнут, в руках ничего нет</text>
+    </g>
+    <g font-size="16" fill="#3b4652">
+      <text x="880" y="476">Высота фигуры по кадру 3 — 173 см</text>
+      <text x="880" y="498">с учётом шапки и обуви. Плечи развёрнуты</text>
+      <text x="880" y="520">к борту, коробку держит двумя руками,</text>
+      <text x="880" y="542">корпус слегка развёрнут влево.</text>
+      <text x="880" y="588">Лицо в кадрах 3 — 5 закрыто козырьком</text>
+      <text x="880" y="610">и поворотом головы. Отдельных кадров</text>
+      <text x="880" y="632">с лицом в архиве нет.</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="664" x2="1540" y2="664" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="710" font-size="19" font-weight="600" fill="#16202b">Сопоставление с другими носителями</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="748">Карта доступа М-04: вход в здание 20:38:07, выход 21:04:12. Разница с последним</text>
+      <text x="60" y="770">кадром - 1 минута 53 секунды, уложивается в путь от ворот до считывателя.</text>
+      <text x="60" y="806">Память весов: взвешивание 20:41:16, то есть между входом по карте и первым</text>
+      <text x="60" y="828">выносом коробки. Книга звонков: вызов курьера записан в 20:31.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="900" y="748">Служебный проём на кадре не оборудован</text>
+      <text x="900" y="770">считывателем: в него можно войти и выйти,</text>
+      <text x="900" y="792">не оставив записи в карте доступа.</text>
+      <text x="900" y="828">Третий вынос совпадает с отметкой 20:52</text>
+    </g>
+  </g>
+</svg>

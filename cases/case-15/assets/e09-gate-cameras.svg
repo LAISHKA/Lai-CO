@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridCams15" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridCams15)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="56" y="74" font-size="26" font-weight="600" fill="#16202b">Копия записи регистратора «Оттиск» Р-4: четыре канала за ночь</text>
+  <text x="56" y="104" font-size="18" fill="#3b4652">Снята 15.02.2026 в 01:40 инженером Роговым Д. А. в присутствии Осокина Р. Т. Часы регистратора синхронизированы с сетью, расхождение ноль секунд. Архив полный, удалённых фрагментов нет.</text>
+
+  <path d="M56 150 V846" stroke="#16202b" stroke-width="2"/>
+  <text x="56" y="140" font-size="13" fill="#3b4652">время сетевое</text>
+
+  <g>
+    <rect x="96" y="168" width="1400" height="150" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="112" y="196" font-size="16" font-weight="600" fill="#16202b">Канал 1 · ворота КПП · угол 96°, подсветка до 18 м</text>
+    <rect x="150" y="212" width="360" height="80" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M150 240 h360" stroke="#16202b" stroke-width="1"/>
+    <text x="162" y="232" font-size="12" fill="#16202b">22:38:10 — 23:02:44</text>
+    <text x="162" y="262" font-size="12" fill="#a8321f">ни одного прохода через калитку</text>
+    <text x="162" y="282" font-size="11" fill="#3b4652">козырёк и читатель в кадре целиком</text>
+    <rect x="560" y="212" width="300" height="80" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <text x="572" y="238" font-size="12" fill="#16202b">турникет под козырьком —</text>
+    <text x="572" y="258" font-size="12" fill="#16202b">слепая зона 3 м от объектива</text>
+    <text x="572" y="282" font-size="12" fill="#a8321f">лица в зоне пропуска не читаются</text>
+    <rect x="910" y="212" width="360" height="80" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="922" y="238" font-size="12" fill="#16202b">22:54:40 — въезд Урал-вахтовки О 613 ВК 716</text>
+    <text x="922" y="258" font-size="12" fill="#16202b">в кузове четверо в касках, у одного планшет-папка</text>
+    <text x="922" y="282" font-size="12" fill="#a8321f">будка дежурного тёмная, шлагбаум подняли из кузова</text>
+  </g>
+
+  <g>
+    <rect x="96" y="338" width="1400" height="150" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="112" y="366" font-size="16" font-weight="600" fill="#16202b">Канал 2 · шлагбаум и платформа автовесов · угол 74°</text>
+    <rect x="150" y="382" width="420" height="88" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="162" y="408" font-size="12" fill="#16202b">13.02 22:47:08 — ТЦ-7, Х 770 НМ 716, на выезд</text>
+    <text x="162" y="428" font-size="12" fill="#a8321f">габариты и фары выключены, борта подняты</text>
+    <text x="162" y="448" font-size="12" fill="#16202b">кузов под тентом, в кабине один силуэт</text>
+    <text x="440" y="470" font-size="20" font-weight="700" fill="#a8321f">2 658</text>
+    <rect x="620" y="382" width="420" height="88" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="632" y="408" font-size="12" fill="#16202b">14.02 06:52:14 — ТЦ-7 на въезде</text>
+    <text x="632" y="428" font-size="12" fill="#a8321f">свет снова выключен, тент лежит поверх кузова</text>
+    <text x="632" y="448" font-size="12" fill="#16202b">борта опущены, в кузове пусто</text>
+    <text x="910" y="470" font-size="20" font-weight="700" fill="#a8321f">2 486</text>
+    <text x="1090" y="404" font-size="12" fill="#3b4652">Цифры табло в кадре читаются;</text>
+    <text x="1090" y="424" font-size="12" fill="#3b4652">разность двух записей — 172 кг.</text>
+    <text x="1090" y="456" font-size="12" fill="#16202b">Между 22:47:08 и 06:52:14</text>
+    <text x="1090" y="476" font-size="12" fill="#16202b">на канале нет ни одного проезда.</text>
+  </g>
+
+  <g>
+    <rect x="96" y="508" width="1400" height="170" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="112" y="536" font-size="16" font-weight="600" fill="#16202b">Канал 3 · приёмный бункер драги № 2 и ходовой мост · угол 118°</text>
+    <rect x="150" y="552" width="440" height="106" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="162" y="578" font-size="12" fill="#16202b">13.02 23:05:12 — конвейер работает, у пульта силуэт</text>
+    <text x="162" y="598" font-size="12" fill="#16202b">от зимника к бытовке идёт человек без каски</text>
+    <text x="162" y="618" font-size="12" fill="#a8321f">в левой руке пустой термос, правая в кармане</text>
+    <text x="162" y="640" font-size="12" fill="#16202b">рост по кадру 172—178 см · вездехода у бункера нет</text>
+    <rect x="640" y="552" width="500" height="106" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="652" y="578" font-size="12" fill="#16202b">14.02 06:31:40 — ТЦ-7 стоит боком к бункеру, двигатель работает</text>
+    <text x="652" y="598" font-size="12" fill="#16202b">с подножки слезает человек в тёмной куртке с капюшоном, в руке монтировка</text>
+    <text x="652" y="618" font-size="12" fill="#a8321f">рост по кадру 185—190 см, лицо не читается</text>
+    <text x="652" y="640" font-size="12" fill="#a8321f">к кронштейну задней тележки болтами притянута лишняя цепь</text>
+    <text x="1170" y="578" font-size="12" fill="#16202b">Слепая зона у двери весовой</text>
+    <text x="1170" y="598" font-size="12" fill="#16202b">будки ШВУ-1 — 12 м.</text>
+    <text x="1170" y="630" font-size="12" fill="#3b4652">На замке цепи загнут</text>
+    <text x="1170" y="650" font-size="12" fill="#3b4652">замок-защёлка, упор домкрата.</text>
+  </g>
+
+  <g>
+    <rect x="96" y="698" width="1400" height="96" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="112" y="726" font-size="16" font-weight="600" fill="#16202b">Канал 4 · вертолещадка «Ключ» · угол 90°, включается по графику борта</text>
+    <text x="112" y="754" font-size="12" fill="#16202b">14.02 работал с 09:20 до 10:40 · пассажир на борт в 10:00 не явился</text>
+    <text x="700" y="754" font-size="12" fill="#a8321f">за ночь с 13.02 на 14.02 канал не записал ни одного движения</text>
+  </g>
+
+  <g>
+    <text x="56" y="826" font-size="13" fill="#16202b">Вне кадров: гаражный бокс ТЦ-7 и бытовки в 90 м от поста, отвал южного борта, будка № 3 на льду, старый северный лаз в 4,1 км.</text>
+    <text x="56" y="850" font-size="13" fill="#a8321f">Между 23:05:12 и 06:31:40 ни на одном канале движения техники не зафиксировано; журнал доступа к архиву — 15.02 в 01:40 и 10:20.</text>
+  </g>
+</svg>

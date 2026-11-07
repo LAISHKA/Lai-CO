@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid163" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <radialGradient id="ir163" cx=".5" cy=".42" r=".72">
+      <stop offset="0" stop-color="#4b5f70" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#101820" stop-opacity=".96"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid163)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера К-3: проход С-14, торец у юнита 12</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Архиватор № 2, файл 2606-0330-k3, серверная метка 06.06 03:32:58. Свет в зоне гашён, ведёт инфракрасная подсветка.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="430" fill="#101820"/>
+    <rect x="72" y="152" width="776" height="406" fill="url(#ir163)"/>
+
+    <path d="M72 558 L 400 372 L 660 372 L 848 558 Z" fill="#22303c"/>
+    <path d="M400 372 L 660 372" stroke="#5c7286" stroke-width="1.4"/>
+
+    <g stroke="#9fb3c4" stroke-width="2.4" fill="#2b3d4c">
+      <rect x="96" y="206" width="18" height="330"/>
+      <rect x="286" y="222" width="16" height="300"/>
+      <path d="M96 300 L 302 312 M96 396 L 302 404 M96 492 L 302 496" fill="none" stroke-width="2"/>
+    </g>
+    <path d="M96 300 L 302 336 L 302 312 L 96 276 Z" fill="#3a4f66" stroke="#9fb3c4" stroke-width="2"/>
+    <text x="104" y="266" font-size="12" fill="#e08a2e">третья полка прогнута, идёт вниз</text>
+
+    <g fill="#43586e" stroke="#9fb3c4" stroke-width="1.6">
+      <rect x="118" y="252" width="52" height="46"/>
+      <rect x="180" y="256" width="52" height="46"/>
+      <rect x="242" y="260" width="48" height="46"/>
+      <rect x="118" y="348" width="52" height="46"/>
+      <rect x="180" y="352" width="52" height="46"/>
+      <rect x="242" y="356" width="48" height="46"/>
+      <rect x="118" y="444" width="52" height="46"/>
+    </g>
+    <text x="100" y="560" font-size="12" fill="#9fb3c4">юнит 12, ярусы 3 / 2 / 1</text>
+
+    <g fill="#4a6076" stroke="#9fb3c4" stroke-width="1.6">
+      <rect x="330" y="392" width="46" height="42"/>
+      <rect x="382" y="394" width="46" height="42"/>
+      <rect x="434" y="396" width="46" height="42"/>
+      <rect x="486" y="398" width="46" height="42"/>
+      <rect x="538" y="400" width="44" height="42"/>
+      <rect x="330" y="440" width="46" height="42"/>
+      <rect x="382" y="443" width="46" height="42"/>
+      <rect x="434" y="446" width="46" height="42"/>
+      <rect x="486" y="449" width="46" height="42"/>
+      <rect x="538" y="452" width="44" height="42"/>
+    </g>
+    <text x="330" y="384" font-size="12" fill="#9fb3c4">двадцать шесть паллетов в два ряда поперёк прохода</text>
+
+    <g>
+      <rect x="612" y="332" width="150" height="96" rx="10" fill="#33465c" stroke="#c9d4de" stroke-width="2.2"/>
+      <path d="M620 332 L 620 262 M620 300 L 660 300" stroke="#c9d4de" stroke-width="4" fill="none"/>
+      <path d="M660 292 v 18" stroke="#c9d4de" stroke-width="4"/>
+      <rect x="648" y="352" width="58" height="42" fill="#1d2b38" stroke="#c9d4de" stroke-width="1.6"/>
+      <circle cx="640" cy="440" r="20" fill="#101820" stroke="#9fb3c4" stroke-width="2.2"/>
+      <circle cx="740" cy="440" r="20" fill="#101820" stroke="#9fb3c4" stroke-width="2.2"/>
+      <path d="M688 344 h 66" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="700" cy="322" r="8" fill="#f2e6c8" opacity=".85"/>
+      <text x="612" y="480" font-size="12" fill="#e08a2e">вилы подняты до третьего яруса, кабина закрыта дуг</text>
+    </g>
+
+    <g opacity=".75">
+      <path d="M300 330 q 60 30 40 90 q -18 52 -70 46 q 24 -60 30 -136" fill="#6a7f92" opacity=".38"/>
+      <circle cx="330" cy="366" r="52" fill="#7f95a8" opacity=".26"/>
+    </g>
+    <g>
+      <path d="M246 508 q 30 -18 62 -6 q 26 10 22 34 q -6 30 -46 32 q -46 2 -52 -26 Z" fill="#5c7286" stroke="#f2e6c8" stroke-width="1.8"/>
+      <path d="M258 516 h 60 M256 530 h 64" stroke="#f2e6c8" stroke-width="2.2"/>
+      <text x="150" y="536" font-size="12" fill="#f2e6c8">фигура в жилете у основания стойки</text>
+    </g>
+
+    <text x="88" y="182" font-size="16" fill="#e8e2d4">06.06.2026  03:32:19</text>
+    <circle cx="826" cy="538" r="7" fill="#a8321f"/>
+    <text x="782" y="534" font-size="14" fill="#a8321f">кадр 6</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Ход кадра по меткам архиватора</text>
+    <line x1="920" y1="196" x2="920" y2="628" stroke="#16202b" stroke-width="2"/>
+    <g font-size="13" fill="#3b4652">
+      <circle cx="920" cy="208" r="4.5" fill="#2f4258"/>
+      <text x="938" y="212">03:30:41 — проход пуст по свету, кадр ведёт инфракрасная подсветка</text>
+      <circle cx="920" cy="244" r="4.5" fill="#2f4258"/>
+      <text x="938" y="248">03:31:12 — в проходе неподвижно стоят двадцать шесть паллетов, последний у стойки</text>
+      <circle cx="920" cy="280" r="4.5" fill="#a8321f"/>
+      <text x="938" y="284" fill="#16202b">03:31:59 — ЭП-240 заходит в проход, на крыше мигает фонарь сигнализации</text>
+      <circle cx="920" cy="316" r="4.5" fill="#a8321f"/>
+      <text x="938" y="320" fill="#16202b">03:32:07 — вилы идут вверх, в поднятом положении высота третьего яруса</text>
+      <circle cx="920" cy="352" r="4.5" fill="#a8321f"/>
+      <text x="938" y="356" fill="#16202b">03:32:14 — вилы упираются в стойку юнита 12, кадр дёргается</text>
+      <circle cx="920" cy="388" r="4.5" fill="#a8321f"/>
+      <text x="938" y="392" fill="#16202b">03:32:19 — кадр закрывает пыль, у основания стойки видна оплывшая масса</text>
+      <circle cx="920" cy="424" r="4.5" fill="#2f4258"/>
+      <text x="938" y="428">03:32:26 — вилы опущены, погрузчик стоит две секунды</text>
+      <circle cx="920" cy="460" r="4.5" fill="#2f4258"/>
+      <text x="938" y="464">03:33:10 — пыль оседает, силуэт у стойки не меняется</text>
+      <circle cx="920" cy="496" r="4.5" fill="#a8321f"/>
+      <text x="938" y="500" fill="#16202b">03:33:40 — ЭП-240 разворачивается и выходит из прохода, свет не включён</text>
+      <circle cx="920" cy="532" r="4.5" fill="#2f4258"/>
+      <text x="938" y="536">пешего человека в проходе до 03:32:19 кадр не показывает: экран закрыт поднятыми вилами</text>
+      <circle cx="920" cy="568" r="4.5" fill="#2f4258"/>
+      <text x="938" y="572">после 03:33:40 в проходе остаётся только лежачая фигура и пыль на полу</text>
+      <circle cx="920" cy="604" r="4.5" fill="#2f4258"/>
+      <text x="938" y="608">счётчик кадров непрерывен с 03:30:41 по 03:33:40, потерь нет</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="648" x2="860" y2="648" stroke="#16202b" stroke-width="2"/>
+  <line x1="900" y1="648" x2="1560" y2="648" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="686" font-size="19" font-weight="600" fill="#16202b">Привязка кадра</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="718">Ракурс из торца: слева юнит 12 в три яруса, проход 34 метра, ширина между стойками 3,2 метра.</text>
+      <text x="60" y="742">Кабина погрузчика в этом ракурсе перекрыта спинкой сиденья и дугой безопасности.</text>
+      <text x="60" y="766">Пыль поднята с третьего яруса и оседает к 03:33:10 на площади около полутора метров.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="60" y="802">Ни оператора, ни карты на считывателе кадр не показывает: только силуэт машины.</text>
+      <text x="60" y="826">Канал пульта микрофоном не оборудован, звука в файле нет.</text>
+      <text x="60" y="850">Свет в зоне гашён, хотя по журналу заявок принят работоспособным в 02:05.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="686" font-size="19" font-weight="600" fill="#16202b">Служебная часть канала</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="900" y="718">Файл 2606-0330-k3: 1280 на 720, двенадцать кадров в секунду, битрейт постоянный.</text>
+      <text x="900" y="742">Подсветка инфракрасная, встроенная в камеру, включается по уровню освещённости.</text>
+      <text x="900" y="766">Выгрузка произведена 06.06 в 03:47 по карте сотрудника службы безопасности с пульта.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="900" y="802">Метка архиватора — серверное время склада, с весовым терминалом не совпадает по определению.</text>
+      <text x="900" y="826">Разрывов целостности файла не обнаружено, кадр 03:32:15—03:32:18 потерь не содержит.</text>
+      <text x="900" y="850">Часы бортового контроллера машины ставят удар в 03:32:14 — ту же секунду, что и кадр.</text>
+    </g>
+  </g>
+</svg>

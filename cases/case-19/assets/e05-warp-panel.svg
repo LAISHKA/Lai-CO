@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1905" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".14"/>
+    </pattern>
+    <pattern id="dust1905" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r="0.9" fill="#b9b1a1" opacity=".75"/>
+      <circle cx="6" cy="7" r="0.7" fill="#a89f8d" opacity=".6"/>
+    </pattern>
+    <pattern id="grease1905" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <path d="M0 4h8" stroke="#3f4a52" stroke-width="2.2" opacity=".55"/>
+    </pattern>
+    <marker id="arr1905" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e08a2e"/>
+    </marker>
+    <marker id="lead1905" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <circle cx="4" cy="4" r="3" fill="#a8321f"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1905)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Панель щита ЩМ-3: замок с ключом, группа ламп блокировки, бирка наряда-допуска</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема к снимку группы от 14.03, кадр 6. Объектив 50 миллиметров, вспышка, масштабная линейка в каждом фрагменте. Три фрагмента кадра разведены отдельно.</text>
+
+  <g>
+    <rect x="60" y="136" width="470" height="440" fill="#2f363c" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="76" y="164" font-size="17" font-weight="600" fill="#e6dfd0">Фрагмент 1 — замок панели и лампы</text>
+
+    <g style="stroke:#8a97a3" stroke-width="1.6" fill="none">
+      <rect x="86" y="180" width="418" height="336"/>
+      <path d="M86 300h418"/>
+    </g>
+
+    <g>
+      <circle cx="150" cy="240" r="38" fill="#454e56" stroke="#c9d4de" stroke-width="2"/>
+      <path d="M150 214v26" stroke="#e6dfd0" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="150" cy="248" r="9" fill="#e6dfd0" opacity=".85"/>
+      <path d="M150 202a38 38 0 0 1 34 20" fill="none" stroke="#e08a2e" stroke-width="3"/>
+      <text x="196" y="216" font-size="14" fill="#e08a2e">личинка в крайнем правом</text>
+      <rect x="126" y="286" width="48" height="30" rx="7" fill="#c9a227" stroke="#16202b" stroke-width="1.4"/>
+      <path d="M150 286v-14" stroke="#c9a227" stroke-width="8"/>
+      <text x="98" y="336" font-size="15" fill="#e6dfd0">ключ в замке, бирка «МБ-2»</text>
+      <path d="M96 300h20" stroke="#c9d4de" stroke-width="1.2" opacity=".5"/>
+    </g>
+
+    <g>
+      <rect x="252" y="200" width="66" height="82" rx="5" fill="#3b444c" stroke="#c9d4de" stroke-width="1.6"/>
+      <path d="M285 268V222" stroke="#e6dfd0" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="285" cy="218" r="8" fill="#e6dfd0"/>
+      <text x="246" y="300" font-size="13" fill="#c9d4de">«местный» — зафиксирован</text>
+      <text x="246" y="318" font-size="13" fill="#8fa3b5">«дистанционный» — свободно</text>
+    </g>
+
+    <g>
+      <rect x="356" y="192" width="146" height="112" rx="6" fill="#39424a" stroke="#8fa3b5" stroke-width="1.4"/>
+      <g font-size="13" fill="#c9d4de">
+        <text x="424" y="216">чан № 2</text>
+        <text x="424" y="252">чан № 3</text>
+        <text x="424" y="288">«наряд открыт»</text>
+      </g>
+      <g>
+        <circle cx="400" cy="212" r="9" fill="#20272d" stroke="#a8321f" stroke-width="2" stroke-dasharray="4 3"/>
+        <circle cx="400" cy="248" r="9" fill="#e8c14b"/>
+        <circle cx="400" cy="248" r="15" fill="#e8c14b" opacity=".22"/>
+        <circle cx="400" cy="284" r="9" fill="#20272d" stroke="#8fa3b5" stroke-width="1.4"/>
+      </g>
+      <path d="M384 212h-16" stroke="#a8321f" stroke-width="1.6"/>
+      <text x="356" y="318" font-size="13" style="fill:#a8321f">лампа чана № 2 не светится</text>
+    </g>
+
+    <rect x="96" y="312" width="402" height="196" fill="url(#dust1905)" opacity=".5"/>
+    <g fill="none" stroke="#dfe6ea" stroke-width="1.6" opacity=".85">
+      <path d="M132 470c-10-18-8-40 6-52 12-10 30-10 40 2 10 12 8 34-4 46"/>
+      <path d="M142 424c6-4 12-4 16 0M146 440c7-4 14-3 18 1M152 456c6-3 12-3 16 1"/>
+    </g>
+    <text x="112" y="498" font-size="14" fill="#c9d4de">отпечаток ладони в пыли, нижний угол</text>
+
+    <path d="M330 468l52-44" stroke="#a8321f" stroke-width="2.6" fill="none" marker-end="url(#lead1905)"/>
+    <text x="300" y="492" font-size="14" style="fill:#a8321f">царапина ниже рамки, против метки 23:26</text>
+    <rect x="452" y="440" width="46" height="24" fill="#20272d" stroke="#8fa3b5" stroke-width="1.2"/>
+    <text x="458" y="457" font-size="14" fill="#e6dfd0">23:26</text>
+
+    <g>
+      <rect x="86" y="524" width="418" height="20" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+      <g stroke="#16202b" stroke-width="1">
+        <path d="M86 524v20M146 524v14M206 524v20M266 524v14M326 524v20M386 524v14M504 524v20"/>
+      </g>
+      <text x="86" y="566" font-size="13" style="fill:var(--fg-dim,#3b4652)">масштабная линейка, деление 100 миллиметров</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="565" y="136" width="470" height="440" fill="#2f363c" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="581" y="164" font-size="17" font-weight="600" fill="#e6dfd0">Фрагмент 2 — бирка на ручке дверцы</text>
+
+    <g style="stroke:#8a97a3" stroke-width="1.6" fill="none">
+      <rect x="591" y="182" width="200" height="330"/>
+      <path d="M591 182v330"/>
+    </g>
+    <rect x="591" y="182" width="200" height="330" fill="url(#dust1905)" opacity=".45"/>
+    <text x="598" y="204" font-size="13" fill="#8fa3b5">дверца щита</text>
+
+    <g>
+      <path d="M760 320h34a12 12 0 0 1 12 12v34a12 12 0 0 1-12 12h-34" fill="none" stroke="#c9d4de" stroke-width="9" stroke-linecap="round"/>
+      <path d="M776 330c-30 26-46 60-40 96 4 26 22 42 46 44" fill="none" stroke="#d9cfb6" stroke-width="5"/>
+      <path d="M776 330c-30 26-46 60-40 96 4 26 22 42 46 44" fill="none" stroke="#8a8474" stroke-width="1.4" stroke-dasharray="3 5"/>
+    </g>
+
+    <g transform="rotate(-7 700 470)">
+      <path d="M648 420h112l16 18v82H648l-16-18v-64z" fill="#ded3b8" stroke="#16202b" stroke-width="1.8"/>
+      <circle cx="664" cy="438" r="7" fill="none" stroke="#16202b" stroke-width="1.8"/>
+      <text x="656" y="482" font-size="17" font-weight="600" fill="#16202b">наряд-допуск</text>
+      <text x="656" y="508" font-size="20" font-weight="700" fill="#16202b">№ 7</text>
+    </g>
+
+    <g>
+      <path d="M820 250l-52 62" stroke="#e08a2e" stroke-width="2" fill="none" marker-end="url(#arr1905)"/>
+      <text x="812" y="228" font-size="15" fill="#e08a2e">шнурок лежит</text>
+      <text x="812" y="248" font-size="15" fill="#e08a2e">поверх слоя пыли</text>
+
+      <rect x="806" y="286" width="212" height="120" rx="6" fill="#39424a" stroke="#8fa3b5" stroke-width="1.4"/>
+      <text x="818" y="312" font-size="14" fill="#c9d4de">следы более старого</text>
+      <text x="818" y="332" font-size="14" fill="#c9d4de">крепления на дверце:</text>
+      <g stroke="#a8321f" stroke-width="2.2">
+        <path d="M818 356h48M826 348l32 16"/>
+      </g>
+      <text x="876" y="362" font-size="14" style="fill:#a8321f">нет</text>
+      <text x="818" y="392" font-size="13" fill="#8fa3b5">пыль на бирке и шнурке равная</text>
+    </g>
+
+    <g>
+      <rect x="591" y="470" width="196" height="42" fill="#39424a" stroke="#8fa3b5" stroke-width="1.2"/>
+      <ellipse cx="640" cy="492" rx="26" ry="14" fill="none" stroke="#dfe6ea" stroke-width="1.6"/>
+      <text x="676" y="497" font-size="13" fill="#c9d4de">след колена на полу</text>
+    </g>
+
+    <g>
+      <rect x="591" y="524" width="418" height="20" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+      <g stroke="#16202b" stroke-width="1">
+        <path d="M591 524v20M651 524v14M711 524v20M771 524v14M831 524v20M891 524v14M1009 524v20"/>
+      </g>
+      <text x="591" y="566" font-size="13" style="fill:var(--fg-dim,#3b4652)">масштабная линейка, деление 100 миллиметров</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1070" y="136" width="470" height="440" fill="#2f363c" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="1086" y="164" font-size="17" font-weight="600" fill="#e6dfd0">Фрагмент 3 — колодка реле и кран K3</text>
+
+    <g>
+      <rect x="1100" y="190" width="180" height="150" rx="6" fill="#3b444c" stroke="#c9d4de" stroke-width="1.8"/>
+      <g style="stroke:#8fa3b5" stroke-width="1.2">
+        <path d="M1116 214h148M1116 244h148M1116 274h148M1116 304h148"/>
+      </g>
+      <g fill="#c9bfa8" opacity=".85">
+        <rect x="1122" y="196" width="26" height="14" rx="3"/>
+        <rect x="1176" y="196" width="26" height="14" rx="3"/>
+        <rect x="1230" y="196" width="26" height="14" rx="3"/>
+      </g>
+      <g fill="none" stroke="#e6dfd0" stroke-width="1.5" opacity=".9">
+        <ellipse cx="1188" cy="252" rx="15" ry="21"/>
+        <path d="M1179 244c6-4 12-3 17 1M1178 256c7-4 14-3 20 1M1180 268c6-3 12-3 17 1"/>
+        <ellipse cx="1232" cy="288" rx="14" ry="19"/>
+        <path d="M1224 281c6-4 11-3 16 1M1223 292c6-3 13-3 18 1"/>
+      </g>
+      <text x="1100" y="362" font-size="14" fill="#c9d4de">два отпечатка пальца на колодке,</text>
+      <text x="1100" y="382" font-size="14" fill="#c9d4de">пыль вокруг стряхнута</text>
+    </g>
+
+    <g>
+      <path d="M1300 214h110" stroke="#8a97a3" stroke-width="16" stroke-linecap="round"/>
+      <circle cx="1300" cy="214" r="22" fill="#454e56" stroke="#c9d4de" stroke-width="2"/>
+      <path d="M1410 190h22v48h-22z" fill="#454e56" stroke="#c9d4de" stroke-width="1.6"/>
+      <text x="1284" y="176" font-size="15" fill="#e6dfd0">кран K3, линия чана № 2</text>
+
+      <g transform="rotate(-16 1380 300)">
+        <rect x="1330" y="256" width="104" height="86" rx="26" fill="url(#grease1905)" stroke="#dfe6ea" stroke-width="2"/>
+        <g stroke="#dfe6ea" stroke-width="1.4" fill="none" opacity=".8">
+          <path d="M1344 272h76M1344 288h76M1344 304h76M1344 320h76"/>
+        </g>
+      </g>
+      <path d="M1318 356c-16 12-26 26-28 44" fill="none" stroke="#e08a2e" stroke-width="2" marker-end="url(#arr1905)"/>
+      <text x="1100" y="418" font-size="14" fill="#e08a2e">след ладони в смазке: четыре пальца вместе,</text>
+      <text x="1100" y="438" font-size="14" fill="#e08a2e">большой палец со стороны тамбура</text>
+    </g>
+
+    <g>
+      <rect x="1096" y="456" width="422" height="56" rx="6" fill="#39424a" stroke="#8fa3b5" stroke-width="1.2"/>
+      <text x="1110" y="480" font-size="14" fill="#c9d4de">лампы индикации реле освещения — в рабочем положении,</text>
+      <text x="1110" y="500" font-size="14" fill="#c9d4de">контакты колодки без следов подгорания</text>
+    </g>
+
+    <g>
+      <rect x="1100" y="524" width="418" height="20" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+      <g stroke="#16202b" stroke-width="1">
+        <path d="M1100 524v20M1160 524v14M1220 524v20M1280 524v14M1340 524v20M1400 524v14M1518 524v20"/>
+      </g>
+      <text x="1100" y="566" font-size="13" style="fill:var(--fg-dim,#3b4652)">масштабная линейка, деление 100 миллиметров</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="60" y="600" width="1480" height="256" rx="8" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+    <text x="80" y="634" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что зафиксировано на фрагментах</text>
+    <g font-size="17" style="fill:var(--fg-dim,#3b4652)">
+      <text x="80" y="670">— замок панели: ключ МБ-2 в замке, на бирке ключа читается номер МБ-2, личинка повёрнута в крайнее правое положение</text>
+      <text x="80" y="700">— лампа блокировки заторного люка чана № 2 под биркой не светится; соседняя лампа чана № 3 горит; индикатор «наряд открыт» погашен</text>
+      <text x="80" y="730">— тумблер режима в положении «местный», зафиксирован; царапина на корпусе ниже рамки, против метки 23:26</text>
+      <text x="80" y="760">— наряд-допуск № 7 продет шнурком через ручку дверцы; шнурок лежит поверх равномерного слоя пыли, следов более старого крепления нет</text>
+      <text x="80" y="790">— на колодке реле освещения два отпечатка пальца, пыль стряхнута; на рукоятке крана K3 след ладони в смазке, четыре пальца,</text>
+      <text x="80" y="818">большой палец со стороны тамбура; у нижнего угла панели отпечаток ладони в пыли, на полу след колена</text>
+    </g>
+  </g>
+</svg>

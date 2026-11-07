@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridCams08" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridCams08)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Регистратор № 1: четыре канала за 22—23 августа</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Копия снята 23.08.2026 в 02:30. Восемь кадров в секунду, шаг кадра 125 миллисекунд. Часы канала синхронизированы с сетевым временем, расхождение 0 секунд.</text>
+
+  <g>
+    <text x="60" y="158" font-size="18" font-weight="600" fill="#16202b">Канал 1 «Ворота»</text>
+    <g fill="#f3efe4" stroke="#16202b" stroke-width="1.5">
+      <rect x="60" y="172" width="250" height="110"/>
+      <rect x="330" y="172" width="250" height="110"/>
+      <rect x="600" y="172" width="250" height="110"/>
+      <rect x="870" y="172" width="250" height="110"/>
+      <rect x="1140" y="172" width="400" height="110"/>
+    </g>
+    <text x="72" y="196" font-size="13" font-weight="600" fill="#a8321f">13:31:04</text>
+    <text x="72" y="220" font-size="12" fill="#16202b">со склада № 2 выезжает</text>
+    <text x="72" y="240" font-size="12" fill="#16202b">ГАЗель С 618 КС 716, кузов</text>
+    <text x="72" y="260" font-size="12" fill="#16202b">открыт, в кабине один</text>
+    <text x="342" y="196" font-size="13" font-weight="600" fill="#a8321f">19:35:07</text>
+    <text x="342" y="220" font-size="12" fill="#16202b">у бочки у ворот стоит</text>
+    <text x="342" y="240" font-size="12" fill="#16202b">мужчина в белом кителе,</text>
+    <text x="342" y="260" font-size="12" fill="#16202b">лицо читается: Гордеев</text>
+    <text x="612" y="196" font-size="13" font-weight="600" fill="#a8321f">21:31:20</text>
+    <text x="612" y="220" font-size="12" fill="#16202b">за ворота выезжает</text>
+    <text x="612" y="240" font-size="12" fill="#16202b">микроавтобус</text>
+    <text x="612" y="260" font-size="12" fill="#16202b">Н 904 МР 716</text>
+    <text x="882" y="196" font-size="13" font-weight="600" fill="#a8321f">22:41:05</text>
+    <text x="882" y="220" font-size="12" fill="#16202b">Н 904 МР 716 возвращается</text>
+    <text x="882" y="240" font-size="12" fill="#16202b">и встаёт у служебного</text>
+    <text x="882" y="260" font-size="12" fill="#16202b">входа</text>
+    <text x="1152" y="196" font-size="13" font-weight="600" fill="#a8321f">00:31:50</text>
+    <text x="1152" y="220" font-size="12" fill="#16202b">сторож открыл кузов микроавтобуса, свет фонаря в кузове;</text>
+    <text x="1152" y="240" font-size="12" fill="#16202b">мотор холодный. Вызов бригады зарегистрирован в 00:44.</text>
+    <text x="1152" y="260" font-size="12" fill="#3b4652">Угол обзора 96°, створ ворот 6,4 м.</text>
+  </g>
+
+  <g>
+    <text x="60" y="336" font-size="18" font-weight="600" fill="#16202b">Канал 2 «Шатёр № 2»</text>
+    <g fill="#f3efe4" stroke="#16202b" stroke-width="1.5">
+      <rect x="60" y="350" width="420" height="110"/>
+      <rect x="500" y="350" width="420" height="110"/>
+      <rect x="940" y="350" width="600" height="110"/>
+    </g>
+    <text x="72" y="374" font-size="13" font-weight="600" fill="#a8321f">21:06:52</text>
+    <text x="72" y="398" font-size="12" fill="#16202b">зал, президиум: мужчина опирается</text>
+    <text x="72" y="418" font-size="12" fill="#16202b">ладонями о стол и оседает, гости</text>
+    <text x="72" y="438" font-size="12" fill="#16202b">встают; аплодисменты танца</text>
+    <text x="512" y="374" font-size="13" font-weight="600" fill="#a8321f">23:16:44</text>
+    <text x="512" y="398" font-size="12" fill="#16202b">мужчина в сером пальто идёт вдоль</text>
+    <text x="512" y="418" font-size="12" fill="#16202b">стола 11 к служебному коридору —</text>
+    <text x="512" y="438" font-size="12" fill="#16202b">последний живой кадр Быкадорова</text>
+    <text x="952" y="374" font-size="13" font-weight="600" fill="#3b4652">Осмотр канала</text>
+    <text x="952" y="398" font-size="12" fill="#16202b">Потолок, угол 118°: видит стол президиума и дверь 6. Лиц у входной</text>
+    <text x="952" y="418" font-size="12" fill="#16202b">группы шатра не различает. Между 21:06:52 и 23:16:44 в кадре</text>
+    <text x="952" y="438" font-size="12" fill="#16202b">остывают две включённые пушки и убранное место у стола 11.</text>
+  </g>
+
+  <g>
+    <text x="60" y="514" font-size="18" font-weight="600" fill="#16202b">Канал 3 «Служебный коридор»</text>
+    <g fill="#f3efe4" stroke="#16202b" stroke-width="1.5">
+      <rect x="60" y="528" width="420" height="118"/>
+      <rect x="500" y="528" width="420" height="118"/>
+      <rect x="940" y="528" width="600" height="118"/>
+    </g>
+    <text x="72" y="552" font-size="13" font-weight="600" fill="#a8321f">21:06:40</text>
+    <text x="72" y="576" font-size="12" fill="#16202b">проём маятниковой двери, человек</text>
+    <text x="72" y="596" font-size="12" fill="#a8321f">в чёрном жилете, правая рука поднята</text>
+    <text x="72" y="616" font-size="12" fill="#a8321f">к уровню груди, предмет длиной</text>
+    <text x="72" y="636" font-size="12" fill="#a8321f">с авторучку</text>
+    <text x="512" y="552" font-size="13" font-weight="600" fill="#a8321f">23:24:11</text>
+    <text x="512" y="576" font-size="12" fill="#16202b">в проёме тот же силуэт: чёрный</text>
+    <text x="512" y="596" font-size="12" fill="#16202b">жилет, светлый верх, на груди бейдж</text>
+    <text x="512" y="616" font-size="12" fill="#16202b">на шнуре; лицо в контруаре</text>
+    <text x="952" y="552" font-size="13" font-weight="600" fill="#a8321f">23:39:40</text>
+    <text x="952" y="576" font-size="12" fill="#16202b">силуэт возвращается в кадр: руки опущены, в правой руке перчатка.</text>
+    <text x="952" y="596" font-size="12" fill="#3b4652">Угол 74°, слепая полоса 1,2 м у самого полотна: стоять в проёме</text>
+    <text x="952" y="616" font-size="12" fill="#3b4652">и не попасть в кадр нельзя, но и лицо в слепой полосе не читается.</text>
+    <text x="952" y="636" font-size="12" fill="#3b4652">Рост по кадру 168—172, обувь 37—39-го размера.</text>
+  </g>
+
+  <g>
+    <text x="60" y="700" font-size="18" font-weight="600" fill="#16202b">Канал 4 «Тамбур и гардероб»</text>
+    <g fill="#f3efe4" stroke="#16202b" stroke-width="1.5">
+      <rect x="60" y="714" width="350" height="118"/>
+      <rect x="430" y="714" width="350" height="118"/>
+      <rect x="800" y="714" width="280" height="118"/>
+      <rect x="1100" y="714" width="440" height="118"/>
+    </g>
+    <text x="72" y="738" font-size="13" font-weight="600" fill="#a8321f">20:38:52</text>
+    <text x="72" y="762" font-size="12" fill="#16202b">в тамбур входит мужчина</text>
+    <text x="72" y="782" font-size="12" fill="#16202b">в сером пальто без бейджа,</text>
+    <text x="72" y="802" font-size="12" fill="#16202b">берёт жетон, в руке листок</text>
+    <text x="442" y="738" font-size="13" font-weight="600" fill="#a8321f">21:07:59</text>
+    <text x="442" y="762" font-size="12" fill="#16202b">у стойки человек в чёрном</text>
+    <text x="442" y="782" font-size="12" fill="#16202b">жилете кладёт конверт</text>
+    <text x="442" y="802" font-size="12" fill="#16202b">и берёт с вешала чужую куртку</text>
+    <text x="812" y="738" font-size="13" font-weight="600" fill="#a8321f">21:26:33</text>
+    <text x="812" y="762" font-size="12" fill="#16202b">мужчина в сером пальто</text>
+    <text x="812" y="782" font-size="12" fill="#16202b">держит телефон экраном</text>
+    <text x="812" y="802" font-size="12" fill="#16202b">к монитору поста</text>
+    <text x="1112" y="738" font-size="13" font-weight="600" fill="#a8321f">00:26:11</text>
+    <text x="1112" y="762" font-size="12" fill="#16202b">тамбур, у стойки на полу бумажный жетон. Угол 88°: держит стойку</text>
+    <text x="1112" y="782" font-size="12" fill="#16202b">гардероба с 12 крючками и щит № 4; слепой угол за шкафчиком поста.</text>
+    <text x="1112" y="802" font-size="12" fill="#3b4652">Крюк 4 к утру свободен, на нём ворс тёмной ткани, под стойкой бейдж.</text>
+  </g>
+
+  <g>
+    <text x="60" y="862" font-size="14" fill="#3b4652">Архив за 22.08 полный, удалённых фрагментов нет. Журнал доступа к регистратору: 23.08 02:30, 24.08 10:12. Часы поста видеоаналитики — отдельные, автономные.</text>
+  </g>
+</svg>

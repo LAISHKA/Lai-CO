@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1920" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".14"/>
+    </pattern>
+    <pattern id="dust1920" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.1" fill="#8a8474" opacity=".5"/>
+      <circle cx="8" cy="7" r="0.8" fill="#8a8474" opacity=".4"/>
+    </pattern>
+    <marker id="arr1920" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#a8321f"/>
+    </marker>
+    <marker id="arr1920b" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+      <path d="M10 0 L0 5 L10 10 Z" fill="#e08a2e"/>
+    </marker>
+    <marker id="arr1920c" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1920)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="72" font-size="25" font-weight="600" style="fill:var(--paper-ink,#16202b)">Замок витрины стенда № 7, читалка «С-07» и план павильона: четыре кадра съёмки</text>
+  <text x="60" y="100" font-size="18" style="fill:var(--fg-dim,#3b4652)">Схема к материалу от 14.03. Съёмка специалиста отдела допусков, объектив 60 миллиметров, макро, масштабная линейка в первых трёх кадрах.</text>
+
+  <g>
+    <rect x="60" y="122" width="720" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="76" y="148" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 1 — навесной замок на планке</text>
+
+    <g>
+      <rect x="112" y="196" width="86" height="212" rx="6" fill="#5d6a76" stroke="#16202b" stroke-width="2"/>
+      <rect x="198" y="196" width="86" height="212" rx="6" fill="#68757f" stroke="#16202b" stroke-width="2"/>
+      <circle cx="155" cy="300" r="9" fill="#16202b" opacity=".6"/>
+      <circle cx="241" cy="300" r="9" fill="#16202b" opacity=".6"/>
+      <text x="112" y="182" font-size="14" style="fill:var(--fg-dim,#3b4652)">планка рамки витрины</text>
+
+      <path d="M198 258v-56a44 44 0 0 1 88 0v56" fill="none" stroke="#b9c3cc" stroke-width="16" stroke-linecap="round"/>
+      <rect x="176" y="256" width="132" height="120" rx="14" fill="#4a5560" stroke="#16202b" stroke-width="2.4"/>
+      <circle cx="242" cy="330" r="12" fill="#2b3238"/>
+      <path d="M242 330v18" stroke="#2b3238" stroke-width="6"/>
+      <text x="326" y="238" font-size="14" style="fill:var(--paper-ink,#16202b)">дужка светлее корпуса,</text>
+      <text x="326" y="258" font-size="14" style="fill:var(--paper-ink,#16202b)">следов вскрытия нет</text>
+      <text x="326" y="292" font-size="14" style="fill:var(--paper-ink,#16202b)">замок 50 миллиметров,</text>
+      <text x="326" y="312" font-size="14" style="fill:var(--paper-ink,#16202b)">закрыт, ключа в скважине нет</text>
+    </g>
+
+    <g>
+      <path d="M112 372h172" stroke="#a8321f" stroke-width="3"/>
+      <path d="M112 388h172" stroke="#a8321f" stroke-width="3"/>
+      <path d="M300 380h44" stroke="#a8321f" stroke-width="2" marker-end="url(#arr1920)"/>
+      <text x="326" y="366" font-size="14" style="fill:#a8321f">две параллельные полосы</text>
+      <text x="326" y="386" font-size="14" style="fill:#a8321f">от снятия скобы,</text>
+      <text x="326" y="406" font-size="14" style="fill:#a8321f">краска под полосами блестящая</text>
+    </g>
+
+    <rect x="112" y="424" width="480" height="14" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M112 424v14M232 424v10M352 424v14M472 424v10M592 424v14"/>
+    </g>
+    <text x="112" y="432" font-size="12" style="fill:var(--fg-dim,#3b4652)">0 — 100 — 200 — 300 — 400 миллиметров</text>
+
+    <g>
+      <rect x="620" y="196" width="132" height="126" rx="6" fill="#39424a" stroke="#16202b" stroke-width="1.8"/>
+      <path d="M634 214h104M634 236h104M634 258h104" stroke="#8fa3b5" stroke-width="2"/>
+      <rect x="640" y="266" width="52" height="40" rx="6" fill="#b9b1a1" stroke="#16202b" stroke-width="1.4"/>
+      <text x="620" y="344" font-size="13" style="fill:var(--fg-dim,#3b4652)">накладки рамки,</text>
+      <text x="620" y="362" font-size="13" style="fill:var(--fg-dim,#3b4652)">краска без царапин</text>
+    </g>
+    <text x="620" y="400" font-size="14" style="fill:var(--fg-dim,#3b4652)">Такой же замок висит на витрине</text>
+    <text x="620" y="420" font-size="14" style="fill:var(--fg-dim,#3b4652)">стенда № 14, ключ у администратора.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="122" width="720" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="836" y="148" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 2 — читалка «С-07» рядом с замком</text>
+
+    <g>
+      <rect x="900" y="186" width="180" height="240" rx="10" fill="#39424a" stroke="#16202b" stroke-width="2.4"/>
+      <rect x="920" y="206" width="140" height="56" rx="4" fill="#1e282f" stroke="#8fa3b5" stroke-width="1.4"/>
+      <g fill="#59646e" stroke="#16202b" stroke-width="1.2">
+        <rect x="922" y="278" width="40" height="34" rx="5"/>
+        <rect x="970" y="278" width="40" height="34" rx="5"/>
+        <rect x="1018" y="278" width="40" height="34" rx="5"/>
+        <rect x="922" y="320" width="40" height="34" rx="5"/>
+        <rect x="970" y="320" width="40" height="34" rx="5"/>
+        <rect x="1018" y="320" width="40" height="34" rx="5"/>
+        <rect x="922" y="362" width="88" height="34" rx="5"/>
+      </g>
+      <rect x="1018" y="362" width="40" height="34" rx="5" fill="#c9bfa8" stroke="#16202b" stroke-width="1.4"/>
+      <g fill="none" stroke="#a8321f" stroke-width="2">
+        <path d="M1026 380c-2-9 4-16 12-16s14 7 12 16c-2 8-8 12-12 12s-10-4-12-12z"/>
+        <path d="M1031 372c3-3 8-3 11 0" stroke-width="1.4"/>
+      </g>
+      <path d="M1092 378h48" stroke="#a8321f" stroke-width="2" marker-end="url(#arr1920)"/>
+      <text x="1148" y="372" font-size="15" style="fill:#a8321f">след большого пальца</text>
+      <text x="1148" y="392" font-size="15" style="fill:#a8321f">на нижней клавише</text>
+    </g>
+
+    <g>
+      <rect x="900" y="150" width="180" height="26" rx="4" fill="#5d6a76"/>
+      <text x="912" y="168" font-size="13" fill="#e6dfd0">узел «С-07», витрина стенда № 7</text>
+    </g>
+
+    <g>
+      <rect x="1180" y="196" width="300" height="228" rx="8" fill="#c9c3b2" stroke="#16202b" stroke-width="1.6"/>
+      <text x="1198" y="226" font-size="14" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что видно на читалке</text>
+      <g font-size="14" style="fill:var(--fg-dim,#3b4652)">
+        <text x="1198" y="256">Корпус закреплён на рамке,</text>
+        <text x="1198" y="278">провод в гофре уходит</text>
+        <text x="1198" y="300">внутрь витрины.</text>
+        <text x="1198" y="332">Клавиши матовые, пыль</text>
+        <text x="1198" y="354">смахнута только</text>
+        <text x="1198" y="376">на нижней клавише.</text>
+      </g>
+    </g>
+
+    <rect x="872" y="440" width="400" height="14" fill="#c9bfa8" stroke="#16202b" stroke-width="1"/>
+    <g stroke="#16202b" stroke-width="1">
+      <path d="M872 440v14M972 440v10M1072 440v14M1172 440v10M1272 440v14"/>
+    </g>
+    <text x="872" y="432" font-size="12" style="fill:var(--fg-dim,#3b4652)">масштабная линейка в кадре</text>
+  </g>
+
+  <g>
+    <rect x="60" y="478" width="720" height="336" fill="#d5cebc" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="76" y="504" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 3 — витрина стенда № 7 изнутри</text>
+
+    <g>
+      <rect x="120" y="536" width="420" height="240" fill="#cfd6da" stroke="#16202b" stroke-width="2.4"/>
+      <rect x="120" y="536" width="420" height="240" fill="url(#dust1920)" opacity=".8"/>
+      <g stroke="#8fa3b5" stroke-width="1.6" fill="none">
+        <path d="M120 616h420M120 696h420"/>
+      </g>
+      <g fill="#e6dfd0" stroke="#16202b" stroke-width="1.4">
+        <rect x="150" y="556" width="110" height="46" rx="3"/>
+        <rect x="162" y="566" width="110" height="46" rx="3"/>
+      </g>
+      <text x="150" y="612" font-size="13" style="fill:var(--fg-dim,#3b4652)">два листа заявки № 07</text>
+      <rect x="300" y="634" width="110" height="48" fill="none" stroke="#a8321f" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <text x="300" y="700" font-size="13" style="fill:#a8321f">карман пуст</text>
+      <g fill="none" stroke="#5d6a76" stroke-width="2" opacity=".7">
+        <path d="M380 726c22-26 58-30 84-12"/>
+        <path d="M392 742c24-20 54-22 76-8"/>
+      </g>
+      <text x="356" y="764" font-size="13" style="fill:var(--fg-dim,#3b4652)">пыль на стекле смазана ладонью</text>
+    </g>
+
+    <g>
+      <rect x="576" y="548" width="172" height="216" rx="8" fill="#c9c3b2" stroke="#16202b" stroke-width="1.6"/>
+      <text x="592" y="578" font-size="14" font-weight="600" style="fill:var(--paper-ink,#16202b)">Состояние</text>
+      <g font-size="14" style="fill:var(--fg-dim,#3b4652)">
+        <text x="592" y="606">Стекло целое,</text>
+        <text x="592" y="628">без следов сверления.</text>
+        <text x="592" y="660">Пломба на раме</text>
+        <text x="592" y="682">оборвана, номер</text>
+        <text x="592" y="704">не читается.</text>
+        <text x="592" y="736">Карманов под стеклом — три.</text>
+      </g>
+    </g>
+  </g>
+
+  <g>
+    <rect x="820" y="478" width="720" height="336" fill="#e2dcc9" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="836" y="504" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кадр 4 — план павильона от руки</text>
+
+    <g style="stroke:var(--paper-ink,#16202b)" fill="none" stroke-width="3">
+      <path d="M880 540h580v220H880z"/>
+    </g>
+    <path d="M1160 540h100" stroke="#d5cebc" stroke-width="6"/>
+    <path d="M1160 540a50 50 0 0 1 50 50" fill="none" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <text x="1120" y="530" font-size="13" style="fill:var(--fg-dim,#3b4652)">ворота</text>
+
+    <g>
+      <rect x="900" y="556" width="130" height="46" fill="#b9b1a1" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.8"/>
+      <text x="910" y="584" font-size="14" style="fill:var(--paper-ink,#16202b)">окно</text>
+      <rect x="900" y="640" width="150" height="60" fill="#8fa3b5" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+      <text x="912" y="668" font-size="15" font-weight="600" fill="#16202b">стенд № 7</text>
+      <text x="912" y="688" font-size="12" fill="#16202b">«Хмелина»</text>
+      <rect x="900" y="712" width="150" height="34" fill="none" stroke="#a8321f" stroke-width="2"/>
+      <text x="908" y="734" font-size="12" style="fill:#a8321f">витрина, узел «С-07»</text>
+    </g>
+
+    <g>
+      <rect x="1330" y="600" width="150" height="60" fill="#8fa3b5" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+      <text x="1342" y="628" font-size="15" font-weight="600" fill="#16202b">стенд № 14</text>
+      <text x="1342" y="648" font-size="12" fill="#16202b">«Пятилеток»</text>
+      <rect x="1330" y="672" width="150" height="34" fill="none" stroke="#a8321f" stroke-width="2"/>
+      <text x="1338" y="694" font-size="12" style="fill:#a8321f">витрина, узел «С-14»</text>
+      <rect x="1330" y="716" width="96" height="34" fill="#c9c3b2" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <text x="1338" y="738" font-size="12" style="fill:var(--paper-ink,#16202b)">бытовка</text>
+    </g>
+
+    <g>
+      <path d="M1064 670h252" stroke="#e08a2e" stroke-width="2" marker-start="url(#arr1920b)" marker-end="url(#arr1920c)"/>
+      <text x="1120" y="660" font-size="15" fill="#8a5a12">техпроход 24 метра</text>
+      <path d="M1064 700h252" stroke="#e08a2e" stroke-width="1" opacity=".55"/>
+      <path d="M1064 640h252" stroke="#e08a2e" stroke-width="1" opacity=".55"/>
+    </g>
+
+    <g>
+      <rect x="1330" y="540" width="120" height="26" fill="#b9b1a1" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <text x="1336" y="558" font-size="12" style="fill:var(--paper-ink,#16202b)">дверь со двора</text>
+      <rect x="1408" y="572" width="42" height="20" fill="#5d6a76"/>
+      <text x="1316" y="588" font-size="12" style="fill:var(--fg-dim,#3b4652)">читалка «П-2»</text>
+    </g>
+
+    <text x="880" y="756" font-size="13" style="fill:var(--fg-dim,#3b4652)">План начерчен администратором на листе съёмки; бытовка — в двух шагах от стенда № 14.</text>
+  </g>
+
+  <text x="60" y="856" font-size="17" style="fill:var(--fg-dim,#3b4652)">Кадры 1—3 сняты на рамке витрины стенда № 7 и внутри витрины 14.03, кадр 4 приложен к съёмке отдельным листом. На всех макросъёмках — масштабная линейка без изменения масштаба.</text>
+</svg>

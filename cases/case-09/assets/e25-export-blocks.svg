@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid25" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="gap25" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#a8321f" stroke-width="5" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid25)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Архив регистратора у калитки: папка зятя и изъятая карта</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Сутки 24.09.2026 — 25.09.2026, 01:00. Вверху пять файлов выгрузки, внизу одиннадцать блоков карты памяти.</text>
+
+  <g>
+    <rect x="140" y="150" width="1340" height="60" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <g font-size="14" fill="#3b4652">
+      <text x="140" y="142">14:00</text>
+      <text x="384" y="142">16:00</text>
+      <text x="627" y="142">18:00</text>
+      <text x="871" y="142">20:00</text>
+      <text x="1114" y="142">22:00</text>
+      <text x="1358" y="142">00:00</text>
+    </g>
+    <g stroke="#3b4652" stroke-width="1" opacity=".5">
+      <path d="M262 150 v60 M505 150 v60 M749 150 v60 M992 150 v60 M1236 150 v60 M1480 150 v60"/>
+    </g>
+
+    <rect x="266" y="162" width="74" height="36" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <rect x="745" y="162" width="41" height="36" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <rect x="786" y="162" width="126" height="36" fill="url(#gap25)" stroke="#a8321f" stroke-width="1.5"/>
+    <rect x="912" y="162" width="40" height="36" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <rect x="970" y="162" width="16" height="36" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <rect x="1411" y="162" width="12" height="36" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <path d="M786 206 v22 h126 v-22" fill="none" stroke="#a8321f" stroke-width="1.5"/>
+    <text x="700" y="248" font-size="15" font-weight="600" fill="#a8321f">19:18:03 — 20:19:41: этого часа в выгрузке нет вовсе</text>
+    <text x="266" y="142" font-size="14" fill="#3b4652">v01</text>
+    <text x="1380" y="142" font-size="14" fill="#3b4652">v05</text>
+    <text x="900" y="278" font-size="14" fill="#3b4652">1 час 12 минут живого места против шести с гаком гигабайт на карте</text>
+
+    <rect x="140" y="222" width="1340" height="56" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <g fill="#c3b99f" stroke="#16202b" stroke-width="1.2">
+      <rect x="140" y="230" width="122" height="40"/>
+      <rect x="262" y="230" width="122" height="40"/>
+      <rect x="384" y="230" width="121" height="40"/>
+      <rect x="505" y="230" width="122" height="40"/>
+      <rect x="627" y="230" width="122" height="40"/>
+      <rect x="749" y="230" width="122" height="40"/>
+      <rect x="871" y="230" width="121" height="40"/>
+      <rect x="992" y="230" width="122" height="40"/>
+      <rect x="1114" y="230" width="122" height="40"/>
+      <rect x="1236" y="230" width="122" height="40"/>
+      <rect x="1358" y="230" width="122" height="40"/>
+    </g>
+    <rect x="749" y="230" width="122" height="40" fill="#a8321f" opacity=".38"/>
+    <rect x="871" y="230" width="121" height="40" fill="#a8321f" opacity=".38"/>
+    <g font-size="14" fill="#16202b">
+      <text x="146" y="256">118</text>
+      <text x="268" y="256">119</text>
+      <text x="390" y="256">120</text>
+      <text x="511" y="256">121</text>
+      <text x="633" y="256">122</text>
+      <text x="755" y="256">123</text>
+      <text x="877" y="256">124</text>
+      <text x="998" y="256">125</text>
+      <text x="1120" y="256">126</text>
+      <text x="1242" y="256">127</text>
+      <text x="1364" y="256">128</text>
+    </g>
+    <text x="140" y="300" font-size="15" fill="#3b4652">Блоки пишутся ровно по часам, по шестьдесят минут, цикл девять суток.</text>
+  </g>
+
+  <g>
+    <text x="60" y="352" font-size="19" font-weight="600" fill="#16202b">Увеличено: 18:40 — 21:10</text>
+    <rect x="200" y="372" width="1200" height="150" fill="#dcd4c0" stroke="#16202b" stroke-width="2"/>
+    <g stroke="#3b4652" stroke-width="1" opacity=".45">
+      <path d="M360 372 v150 M520 372 v150 M680 372 v150 M840 372 v150 M1000 372 v150 M1160 372 v150 M1320 372 v150"/>
+    </g>
+    <g font-size="14" fill="#3b4652">
+      <text x="176" y="546">18:40</text>
+      <text x="344" y="546">19:00</text>
+      <text x="504" y="546">19:20</text>
+      <text x="664" y="546">19:40</text>
+      <text x="824" y="546">20:00</text>
+      <text x="984" y="546">20:20</text>
+      <text x="1144" y="546">20:40</text>
+      <text x="1304" y="546">21:00</text>
+    </g>
+
+    <rect x="360" y="390" width="144" height="34" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <text x="366" y="412" font-size="14" fill="#e8e2d4">v02, 41 Мбайт, до 19:18:03</text>
+    <rect x="504" y="390" width="494" height="34" fill="url(#gap25)" stroke="#a8321f" stroke-width="2"/>
+    <text x="620" y="413" font-size="16" font-weight="600" fill="#16202b">промежутка 19:18:03 — 20:19:41 в выгрузке нет</text>
+    <rect x="998" y="390" width="162" height="34" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <text x="1004" y="412" font-size="14" fill="#e8e2d4">v03, 20:19 — 20:40</text>
+    <rect x="1232" y="390" width="56" height="34" fill="#3b4652" stroke="#16202b" stroke-width="1.2"/>
+    <text x="1178" y="446" font-size="14" fill="#16202b">v04, 20:49 — 20:56</text>
+
+    <rect x="360" y="462" width="480" height="34" fill="#c3b99f" stroke="#16202b" stroke-width="1.2"/>
+    <text x="366" y="484" font-size="14" fill="#16202b">блок 123, 19:00 — 20:00, читаемость 96 процентов</text>
+    <rect x="840" y="462" width="480" height="34" fill="#c3b99f" stroke="#16202b" stroke-width="1.2"/>
+    <text x="846" y="484" font-size="14" fill="#16202b">блок 124, 20:00 — 21:00, читаемость 98 процентов</text>
+
+    <line x1="608" y1="372" x2="608" y2="522" stroke="#a8321f" stroke-width="2.5"/>
+    <path d="M608 434 l 10 -7 v 14 Z" fill="#a8321f"/>
+    <text x="620" y="440" font-size="15" fill="#a8321f">кадр 19:31 — 19:32: въезжает У 137 ОС 716, в выгрузке его нет</text>
+    <line x1="998" y1="372" x2="998" y2="522" stroke="#a8321f" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <text x="1006" y="470" font-size="15" fill="#a8321f">метка начала v03: 20:19:41</text>
+  </g>
+
+  <line x1="60" y1="576" x2="1540" y2="576" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="622" font-size="19" font-weight="600" fill="#16202b">Метки создания в папке «Глухари выгрузка»</text>
+    <line x1="90" y1="650" x2="90" y2="812" stroke="#16202b" stroke-width="2"/>
+    <g font-size="16" fill="#3b4652">
+      <circle cx="90" cy="670" r="5" fill="#2f4258"/>
+      <text x="110" y="666">25.09 09:40:11 — журнал монтажной программы:</text>
+      <text x="110" y="688">«проект создан», проект на этом ноутбуке первый</text>
+      <circle cx="90" cy="718" r="5" fill="#2f4258"/>
+      <text x="110" y="714">09:41:12, 09:41:55, 09:42:30, 09:43:02, 09:43:48 —</text>
+      <text x="110" y="736">пять файлов созданы подряд, один за другим</text>
+      <circle cx="90" cy="766" r="5" fill="#2f4258"/>
+      <text x="110" y="762">09:44:02 — «экспорт, 5 файлов»; 10:02 — корзина очищена</text>
+      <circle cx="90" cy="800" r="5" fill="#a8321f"/>
+      <text x="110" y="796" fill="#16202b">09:44:31 — 10:02:19 — в это же окно ноутбук держал</text>
+      <text x="110" y="818" fill="#16202b">домашний канал и выкачал 612 Мбайт</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="880" y="622" font-size="19" font-weight="600" fill="#16202b">Что записано в заключении</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="880" y="660">Прибор начинает файл ровно по часам и не умеет</text>
+      <text x="880" y="682">начинать его с середины минуты.</text>
+      <text x="880" y="718">Внутренняя метка потока в трёх файлах из пяти</text>
+      <text x="880" y="740">обрывается и продолжается с другого числа секунд.</text>
+      <text x="880" y="776">Флешку принёс 26.09 в 10:05 сам Мелитонов А. Л.:</text>
+      <text x="880" y="798">«перегнал вчера вечером, ничего не резал».</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="880" y="834">Разница между картой и папкой — шесть с гаком</text>
+      <text x="880" y="856">гигабайт за вечер 24.09.</text>
+    </g>
+  </g>
+</svg>

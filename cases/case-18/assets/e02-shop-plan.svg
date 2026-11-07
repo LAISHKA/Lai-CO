@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <title>План склада, тамбура и камеры хранения № 2 с двумя позициями видеонаблюдения</title>
+  <defs>
+    <pattern id="gridPlan18" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridPlan18)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">План: склад — тамбур — камера хранения № 2</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Обмеры 18.07.2026, 23:10—23:30. Масштаб: одна клетка 0,4 м. Единственный путь из склада в камеру № 2 лежит через тамбур 2,1 × 1,6 м.</text>
+
+  <g stroke="#16202b" stroke-width="2.5" fill="#f3efe4">
+    <rect x="80" y="200" width="540" height="440"/>
+    <rect x="620" y="330" width="210" height="160"/>
+    <rect x="830" y="240" width="400" height="340"/>
+  </g>
+
+  <g fill="none" stroke="#e8e2d4" stroke-width="5">
+    <path d="M620 370v60"/>
+    <path d="M830 370v60"/>
+  </g>
+  <g fill="none" stroke="#16202b" stroke-width="1.6" stroke-dasharray="7 5">
+    <path d="M620 370l52 26"/>
+    <path d="M830 430l-52 -26"/>
+  </g>
+
+  <text x="100" y="238" font-size="21" font-weight="600" fill="#16202b">Склад готовой продукции</text>
+  <text x="100" y="264" font-size="16" fill="#3b4652">дверь со стороны тамбура, считыватель карт 305, 412, 216</text>
+  <text x="642" y="318" font-size="20" font-weight="600" fill="#16202b">Тамбур 2,1 × 1,6 м</text>
+  <text x="642" y="512" font-size="16" fill="#3b4652">считыватель тамбура: карты 305, 412, 233</text>
+  <text x="852" y="278" font-size="21" font-weight="600" fill="#16202b">Камера хранения № 2</text>
+  <text x="852" y="304" font-size="16" fill="#3b4652">объём 18 м³, дверь открывалась 17.07 в 08:40</text>
+
+  <g>
+    <rect x="736" y="330" width="56" height="26" fill="#a8321f" stroke="#16202b" stroke-width="1.6"/>
+    <text x="700" y="384" font-size="16" font-weight="600" fill="#a8321f">принтер бирок</text>
+    <text x="700" y="404" font-size="14" fill="#3b4652">полка у двери камеры</text>
+    <g stroke="#3b4652" stroke-width="1.2" fill="none">
+      <path d="M764 366v104"/>
+      <path d="M756 470h16"/>
+      <path d="M628 470h128" stroke-dasharray="4 4"/>
+    </g>
+    <text x="640" y="492" font-size="14" fill="#3b4652">0,8 м до двери камеры, 1,4 м до двери склада</text>
+  </g>
+
+  <g>
+    <circle cx="150" cy="620" r="9" fill="#16202b"/>
+    <text x="104" y="662" font-size="16" font-weight="600" fill="#16202b">Канал 3</text>
+    <path d="M150 611 L612 300 L612 470 Z" fill="#a8321f" opacity=".12"/>
+    <path d="M150 611 L612 300" stroke="#a8321f" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <path d="M150 611 L612 470" stroke="#a8321f" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <text x="196" y="690" font-size="14" fill="#a8321f">угол обзора 65°, смотрит на дверь склада; слепая полоса 0,9 м у правого косяка</text>
+    <path d="M560 300 L620 300 L620 370" fill="none" stroke="#3b4652" stroke-width="1.2" stroke-dasharray="3 4"/>
+    <text x="452" y="286" font-size="13" fill="#3b4652">слепая полоса 0,9 м</text>
+  </g>
+
+  <g>
+    <circle cx="810" cy="474" r="9" fill="#16202b"/>
+    <text x="676" y="560" font-size="16" font-weight="600" fill="#16202b">Канал 4</text>
+    <path d="M806 466 L736 344 L876 288 Z" fill="#16202b" opacity=".10"/>
+    <path d="M806 466 L736 344" stroke="#16202b" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <path d="M806 466 L876 288" stroke="#16202b" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <text x="900" y="606" font-size="14" fill="#3b4652">угол обзора 40°, держит дверь камеры и полку принтера; слепых зон нет</text>
+    <text x="900" y="628" font-size="14" fill="#3b4652">съёмка со спины и сбоку: лица вечерней смены в кадре не различимы</text>
+  </g>
+
+  <g stroke="#16202b" stroke-width="1.4" fill="none">
+    <path d="M870 330h320"/>
+    <path d="M870 400h320"/>
+    <path d="M870 470h320"/>
+  </g>
+  <g fill="#f3efe4" stroke="#16202b" stroke-width="1.4">
+    <rect x="884" y="412" width="44" height="26"/>
+    <rect x="936" y="412" width="44" height="26"/>
+    <rect x="988" y="412" width="44" height="26"/>
+    <rect x="1040" y="412" width="44" height="26"/>
+    <rect x="1092" y="412" width="44" height="26"/>
+    <rect x="1144" y="412" width="44" height="26"/>
+  </g>
+  <text x="884" y="466" font-size="14" fill="#3b4652">шесть лотков партии 17-С, 17.07 стояли на средней полке</text>
+  <circle cx="1052" cy="392" r="7" fill="#a8321f"/>
+  <text x="1200" y="398" font-size="14" fill="#a8321f">датчик температуры</text>
+  <text x="1200" y="378" font-size="14" fill="#a8321f">камеры № 2</text>
+  <g stroke="#a8321f" stroke-width="1.2" fill="none">
+    <path d="M1060 392h130"/>
+  </g>
+  <path d="M1052 392 L1052 412" stroke="#a8321f" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="852" y="546" font-size="14" fill="#3b4652">датчик закреплён на средней полке, в 1,1 м от места, где стояли лотки</text>
+
+  <g>
+    <text x="80" y="756" font-size="18" font-weight="600" fill="#16202b">Считыватели карт доступа</text>
+    <g fill="#f3efe4" stroke="#16202b" stroke-width="1.4">
+      <rect x="80" y="772" width="470" height="88"/>
+      <rect x="570" y="772" width="470" height="88"/>
+      <rect x="1060" y="772" width="480" height="88"/>
+    </g>
+    <text x="94" y="798" font-size="15" font-weight="600" fill="#16202b">дверь склада</text>
+    <text x="94" y="822" font-size="14" fill="#3b4652">карты 305, 412, 216</text>
+    <text x="94" y="844" font-size="14" fill="#3b4652">первый вход 17.07 — карта 305 в 06:55:12</text>
+    <text x="584" y="798" font-size="15" font-weight="600" fill="#16202b">дверь тамбура</text>
+    <text x="584" y="822" font-size="14" fill="#3b4652">карты 305, 412, 233</text>
+    <text x="584" y="844" font-size="14" fill="#3b4652">за 17.07 — один вход и один выход, обе карты 305</text>
+    <text x="1074" y="798" font-size="15" font-weight="600" fill="#16202b">дверь в цех</text>
+    <text x="1074" y="822" font-size="14" fill="#3b4652">карты 305, 216, 412, 148</text>
+    <text x="1074" y="844" font-size="14" fill="#3b4652">у двери камеры считывателя нет, только датчик открытия</text>
+  </g>
+</svg>

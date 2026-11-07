@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g20c" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#5c7286" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatchc" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#3b4652" stroke-width="2" stroke-opacity=".45"/>
+    </pattern>
+    <pattern id="puddlec" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#a8321f" stroke-width="2.4" stroke-opacity=".55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#g20c)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" fill="#16202b" font-weight="600">Схема 3 · тамбур склада ЛКМ, помещение 4-7</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">15.03.2025, 03:10 · М 1:25 · понятый: Куприн А. Л. · составил: дознаватель ОНД Шелест Р. Ю.</text>
+
+  <!-- помещение 3,4 х 2,6 м -->
+  <path d="M250 200 H1050 V620 H250 Z" fill="url(#hatchc)" fill-opacity=".25"/>
+  <path d="M250 200 H1050 V620 H250 Z" fill="none" stroke="#16202b" stroke-width="7"/>
+
+  <!-- дверь из цеха (слева) -->
+  <line x1="250" y1="300" x2="250" y2="400" stroke="#e8e2d4" stroke-width="9"/>
+  <path d="M250 400 A100 100 0 0 1 350 300" fill="none" stroke="#1f6f8f" stroke-width="3" stroke-dasharray="11 7"/>
+  <text x="196" y="356" font-size="19" fill="#3b4652" text-anchor="end">дверь в цех № 4</text>
+  <text x="196" y="380" font-size="17" fill="#3b4652" text-anchor="end">— открыта</text>
+
+  <!-- тяжёлая утеплённая дверь склада (справа) -->
+  <line x1="1050" y1="290" x2="1050" y2="430" stroke="#e8e2d4" stroke-width="10"/>
+  <rect x="1050" y="290" width="26" height="140" fill="#c9bfa6" stroke="#16202b" stroke-width="3"/>
+  <circle cx="1096" cy="360" r="13" fill="none" stroke="#16202b" stroke-width="3"/>
+  <path d="M1096 347 v-16 a8 8 0 0 1 16 0 v10" fill="none" stroke="#a8321f" stroke-width="3.4"/>
+  <text x="1096" y="272" font-size="19" fill="#16202b" font-weight="600">дверь склада ЛКМ</text>
+  <text x="1096" y="296" font-size="17" fill="#a8321f">навесной замок «Сам» № 4</text>
+  <text x="1096" y="318" font-size="17" fill="#3b4652">на дужке, не защёлкнут</text>
+
+  <!-- лужа 2,1 х 1,4 м -->
+  <rect x="700" y="360" width="300" height="200" fill="url(#puddlec)"/>
+  <rect x="700" y="360" width="300" height="200" fill="none" stroke="#a8321f" stroke-width="3.6"/>
+  <text x="850" y="466" font-size="21" fill="#a8321f" text-anchor="middle" font-weight="600">2,1 × 1,4 м</text>
+  <text x="850" y="590" font-size="18" fill="#a8321f" text-anchor="middle">граница прямоугольная, с ровным «мокрым» краем</text>
+
+  <!-- контур тела головой к складу -->
+  <g stroke="#16202b" stroke-width="3.2" fill="#f4efe2" fill-opacity=".85" stroke-dasharray="13 8">
+    <circle cx="960" cy="250" r="26"/>
+    <path d="M934 274 h52 l14 120 -80 0 z"/>
+    <path d="M920 300 l-46 44 M1000 300 l44 40"/>
+    <path d="M930 396 l-16 96 M990 396 l14 96"/>
+  </g>
+  <polygon points="1010,214 1030,206 1022,228" fill="#e8c33a" stroke="#16202b" stroke-width="2"/>
+  <text x="1006" y="196" font-size="18" fill="#16202b">головой к двери склада</text>
+  <text x="1006" y="220" font-size="17" fill="#a8321f">рана затылка, в кисти зажигалка</text>
+
+  <!-- 6 мазков волочения от порога бытовки -->
+  <g stroke="#16202b" stroke-width="3" stroke-opacity=".8">
+    <line x1="250" y1="470" x2="900" y2="404"/>
+    <line x1="250" y1="486" x2="900" y2="420"/>
+    <line x1="252" y1="502" x2="898" y2="436"/>
+    <line x1="256" y1="518" x2="900" y2="452"/>
+    <line x1="262" y1="534" x2="902" y2="468"/>
+    <line x1="268" y1="550" x2="904" y2="484"/>
+  </g>
+  <line x1="250" y1="512" x2="900" y2="446" stroke="#1f6f8f" stroke-width="2" stroke-dasharray="16 10"/>
+  <text x="470" y="580" font-size="20" fill="#1f6f8f">6 мазков, 6,3 м — обрываются у порога 4-12</text>
+
+  <!-- единственный след 44-го -->
+  <g transform="translate(742,556) rotate(-8)">
+    <path d="M0 0 c26 -6 52 -4 66 6 c10 8 8 26 -4 32 c-18 8 -46 6 -60 -4 c-10 -8 -10 -28 -2 -34 z" fill="#f4efe2" stroke="#16202b" stroke-width="3"/>
+    <path d="M52 44 c14 2 22 8 20 16 c-2 8 -16 10 -24 4" fill="none" stroke="#a8321f" stroke-width="3.4"/>
+  </g>
+  <polygon points="742,548 762,540 754,562" fill="#e8c33a" stroke="#16202b" stroke-width="2"/>
+  <text x="600" y="660" font-size="20" fill="#16202b" font-weight="600">след 44-го (302 × 112 мм)</text>
+  <text x="600" y="684" font-size="18" fill="#a8321f">наружный край каблука смазан — износ 2,0 мм</text>
+
+  <!-- два пунктирных следа 43-го у двери склада -->
+  <g fill="none" stroke="#3b4652" stroke-width="2.6" stroke-dasharray="7 6">
+    <path d="M1000 470 c18 -4 34 2 34 14 c0 12 -18 18 -32 14 c-10 -4 -12 -24 -2 -42 z"/>
+    <path d="M1014 508 c18 -4 34 2 34 14 c0 12 -18 18 -32 14 c-10 -4 -12 -24 -2 -42 z"/>
+  </g>
+  <text x="1096" y="470" font-size="18" fill="#3b4652">ботинки Дронова, 43-й:</text>
+  <text x="1096" y="492" font-size="18" fill="#3b4652">стоял у двери склада</text>
+
+  <!-- размеры -->
+  <g stroke="#1f6f8f" stroke-width="2" fill="#1f6f8f" font-size="20">
+    <line x1="250" y1="660" x2="1050" y2="660"/>
+    <line x1="250" y1="648" x2="250" y2="672"/>
+    <line x1="1050" y1="648" x2="1050" y2="672"/>
+    <text x="650" y="646" text-anchor="middle">3,40 м</text>
+    <line x1="200" y1="200" x2="200" y2="620"/>
+    <line x1="188" y1="200" x2="212" y2="200"/>
+    <line x1="188" y1="620" x2="212" y2="620"/>
+    <text x="180" y="416" text-anchor="middle" transform="rotate(-90 180 416)">2,60 м</text>
+  </g>
+
+  <g font-size="19" fill="#16202b">
+    <text x="1230" y="200" font-weight="600">Что не сходится</text>
+    <line x1="1230" y1="214" x2="1520" y2="214" stroke="#16202b" stroke-width="1.6"/>
+    <text x="1230" y="246">1. Следов обуви к двери цеха</text>
+    <text x="1244" y="270">нет: входивший ушёл раньше</text>
+    <text x="1244" y="294">тела. В тамбуре его след один.</text>
+    <text x="1230" y="330">2. Поза без защитной реакции —</text>
+    <text x="1244" y="354">руки сложены, предплечье</text>
+    <text x="1244" y="378">сломано в бытовке.</text>
+    <text x="1230" y="414">3. Жидкость лили из ёмкости:</text>
+    <text x="1244" y="438">прямоугольник, а не брызги.</text>
+    <text x="1230" y="474">4. У устья растекания никто</text>
+    <text x="1244" y="498">не стоял — след 44-го в углу.</text>
+    <text x="1230" y="534">5. Свет тут горел 23:17—23:29</text>
+    <text x="1244" y="558">(АИИС), цех был обесточен.</text>
+  </g>
+
+  <g transform="translate(1150,872)">
+    <rect x="-430" y="-96" width="430" height="96" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="-430" y1="-62" x2="0" y2="-62" stroke="#16202b" stroke-width="1.6"/>
+    <line x1="-160" y1="-62" x2="-160" y2="0" stroke="#16202b" stroke-width="1.6"/>
+    <text x="-416" y="-72" font-size="21" fill="#16202b" font-weight="600">Схема 3 к протоколу осмотра, пом. 4-7</text>
+    <text x="-416" y="-32" font-size="18" fill="#16202b">М 1:25 · 15.03.2025, 03:10</text>
+    <text x="-416" y="-10" font-size="18" fill="#16202b">пос. Стеклянный, фабрика «Дубрава»</text>
+    <text x="-146" y="-32" font-size="18" fill="#16202b">прогар</text>
+    <text x="-146" y="-10" font-size="18" fill="#16202b">2,41 л/м²</text>
+  </g>
+</svg>

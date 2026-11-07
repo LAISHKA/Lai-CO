@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="gravel" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="1.2" fill="#8d8676"/>
+      <circle cx="10" cy="9" r="1.1" fill="#8d8676"/>
+      <circle cx="6" cy="12" r="1" fill="#8d8676"/>
+    </pattern>
+    <pattern id="cut" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#3b4652" stroke-width="1.4" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Развилка карьера «Долгое», 45-я верста</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">План с натуры, 12.04.2025. Грунт глинистый, после дождя — след держит 12—16 часов. Оттенок колеи: въезд 18 мм, выезд 12 мм.</text>
+
+  <!-- quarry pit -->
+  <path d="M980 150 L1480 150 L1480 470 L1080 470 Q960 400 980 150 Z" fill="url(#cut)" stroke="#16202b" stroke-width="2.5"/>
+  <text x="1150" y="300" font-size="20" fill="#16202b">карьер</text>
+  <text x="1150" y="326" font-size="16" fill="#3b4652">забор, контрольная точка</text>
+
+  <!-- conveyor -->
+  <line x1="1010" y1="180" x2="1330" y2="132" stroke="#3b4652" stroke-width="6"/>
+  <text x="1180" y="120" font-size="16" fill="#3b4652">конвейерная эстакада</text>
+
+  <!-- main road -->
+  <rect x="120" y="640" width="1360" height="150" fill="#cfc7b4"/>
+  <line x1="120" y1="640" x2="1480" y2="640" stroke="#3b4652" stroke-width="2.5"/>
+  <line x1="120" y1="790" x2="1480" y2="790" stroke="#3b4652" stroke-width="2.5"/>
+  <line x1="120" y1="715" x2="1480" y2="715" stroke="#8d8676" stroke-width="2" stroke-dasharray="34 26"/>
+  <text x="140" y="672" font-size="17" fill="#3b4652">Р-118, полоса на запад (на Ветрогорск)</text>
+  <text x="140" y="776" font-size="17" fill="#3b4652">полоса на восток</text>
+
+  <!-- access road to quarry -->
+  <path d="M700 640 L860 640 L1000 470 L930 420 L760 560 L640 640 Z" fill="#d9d2c1" stroke="#3b4652" stroke-width="2"/>
+  <text x="820" y="520" font-size="17" fill="#3b4652">грунтовка к карьеру</text>
+
+  <!-- gravel apron -->
+  <path d="M600 470 L1010 470 L1010 640 L470 640 Z" fill="url(#gravel)" stroke="#8d8676" stroke-width="1.6"/>
+
+  <!-- Gazel ruts: in and out, with turning circle -->
+  <g fill="none" stroke="#a8321f">
+    <path d="M640 620 Q760 560 850 500 Q900 466 968 462" stroke-width="4"/>
+    <path d="M676 636 Q800 578 890 516 Q938 482 1000 480" stroke-width="4"/>
+    <path d="M1000 480 A96 96 0 0 0 968 462" stroke-width="4"/>
+    <path d="M962 520 Q900 556 848 596 Q806 628 762 640" stroke-width="3" stroke-dasharray="12 8"/>
+  </g>
+  <circle cx="928" cy="486" r="96" fill="none" stroke="#a8321f" stroke-width="1.6" stroke-dasharray="6 8"/>
+  <line x1="832" y1="486" x2="1024" y2="486" stroke="#a8321f" stroke-width="1.4"/>
+  <text x="852" y="474" font-size="16" fill="#a8321f">круг разворота 11,4 м</text>
+  <text x="984" y="440" font-size="17" fill="#a8321f">колея 215/75 R16C</text>
+  <text x="700" y="666" font-size="16" fill="#a8321f">въезд с трассы</text>
+  <text x="770" y="616" font-size="16" fill="#a8321f">выезд на трассу</text>
+
+  <!-- Sobol stop place -->
+  <g>
+    <rect x="470" y="600" width="130" height="58" rx="10" fill="none" stroke="#16202b" stroke-width="3" stroke-dasharray="10 6"/>
+    <text x="452" y="590" font-size="17" fill="#16202b">остановка Н-417-ЕК</text>
+    <text x="452" y="690" font-size="16" fill="#3b4652">20:31—20:36, тахограф: стоянка,</text>
+    <text x="452" y="712" font-size="16" fill="#3b4652">с 20:33:10 — прочие работы</text>
+  </g>
+
+  <!-- 12 steps to the east, size 44 -->
+  <g fill="#16202b">
+    <ellipse cx="614" cy="612" rx="7" ry="13" transform="rotate(-18 614 612)"/>
+    <ellipse cx="648" cy="596" rx="7" ry="13" transform="rotate(-18 648 596)"/>
+    <ellipse cx="682" cy="580" rx="7" ry="13" transform="rotate(-18 682 580)"/>
+    <ellipse cx="716" cy="564" rx="7" ry="13" transform="rotate(-18 716 564)"/>
+    <ellipse cx="750" cy="548" rx="7" ry="13" transform="rotate(-18 750 548)"/>
+    <ellipse cx="784" cy="532" rx="7" ry="13" transform="rotate(-18 784 532)"/>
+  </g>
+  <text x="596" y="646" font-size="16" fill="#16202b">след 44-го, носок глубже на 3,5 мм</text>
+  <line x1="614" y1="612" x2="784" y2="532" stroke="#16202b" stroke-width="1.2" stroke-dasharray="4 6"/>
+  <text x="800" y="562" font-size="16" fill="#16202b">12 шагов, шаг 68—71 см</text>
+
+  <!-- second footprints near ruts, size 43 -->
+  <g fill="#a8321f">
+    <ellipse cx="892" cy="436" rx="6" ry="11" transform="rotate(24 892 436)"/>
+    <ellipse cx="916" cy="420" rx="6" ry="11" transform="rotate(24 916 420)"/>
+    <ellipse cx="942" cy="406" rx="6" ry="11" transform="rotate(24 942 406)"/>
+  </g>
+  <text x="836" y="396" font-size="16" fill="#a8321f">три отпечатка 43-го: обувь изъята 19.04 в гараже,</text>
+  <text x="836" y="374" font-size="16" fill="#a8321f">владелец — не сотрудник «Версты»</text>
+
+  <!-- legend -->
+  <g font-size="17" fill="#3b4652">
+    <text x="120" y="200" font-size="19" font-weight="600" fill="#16202b">Условные обозначения</text>
+    <rect x="120" y="220" width="34" height="18" fill="url(#gravel)" stroke="#8d8676"/>
+    <text x="168" y="236">отсыпка, щебень — след слепой</text>
+    <line x1="120" y1="268" x2="154" y2="268" stroke="#a8321f" stroke-width="4"/>
+    <text x="168" y="274">колея «Газели» Х-305-ТК</text>
+    <ellipse cx="134" cy="304" rx="7" ry="13" fill="#16202b"/>
+    <text x="168" y="310">единичный след обуви</text>
+    <rect x="120" y="336" width="34" height="18" fill="none" stroke="#16202b" stroke-width="3" stroke-dasharray="8 5"/>
+    <text x="168" y="352">положение борта по тахографу</text>
+  </g>
+
+  <!-- scale + north -->
+  <g>
+    <line x1="1180" y1="836" x2="1420" y2="836" stroke="#16202b" stroke-width="2.5"/>
+    <line x1="1180" y1="826" x2="1180" y2="846" stroke="#16202b" stroke-width="2.5"/>
+    <line x1="1300" y1="828" x2="1300" y2="844" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="1420" y1="826" x2="1420" y2="846" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1188" y="820" font-size="16" fill="#3b4652">0    10   20 м — масштаб 1:100</text>
+  </g>
+  <g transform="translate(1440,180)">
+    <line x1="0" y1="34" x2="0" y2="-6" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M0 -14 L8 6 L0 1 L-8 6 Z" fill="#16202b"/>
+    <text x="-7" y="-22" font-size="17" fill="#16202b">С</text>
+  </g>
+
+  <text x="120" y="856" font-size="16" fill="#3b4652">Составил: следователь СО ОМВД Ветрова П. А. Понятые: Литвинов С. П., сторож карьера Наумов Р. Х. Эксперт ЭКМ Гущин О. В.</text>
+</svg>

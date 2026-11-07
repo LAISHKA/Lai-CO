@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7f97a4" stroke-width="0.6" opacity=".1"/>
+    </pattern>
+    <radialGradient id="lamp" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#cfe3e8" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#cfe3e8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3d4e5c" stroke-width="2.5"/>
+
+  <text x="60" y="72" font-size="25" fill="#cfe3e8">CAM АЗС «МАГИСТРАЛЬ» · КАНАЛ 3 · КОЛОНКА № 2 · 52-Я ВЕРСТА</text>
+  <text x="60" y="102" font-size="19" fill="#7f97a4">Запись 11.04.2025, 20:14—20:21. Хранение — видеорегистратор АЗС, архив 30 суток. Выдан 13.04.2025.</text>
+
+  <circle cx="1480" cy="66" r="9" fill="#c8321f"/>
+  <text x="1400" y="106" font-size="20" fill="#cfe3e8">REC</text>
+
+  <!-- canopy + lamps -->
+  <rect x="120" y="150" width="1360" height="26" fill="#182430" stroke="#3d4e5c" stroke-width="2"/>
+  <ellipse cx="420" cy="300" rx="300" ry="180" fill="url(#lamp)"/>
+  <ellipse cx="1060" cy="300" rx="300" ry="180" fill="url(#lamp)"/>
+  <g fill="#cfe3e8" opacity=".8">
+    <rect x="380" y="176" width="80" height="10" rx="4"/>
+    <rect x="1020" y="176" width="80" height="10" rx="4"/>
+  </g>
+
+  <!-- forecourt -->
+  <rect x="120" y="470" width="1360" height="330" fill="#182430"/>
+  <line x1="120" y1="470" x2="1480" y2="470" stroke="#3d4e5c" stroke-width="2"/>
+  <g stroke="#9db4bd" stroke-width="3" opacity=".45">
+    <line x1="120" y1="690" x2="1480" y2="690"/>
+  </g>
+  <text x="150" y="716" font-size="17" fill="#7f97a4">проезд между колонками</text>
+
+  <!-- column 2 -->
+  <g>
+    <rect x="880" y="380" width="56" height="150" rx="6" fill="#22303c" stroke="#9db4bd" stroke-width="2"/>
+    <rect x="892" y="400" width="32" height="26" fill="#101820" stroke="#9db4bd" stroke-width="1.2"/>
+    <path d="M936 448 q34 6 34 44" fill="none" stroke="#9db4bd" stroke-width="3"/>
+    <text x="852" y="366" font-size="17" fill="#cfe3e8">колонка № 2</text>
+  </g>
+  <!-- column 1 -->
+  <g>
+    <rect x="300" y="392" width="52" height="138" rx="6" fill="#22303c" stroke="#9db4bd" stroke-width="2"/>
+    <text x="278" y="378" font-size="17" fill="#7f97a4">колонка № 1</text>
+  </g>
+
+  <!-- Sobol at column 2, front view 3/4 -->
+  <g transform="translate(990,420)">
+    <polygon points="0,210 24,60 210,44 250,120 250,210" fill="#22303c" stroke="#9db4bd" stroke-width="2.5"/>
+    <polygon points="34,66 196,54 226,116 34,116" fill="#101820" stroke="#9db4bd" stroke-width="1.5"/>
+    <rect x="34" y="116" width="192" height="12" fill="#3d4e5c" opacity=".8"/>
+    <circle cx="52" cy="210" r="24" fill="#101820" stroke="#9db4bd" stroke-width="2"/>
+    <circle cx="206" cy="210" r="24" fill="#101820" stroke="#9db4bd" stroke-width="2"/>
+    <text x="-6" y="-14" font-size="18" fill="#cfe3e8">Н-417-ЕК, правая дверь кабины открыта</text>
+  </g>
+  <path d="M1236 470 q46 6 62 54" fill="none" stroke="#9db4bd" stroke-width="6" opacity=".8"/>
+
+  <!-- figure with thermos -->
+  <g stroke="#cfe3e8" stroke-width="3" fill="none">
+    <circle cx="1290" cy="470" r="16" fill="#cfe3e8" stroke="none"/>
+    <path d="M1290 486 L1288 556"/>
+    <path d="M1288 508 L1246 476"/>
+    <path d="M1288 516 L1324 540"/>
+    <path d="M1288 556 L1268 616 M1288 556 L1310 614"/>
+  </g>
+  <rect x="1234" y="462" width="16" height="22" rx="3" fill="#cfe3e8"/>
+  <line x1="1250" y1="470" x2="1230" y2="418" stroke="#c8321f" stroke-width="1.6"/>
+  <text x="1120" y="404" font-size="17" fill="#c8321f">термос в правой руке,</text>
+  <text x="1120" y="382" font-size="17" fill="#c8321f">наклон к панели кабины</text>
+
+  <!-- inset: Gazel arrives 20:19:22 -->
+  <g>
+    <rect x="150" y="742" width="520" height="140" fill="#0b1117" stroke="#3d4e5c" stroke-width="2"/>
+    <polygon points="190,860 230,800 400,792 430,832 430,860" fill="#22303c" stroke="#9db4bd" stroke-width="2"/>
+    <rect x="430" y="806" width="46" height="54" fill="#22303c" stroke="#9db4bd" stroke-width="2"/>
+    <circle cx="252" cy="860" r="14" fill="#101820" stroke="#9db4bd" stroke-width="1.6"/>
+    <circle cx="404" cy="860" r="14" fill="#101820" stroke="#9db4bd" stroke-width="1.6"/>
+    <circle cx="452" cy="860" r="12" fill="#101820" stroke="#9db4bd" stroke-width="1.6"/>
+    <text x="168" y="768" font-size="17" fill="#cfe3e8">20:19:22 · «Газель» Х-305-ТК заходит к колонке № 1</text>
+    <text x="492" y="768" font-size="16" fill="#7f97a4">кузов чистый</text>
+  </g>
+
+  <!-- OSD -->
+  <text x="60" y="676" font-size="22" fill="#cfe3e8">2025-04-11  20:16:41</text>
+  <text x="60" y="708" font-size="18" fill="#7f97a4">CH3 · 12 к/с · -42 дБм · налив 41,80 л, чек № 4417</text>
+
+  <text x="700" y="676" font-size="16" fill="#7f97a4">Оператор АЗС Кулагина Т. С. подтвердила запись при допросе.</text>
+  <text x="700" y="700" font-size="16" fill="#7f97a4">На кадре 20:16:41 Жуков сидит за рулём; стакан остаётся на панели.</text>
+</svg>

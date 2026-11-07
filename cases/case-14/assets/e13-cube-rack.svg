@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Стенд полигона кубов: тридцать ячеек, двадцать четыре образца, бирки 01 — 24</text>
+  <text x="60" y="104" font-size="18" style="fill:var(--fg-dim,#3b4652)">Схема по кадрам 1 — 7 фототаблицы акта проверки полигона. Куб 150 × 150 × 150 мм, масштабная линейка в каждом кадре.</text>
+
+  <path d="M80 150 H700" style="stroke:var(--paper-ink,#16202b)" stroke-width="4"/>
+  <path d="M92 150 V186 M132 150 V186 M172 150 V186 M212 150 V186 M252 150 V186 M292 150 V186 M332 150 V186 M372 150 V186 M412 150 V186 M452 150 V186 M492 150 V186 M532 150 V186 M572 150 V186 M612 150 V186 M652 150 V186 M692 150 V186" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4"/>
+  <text x="80" y="142" font-size="15" style="fill:var(--fg-dim,#3b4652)">северный забор участка</text>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6" fill="none">
+    <path d="M120 196 H660 M120 288 H660 M120 380 H660 M120 472 H660 M120 564 H660 M120 656 H660 M120 748 H660"/>
+    <path d="M120 196 V748 M228 196 V748 M336 196 V748 M444 196 V748 M552 196 V748 M660 196 V748"/>
+  </g>
+  <text x="80" y="190" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 1</text>
+  <text x="80" y="282" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 2</text>
+  <text x="80" y="374" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 3</text>
+  <text x="80" y="466" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 4</text>
+  <text x="80" y="558" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 5</text>
+  <text x="76" y="650" font-size="14" style="fill:var(--fg-dim,#3b4652)">ряд 6</text>
+
+  <g fill="#b9c6ad" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6">
+    <rect x="128" y="204" width="92" height="76"/><rect x="236" y="204" width="92" height="76"/><rect x="344" y="204" width="92" height="76"/><rect x="452" y="204" width="92" height="76"/><rect x="560" y="204" width="92" height="76"/>
+    <rect x="128" y="296" width="92" height="76"/><rect x="236" y="296" width="92" height="76"/><rect x="344" y="296" width="92" height="76"/><rect x="452" y="296" width="92" height="76"/><rect x="560" y="296" width="92" height="76"/>
+    <rect x="128" y="388" width="92" height="76"/><rect x="236" y="388" width="92" height="76"/><rect x="344" y="388" width="92" height="76"/><rect x="452" y="388" width="92" height="76"/><rect x="560" y="388" width="92" height="76"/>
+    <rect x="128" y="480" width="92" height="76"/><rect x="236" y="480" width="92" height="76"/><rect x="344" y="480" width="92" height="76"/><rect x="452" y="480" width="92" height="76"/><rect x="560" y="480" width="92" height="76"/>
+  </g>
+  <g fill="#a9bccb" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6">
+    <rect x="128" y="572" width="92" height="76"/><rect x="236" y="572" width="92" height="76"/><rect x="344" y="572" width="92" height="76"/><rect x="452" y="572" width="92" height="76"/>
+  </g>
+
+  <g font-size="22" font-weight="600" style="fill:var(--paper-ink,#16202b)">
+    <text x="158" y="250">01</text><text x="266" y="250">02</text><text x="374" y="250">03</text><text x="482" y="250">04</text><text x="590" y="250">05</text>
+    <text x="158" y="342">06</text><text x="266" y="342">07</text><text x="374" y="342">08</text><text x="482" y="342">09</text><text x="590" y="342">10</text>
+    <text x="158" y="434">11</text><text x="266" y="434">12</text><text x="374" y="434">13</text><text x="482" y="434">14</text><text x="590" y="434">15</text>
+    <text x="158" y="526">16</text><text x="266" y="526">17</text><text x="374" y="526">18</text><text x="482" y="526">19</text><text x="590" y="526">20</text>
+    <text x="158" y="618">21</text><text x="266" y="618">22</text><text x="374" y="618">23</text><text x="482" y="618">24</text>
+  </g>
+  <g font-size="13" style="fill:var(--fg-dim,#3b4652)">
+    <text x="140" y="272">бирка</text><text x="248" y="272">бирка</text><text x="356" y="272">бирка</text><text x="464" y="272">бирка</text><text x="572" y="272">бирка</text>
+    <text x="140" y="364">бирка</text><text x="248" y="364">бирка</text><text x="356" y="364">бирка</text><text x="464" y="364">бирка</text><text x="572" y="364">бирка</text>
+  </g>
+
+  <g fill="none" style="stroke:var(--danger,#a8321f)" stroke-width="2" stroke-dasharray="7 5">
+    <rect x="560" y="572" width="92" height="76"/>
+    <rect x="128" y="664" width="92" height="76"/><rect x="236" y="664" width="92" height="76"/><rect x="344" y="664" width="92" height="76"/><rect x="452" y="664" width="92" height="76"/><rect x="560" y="664" width="92" height="76"/>
+  </g>
+  <g font-size="16" style="fill:var(--danger,#a8321f)">
+    <text x="568" y="606">пусто</text><text x="140" y="698">пусто</text><text x="248" y="698">пусто</text><text x="356" y="698">пусто</text><text x="464" y="698">пусто</text><text x="572" y="698">пусто</text>
+  </g>
+  <text x="128" y="784" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">Ячейки под номера 25 — 30 пусты: на полке следы пыли без отпечатков,</text>
+  <text x="128" y="806" font-size="17" style="fill:var(--danger,#a8321f)">на боковой грани ячейки мела нет. Нумерация на стенде кончается двадцать четвёртой.</text>
+
+  <path d="M660 700 H760" style="stroke:var(--paper-ink,#16202b)" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="666" y="692" font-size="14" style="fill:var(--fg-dim,#3b4652)">1,2 м до забора</text>
+
+  <g>
+    <text x="790" y="204" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Лоток боя, 2 м от стенда</text>
+    <path d="M790 224 h 240 l -26 62 h -188 Z" fill="#d8d1bf" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <path d="M804 236 h 212" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.4"/>
+    <text x="826" y="272" font-size="16" style="fill:var(--danger,#a8321f)">пусто, разбитых образцов на площадке нет</text>
+    <text x="790" y="312" font-size="16" style="fill:var(--fg-dim,#3b4652)">кубы 01 — 24 целы, бирки читаются, 19 — 24 не переклеены</text>
+
+    <line x1="790" y1="336" x2="1540" y2="336" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+    <text x="790" y="376" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что стоит на стенде по ведомости</text>
+    <g style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6" fill="none">
+      <rect x="790" y="398" width="620" height="44"/>
+    </g>
+    <rect x="790" y="398" width="155" height="44" fill="#b9c6ad"/>
+    <rect x="945" y="398" width="310" height="44" fill="#c8cfa2"/>
+    <rect x="1255" y="398" width="155" height="44" fill="#a9bccb"/>
+    <g font-size="16" style="fill:var(--paper-ink,#16202b)">
+      <text x="806" y="426">01 — 06</text>
+      <text x="962" y="426">07 — 18</text>
+      <text x="1272" y="426">19 — 24</text>
+    </g>
+    <g font-size="15" style="fill:var(--fg-dim,#3b4652)">
+      <text x="790" y="466">шесть кубов подбетонки, 04.11</text>
+      <text x="962" y="466">двенадцать кубов секции № 1, 06.11</text>
+      <text x="1272" y="466">шесть кубов секции № 2, 06.11</text>
+    </g>
+    <text x="790" y="504" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">Кубов секции № 3 на стенде нет: ни в ячейках, ни в лотке боя, ни на грунте</text>
+
+    <line x1="790" y1="528" x2="1540" y2="528" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+    <text x="790" y="566" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Привязка и осмотр площадки</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="790" y="600">Стенд у северного забора, привязка к забору 1,2 м</text>
+      <text x="790" y="626">До бытовки № 3 по замеру 20,4 м</text>
+      <text x="790" y="652">Грунт между стендом и забором присыпан снегом,</text>
+      <text x="790" y="678">следов обуви в ноябре не обнаружено</text>
+      <text x="790" y="704">Следов перестановки нет: пыль на полках ровная</text>
+    </g>
+    <text x="790" y="744" font-size="16" style="fill:var(--paper-ink,#16202b)">Участники проверки: помощник заведующей Белыхова И. К.,</text>
+    <text x="790" y="768" font-size="16" style="fill:var(--paper-ink,#16202b)">производитель работ, понятые</text>
+  </g>
+</svg>

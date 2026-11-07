@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridB12" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridB12)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Бирки серии М: два оттиска номера М-338 и один оттиск М-341</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Сличная фототаблица бюро медэкспертизы, 16.02.2026. Масштаб 2:1. Основание — заключение 12-И и выгрузка бирочного терминала.</text>
+
+  <g>
+    <text x="60" y="152" font-size="17" font-weight="600" fill="#16202b">Оттиск первый — 03.02.2026, 06:42, сессия mazhutina, бой бланка учтён</text>
+    <rect x="60" y="168" width="470" height="210" rx="10" fill="#f2e6c8" stroke="#16202b" stroke-width="3"/>
+    <line x1="300" y1="168" x2="300" y2="378" stroke="#16202b" stroke-width="1.5" stroke-dasharray="7 6"/>
+    <text x="96" y="212" font-size="15" fill="#3b4652">ГОРБОЛЬНИЦА № 4 · ПАО</text>
+    <text x="96" y="290" font-size="72" font-weight="700" fill="#16202b">М-338</text>
+    <text x="96" y="330" font-size="16" fill="#3b4652">бокс 2 · 168 см · 74,2 кг</text>
+    <text x="96" y="356" font-size="16" fill="#3b4652">03.02.2026 · 06:44</text>
+    <circle cx="500" cy="272" r="12" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M492 264 L508 280" stroke="#16202b" stroke-width="2.5"/>
+    <text x="540" y="200" font-size="15" fill="#3b4652" transform="rotate(90 540 200)">корешок книжки</text>
+
+    <text x="590" y="152" font-size="17" font-weight="600" fill="#a8321f">Оттиск второй — 03.02.2026, 23:52, сессия nezhinaya, боя нет</text>
+    <rect x="590" y="168" width="470" height="210" rx="10" fill="#f2e6c8" stroke="#a8321f" stroke-width="3"/>
+    <line x1="830" y1="168" x2="830" y2="378" stroke="#16202b" stroke-width="1.5" stroke-dasharray="7 6"/>
+    <text x="626" y="212" font-size="15" fill="#3b4652">ГОРБОЛЬНИЦА № 4 · ПАО</text>
+    <text x="626" y="290" font-size="72" font-weight="700" fill="#16202b">М-3<tspan fill="#3b4652" opacity=".45">3</tspan>8</text>
+    <text x="626" y="330" font-size="16" fill="#a8321f">бокс 2 · 178 см · 92,8 кг</text>
+    <text x="626" y="356" font-size="16" fill="#3b4652">04.02.2026 · 15:40</text>
+    <circle cx="1030" cy="272" r="12" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M1022 264 L1038 280" stroke="#16202b" stroke-width="2.5"/>
+    <path d="M596 200 q10 6 0 12 q-10 6 0 12 q10 6 0 12" fill="none" stroke="#a8321f" stroke-width="2"/>
+    <text x="1100" y="200" font-size="15" fill="#3b4652" transform="rotate(90 1100 200)">волна от прогона</text>
+
+    <text x="1140" y="152" font-size="17" font-weight="600" fill="#16202b">Оттиск М-341 — 03.02.2026, 16:35, дубликат на вскрытие</text>
+    <rect x="1140" y="168" width="400" height="210" rx="10" fill="#f2e6c8" stroke="#16202b" stroke-width="3"/>
+    <line x1="1330" y1="168" x2="1330" y2="378" stroke="#16202b" stroke-width="1.5" stroke-dasharray="7 6"/>
+    <text x="1172" y="212" font-size="15" fill="#3b4652">ГОРБОЛЬНИЦА № 4 · ПАО</text>
+    <text x="1172" y="290" font-size="72" font-weight="700" fill="#16202b">М-341</text>
+    <text x="1172" y="330" font-size="16" fill="#3b4652">бокс 4 · 178 см · 93,2 кг</text>
+    <text x="1172" y="356" font-size="16" fill="#3b4652">выдача в зал 10:22 · 73,9 кг</text>
+    <circle cx="1508" cy="272" r="12" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+    <text x="60" y="418" font-size="15" fill="#a8321f">Пробел в нижней строке второго оттиска — 2,3 мм против 1,5 мм у первого</text>
+  </g>
+
+  <g>
+    <text x="60" y="474" font-size="19" font-weight="600" fill="#16202b">Четыре различия, зафиксированные сличением</text>
+    <line x1="60" y1="488" x2="1540" y2="488" stroke="#8fa3b5" stroke-width="1.5"/>
+
+    <rect x="60" y="506" width="360" height="150" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="76" y="534" font-size="17" font-weight="600" fill="#16202b">1. Недобита «3»</text>
+    <text x="76" y="560" font-size="16" fill="#3b4652">Средняя часть цифры не взяла</text>
+    <text x="76" y="582" font-size="16" fill="#3b4652">краску: ложе нумератора</text>
+    <text x="76" y="604" font-size="16" fill="#3b4652">забито ворсом. Первый оттиск</text>
+    <text x="76" y="626" font-size="16" fill="#3b4652">полный, печатался до чистки.</text>
+
+    <rect x="440" y="506" width="360" height="150" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="456" y="534" font-size="17" font-weight="600" fill="#16202b">2. Волна бумаги</text>
+    <text x="456" y="560" font-size="16" fill="#3b4652">Повторный прогон того же</text>
+    <text x="456" y="582" font-size="16" fill="#3b4652">листа через ролики: косая</text>
+    <text x="456" y="604" font-size="16" fill="#3b4652">волна от левого края к центру,</text>
+    <text x="456" y="626" font-size="16" fill="#3b4652">на первом оттиске её нет.</text>
+
+    <rect x="820" y="506" width="360" height="150" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="836" y="534" font-size="17" font-weight="600" fill="#16202b">3. Надрез смещён</text>
+    <text x="836" y="560" font-size="16" fill="#3b4652">Надрез под шнур на втором</text>
+    <text x="836" y="582" font-size="16" fill="#3b4652">оттиске правее на 3 мм —</text>
+    <text x="836" y="604" font-size="16" fill="#3b4652">бланк легли в нож не тем</text>
+    <text x="836" y="626" font-size="16" fill="#3b4652">краем, что при приёмке.</text>
+
+    <rect x="1200" y="506" width="340" height="150" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="1216" y="534" font-size="17" font-weight="600" fill="#16202b">4. Пробел шире</text>
+    <text x="1216" y="560" font-size="16" fill="#3b4652">Нижняя строка: 1,5 мм</text>
+    <text x="1216" y="582" font-size="16" fill="#3b4652">против 2,3 мм. Разбег по</text>
+    <text x="1216" y="604" font-size="16" fill="#3b4652">гарнитуре — после 23:50</text>
+    <text x="1216" y="626" font-size="16" fill="#3b4652">печатать было некому.</text>
+
+    <rect x="60" y="676" width="720" height="150" fill="none" stroke="#a8321f" stroke-width="2"/>
+    <text x="76" y="704" font-size="18" font-weight="600" fill="#a8321f">Пустой корешок книжки серии М</text>
+    <text x="76" y="730" font-size="16" fill="#3b4652">В книжке за февраль номер М-338 значится один раз, с боем одного</text>
+    <text x="76" y="752" font-size="16" fill="#3b4652">бланка. Второй оттиск того же номера прошёл командой обхода защиты</text>
+    <text x="76" y="774" font-size="16" fill="#3b4652">и в книгу боя не попал. Ровно в 23:52 карта 1174 отметила вход в тамбур.</text>
+    <text x="76" y="800" font-size="16" fill="#16202b">Значит, у тяжёлого тела оказалась бирка лёгкого, и наоборот.</text>
+
+    <rect x="800" y="676" width="740" height="150" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="816" y="704" font-size="18" font-weight="600" fill="#16202b">Номера и массы, которые не сходятся</text>
+    <text x="816" y="732" font-size="16" fill="#3b4652">М-338 при приёмке 74,2 кг · М-338 при выдаче «бесхозного» 15:40 — 92,8 кг</text>
+    <text x="816" y="758" font-size="16" fill="#3b4652">М-341 при приёмке 93,2 кг · М-341 на лентах 08:55 и 08:58 — 74,2 кг</text>
+    <text x="816" y="784" font-size="16" fill="#3b4652">М-341 на выдаче в зал 10:22 — 73,9 кг с тарой, подпись «Н.»</text>
+    <text x="816" y="810" font-size="16" fill="#a8321f">Одна бирка не может весить 74,2 кг и 92,8 кг: меняли не тела, а номера.</text>
+  </g>
+</svg>

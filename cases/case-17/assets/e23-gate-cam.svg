@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gE23" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="gE23ir" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 0H4" fill="none" stroke="#9fb1c1" stroke-width="0.5" opacity=".07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gE23)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" fill="#16202b">Камера «ворота-1» на Механической, 4: ночь с 08.10 на 09.10.2025, кадр 00:20:12</text>
+  <text x="60" y="104" font-size="19" fill="#3b4652">Инфракрасная подсветка, фиксированный объектив, угол 78 градусов, архив регистратора 30 суток. Часы регистратора спешат на 6 минут; сверка с эталоном 05.11.2025.</text>
+
+  <!-- ============ FRAME ============ -->
+  <rect x="60" y="136" width="1000" height="560" fill="#33465c" stroke="#16202b" stroke-width="3"/>
+  <rect x="60" y="136" width="1000" height="560" fill="url(#gE23ir)"/>
+
+  <text x="80" y="172" font-size="16" fill="#9fb1c1">CAM 01 · ВОРОТА-1 · ИК · 4 КАДРА В СЕКУНДУ</text>
+  <text x="1040" y="172" font-size="16" fill="#9fb1c1" text-anchor="end">КОПИЯ СНЯТА 13.10 · ФАЙЛ 2,1 ГБ</text>
+
+  <!-- guard booth -->
+  <rect x="880" y="200" width="150" height="110" fill="#4a6076" stroke="#16202b" stroke-width="2.5"/>
+  <rect x="902" y="224" width="46" height="34" fill="#c9d4de" opacity=".5"/>
+  <text x="955" y="336" font-size="15" fill="#9fb1c1" text-anchor="middle">Будка охраны</text>
+
+  <!-- gate leaf, first gate -->
+  <g stroke="#9fb1c1" stroke-width="4" fill="none" opacity=".8">
+    <path d="M80 470 V300 H420 V470"/>
+    <path d="M80 340 H420 M80 380 H420 M80 420 H420"/>
+    <path d="M140 300 V470 M200 300 V470 M260 300 V470 M320 300 V470 M380 300 V470"/>
+  </g>
+  <text x="250" y="500" font-size="15" fill="#9fb1c1" text-anchor="middle">Створка первых ворот, открыта</text>
+
+  <!-- barrier, raised by hand -->
+  <path d="M440 468 L560 336" stroke="#e8e2d4" stroke-width="9"/>
+  <path d="M440 468 L560 336" stroke="#a8321f" stroke-width="9" stroke-dasharray="20 20" opacity=".75"/>
+  <rect x="428" y="462" width="26" height="42" fill="#4a6076" stroke="#16202b" stroke-width="2"/>
+  <text x="470" y="536" font-size="15" fill="#a8321f">Шлагбаум поднят вручную</text>
+
+  <!-- second gate leaves -->
+  <g stroke="#9fb1c1" stroke-width="3.5" fill="none" opacity=".6">
+    <path d="M700 560 V420 H1040 V560"/>
+    <path d="M760 420 V560 M840 420 V560 M920 420 V560 M1000 420 V560"/>
+  </g>
+  <text x="870" y="590" font-size="15" fill="#9fb1c1" text-anchor="middle">Вторые ворота, проём 4,2 м</text>
+
+  <!-- row A: five parked cars -->
+  <g fill="#5c7286" stroke="#c9d4de" stroke-width="1.6" opacity=".95">
+    <rect x="96" y="596" width="120" height="44" rx="12"/>
+    <rect x="232" y="596" width="120" height="44" rx="12"/>
+    <rect x="368" y="596" width="120" height="44" rx="12"/>
+    <rect x="504" y="596" width="120" height="44" rx="12"/>
+    <rect x="640" y="596" width="120" height="44" rx="12"/>
+  </g>
+  <text x="96" y="672" font-size="15" fill="#9fb1c1">Ряд А, места 15—19: пять легковых, в 20:22 стоят, в 00:26 стоят</text>
+
+  <!-- tractor with empty lowbed -->
+  <g>
+    <rect x="700" y="240" width="112" height="62" fill="#c9d4de" stroke="#16202b" stroke-width="2.5"/>
+    <rect x="722" y="252" width="52" height="30" fill="#4a6076"/>
+    <rect x="818" y="256" width="184" height="34" fill="none" stroke="#e8e2d4" stroke-width="3"/>
+    <line x1="842" y1="256" x2="842" y2="290" stroke="#e8e2d4" stroke-width="2"/>
+    <line x1="888" y1="256" x2="888" y2="290" stroke="#e8e2d4" stroke-width="2"/>
+    <line x1="934" y1="256" x2="934" y2="290" stroke="#e8e2d4" stroke-width="2"/>
+    <line x1="980" y1="256" x2="980" y2="290" stroke="#e8e2d4" stroke-width="2"/>
+    <g fill="#16202b" stroke="#9fb1c1" stroke-width="2">
+      <circle cx="736" cy="312" r="17"/>
+      <circle cx="786" cy="312" r="17"/>
+      <circle cx="880" cy="300" r="14"/>
+      <circle cx="964" cy="300" r="14"/>
+    </g>
+    <rect x="686" y="222" width="330" height="112" fill="none" stroke="#a8321f" stroke-width="3"/>
+    <text x="686" y="358" font-size="16" fill="#a8321f">Тягач М 707 ЕК 716 с тралом, трал пуст</text>
+  </g>
+
+  <!-- one person -->
+  <g fill="#c9d4de" opacity=".9">
+    <circle cx="620" cy="356" r="12"/>
+    <path d="M608 372 h24 l8 46 h-40 z"/>
+    <path d="M612 418 l-4 40 M628 418 l4 40"/>
+  </g>
+  <text x="620" y="486" font-size="15" fill="#e8e2d4" text-anchor="middle">Один человек, 182 см</text>
+
+  <!-- timestamp overlay -->
+  <rect x="80" y="612" width="330" height="66" fill="#16202b" opacity=".75"/>
+  <text x="98" y="640" font-size="22" fill="#e8e2d4">09.10.2025  00:20:12</text>
+  <text x="98" y="664" font-size="15" fill="#9fb1c1">по часам регистратора</text>
+  <path d="M1010 156 v22 M1010 167 h-22 M50 660 M1030 660" stroke="#9fb1c1" stroke-width="2" fill="none"/>
+
+  <!-- ============ TIMELINE ============ -->
+  <rect x="1090" y="136" width="450" height="560" rx="8" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+  <text x="1116" y="180" font-size="19" font-weight="600" fill="#16202b">ОТМЕТКИ ЗАПИСИ, ВРЕМЯ ПРИБОРА</text>
+  <line x1="1116" y1="196" x2="1514" y2="196" stroke="#16202b" stroke-width="1.4"/>
+
+  <g font-size="16" fill="#16202b">
+    <text x="1116" y="234">20:14:06</text>
+    <text x="1250" y="234">пять легковых заходят</text>
+    <text x="1250" y="256">в ворота, головной</text>
+    <text x="1250" y="278">С 731 КМ 716</text>
+
+    <rect x="1108" y="296" width="414" height="72" rx="4" fill="#a8321f" opacity=".18"/>
+    <text x="1116" y="326" fill="#a8321f">20:22:41</text>
+    <text x="1250" y="326">К 108 НВ 716 у будки,</text>
+    <text x="1250" y="350">выходит один человек</text>
+    <text x="1250" y="374">в куртке без знаков</text>
+
+    <text x="1116" y="412">20:47:10</text>
+    <text x="1250" y="412">тот же автомобиль</text>
+    <text x="1250" y="436">у вторых ворот, человек</text>
+    <text x="1250" y="460">идёт к воротам</text>
+
+    <rect x="1108" y="478" width="414" height="48" rx="4" fill="#a8321f" opacity=".18"/>
+    <text x="1116" y="510" fill="#a8321f">00:20:12</text>
+    <text x="1250" y="510">тягач под шлагбаумом, трал пуст</text>
+
+    <text x="1116" y="556">00:26:38</text>
+    <text x="1250" y="556">тягач уходит через</text>
+    <text x="1250" y="580">вторые ворота, створка</text>
+    <text x="1250" y="604">открыта</text>
+
+    <text x="1116" y="642">05:41:22</text>
+    <text x="1250" y="642">тягач возвращается, трал пуст</text>
+  </g>
+
+  <!-- ============ BOTTOM FACTS ============ -->
+  <rect x="60" y="722" width="480" height="142" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="84" y="756" font-size="17" font-weight="600" fill="#16202b">Что в кадре зафиксировано</text>
+  <text x="84" y="786" font-size="16" fill="#3b4652">Люди в кадре: один, лицо закрыто</text>
+  <text x="84" y="810" font-size="16" fill="#3b4652">капюшоном, рост по кадру 182 см</text>
+  <text x="84" y="840" font-size="16" fill="#3b4652">Пять машин на площадке в 20:22 и в 00:26</text>
+
+  <rect x="566" y="722" width="480" height="142" rx="6" fill="none" stroke="#a8321f" stroke-width="2"/>
+  <text x="590" y="756" font-size="17" font-weight="600" fill="#a8321f">Чего в кадре нет</text>
+  <text x="590" y="786" font-size="16" fill="#a8321f">Кадра с регистрацией пропуска</text>
+  <text x="590" y="810" font-size="16" fill="#a8321f">в записи нет, шлагбаум поднят</text>
+  <text x="590" y="840" font-size="16" fill="#a8321f">вручную, а не считывателем</text>
+
+  <rect x="1072" y="722" width="468" height="142" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="1096" y="756" font-size="17" font-weight="600" fill="#16202b">Пересчёт шкалы</text>
+  <text x="1096" y="786" font-size="16" fill="#3b4652">Прибор спешит на 6 минут: 00:20:12</text>
+  <text x="1096" y="810" font-size="16" fill="#3b4652">по регистратору — это 00:14:12</text>
+  <text x="1096" y="840" font-size="16" fill="#3b4652">по поясному времени</text>
+</svg>

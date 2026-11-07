@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gE22" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gE22)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" fill="#16202b">Снимок экрана сервиса оператора платной дороги: одна ночная транзакция</text>
+  <text x="60" y="104" font-size="19" fill="#3b4652">Офис оператора дороги, ул. Трактовая, 47. Съёмка 31.10.2025 в 15:10 по запросу следствия. Выгрузка по бортовому транспондеру, привязанному к знаку С 731 КМ 716.</text>
+
+  <!-- transponder card -->
+  <rect x="60" y="140" width="440" height="330" rx="8" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+  <text x="88" y="184" font-size="19" font-weight="600" fill="#16202b">КАРТОЧКА ТРАНСПОНДЕРА</text>
+  <line x1="88" y1="200" x2="472" y2="200" stroke="#16202b" stroke-width="1.4"/>
+  <g font-size="17" fill="#3b4652">
+    <text x="88" y="236">Тип</text>
+    <text x="270" y="236" fill="#16202b">бортовой, в бардачке</text>
+    <text x="88" y="274">Закреплён за знаком</text>
+    <text x="270" y="274" fill="#16202b">С 731 КМ 716</text>
+    <text x="88" y="312">Класс транспортного средства</text>
+    <text x="270" y="312" fill="#16202b">первый, легковой</text>
+    <text x="88" y="350">Баланс счёта</text>
+    <text x="270" y="350" fill="#16202b">1 860 ₽</text>
+    <text x="88" y="388">Состояние</text>
+    <text x="270" y="388" fill="#a8321f">активен</text>
+    <text x="88" y="440" font-size="15">Элемент питания заменён 02.10.2025</text>
+  </g>
+
+  <!-- road scheme -->
+  <rect x="530" y="140" width="1010" height="330" rx="8" fill="none" stroke="#16202b" stroke-width="2.5"/>
+  <text x="558" y="184" font-size="19" font-weight="600" fill="#16202b">УЧАСТОК 47—62 КМ, РАМКА «ЗАРЕЧЬЕ»</text>
+  <path d="M558 300 H1512" stroke="#16202b" stroke-width="26" opacity=".14"/>
+  <path d="M558 300 H1512" stroke="#3b4652" stroke-width="1.4" stroke-dasharray="18 14"/>
+  <path d="M558 340 H1512" stroke="#3b4652" stroke-width="1.4" stroke-dasharray="18 14"/>
+  <text x="566" y="284" font-size="15" fill="#3b4652">полоса 1</text>
+  <text x="566" y="366" font-size="15" fill="#3b4652">полоса 2</text>
+
+  <g stroke="#a8321f" stroke-width="4" fill="none">
+    <path d="M900 246 V372"/>
+    <path d="M884 246 H916"/>
+  </g>
+  <rect x="836" y="196" width="188" height="38" rx="5" fill="#a8321f"/>
+  <text x="862" y="222" font-size="17" fill="#e8e2d4">рамка, км 54</text>
+  <text x="836" y="404" font-size="15" fill="#a8321f">старт участка — км 47</text>
+  <text x="1330" y="404" font-size="15" fill="#3b4652">финиш — км 62</text>
+  <path d="M1080 470 h300" stroke="#3b4652" stroke-width="1.6"/>
+  <path d="M1080 462 V478 M1380 462 V478" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="1122" y="500" font-size="16" fill="#3b4652">весовая станция — км 61</text>
+  <text x="558" y="446" font-size="16" fill="#3b4652">Направление: Усть-Кудра — Восточный. Километраж нанесён по паспортной схеме участка.</text>
+
+  <!-- transactions table -->
+  <rect x="60" y="500" width="1480" height="290" rx="8" fill="#16202b"/>
+  <text x="88" y="546" font-size="19" font-weight="600" fill="#e8e2d4">ТРАНЗАКЦИИ ПО ТРАНСПОНДЕРУ, ОКТЯБРЬ 2025</text>
+  <g font-size="15" fill="#9fb1c1">
+    <text x="88" y="584">Дата</text>
+    <text x="270" y="584">Время</text>
+    <text x="450" y="584">Рамка</text>
+    <text x="700" y="584">Участок</text>
+    <text x="920" y="584">Класс</text>
+    <text x="1080" y="584">Списание</text>
+    <text x="1290" y="584">Съёмка рамки</text>
+  </g>
+  <line x1="80" y1="598" x2="1520" y2="598" stroke="#5c7286" stroke-width="1.2"/>
+
+  <g font-size="17" fill="#e8e2d4">
+    <text x="88" y="634">06.10.2025</text>
+    <text x="270" y="634">дневное время</text>
+    <text x="450" y="634">Заречье</text>
+    <text x="700" y="634">47—62 км</text>
+    <text x="920" y="634">1</text>
+    <text x="1080" y="634">620 ₽</text>
+    <text x="1290" y="634">хранится</text>
+
+    <rect x="80" y="654" width="1440" height="46" rx="4" fill="#a8321f" opacity=".3"/>
+    <text x="88" y="684">09.10.2025</text>
+    <text x="270" y="684" fill="#f4c9bd">03:12:41</text>
+    <text x="450" y="684">Заречье, полоса 2</text>
+    <text x="700" y="684">47—62 км</text>
+    <text x="920" y="684">1</text>
+    <text x="1080" y="684">620 ₽</text>
+    <text x="1290" y="684" fill="#f4c9bd">срок хранения истёк</text>
+
+    <text x="88" y="734">12.10.2025</text>
+    <text x="270" y="734">дневное время</text>
+    <text x="450" y="734">Заречье</text>
+    <text x="700" y="734">47—62 км</text>
+    <text x="920" y="734">1</text>
+    <text x="1080" y="734">620 ₽</text>
+    <text x="1290" y="734">хранится</text>
+  </g>
+  <text x="88" y="772" font-size="15" fill="#9fb1c1">Три метки распознаны по знаку частично; строка 09.10 подтверждена снимком рамки. С 10.10 по 11.10 транзакций нет.</text>
+
+  <!-- comparison strip -->
+  <rect x="60" y="812" width="720" height="52" rx="6" fill="none" stroke="#a8321f" stroke-width="2"/>
+  <text x="84" y="845" font-size="16" fill="#a8321f">Списание 620 ₽ в тот же день, без возврата; счёт на момент выгрузки — 1 860 ₽</text>
+  <rect x="820" y="812" width="720" height="52" rx="6" fill="none" stroke="#3b4652" stroke-width="1.8"/>
+  <text x="844" y="845" font-size="16" fill="#3b4652">Фотофиксация с рамки: хранение 21 сутки, на запрос от 30.10 не предоставлена</text>
+</svg>

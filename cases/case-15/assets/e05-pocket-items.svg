@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridPocket15" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridPocket15)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="56" y="74" font-size="26" font-weight="600" fill="#16202b">Фототаблица: карманные предметы, орудие и ящик инструмента ТЦ-7</text>
+  <text x="56" y="104" font-size="18" fill="#3b4652">Съмка 14.02.2026, объектив 50 мм, в каждом кадре масштабная линейка 50 мм. Раскладка составлена специалистом, карманы не вскрыты.</text>
+
+  <g>
+    <rect x="56" y="140" width="470" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="72" y="170" font-size="17" font-weight="600" fill="#16202b">Кадр 1. Куртка Тужилкина А. Т.</text>
+    <rect x="92" y="192" width="86" height="150" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M92 214 h86" stroke="#16202b" stroke-width="1"/>
+    <text x="135" y="238" font-size="11" fill="#16202b" text-anchor="middle">термос 0,8 л</text>
+    <text x="135" y="256" font-size="11" fill="#a8321f" text-anchor="middle">4 стакана чая</text>
+    <circle cx="240" cy="250" r="40" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M240 210 q 14 40 0 80" fill="none" stroke="#16202b" stroke-width="1"/>
+    <text x="240" y="310" font-size="11" fill="#16202b" text-anchor="middle">бечёвка 4 м</text>
+    <rect x="300" y="200" width="106" height="132" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="310" y="222" font-size="10" fill="#16202b">«СтройЦентр-</text>
+    <text x="310" y="238" font-size="10" fill="#16202b">Хозяйство»</text>
+    <text x="310" y="262" font-size="10" fill="#3b4652">12.02 14:22</text>
+    <text x="310" y="284" font-size="10" fill="#a8321f">1 840,00 ₽</text>
+    <path d="M438 226 h34 v40 h-34 z" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <circle cx="455" cy="286" r="16" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <text x="455" y="330" font-size="11" fill="#16202b" text-anchor="middle">ключ 7-38</text>
+    <text x="72" y="368" font-size="12" fill="#16202b">Навесной ключ от весовой будки на цепочке; в ящике мастерка</text>
+    <text x="72" y="388" font-size="12" fill="#16202b">таких ключа два — на Тужилкина и на Подахина.</text>
+    <text x="72" y="424" font-size="13" fill="#a8321f">На узле бечёвки светлые волосы; содержимое карманов не тронуто.</text>
+    <rect x="300" y="440" width="160" height="10" fill="none" stroke="#16202b" stroke-width="1"/>
+    <text x="300" y="464" font-size="11" fill="#16202b">масштаб 50 мм</text>
+  </g>
+
+  <g>
+    <rect x="560" y="140" width="470" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="576" y="170" font-size="17" font-weight="600" fill="#16202b">Кадр 2. Куртка Таволжнова Л. С.</text>
+    <rect x="600" y="196" width="120" height="150" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M600 196 V346" stroke="#a8321f" stroke-width="2"/>
+    <text x="660" y="274" font-size="12" fill="#16202b" text-anchor="middle">блокнот</text>
+    <text x="660" y="294" font-size="11" fill="#3b4652" text-anchor="middle">в клетку</text>
+    <path d="M756 300 l84 -34 22 16 -84 34 z" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <text x="800" y="336" font-size="11" fill="#16202b" text-anchor="middle">нож складной</text>
+    <rect x="850" y="212" width="52" height="66" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <rect x="866" y="230" width="52" height="66" fill="none" stroke="#16202b" stroke-width="1.5"/>
+    <text x="884" y="318" font-size="11" fill="#16202b" text-anchor="middle">2 пакетика порошка</text>
+    <circle cx="890" cy="200" r="4" fill="none" stroke="#16202b" stroke-width="1.2"/>
+    <circle cx="906" cy="208" r="4" fill="none" stroke="#16202b" stroke-width="1.2"/>
+    <circle cx="874" cy="206" r="4" fill="none" stroke="#16202b" stroke-width="1.2"/>
+    <text x="576" y="390" font-size="12" fill="#16202b">Горсть шайб М8 — восемь штук, грань свежая, без следов металла</text>
+    <text x="576" y="410" font-size="12" fill="#16202b">на заклёпках цепи. Блокнот изъят следователем отдельно.</text>
+    <text x="576" y="446" font-size="13" fill="#a8321f">Документов, денег и ключей в карманах нет; правый унт на ноге.</text>
+  </g>
+
+  <g>
+    <rect x="1064" y="140" width="478" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1080" y="170" font-size="17" font-weight="600" fill="#16202b">Кадр 3. Предмет в 40 см от затылка тела № 1</text>
+    <path d="M1100 300 L1450 214" stroke="#16202b" stroke-width="14" stroke-linecap="round"/>
+    <path d="M1450 214 l34 -10 -6 30 z" fill="#16202b"/>
+    <path d="M1100 300 l-26 14 8 -30 z" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="1120" y="264" font-size="12" fill="#16202b">лом КГ-45</text>
+    <text x="1300" y="286" font-size="12" fill="#a8321f">боёк 34 мм</text>
+    <text x="1240" y="330" font-size="12" fill="#16202b">длина 96 см</text>
+    <text x="1080" y="368" font-size="12" fill="#16202b">На бойке тёмно-бурый мазут и кирпично-красная эмаль АЛ-43;</text>
+    <text x="1080" y="388" font-size="12" fill="#16202b">кромка прямоугольная 12 на 2 мм. Рукоять сломана, обломок</text>
+    <text x="1080" y="408" font-size="12" fill="#16202b">11 см с нагаром изъят в пакет № 1.</text>
+    <text x="1080" y="444" font-size="13" fill="#a8321f">Той же эмалью окрашены ходовые звенья гусениц ТЦ-7.</text>
+  </g>
+
+  <g>
+    <rect x="56" y="500" width="730" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="72" y="530" font-size="17" font-weight="600" fill="#16202b">Кадр 4. Ящик инструмента вездехода ТЦ-7, снят 14.02 в 09:15</text>
+    <rect x="96" y="552" width="380" height="200" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="112" y="580" font-size="12" fill="#16202b">монтажка</text>
+    <text x="112" y="604" font-size="12" fill="#16202b">домкрат 5 т — 2 шт.</text>
+    <text x="112" y="628" font-size="12" fill="#16202b">домкрат-рейка, мотопила</text>
+    <text x="112" y="652" font-size="12" fill="#16202b">набор ключей 10—32</text>
+    <text x="112" y="676" font-size="12" fill="#16202b">тяга гусеничная, буксир</text>
+    <text x="112" y="700" font-size="12" fill="#16202b">лопата, пила-ножовка</text>
+    <path d="M112 718 h250" stroke="#a8321f" stroke-width="2"/>
+    <text x="380" y="726" font-size="12" fill="#a8321f">лом КГ-45 — нет</text>
+    <text x="112" y="748" font-size="12" fill="#3b4652">позиция 12 описи</text>
+    <text x="510" y="580" font-size="12" fill="#16202b">Банка мазута 0,8 л в ящике</text>
+    <text x="510" y="602" font-size="12" fill="#16202b">открыта; на борту банки свежий</text>
+    <text x="510" y="624" font-size="12" fill="#16202b">отпечаток ладони без перчаток.</text>
+    <text x="510" y="668" font-size="12" fill="#a8321f">В инвентарной карточке ТЦ-7</text>
+    <text x="510" y="690" font-size="12" fill="#a8321f">за 2025 год строка «лом КГ-45</text>
+    <text x="510" y="712" font-size="12" fill="#a8321f">инв. ТЦ-Р-12» перечёрнута рукой,</text>
+    <text x="510" y="734" font-size="12" fill="#a8321f">графа «выбытие» — 12.02.2026,</text>
+    <text x="510" y="756" font-size="12" fill="#a8321f">подпись не читается.</text>
+    <text x="72" y="800" font-size="12" fill="#16202b">На бойке изъятого предмета краской набито «ТЦ-Р-12»; между</text>
+    <text x="72" y="820" font-size="12" fill="#16202b">цифрами 1 и 2 — след спила.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="500" width="722" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="836" y="530" font-size="17" font-weight="600" fill="#16202b">Кадр 5. Чехол у бермы отвала и пачка позиции 12</text>
+    <path d="M880 592 q 60 -46 150 -22 q 92 24 84 78 q -8 54 -122 60 q -118 6 -112 -116 z" fill="none" stroke="#16202b" stroke-width="2"/>
+    <text x="990" y="646" font-size="12" fill="#16202b" text-anchor="middle">брезент 80 на 60</text>
+    <text x="1090" y="592" font-size="12" fill="#3b4652">пряжка цела, шов на одном</text>
+    <text x="1090" y="612" font-size="12" fill="#3b4652">крыле надорван</text>
+    <text x="1090" y="654" font-size="12" fill="#a8321f">В книге порядка Хуланиной:</text>
+    <text x="1090" y="674" font-size="12" fill="#a8321f">12.02 из бокса вынесли чехол,</text>
+    <text x="1090" y="694" font-size="12" fill="#a8321f">несли двое; на гвозде в боксе</text>
+    <text x="1090" y="714" font-size="12" fill="#a8321f">висит второй, пустой.</text>
+    <rect x="856" y="740" width="300" height="56" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M856 764 h300" stroke="#16202b" stroke-width="1"/>
+    <text x="868" y="758" font-size="11" fill="#16202b">Чек «СтройЦентр-Хозяйство» 12.02, 14:22</text>
+    <text x="868" y="786" font-size="11" fill="#16202b">шнур 50 м · перчатки 6 пар · чехол для лома 1</text>
+    <text x="836" y="822" font-size="13" fill="#a8321f">Чехол по позиции чека куплен за два дня до ночи, в которой остались оба.</text>
+  </g>
+</svg>

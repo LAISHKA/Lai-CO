@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <g style="stroke:var(--paper-line,#cbbfa8)" stroke-width="0.7" opacity=".5">
+    <path d="M70 180 H980 M70 240 H980 M70 300 H980 M70 360 H980 M70 420 H980 M70 480 H980 M70 540 H980 M70 600 H980 M70 660 H980"/>
+    <path d="M130 150 V730 M250 150 V730 M370 150 V730 M490 150 V730 M610 150 V730 M730 150 V730 M850 150 V730 M970 150 V730"/>
+  </g>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Рабочий генплан участка третьей очереди: бытовки, плиты секций, точки отстоя</text>
+  <text x="60" y="104" font-size="18" style="fill:var(--fg-dim,#3b4652)">Схема 1:200, вариант от 28.10.2025; красным дополнено 09.11.2025 после обрушения. Подпись производителя работ на рамке схемы.</text>
+
+  <rect x="70" y="150" width="910" height="580" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="3"/>
+  <rect x="78" y="158" width="894" height="564" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="1"/>
+  <text x="84" y="144" font-size="15" style="fill:var(--fg-dim,#3b4652)">граница участка, забор по профнастилу</text>
+  <path d="M196 150 V158 M268 150 V158" style="stroke:var(--paper,#e8e2d4)" stroke-width="4"/>
+  <path d="M196 150 H268" style="stroke:var(--danger,#a8321f)" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="176" y="140" font-size="15" style="fill:var(--danger,#a8321f)">северный въезд</text>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="#d8d1bf">
+    <rect x="196" y="172" width="72" height="46"/>
+  </g>
+  <text x="204" y="200" font-size="15" font-weight="600" style="fill:var(--paper-ink,#16202b)">КПП-1</text>
+  <text x="188" y="234" font-size="14" style="fill:var(--fg-dim,#3b4652)">будка, регистратор</text>
+  <text x="188" y="252" font-size="14" style="fill:var(--fg-dim,#3b4652)">с датчиком движения</text>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="#cdd6db">
+    <rect x="120" y="300" width="240" height="180"/>
+    <rect x="390" y="300" width="240" height="180"/>
+    <rect x="660" y="300" width="240" height="180"/>
+  </g>
+  <text x="140" y="330" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">секция № 1</text>
+  <text x="140" y="352" font-size="14" style="fill:var(--fg-dim,#3b4652)">плита, принята отдельным актом в октябре</text>
+  <text x="410" y="330" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">секция № 2</text>
+  <text x="410" y="352" font-size="14" style="fill:var(--fg-dim,#3b4652)">плита, принята отдельным актом</text>
+  <text x="680" y="330" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">секция № 3</text>
+  <text x="680" y="352" font-size="14" style="fill:var(--fg-dim,#3b4652)">плита покрытия, укладка 07.11</text>
+
+  <rect x="380" y="288" width="260" height="204" fill="none" style="stroke:var(--accent,#c8811f)" stroke-width="2" stroke-dasharray="10 6"/>
+  <text x="382" y="512" font-size="15" style="fill:var(--accent,#c8811f)">тёпляк по второй секции, 34 м от точек отстоя</text>
+
+  <rect x="660" y="196" width="240" height="88" fill="none" style="stroke:var(--fg-dim,#3b4652)" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M668 284 L756 196 M700 284 L788 196 M732 284 L820 196 M764 284 L852 196 M796 284 L884 196 M828 284 L900 212" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1" opacity=".45"/>
+  <text x="668" y="190" font-size="15" style="fill:var(--fg-dim,#3b4652)">сектор 4 — котлован: плиты проектом не предусмотрено</text>
+
+  <path d="M70 390 H980" style="stroke:var(--paper-ink,#16202b)" stroke-width="1" stroke-dasharray="16 5 3 5" opacity=".5"/>
+  <text x="906" y="384" font-size="13" style="fill:var(--fg-dim,#3b4652)">оси плит</text>
+
+  <path d="M690 480 H714" style="stroke:var(--danger,#a8321f)" stroke-width="7"/>
+  <path d="M660 480 H900" style="stroke:var(--danger,#a8321f)" stroke-width="2" stroke-dasharray="8 5" fill="none"/>
+  <text x="722" y="474" font-size="15" font-weight="600" style="fill:var(--danger,#a8321f)">отколотый край 2,4 м</text>
+  <text x="722" y="494" font-size="14" style="fill:var(--danger,#a8321f)">ось откола — юго-восточный край плиты</text>
+  <rect x="686" y="480" width="32" height="10" fill="none" style="stroke:var(--danger,#a8321f)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="600" y="506" font-size="14" style="fill:var(--danger,#a8321f)">навис 0,4 м</text>
+  <path d="M652 500 L694 490" style="stroke:var(--danger,#a8321f)" stroke-width="1.2" fill="none"/>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="#ded6c2">
+    <rect x="690" y="542" width="24" height="60"/>
+    <rect x="628" y="542" width="24" height="60"/>
+    <rect x="750" y="542" width="24" height="60"/>
+    <rect x="790" y="542" width="24" height="60"/>
+  </g>
+  <rect x="686" y="538" width="32" height="68" fill="none" style="stroke:var(--danger,#a8321f)" stroke-width="2.5"/>
+  <text x="676" y="622" font-size="15" font-weight="600" style="fill:var(--danger,#a8321f)">бытовка № 3</text>
+  <text x="614" y="642" font-size="14" style="fill:var(--danger,#a8321f)">2,4 × 6,0 м</text>
+  <text x="620" y="622" font-size="15" font-weight="600" style="fill:var(--paper-ink,#16202b)">№ 4</text>
+  <text x="746" y="622" font-size="15" font-weight="600" style="fill:var(--paper-ink,#16202b)">№ 2</text>
+  <text x="786" y="622" font-size="15" font-weight="600" style="fill:var(--paper-ink,#16202b)">№ 1</text>
+  <text x="700" y="666" font-size="14" style="fill:var(--fg-dim,#3b4652)">№ 4 в 3,1 м западнее № 3, габарит и цвет обшивки одинаковые</text>
+  <text x="700" y="686" font-size="14" style="fill:var(--fg-dim,#3b4652)">номера присвоены приказом по объекту от 04.09, с 04.09 бытовки не переставлялись</text>
+  <path d="M652 552 H690 M652 546 V558 M690 546 V558" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.2" fill="none"/>
+
+  <g style="stroke:#3f6f92" stroke-width="2" fill="#3f6f92">
+    <circle cx="700" cy="414" r="6"/>
+    <circle cx="762" cy="414" r="6"/>
+    <circle cx="824" cy="414" r="6"/>
+  </g>
+  <text x="838" y="418" font-size="15" style="fill:#3f6f92">точки отстоя миксеров, колья</text>
+  <path d="M700 414 V480 M694 480 H706 M694 414 H706" style="stroke:#3f6f92" stroke-width="1.2" fill="none"/>
+  <text x="612" y="452" font-size="14" style="fill:#3f6f92">6,4 м</text>
+  <path d="M824 414 L702 542" style="stroke:#3f6f92" stroke-width="1.2" stroke-dasharray="6 5" fill="none"/>
+  <text x="792" y="490" font-size="14" style="fill:#3f6f92">11,8 м по прямой</text>
+  <path d="M714 512 H676 M714 506 V518 M676 506 V518" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.2" fill="none"/>
+  <text x="618" y="534" font-size="14" style="fill:var(--fg-dim,#3b4652)">6,2 м</text>
+
+  <path d="M232 218 V268 H660 V404" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.6" stroke-dasharray="10 6" fill="none"/>
+  <text x="330" y="262" font-size="14" style="fill:var(--fg-dim,#3b4652)">маршрут от КПП до точек отстоя, 240 м</text>
+
+  <rect x="300" y="176" width="15" height="15" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+  <text x="322" y="190" font-size="15" style="fill:var(--paper-ink,#16202b)">полигон кубов 1,5 × 1,5 м</text>
+  <path d="M308 192 L690 540" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+  <text x="420" y="392" font-size="14" style="fill:var(--fg-dim,#3b4652)">20 м до бытовки № 3</text>
+
+  <g style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6" fill="none">
+    <path d="M920 700 V660 M910 668 L920 652 L930 668"/>
+  </g>
+  <text x="906" y="722" font-size="14" style="fill:var(--paper-ink,#16202b)">С</text>
+  <path d="M70 730 H270" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+  <path d="M70 724 V736 M170 726 V734 M270 724 V736" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+  <text x="70" y="752" font-size="14" style="fill:var(--fg-dim,#3b4652)">0</text>
+  <text x="160" y="752" font-size="14" style="fill:var(--fg-dim,#3b4652)">10 м</text>
+  <text x="248" y="752" font-size="14" style="fill:var(--fg-dim,#3b4652)">20 м</text>
+
+  <g>
+    <text x="1010" y="180" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Врезка: юго-восточный край плиты и бытовка № 3</text>
+    <rect x="1010" y="200" width="530" height="150" fill="#d8d1bf" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <rect x="1010" y="350" width="240" height="10" fill="#cdd6db" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+    <path d="M1250 350 h 60 v 10 h -60 Z" fill="none" style="stroke:var(--danger,#a8321f)" stroke-width="2"/>
+    <text x="1256" y="342" font-size="14" style="fill:var(--danger,#a8321f)">отколотый кусок 0,55 м</text>
+    <rect x="1330" y="288" width="14" height="72" fill="#ded6c2" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <path d="M1330 350 v 10 h 14 v -10" fill="none" style="stroke:var(--danger,#a8321f)" stroke-width="2"/>
+    <text x="1352" y="304" font-size="14" style="fill:var(--paper-ink,#16202b)">вагончик 2,4 × 6,0 м</text>
+    <text x="1020" y="316" font-size="13" style="fill:var(--fg-dim,#3b4652)">северная грань — в 6,2 м от оси плиты</text>
+    <text x="1020" y="338" font-size="13" style="fill:var(--danger,#a8321f)">южная стенка под краем на 0,4 м</text>
+    <path d="M1010 380 H1330 M1010 374 V386 M1330 374 V386" style="stroke:var(--fg-dim,#3b4652)" stroke-width="1.2" fill="none"/>
+    <text x="1120" y="400" font-size="14" style="fill:var(--fg-dim,#3b4652)">в шурфе у границы откола измерена толщина плиты: 168 мм</text>
+    <text x="1010" y="428" font-size="14" style="fill:var(--fg-dim,#3b4652)">тело лежало между печью и нарами, под южной стенкой</text>
+
+    <line x1="1010" y1="452" x2="1540" y2="452" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+    <text x="1010" y="490" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Выноски с рамки схемы</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1010" y="524">Красным обведён отколотый край секции № 3</text>
+      <text x="1010" y="548">и контур бытовки № 3, дополнено 09.11.2025</text>
+      <text x="1010" y="572">Синим показаны три точки отстоя у кольев:</text>
+      <text x="1010" y="596">6,4 м до оси откола, 11,8 м до бытовки</text>
+      <text x="1010" y="620">Пунктиром проведён маршрут от КПП, 240 м</text>
+      <text x="1010" y="644">Полигон кубов у северного забора, 20 м</text>
+      <text x="1010" y="668">Тёпляк по второй секции, 34 м от отстоя</text>
+      <text x="1010" y="692">Сектор 4 подписан «котлован»</text>
+    </g>
+
+    <text x="1010" y="736" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">Ведёт схему: производитель работ Кулагин И. Т.</text>
+    <text x="1010" y="762" font-size="16" style="fill:var(--fg-dim,#3b4652)">записей о перестановке бытовок в журнале КПП нет</text>
+  </g>
+</svg>

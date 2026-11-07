@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="glass" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#2f4258" stroke-width="1.4" opacity=".55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Фототаблица экспозиции 1: кухня квартиры 47</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Кадры 3 — 7, 13.11.2025, с 11:20 до 11:55. Съёмка без вспышки. Линейка 50 мм уложена в той же плоскости, что и объект.</text>
+
+  <g>
+    <text x="110" y="180" font-size="19" font-weight="600" fill="#16202b">А. Кадр 3: стол у окна</text>
+    <rect x="110" y="204" width="330" height="180" rx="6" fill="#d9c6ae" stroke="#16202b" stroke-width="2.6"/>
+    <rect x="150" y="236" width="96" height="72" rx="3" fill="#e8e2d4" stroke="#16202b" stroke-width="2"/>
+    <g stroke="#3b4652" stroke-width="1.4">
+      <line x1="160" y1="256" x2="236" y2="256"/>
+      <line x1="160" y1="272" x2="236" y2="272"/>
+      <line x1="160" y1="288" x2="214" y2="288"/>
+    </g>
+    <path d="M160 246 h 76" stroke="#a8321f" stroke-width="3"/>
+    <text x="152" y="326" font-size="15" fill="#3b4652">календарь, ноябрь</text>
+    <path d="M300 250 q 26 -8 52 0 l -6 46 q -20 8 -40 0 Z" fill="none" stroke="#16202b" stroke-width="2.2"/>
+    <text x="292" y="326" font-size="15" fill="#3b4652">стакан, 200 мл</text>
+    <g fill="none" stroke="#16202b" stroke-width="2">
+      <circle cx="386" cy="266" r="16"/>
+      <circle cx="424" cy="266" r="16"/>
+      <path d="M402 266 h 6 M370 260 l -10 -6 M440 260 l 10 -6"/>
+    </g>
+    <text x="352" y="326" font-size="15" fill="#3b4652">очки</text>
+    <text x="110" y="424" font-size="16" fill="#3b4652">Стол придвинут к окну. На странице</text>
+    <text x="110" y="446" font-size="16" fill="#3b4652">ноября четыре строки от руки, верхняя</text>
+    <text x="110" y="468" font-size="16" fill="#3b4652">зачёркнута. Стакан и очки на месте.</text>
+  </g>
+
+  <g>
+    <text x="560" y="180" font-size="19" font-weight="600" fill="#16202b">Б. Кадр 6: ведро под мойкой</text>
+    <path d="M560 210 h 250 l -22 200 h -206 Z" fill="none" stroke="#16202b" stroke-width="2.6"/>
+    <path d="M560 210 q 125 30 250 0" fill="none" stroke="#16202b" stroke-width="2"/>
+    <g fill="url(#glass)" stroke="#16202b" stroke-width="1.8">
+      <path d="M596 246 l 34 -14 l 16 26 l -30 16 Z"/>
+      <path d="M660 232 l 40 10 l -10 30 l -36 -12 Z"/>
+      <path d="M612 292 l 30 14 l -18 22 l -26 -16 Z"/>
+    </g>
+    <text x="572" y="352" font-size="15" fill="#a8321f">стеклобой, 7 фрагментов</text>
+    <rect x="700" y="300" width="86" height="34" rx="2" fill="#e8e2d4" stroke="#16202b" stroke-width="2"/>
+    <text x="706" y="322" font-size="14" fill="#16202b">инв. 14/2..</text>
+    <text x="690" y="352" font-size="15" fill="#3b4652">картонная полоска</text>
+    <g stroke="#a8321f" stroke-width="2">
+      <line x1="556" y1="418" x2="814" y2="418"/>
+      <line x1="556" y1="410" x2="556" y2="426"/>
+      <line x1="814" y1="410" x2="814" y2="426"/>
+    </g>
+    <text x="640" y="442" font-size="16" fill="#a8321f">линейка 50 мм</text>
+    <text x="560" y="474" font-size="16" fill="#3b4652">Стекло уложено сверху, поверх газет.</text>
+    <text x="560" y="496" font-size="16" fill="#3b4652">Обрывок этикетки - под стеклом, надорван.</text>
+  </g>
+
+  <g>
+    <text x="1030" y="180" font-size="19" font-weight="600" fill="#16202b">В. Кадр 7: вид из окна</text>
+    <rect x="1030" y="204" width="470" height="240" fill="none" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="1265" y1="204" x2="1265" y2="444" stroke="#16202b" stroke-width="2"/>
+    <line x1="1030" y1="324" x2="1500" y2="324" stroke="#16202b" stroke-width="2"/>
+    <rect x="1104" y="352" width="132" height="66" fill="#2f4258" stroke="#16202b" stroke-width="2"/>
+    <text x="1112" y="410" font-size="14" fill="#e8e2d4">аптека № 14</text>
+    <path d="M1236 386 h 26 v -26 h -26" fill="none" stroke="#a8321f" stroke-width="2.4"/>
+    <text x="1244" y="352" font-size="14" fill="#a8321f">ворота</text>
+    <rect x="1360" y="228" width="112" height="216" fill="#2f4258" stroke="#16202b" stroke-width="2" opacity=".8"/>
+    <text x="1368" y="440" font-size="14" fill="#e8e2d4">торец дома 12</text>
+    <g stroke="#3b4652" stroke-width="1.2" opacity=".7">
+      <line x1="1040" y1="430" x2="1340" y2="352"/>
+      <line x1="1080" y1="440" x2="1360" y2="360"/>
+    </g>
+    <text x="1030" y="474" font-size="16" fill="#3b4652">Площадка между домами просматривается</text>
+    <text x="1030" y="496" font-size="16" fill="#3b4652">от угла до ворот. Двор аптеки - 120 м.</text>
+  </g>
+
+  <line x1="60" y1="540" x2="1540" y2="540" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="586" font-size="19" font-weight="600" fill="#16202b">План: квартира 47 и аптека № 14</text>
+    <g fill="none" stroke="#2f4258" stroke-width="2.4">
+      <path d="M120 700 h 240 v -150 h -240 Z"/>
+      <path d="M120 700 v 60 h 150 v -60"/>
+    </g>
+    <text x="132" y="628" font-size="16" fill="#16202b">кв. 47</text>
+    <text x="132" y="650" font-size="15" fill="#3b4652">окно кухни</text>
+    <circle cx="120" cy="640" r="7" fill="#a8321f"/>
+    <text x="92" y="782" font-size="15" fill="#3b4652">лестничная клетка, дверь 49 справа</text>
+    <path d="M470 640 h 360" stroke="#a8321f" stroke-width="2.2" stroke-dasharray="10 8"/>
+    <text x="560" y="628" font-size="16" fill="#a8321f">120 м по прямой</text>
+    <g fill="none" stroke="#2f4258" stroke-width="2.4">
+      <path d="M900 700 h 300 v -120 h -300 Z"/>
+    </g>
+    <text x="912" y="628" font-size="16" fill="#16202b">аптека № 14</text>
+    <text x="912" y="650" font-size="15" fill="#3b4652">Фондутская, 18</text>
+    <path d="M1200 660 h 30 v -40 h -30" fill="none" stroke="#a8321f" stroke-width="2.4"/>
+    <text x="1150" y="700" font-size="15" fill="#a8321f">ворота во двор</text>
+    <rect x="1260" y="580" width="180" height="120" fill="none" stroke="#2f4258" stroke-width="2.4" stroke-dasharray="8 6"/>
+    <text x="1272" y="606" font-size="15" fill="#3b4652">двор: стоянка</text>
+    <text x="1272" y="628" font-size="15" fill="#3b4652">и задняя дверь</text>
+    <text x="1272" y="650" font-size="15" fill="#3b4652">комнаты хранения</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="826">Из окна кухни видны ворота и часть двора. Камера № 4 снимает этот же двор</text>
+      <text x="60" y="850">с противоположной стороны: сектор обзора перекрывается не полностью.</text>
+    </g>
+  </g>
+
+  <text x="1030" y="826" font-size="16" fill="#a8321f">Ампулы 3106/03 и 3106/04 изъяты в пакеты № 4 и № 5,</text>
+  <text x="1030" y="850" font-size="16" fill="#a8321f">обрывок этикетки упакован отдельно - в пакет № 6</text>
+</svg>

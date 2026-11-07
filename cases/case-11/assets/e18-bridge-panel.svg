@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1118" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <marker id="arr1118" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1118)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Экран навигационного процессора «МРС-500»: трек вахты с 02:40 по 04:20</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема к снимку экрана от 23.10, 11:40, сделанному до извлечения носителя. Окно трека «TRK 22-10/01», шкала спутниковая, одна точка в минуту.</text>
+
+  <g>
+    <rect x="60" y="140" width="940" height="380" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="72" y="152" width="916" height="356" fill="#243444"/>
+
+    <path d="M72 196 C 240 178 420 214 600 190 S 860 206 988 186" fill="#2b3a48" stroke="#8fa3b5" stroke-width="1.8"/>
+    <text x="86" y="182" font-size="14" fill="#c9d4de">правый берег, створ 41-го км</text>
+
+    <path d="M120 470 C 260 430 360 402 470 384 S 700 348 900 336" fill="none" stroke="#4a7ea0" stroke-width="2" opacity=".5"/>
+    <text x="120" y="492" font-size="13" fill="#8fa3b5">ось фарватера</text>
+
+    <g style="stroke:#e08a2e" stroke-width="2" fill="none">
+      <path d="M180 396 L268 384 L352 376 L436 370" marker-end="url(#arr1118)"/>
+    </g>
+    <text x="150" y="366" font-size="14" fill="#e08a2e">02:40 — 02:49:40, судно ещё делает ход</text>
+
+    <g fill="#dfe6ea" stroke="#16202b" stroke-width="1.2">
+      <circle cx="180" cy="396" r="6"/>
+      <circle cx="268" cy="384" r="6"/>
+      <circle cx="352" cy="376" r="6"/>
+      <circle cx="436" cy="370" r="6"/>
+      <circle cx="512" cy="366" r="6"/>
+      <circle cx="600" cy="362" r="6"/>
+      <circle cx="700" cy="358" r="6"/>
+      <circle cx="812" cy="352" r="6"/>
+      <circle cx="900" cy="348" r="6"/>
+    </g>
+
+    <g stroke="#a8321f" stroke-width="2.4" stroke-dasharray="9 6" fill="none">
+      <path d="M436 370 L900 348"/>
+    </g>
+    <text x="90" y="418" font-size="15" style="fill:var(--danger,#a8321f)">03:19:40 — 04:06:40: точки стоят на одной линии, слабым шагом, без ломаных разворота</text>
+    <text x="90" y="442" font-size="15" style="fill:var(--danger,#a8321f)">отрезок подписан «1,8 мили» — это снос течением, а не путь машины</text>
+
+    <g font-size="13" fill="#c9d4de">
+      <text x="150" y="240">03:11:05</text>
+      <text x="252" y="252">03:14:40</text>
+      <text x="340" y="264">03:19:40</text>
+      <text x="580" y="276">03:36:02</text>
+      <text x="770" y="288">04:06:40</text>
+      <text x="880" y="300">04:20</text>
+    </g>
+    <g stroke="#8fa3b5" stroke-width="1" opacity=".6">
+      <path d="M162 246 L180 390 M264 258 L268 378 M352 270 L352 370 M592 282 L600 356 M782 294 L812 346 M892 306 L900 342"/>
+    </g>
+
+    <rect x="820" y="164" width="160" height="26" fill="#24506b" stroke="#8fa3b5" stroke-width="1.4"/>
+    <text x="832" y="182" font-size="14" fill="#f2e6c8">TRK 22-10/01</text>
+    <text x="86" y="508" font-size="13" fill="#8fa3b5">режим: 1 точка в минуту · трек с 21.10 не сбрасывался</text>
+  </g>
+
+  <g>
+    <text x="1040" y="176" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Таблица показаний на 03:36:02</text>
+    <g stroke-width="2" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="1040" y="196" width="440" height="196"/>
+      <path d="M1040 245 H1480 M1040 294 H1480 M1040 343 H1480"/>
+    </g>
+    <g font-size="17" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1056" y="228">курс</text>
+      <text x="1056" y="277">скорость относительно грунта</text>
+      <text x="1056" y="326">скорость относительно воды</text>
+      <text x="1056" y="375">глубина</text>
+    </g>
+    <g font-size="18" font-weight="600" style="fill:var(--paper-ink,#16202b)">
+      <text x="1330" y="228">214 градусов</text>
+      <text x="1330" y="277">0,9 узла</text>
+      <text x="1330" y="326">0,0 узла</text>
+      <text x="1330" y="375">3,2 метра</text>
+    </g>
+    <text x="1040" y="428" font-size="16" style="fill:var(--danger,#a8321f)">0,9 узла грунта при 0,0 узла воды:</text>
+    <text x="1040" y="450" font-size="16" style="fill:var(--danger,#a8321f)">корпус стоит в воде и его сносит</text>
+    <text x="1040" y="478" font-size="16" style="fill:var(--fg-dim,#3b4652)">в системной строке экрана дата 23.10.2026, 11:40</text>
+  </g>
+
+  <line x1="60" y1="560" x2="1540" y2="560" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="606" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что должно быть на этой шкале, если версия журнала верна</text>
+    <g stroke-width="2" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="60" y="628" width="700" height="60"/>
+      <rect x="60" y="700" width="700" height="60"/>
+    </g>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="78" y="654">Запись вахтенного журнала, 03:12, судовые часы: «ход тихой»</text>
+      <text x="78" y="672">и, позднее, «стал у правого берега»</text>
+      <text x="78" y="726">Лента дублёра машинного телеграфа, e05: с 02:47 до 04:04</text>
+      <text x="78" y="744">ни одного пуска главного двигателя, только «стоп-машина»</text>
+    </g>
+    <g stroke-width="2.6" fill="none" style="stroke:var(--danger,#a8321f)">
+      <path d="M666 658 H770 M754 646 l 16 12 l -16 12"/>
+      <path d="M666 730 H770 M754 718 l 16 12 l -16 12"/>
+    </g>
+    <text x="790" y="662" font-size="16" font-weight="600" style="fill:var(--danger,#a8321f)">ход тихой</text>
+    <text x="790" y="682" font-size="16" font-weight="600" style="fill:var(--danger,#a8321f)">не даёт шага точек</text>
+    <text x="790" y="734" font-size="16" font-weight="600" style="fill:var(--danger,#a8321f)">«стал у берега»</text>
+    <text x="790" y="754" font-size="16" font-weight="600" style="fill:var(--danger,#a8321f)">не даёт сноса</text>
+  </g>
+
+  <g>
+    <text x="1040" y="606" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Шкалы, которые надо свести</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1040" y="644">Процессор и эхолот — спутниковый эталон,</text>
+      <text x="1040" y="666">по акту № 14-ГИМС расхождения с берегом нет</text>
+      <text x="1040" y="704">Вахтенный и балластный журналы — судовые часы,</text>
+      <text x="1040" y="726">они отстают на 2 минуты 40 секунд</text>
+      <text x="1040" y="764">Регистратор ГИМС на 41-м км и книга шлюза —</text>
+      <text x="1040" y="786">береговая шкала, тот же эталон, что и у экрана</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="1040" y="826">Поэтому 03:36:02 камеры и 03:36:02 процесса —</text>
+      <text x="1040" y="848">один и тот же момент, а 03:20 журнала — на 2:40 раньше</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridPaper21" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#16202b" stroke-width="0.4" opacity="0.10"/>
+    </pattern>
+    <pattern id="blankKu21" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 L0 0 0 24" fill="none" stroke="#5c7286" stroke-width="0.5" opacity="0.22"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridPaper21)"/>
+  <text x="60" y="56" font-size="26" font-weight="600" fill="#16202b">Командировочное удостоверение № 0041 и приказ о направлении</text>
+  <text x="60" y="86" font-size="18" fill="#3b4652">Съёмка 27.02.2026, листы 12—13 личного дела; левый разворот бланка КУ-1, справа приказ № 8-к и расчёт суточных</text>
+
+  <g>
+    <rect x="80" y="120" width="700" height="620" fill="#f4efe2" stroke="#16202b" stroke-width="2.5"/>
+    <rect x="80" y="120" width="700" height="620" fill="url(#blankKu21)"/>
+    <text x="120" y="172" font-size="20" font-weight="600" fill="#16202b">КОМАНДИРОВОЧНОЕ УДОСТОВЕРЕНИЕ</text>
+    <text x="120" y="198" font-size="15" fill="#3b4652">бланка КУ-1 · № 0041 · выдано 04.02.2026 · действительно до 09.02.2026</text>
+    <line x1="120" y1="214" x2="740" y2="214" stroke="#16202b" stroke-width="1.2"/>
+    <g font-size="16" fill="#16202b">
+      <text x="120" y="250">Фамилия, инициалы: Мочалов Роман Геннадьевич</text>
+      <text x="120" y="278">Должность: заместитель директора по АХЧ</text>
+      <text x="120" y="306">Место работы: МАОУ «Гимназия № 7»</text>
+      <text x="120" y="334">Пункт назначения: г. Вышнегорск</text>
+      <text x="120" y="362">Организация: Учебный центр «Надзор»</text>
+      <text x="120" y="390">Срок: 05.02.2026 — 07.02.2026 (3 дня)</text>
+      <text x="120" y="418">Основание: приказ № 8-к от 04.02.2026</text>
+    </g>
+    <line x1="120" y1="440" x2="740" y2="440" stroke="#16202b" stroke-width="1.2"/>
+    <text x="120" y="470" font-size="17" font-weight="600" fill="#16202b">Отметки организаций</text>
+    <g>
+      <circle cx="240" cy="570" r="82" fill="none" stroke="#2f5fa8" stroke-width="3" opacity="0.85"/>
+      <circle cx="240" cy="570" r="58" fill="none" stroke="#2f5fa8" stroke-width="1.6" opacity="0.85"/>
+      <text x="240" y="548" font-size="12" fill="#2f5fa8" text-anchor="middle">УЧЕБНЫЙ ЦЕНТР</text>
+      <text x="240" y="568" font-size="15" font-weight="700" fill="#2f5fa8" text-anchor="middle">НАДЗОР</text>
+      <text x="240" y="588" font-size="12" fill="#2f5fa8" text-anchor="middle">г. ВЫШНЕГОРСК</text>
+      <text x="240" y="610" font-size="13" fill="#2f5fa8" text-anchor="middle">прибытие 05.02.2026</text>
+      <text x="150" y="676" font-size="14" fill="#16202b">подпись принявшего лица, фамилия подштемпелевана</text>
+    </g>
+    <g>
+      <circle cx="530" cy="576" r="82" fill="none" stroke="#2f5fa8" stroke-width="3" opacity="0.55"/>
+      <circle cx="530" cy="576" r="58" fill="none" stroke="#2f5fa8" stroke-width="1.6" opacity="0.55"/>
+      <text x="530" y="554" font-size="12" fill="#2f5fa8" opacity="0.75" text-anchor="middle">УЧЕБНЫЙ ЦЕНТР</text>
+      <text x="530" y="574" font-size="15" font-weight="700" fill="#2f5fa8" opacity="0.75" text-anchor="middle">НАДЗОР</text>
+      <text x="530" y="594" font-size="12" fill="#2f5fa8" opacity="0.75" text-anchor="middle">г. ВЫШНЕГОРСК</text>
+      <text x="530" y="616" font-size="13" fill="#2f5fa8" opacity="0.75" text-anchor="middle">убытие 07.02.2026</text>
+      <text x="452" y="676" font-size="14" fill="#16202b">тот же оттиск, тот же распорядитель</text>
+    </g>
+    <text x="120" y="716" font-size="14" fill="#a8321f">Отметки наложены поверх печати бланка; нижний оттиск размыт — дата читается, город по верхнему краю.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="120" width="420" height="300" fill="#f4efe2" stroke="#16202b" stroke-width="2.5"/>
+    <text x="846" y="158" font-size="17" font-weight="600" fill="#16202b">Приказ № 8-к от 04.02.2026</text>
+    <g font-size="15" fill="#16202b">
+      <text x="846" y="190">1. Направить Мочалова Р. Г. в г. Вышнегорск</text>
+      <text x="846" y="212">   в УЧЦ «Надзор» на 05.02 — 07.02.2026.</text>
+      <text x="846" y="244">2. Назначить очное занятие по проверке</text>
+      <text x="846" y="266">   знаний на 06.02.2026, 10:00.</text>
+      <text x="846" y="298">3. Выплатить суточные в размере 2 100 ₽.</text>
+    </g>
+    <line x1="846" y1="326" x2="1214" y2="326" stroke="#16202b" stroke-width="1"/>
+    <text x="846" y="356" font-size="14" fill="#3b4652">Подпись директора и визы отдела кадров</text>
+    <text x="846" y="404" font-size="14" fill="#a8321f">Пункт 2 — единственная дата очного занятия</text>
+  </g>
+
+  <g>
+    <rect x="820" y="440" width="420" height="300" fill="#f4efe2" stroke="#16202b" stroke-width="2.5"/>
+    <text x="846" y="478" font-size="17" font-weight="600" fill="#16202b">Расчёт суточных и проезд</text>
+    <g font-size="15" fill="#16202b">
+      <text x="846" y="512">Суточные 3 дня × 700 ₽</text>
+      <text x="1130" y="512" text-anchor="end">2 100 ₽</text>
+      <text x="846" y="540">Выдано из кассы 04.02.2026</text>
+      <text x="1130" y="540" text-anchor="end">РКО № 47</text>
+      <text x="846" y="568">Билеты туда и обратно</text>
+      <text x="1130" y="568" text-anchor="end">3 480 ₽</text>
+      <text x="846" y="596">Авансовый отчёт № 9</text>
+      <text x="1130" y="596" text-anchor="end">10.02.2026</text>
+    </g>
+    <line x1="846" y1="618" x2="1214" y2="618" stroke="#16202b" stroke-width="1"/>
+    <g font-size="14" fill="#3b4652">
+      <text x="846" y="646">Отчёт закрыт без замечаний;</text>
+      <text x="846" y="668">билеты: выезд 05.02, обратный 07.02.</text>
+      <text x="846" y="700">Отметка к месту работы: 09.02.2026,</text>
+      <text x="846" y="722">кадровая печать гимназии.</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1280" y="120" width="260" height="620" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1304" y="162" font-size="19" font-weight="600" fill="#16202b">Что видно на снимке</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1304" y="198">Два оттиска УЧЦ</text>
+      <text x="1304" y="220">«Надзор»: прибытие</text>
+      <text x="1304" y="242">05.02.2026 и убытие</text>
+      <text x="1304" y="264">07.02.2026.</text>
+      <text x="1304" y="304">Между ними — ни одной</text>
+      <text x="1304" y="326">промежуточной отметки</text>
+      <text x="1304" y="348">за 06.02.2026.</text>
+      <text x="1304" y="388">Возвращение по месту</text>
+      <text x="1304" y="410">работы отмечено</text>
+      <text x="1304" y="432">09.02.2026.</text>
+    </g>
+    <line x1="1304" y1="460" x2="1516" y2="460" stroke="#16202b" stroke-width="1"/>
+    <text x="1304" y="494" font-size="19" font-weight="600" fill="#16202b">Чего нет</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1304" y="528">Второго маршрутного</text>
+      <text x="1304" y="550">листа.</text>
+      <text x="1304" y="584">Отметок о выезде</text>
+      <text x="1304" y="606">в другой район.</text>
+      <text x="1304" y="640">Записей на листе 14 —</text>
+      <text x="1304" y="662">это пустой подворот.</text>
+    </g>
+    <text x="1304" y="712" font-size="13" fill="#a8321f">Листы 12—13 личного дела</text>
+  </g>
+  <text x="80" y="782" font-size="15" fill="#3b4652">Схема составлена по снимку от 27.02.2026, сделанному в кабинете делопроизводителя: листы 12—13 личного дела, в материалах — л. д. 29.</text>
+</svg>

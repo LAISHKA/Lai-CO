@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Рейсы трёх миксеров в вечер укладки 07.11: построение по 71 точке</text>
+  <text x="60" y="104" font-size="18" style="fill:var(--fg-dim,#3b4652)">Масштаб 1:2000. Источники меток: талоны дозатора узла, рейсовые листы трёх водителей, отметки четвёртого считывателя на щите КПП.</text>
+
+  <g>
+    <rect x="80" y="150" width="180" height="130" fill="#d8d1bf" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.4"/>
+    <text x="94" y="180" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">бетонный узел № 2</text>
+    <text x="94" y="204" font-size="14" style="fill:var(--fg-dim,#3b4652)">дозатор, бункер,</text>
+    <text x="94" y="222" font-size="14" style="fill:var(--fg-dim,#3b4652)">выдача талонов</text>
+    <circle cx="126" cy="252" r="7" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="140" y="258" font-size="13" style="fill:var(--fg-dim,#3b4652)">выезд на Сосновский тракт</text>
+
+    <path d="M260 216 H760" style="stroke:var(--fg-dim,#3b4652)" stroke-width="10" opacity=".22"/>
+    <path d="M260 216 H760" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.4" stroke-dasharray="14 10" fill="none"/>
+    <path d="M260 196 V236 M760 196 V236 M510 196 V236" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.2"/>
+    <text x="300" y="188" font-size="15" style="fill:var(--paper-ink,#16202b)">плечо «узел — секция № 3», 2,4 км</text>
+    <text x="430" y="252" font-size="14" style="fill:var(--fg-dim,#3b4652)">чистое время в пути по восьми состоявшимся рейсам: 20 — 24 минуты</text>
+
+    <rect x="760" y="150" width="200" height="130" fill="#cdd6db" style="stroke:var(--danger,#a8321f)" stroke-width="2.6"/>
+    <text x="774" y="180" font-size="17" font-weight="600" style="fill:var(--paper-ink,#16202b)">забойка секции № 3</text>
+    <text x="774" y="204" font-size="14" style="fill:var(--fg-dim,#3b4652)">юго-восточный край плиты,</text>
+    <text x="774" y="222" font-size="14" style="fill:var(--fg-dim,#3b4652)">три точки отстоя у кольев</text>
+    <text x="774" y="248" font-size="14" style="fill:var(--danger,#a8321f)">журнал: укладка 19:30 — 22:40</text>
+
+    <rect x="450" y="300" width="160" height="70" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="462" y="326" font-size="15" style="fill:var(--paper-ink,#16202b)">площадка кубовых</text>
+    <text x="462" y="346" font-size="15" style="fill:var(--paper-ink,#16202b)">форм и полигона</text>
+
+    <path d="M200 280 C 300 340 560 300 700 250 L760 232" style="stroke:#3f6f92" stroke-width="3" fill="none"/>
+    <path d="M200 274 C 320 210 620 200 760 208" style="stroke:#c8811f" stroke-width="3" fill="none" stroke-dasharray="12 6"/>
+    <path d="M200 286 C 330 320 470 336 540 336 C 640 336 700 250 760 244" style="stroke:#a8321f" stroke-width="3" fill="none" stroke-dasharray="2 6"/>
+    <circle cx="560" cy="336" r="7" fill="none" style="stroke:#a8321f" stroke-width="2.4"/>
+    <text x="576" y="382" font-size="14" style="fill:var(--danger,#a8321f)">стоянка 21:00 — 21:26, возвращение на узел в 21:41 с полным бункером</text>
+
+    <g font-size="15">
+      <text x="980" y="168" font-weight="600" style="fill:#3f6f92">Линия 1 — миксер № 14</text>
+      <text x="980" y="190" style="fill:var(--fg-dim,#3b4652)">выезд 20:32, выгрузка 20:56</text>
+      <text x="980" y="210" style="fill:var(--fg-dim,#3b4652)">возврат 21:15, выгрузка 21:39</text>
+      <text x="980" y="230" style="fill:var(--fg-dim,#3b4652)">по рейсовому листу: семь с половиной и четыре с половиной</text>
+      <text x="980" y="266" font-weight="600" style="fill:#c8811f">Линия 2 — миксер № 17</text>
+      <text x="980" y="288" style="fill:var(--fg-dim,#3b4652)">три рейса с полной выгрузкой:</text>
+      <text x="980" y="308" style="fill:var(--fg-dim,#3b4652)">19:40 — 20:04, 21:05 — 21:29,</text>
+      <text x="980" y="328" style="fill:var(--fg-dim,#3b4652)">22:05 — 22:29</text>
+      <text x="980" y="364" font-weight="600" style="fill:var(--danger,#a8321f)">Линия 3 — миксер № 09</text>
+      <text x="980" y="386" style="fill:var(--fg-dim,#3b4652)">заявлен один рейс с выгрузкой</text>
+      <text x="980" y="406" style="fill:var(--fg-dim,#3b4652)">в 21:00; на схеме — у форм,</text>
+      <text x="980" y="426" style="fill:var(--fg-dim,#3b4652)">на забойку с грузом не входил</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="450" x2="1540" y2="450" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="492" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Ось вечера: каждая метка взята из талона, рейсового листа или журнала считывателя</text>
+    <g style="stroke:var(--paper-line,#cbbfa8)" stroke-width="1.4">
+      <path d="M120 520 V700 M252 520 V700 M384 520 V700 M516 520 V700 M648 520 V700 M780 520 V700 M912 520 V700"/>
+    </g>
+    <path d="M120 700 H956" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <g font-size="15" style="fill:var(--fg-dim,#3b4652)">
+      <text x="108" y="724">19:30</text><text x="240" y="724">20:00</text><text x="372" y="724">20:30</text><text x="504" y="724">21:00</text><text x="636" y="724">21:30</text><text x="768" y="724">22:00</text><text x="900" y="724">22:30</text>
+    </g>
+
+    <g font-size="16" style="fill:var(--paper-ink,#16202b)">
+      <text x="60" y="546">№ 14</text>
+      <text x="60" y="602">№ 17</text>
+      <text x="60" y="658">№ 09</text>
+    </g>
+
+    <g stroke="#3f6f92" stroke-width="9" fill="none" stroke-linecap="round">
+      <path d="M393 540 L498 540"/>
+      <path d="M582 570 L688 570"/>
+    </g>
+    <g fill="#3f6f92">
+      <circle cx="393" cy="540" r="6"/><circle cx="498" cy="540" r="6"/><circle cx="582" cy="570" r="6"/><circle cx="688" cy="570" r="6"/>
+    </g>
+    <g font-size="14" fill="#3f6f92">
+      <text x="356" y="528">выезд 20:32</text><text x="466" y="516">выгрузка 20:56</text>
+      <text x="548" y="596">возврат 21:15</text><text x="654" y="596">выгрузка 21:39</text>
+    </g>
+
+    <g stroke="#c8811f" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16 5">
+      <path d="M164 596 L270 596"/>
+      <path d="M538 610 L644 610"/>
+      <path d="M802 624 L908 624"/>
+    </g>
+    <g font-size="14" fill="#c8811f">
+      <text x="140" y="584">19:40 — 20:04</text>
+      <text x="510" y="644">21:05 — 21:29</text>
+      <text x="776" y="664">22:05 — 22:29</text>
+    </g>
+
+    <g stroke="#a8321f" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="3 7">
+      <path d="M516 676 L630 676"/>
+      <path d="M630 676 L696 676"/>
+    </g>
+    <g fill="none" stroke="#a8321f" stroke-width="2.2">
+      <circle cx="672" cy="652" r="9"/>
+    </g>
+    <g font-size="14" fill="#a8321f">
+      <text x="470" y="700">заявленная выгрузка 21:00</text>
+      <text x="640" y="700">стоянка у форм 21:00 — 21:26, на узел 21:41</text>
+    </g>
+
+    <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="none">
+      <path d="M120 520 V700"/>
+    </g>
+    <text x="126" y="512" font-size="14" style="fill:var(--paper-ink,#16202b)">начало укладки по журналу бетонных работ, 19:30</text>
+    <path d="M256 520 V700" style="stroke:var(--danger,#a8321f)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+    <text x="262" y="512" font-size="14" style="fill:var(--danger,#a8321f)">первое включение виброрейки, 20:01</text>
+    <path d="M956 520 V700" style="stroke:var(--paper-ink,#16202b)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+    <text x="866" y="512" font-size="14" style="fill:var(--paper-ink,#16202b)">закрытие листа журнала, 22:40</text>
+  </g>
+
+  <line x1="60" y1="746" x2="1540" y2="746" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="786" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Сумма вечера в трёх учётах</text>
+    <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="#cdd6db">
+      <rect x="60" y="806" width="490" height="40"/>
+    </g>
+    <rect x="60" y="806" width="408" height="40" fill="#b9c6ad" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="76" y="832" font-size="16" style="fill:var(--paper-ink,#16202b)">по рейсовым листам трёх водителей — 70 м³</text>
+    <g style="stroke:var(--paper-ink,#16202b)" stroke-width="2" fill="#cdd6db">
+      <rect x="600" y="806" width="490" height="40"/>
+    </g>
+    <rect x="600" y="806" width="420" height="40" fill="#c8cfa2" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <text x="616" y="832" font-size="16" style="fill:var(--paper-ink,#16202b)">в накладных узла по заказу № 203 — 72 м³</text>
+    <g style="stroke:var(--danger,#a8321f)" stroke-width="2.4" fill="none">
+      <rect x="1140" y="806" width="400" height="40"/>
+    </g>
+    <text x="1156" y="832" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">в акте скрытых работ № 12 — 84 м³</text>
+    <text x="1140" y="786" font-size="15" style="fill:var(--danger,#a8321f)">ни один рейс того вечера не покрывает объём акта</text>
+  </g>
+</svg>

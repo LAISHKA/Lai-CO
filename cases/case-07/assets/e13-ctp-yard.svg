@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid13" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid13)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера № 1 «ЦТП-6, двор»: 14.01.2026, ночь</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Ковыльная, 14. Регистратор пишет непрерывно, звук не пишется. Насосная подпитки — в левом крыле.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="420" fill="#16202b" stroke="#16202b" stroke-width="3"/>
+    <rect x="72" y="152" width="776" height="396" fill="#243444"/>
+    <path d="M72 430 L848 392 L848 548 L72 548 Z" fill="#2f4258"/>
+
+    <rect x="96" y="206" width="330" height="200" fill="#33465c" stroke="#4a6076" stroke-width="2"/>
+    <g fill="#c9d4de" opacity=".85">
+      <rect x="120" y="228" width="42" height="54"/>
+      <rect x="188" y="228" width="42" height="54"/>
+      <rect x="256" y="228" width="42" height="54"/>
+      <rect x="324" y="228" width="42" height="54"/>
+      <rect x="120" y="312" width="42" height="54"/>
+      <rect x="256" y="312" width="42" height="54"/>
+    </g>
+    <text x="102" y="196" font-size="15" fill="#8fa3b5">корпус станции, насосная подпитки</text>
+
+    <path d="M300 406 h 74 v -52 h -74 Z" fill="#1d2b38" stroke="#8fa3b5" stroke-width="1.8"/>
+    <text x="268" y="436" font-size="14" fill="#8fa3b5">служебный вход с тамбуром</text>
+    <rect x="386" y="376" width="26" height="22" fill="#dfe6ea" opacity=".9"/>
+    <text x="356" y="366" font-size="13" fill="#dfe6ea">ключница</text>
+
+    <path d="M740 168 h 60 v 30 h -60 Z" fill="#e8e2d4" opacity=".8"/>
+    <text x="806" y="190" font-size="15" fill="#c9d4de">ворота</text>
+
+    <g>
+      <path d="M470 350 h 240 v 60 h -240 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M500 350 v -34 h 180 v 34" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="512" cy="418" r="16" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="668" cy="418" r="16" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <text x="470" y="336" font-size="15" fill="#c9d4de">Т 300 ЕК 7.., фары выключены</text>
+    </g>
+
+    <g>
+      <path d="M420 372 q 16 -22 34 0 l 4 42 q -20 10 -40 0 Z" fill="#e08a2e" stroke="#8fa3b5" stroke-width="1.6"/>
+      <circle cx="437" cy="356" r="11" fill="#dfe6ea" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M424 366 h 26" stroke="#f2e6c8" stroke-width="3"/>
+      <text x="392" y="440" font-size="14" fill="#c9d4de">оранжевая куртка</text>
+    </g>
+
+    <text x="88" y="180" font-size="16" fill="#e8e2d4">14.01.2026  23:11:20</text>
+    <circle cx="826" cy="530" r="7" fill="#a8321f"/>
+    <text x="742" y="526" font-size="14" fill="#a8321f">момент передачи</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Раскадровка архива</text>
+    <line x1="920" y1="200" x2="920" y2="700" stroke="#16202b" stroke-width="2"/>
+    <g font-size="16" fill="#3b4652">
+      <circle cx="920" cy="222" r="5" fill="#2f4258"/>
+      <text x="940" y="218">22:58:40 — двор пуст, въезда нет</text>
+      <circle cx="920" cy="252" r="5" fill="#a8321f"/>
+      <text x="940" y="248" fill="#16202b">23:02:11 — в тамбуре человек в тёмной куртке,</text>
+      <text x="940" y="270">без головного убора, стоит у ключницы</text>
+      <circle cx="920" cy="300" r="5" fill="#a8321f"/>
+      <text x="940" y="296" fill="#16202b">23:07:48 — выходит во двор с металлической</text>
+      <text x="940" y="318">ключницей в руках</text>
+      <circle cx="920" cy="348" r="5" fill="#a8321f"/>
+      <text x="940" y="344" fill="#16202b">23:11:20 — подходит человек в оранжевой куртке,</text>
+      <text x="940" y="366">принимает предмет, расходится в стороны</text>
+      <circle cx="920" cy="396" r="5" fill="#2f4258"/>
+      <text x="940" y="392">23:19:05 — ворота, авто без фар, выезд за створ</text>
+      <circle cx="920" cy="426" r="5" fill="#2f4258"/>
+      <text x="940" y="422">00:04:52 — то же авто возвращается во двор, фары не горят</text>
+      <circle cx="920" cy="452" r="5" fill="#2f4258"/>
+      <text x="940" y="448">00:05:20 — человек в оранжевой куртке идёт к тамбуру,</text>
+      <text x="940" y="470">останавливается у двери</text>
+      <circle cx="920" cy="500" r="5" fill="#a8321f"/>
+      <text x="940" y="496" fill="#16202b">00:06:40 — из машины выходит человек в тёмной</text>
+      <text x="940" y="518">куртке, входит в тамбур, свет включается</text>
+      <circle cx="920" cy="548" r="5" fill="#2f4258"/>
+      <text x="940" y="544">00:12:20 — свет в тамбуре гаснет</text>
+      <circle cx="920" cy="578" r="5" fill="#2f4258"/>
+      <text x="940" y="574">06:36:07 — свет горит, у ворот двое и третий</text>
+      <text x="940" y="596">в дутой шапке</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="612" x2="860" y2="612" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="658" font-size="19" font-weight="600" fill="#16202b">Ключница и ключи</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="696">На участке 41 колодец, по три ключа на каждый: два в настенной</text>
+      <text x="60" y="718">ключнице тамбура ЦТП-6, третий у дежурного слесаря.</text>
+      <text x="60" y="754">Ключ № 4 от колодца 118 с 09.01.2026 числится выданным на руки</text>
+      <text x="60" y="776">и в ключницу не возвращался.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="60" y="818">На 16.01 третьего ключа в ключнице нет,</text>
+      <text x="60" y="840">а ящик с ключами не опечатан с 12.01.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="940" y="658" font-size="19" font-weight="600" fill="#16202b">Сверка времени</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="940" y="696">Регистратор ЦТП-6 синхронизирован с пультом, расхождение</text>
+      <text x="940" y="718">по паспорту — до двух секунд за сутки.</text>
+      <text x="940" y="754">Камера бокса в 23:41:12 показывает того же человека</text>
+      <text x="940" y="776">к колодцу, то есть ровно через 30 минут после</text>
+      <text x="940" y="798">выхода из этого тамбура.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="940" y="840">Лиц на записи не различить: ИК-подсветка, ракурс сверху.</text>
+    </g>
+  </g>
+</svg>

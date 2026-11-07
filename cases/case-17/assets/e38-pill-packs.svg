@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gE38" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gE38)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" fill="#16202b">Изъятое: три упаковки «Реглипон 30 мг № 30» и банка из бокса № 24</text>
+  <text x="60" y="104" font-size="19" fill="#3b4652">Фотофиксация 27.10.2025 в 16:20, специалист-криминалист, кадр 41 из 68. Упаковки подняты 22.10.2025 в 16:05 из бардачка К 108 НВ 716; банка изъята в боксе № 24.</text>
+
+  <!-- ================= PACK 1 ================= -->
+  <g>
+    <rect x="60" y="150" width="270" height="300" rx="8" fill="#f2e6c8" stroke="#a8321f" stroke-width="3"/>
+    <text x="80" y="182" font-size="16" font-weight="600" fill="#a8321f">Упаковка 1 · блистер вскрыт</text>
+    <!-- blister 6x5 -->
+    <rect x="90" y="200" width="210" height="170" rx="4" fill="none" stroke="#16202b" stroke-width="2"/>
+    <path d="M125 200 V370 M160 200 V370 M195 200 V370 M230 200 V370 M265 200 V370
+             M90 234 H300 M90 268 H300 M90 302 H300 M90 336 H300" stroke="#3b4652" stroke-width="1"/>
+    <rect x="90" y="200" width="210" height="136" fill="#a8321f" opacity=".16"/>
+    <rect x="90" y="336" width="70" height="34" fill="#a8321f" opacity=".16"/>
+    <g fill="#c9d4de" stroke="#16202b" stroke-width="1.6">
+      <ellipse cx="212" cy="353" rx="13" ry="9"/>
+      <ellipse cx="247" cy="353" rx="13" ry="9"/>
+      <ellipse cx="282" cy="353" rx="13" ry="9"/>
+      <ellipse cx="177" cy="353" rx="13" ry="9"/>
+    </g>
+    <text x="80" y="400" font-size="15" fill="#a8321f">26 ячеек из 30 пусты</text>
+    <text x="80" y="424" font-size="15" fill="#3b4652">в четырёх — целые таблетки</text>
+    <text x="80" y="446" font-size="15" fill="#3b4652">серия 4112, срок 07.2027</text>
+  </g>
+
+  <!-- ================= PACK 2 ================= -->
+  <g>
+    <rect x="350" y="150" width="270" height="300" rx="8" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+    <text x="370" y="182" font-size="16" font-weight="600" fill="#16202b">Упаковка 2 · распакована</text>
+    <rect x="380" y="200" width="210" height="170" rx="4" fill="none" stroke="#16202b" stroke-width="2"/>
+    <path d="M415 200 V370 M450 200 V370 M485 200 V370 M520 200 V370 M555 200 V370
+             M380 234 H590 M380 268 H590 M380 302 H590 M380 336 H590" stroke="#3b4652" stroke-width="1"/>
+    <g fill="#c9d4de" stroke="#16202b" stroke-width="1.4">
+      <ellipse cx="397" cy="217" rx="12" ry="8"/><ellipse cx="432" cy="217" rx="12" ry="8"/><ellipse cx="467" cy="217" rx="12" ry="8"/><ellipse cx="502" cy="217" rx="12" ry="8"/><ellipse cx="537" cy="217" rx="12" ry="8"/><ellipse cx="572" cy="217" rx="12" ry="8"/>
+      <ellipse cx="397" cy="251" rx="12" ry="8"/><ellipse cx="432" cy="251" rx="12" ry="8"/><ellipse cx="467" cy="251" rx="12" ry="8"/><ellipse cx="502" cy="251" rx="12" ry="8"/><ellipse cx="537" cy="251" rx="12" ry="8"/><ellipse cx="572" cy="251" rx="12" ry="8"/>
+      <ellipse cx="397" cy="285" rx="12" ry="8"/><ellipse cx="432" cy="285" rx="12" ry="8"/><ellipse cx="467" cy="285" rx="12" ry="8"/><ellipse cx="502" cy="285" rx="12" ry="8"/><ellipse cx="537" cy="285" rx="12" ry="8"/><ellipse cx="572" cy="285" rx="12" ry="8"/>
+      <ellipse cx="397" cy="319" rx="12" ry="8"/><ellipse cx="432" cy="319" rx="12" ry="8"/><ellipse cx="467" cy="319" rx="12" ry="8"/><ellipse cx="502" cy="319" rx="12" ry="8"/><ellipse cx="537" cy="319" rx="12" ry="8"/><ellipse cx="572" cy="319" rx="12" ry="8"/>
+      <ellipse cx="397" cy="353" rx="12" ry="8"/><ellipse cx="432" cy="353" rx="12" ry="8"/><ellipse cx="467" cy="353" rx="12" ry="8"/><ellipse cx="502" cy="353" rx="12" ry="8"/><ellipse cx="537" cy="353" rx="12" ry="8"/><ellipse cx="572" cy="353" rx="12" ry="8"/>
+    </g>
+    <text x="370" y="400" font-size="15" fill="#3b4652">блистер цел, 30 ячеек</text>
+    <text x="370" y="424" font-size="15" fill="#3b4652">с таблетками</text>
+    <text x="370" y="446" font-size="15" fill="#3b4652">цена 2 880 ₽ за упаковку</text>
+  </g>
+
+  <!-- ================= PACK 3 ================= -->
+  <g>
+    <rect x="640" y="150" width="270" height="300" rx="8" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+    <text x="660" y="182" font-size="16" font-weight="600" fill="#16202b">Упаковка 3 · не вскрыта</text>
+    <rect x="690" y="204" width="170" height="162" rx="6" fill="none" stroke="#9fb1c1" stroke-width="3" opacity=".8"/>
+    <path d="M690 204 L860 366 M860 204 L690 366" stroke="#9fb1c1" stroke-width="1.4" opacity=".5"/>
+    <rect x="700" y="214" width="150" height="142" rx="4" fill="none" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="8 6"/>
+    <text x="660" y="400" font-size="15" fill="#3b4652">в заводской плёнке,</text>
+    <text x="660" y="424" font-size="15" fill="#3b4652">плёнка не вскрыта</text>
+    <text x="660" y="446" font-size="15" fill="#3b4652">счёт по трём упаковкам — 8 640 ₽</text>
+  </g>
+
+  <!-- ================= APOTHEKA STAMP ================= -->
+  <g>
+    <rect x="60" y="470" width="330" height="96" rx="6" fill="none" stroke="#3b4652" stroke-width="1.8"/>
+    <ellipse cx="130" cy="518" rx="42" ry="30" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+    <text x="130" y="512" font-size="12" fill="#a8321f" text-anchor="middle">ДЕЖУРНАЯ</text>
+    <text x="130" y="530" font-size="12" fill="#a8321f" text-anchor="middle">АПТЕКА</text>
+    <text x="192" y="506" font-size="15" fill="#3b4652">Оттиск печати на коробках:</text>
+    <text x="192" y="528" font-size="15" fill="#3b4652">«Дежурная аптека»,</text>
+    <text x="192" y="550" font-size="15" fill="#3b4652">ул. Трактовая, 9</text>
+  </g>
+  <rect x="410" y="470" width="500" height="96" rx="6" fill="none" stroke="#a8321f" stroke-width="2"/>
+  <text x="436" y="506" font-size="16" font-weight="600" fill="#a8321f">Дата на оттиске и в кассовой выгрузке — 21.10.2025</text>
+  <text x="436" y="534" font-size="15" fill="#3b4652">Чек № 6014 от 18:36:12, три упаковки «Реглипон 30 мг № 30»,</text>
+  <text x="436" y="556" font-size="15" fill="#3b4652">оплата корпоративной картой водителя серия К 14 № 0773</text>
+
+  <!-- ================= JAR ================= -->
+  <g>
+    <rect x="960" y="150" width="580" height="416" rx="8" fill="#c9d4de" stroke="#16202b" stroke-width="2.5" opacity=".45"/>
+    <text x="986" y="184" font-size="16" font-weight="600" fill="#16202b">Банка из бокса № 24</text>
+
+    <rect x="1000" y="212" width="200" height="250" rx="16" fill="#e8e2d4" stroke="#16202b" stroke-width="3"/>
+    <rect x="1000" y="300" width="200" height="60" fill="#33465c" opacity=".8"/>
+    <text x="1100" y="336" font-size="14" fill="#e8e2d4" text-anchor="middle">чехол из синей изоленты</text>
+    <rect x="1016" y="228" width="168" height="58" rx="4" fill="#f2e6c8" stroke="#16202b" stroke-width="1.6"/>
+    <text x="1100" y="252" font-size="15" fill="#16202b" text-anchor="middle">Метиглюкон 850 мг</text>
+    <text x="1100" y="274" font-size="15" fill="#a8321f" text-anchor="middle">№ 60</text>
+    <g fill="#c9d4de" stroke="#16202b" stroke-width="1.4">
+      <ellipse cx="1040" cy="392" rx="13" ry="9"/><ellipse cx="1074" cy="392" rx="13" ry="9"/>
+      <ellipse cx="1108" cy="392" rx="13" ry="9"/><ellipse cx="1142" cy="392" rx="13" ry="9"/>
+      <ellipse cx="1056" cy="418" rx="13" ry="9"/><ellipse cx="1090" cy="418" rx="13" ry="9"/>
+      <ellipse cx="1124" cy="418" rx="13" ry="9"/>
+    </g>
+    <text x="1100" y="446" font-size="15" fill="#a8321f" text-anchor="middle">в банке 22 таблетки</text>
+
+    <ellipse cx="1250" cy="470" rx="52" ry="18" fill="#f2e6c8" stroke="#16202b" stroke-width="2"/>
+    <text x="1250" y="474" font-size="12" fill="#3b4652" text-anchor="middle">на донышке пластырь</text>
+    <text x="1320" y="252" font-size="16" fill="#16202b">Крышка отвинчена,</text>
+    <text x="1320" y="276" font-size="16" fill="#16202b">лежала рядом</text>
+    <text x="1320" y="312" font-size="16" fill="#16202b">Пластырь на донышке:</text>
+    <text x="1320" y="336" font-size="16" fill="#16202b">«д. Авдей, утром и вечером»</text>
+    <text x="1320" y="372" font-size="16" fill="#3b4652">Смыв с крышки направлен</text>
+    <text x="1320" y="396" font-size="16" fill="#3b4652">на химию, пакет № 7</text>
+  </g>
+
+  <!-- ================= TABLET COMPARISON ================= -->
+  <rect x="60" y="586" width="850" height="278" rx="8" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+  <text x="88" y="624" font-size="18" font-weight="600" fill="#16202b">Таблетки на белой подложке: сравнение</text>
+
+  <g>
+    <ellipse cx="220" cy="712" rx="86" ry="52" fill="#c9d4de" stroke="#16202b" stroke-width="3"/>
+    <path d="M220 672 V752 M180 712 H260" stroke="#16202b" stroke-width="3"/>
+    <text x="220" y="790" font-size="15" fill="#a8321f" text-anchor="middle">из банки погибшего</text>
+    <text x="220" y="814" font-size="15" fill="#3b4652" text-anchor="middle">овальная, двояковыпуклая,</text>
+    <text x="220" y="836" font-size="15" fill="#3b4652" text-anchor="middle">фаска, тиснёный крест</text>
+  </g>
+  <text x="380" y="718" font-size="30" fill="#a8321f" text-anchor="middle">=</text>
+  <g>
+    <ellipse cx="540" cy="712" rx="86" ry="52" fill="#c9d4de" stroke="#16202b" stroke-width="3"/>
+    <path d="M540 672 V752 M500 712 H580" stroke="#16202b" stroke-width="3"/>
+    <text x="540" y="790" font-size="15" fill="#a8321f" text-anchor="middle">из упаковки 1</text>
+    <text x="540" y="814" font-size="15" fill="#3b4652" text-anchor="middle">совпадают форма, фаска</text>
+    <text x="540" y="836" font-size="15" fill="#3b4652" text-anchor="middle">и тиснёный знак</text>
+  </g>
+  <text x="700" y="718" font-size="30" fill="#3b4652" text-anchor="middle">≠</text>
+  <g>
+    <circle cx="810" cy="712" r="50" fill="#e8e2d4" stroke="#16202b" stroke-width="3"/>
+    <path d="M770 712 H850" stroke="#16202b" stroke-width="3"/>
+    <text x="810" y="694" font-size="18" fill="#16202b" text-anchor="middle">850</text>
+    <text x="810" y="790" font-size="15" fill="#16202b" text-anchor="middle">контроль: домашняя</text>
+    <text x="810" y="814" font-size="15" fill="#3b4652" text-anchor="middle">круглая, плоская, риска,</text>
+    <text x="810" y="836" font-size="15" fill="#3b4652" text-anchor="middle">знак «850»</text>
+  </g>
+
+  <!-- ================= ACCOUNT ================= -->
+  <rect x="960" y="586" width="580" height="278" rx="8" fill="none" stroke="#a8321f" stroke-width="2.5"/>
+  <text x="988" y="624" font-size="18" font-weight="600" fill="#a8321f">Расчёт по ячейкам</text>
+  <text x="988" y="662" font-size="17" fill="#16202b">Пустых ячеек в упаковке 1 ........ 26</text>
+  <text x="988" y="694" font-size="17" fill="#16202b">Таблеток в банке ...................... 22</text>
+  <text x="988" y="726" font-size="17" fill="#16202b">Растёрто в чай ................... 4</text>
+  <line x1="988" y1="748" x2="1512" y2="748" stroke="#a8321f" stroke-width="1.6"/>
+  <text x="988" y="780" font-size="16" fill="#3b4652">Домашняя упаковка «Метиглюкон 850, № 60»:</text>
+  <text x="988" y="804" font-size="16" fill="#3b4652">заводская плёнка не вскрыта, 60 штук,</text>
+  <text x="988" y="828" font-size="16" fill="#3b4652">чек от 13.10.2025, в снятии не участвовала</text>
+</svg>

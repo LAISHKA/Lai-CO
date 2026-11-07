@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gE29" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gE29)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" fill="#16202b">Лист учёта гостевых карт конторы и экран терминала: 21.10.2025</text>
+  <text x="60" y="104" font-size="19" fill="#3b4652">Снимок сделан при выемке 24.10.2025 в конторе ГК «Слип-4». Слева — бланк картоотеки с четырьмя прорезями, справа — экран терминала учёта.</text>
+
+  <!-- ============ PAPER SHEET ============ -->
+  <rect x="60" y="140" width="920" height="560" rx="6" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+  <text x="96" y="188" font-size="18" font-weight="600" fill="#16202b">ГК «Слип-4» · ЛИСТ УЧЁТА ГОСТЕВЫХ КАРТ · 21.10.2025</text>
+  <line x1="96" y1="204" x2="944" y2="204" stroke="#16202b" stroke-width="1.4"/>
+
+  <g font-size="15" fill="#3b4652">
+    <text x="96" y="236">Карта</text>
+    <text x="200" y="236">Кто получил</text>
+    <text x="470" y="236">Выдача</text>
+    <text x="580" y="236">Закрытие</text>
+    <text x="700" y="236">Назначение</text>
+    <text x="860" y="236">Возврат</text>
+  </g>
+  <line x1="96" y1="250" x2="944" y2="250" stroke="#3b4652" stroke-width="1.2"/>
+
+  <!-- row 14-A -->
+  <rect x="112" y="266" width="72" height="92" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="148" y="316" font-size="16" fill="#3b4652" text-anchor="middle">прорезь</text>
+  <g font-size="17" fill="#16202b">
+    <text x="96" y="300">14-А</text>
+    <text x="200" y="300">член кооператива</text>
+    <text x="470" y="300">09:14</text>
+    <text x="580" y="300">—</text>
+    <text x="700" y="300">своя ячейка</text>
+    <text x="860" y="300">в прорези</text>
+  </g>
+
+  <!-- row 14-B -->
+  <rect x="112" y="374" width="72" height="92" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="148" y="424" font-size="16" fill="#3b4652" text-anchor="middle">прорезь</text>
+  <g font-size="17" fill="#16202b">
+    <text x="96" y="408">14-Б</text>
+    <text x="200" y="408">Верещагин Э. П.</text>
+    <text x="470" y="408">18:30</text>
+    <text x="580" y="408">18:44</text>
+    <text x="700" y="408">бокс 24</text>
+    <text x="860" y="408">подпись есть</text>
+  </g>
+
+  <!-- row 14-G, highlighted -->
+  <rect x="88" y="482" width="864" height="92" rx="6" fill="#a8321f" opacity=".16"/>
+  <rect x="112" y="490" width="72" height="76" rx="6" fill="none" stroke="#a8321f" stroke-width="2"/>
+  <text x="148" y="534" font-size="16" fill="#a8321f" text-anchor="middle">карта</text>
+  <g font-size="17" fill="#16202b">
+    <text x="96" y="520" fill="#a8321f" font-weight="600">14-Г</text>
+    <text x="200" y="520" fill="#a8321f" font-weight="600">Хабардин Г. С., К 108 НВ 716</text>
+    <text x="470" y="520">19:01</text>
+    <text x="580" y="520">по экрану 19:25:44</text>
+    <text x="700" y="520">бокс № 24, гость</text>
+  </g>
+  <text x="860" y="512" font-size="16" fill="#3b4652">возврат</text>
+  <text x="856" y="540" font-size="21" fill="#16202b" font-style="italic">20:31</text>
+  <path d="M852 552 q26 8 52 -2" stroke="#16202b" stroke-width="1.4" fill="none"/>
+
+  <!-- row 14-E, struck out -->
+  <rect x="112" y="594" width="72" height="76" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="148" y="638" font-size="15" fill="#3b4652" text-anchor="middle">пусто</text>
+  <g font-size="17" fill="#3b4652">
+    <text x="96" y="628">14-Е</text>
+    <text x="200" y="628">строка зачёркнута 20.10</text>
+    <text x="700" y="628">карта в прорези отсутствует</text>
+  </g>
+  <path d="M96 622 H456" stroke="#16202b" stroke-width="2"/>
+
+  <text x="96" y="682" font-size="16" fill="#3b4652">Графа «возврат» по карте 14-Г заполнена от руки шариковой ручкой, отдельно от печатных строк листа.</text>
+
+  <!-- ============ TERMINAL SCREEN ============ -->
+  <rect x="1010" y="140" width="530" height="330" rx="8" fill="#16202b" stroke="#16202b" stroke-width="2.5"/>
+  <text x="1036" y="184" font-size="17" fill="#9fb1c1">ТЕРМИНАЛ УЧЁТА · 21.10.2025</text>
+  <line x1="1036" y1="200" x2="1514" y2="200" stroke="#5c7286" stroke-width="1.2"/>
+  <g font-size="15" fill="#9fb1c1">
+    <text x="1036" y="232">КАРТА</text>
+    <text x="1180" y="232">ПРИНЯТА</text>
+    <text x="1360" y="232">ЗАКРЫТА</text>
+  </g>
+  <line x1="1036" y1="246" x2="1514" y2="246" stroke="#5c7286" stroke-width="1"/>
+  <g font-size="19" fill="#e8e2d4">
+    <text x="1036" y="284">14-А</text>
+    <text x="1180" y="284">09:14</text>
+    <text x="1360" y="284">строка свернута</text>
+
+    <text x="1036" y="326">14-Б</text>
+    <text x="1180" y="326">18:30</text>
+    <text x="1360" y="326">18:44</text>
+
+    <rect x="1028" y="344" width="486" height="42" rx="4" fill="#a8321f" opacity=".3"/>
+    <text x="1036" y="372" fill="#f4c9bd">14-Г</text>
+    <text x="1180" y="372" fill="#f4c9bd">19:01:12</text>
+    <text x="1360" y="372" fill="#f4c9bd">19:25:44 автомат.</text>
+  </g>
+  <text x="1036" y="424" font-size="15" fill="#9fb1c1">журнал объезда охраны, синхронизация не выполняется</text>
+  <rect x="1290" y="440" width="12" height="20" fill="#e8e2d4"/>
+  <text x="1036" y="458" font-size="15" fill="#e8e2d4">поле ввода: журнал</text>
+
+  <!-- ============ CARD FACE ============ -->
+  <rect x="1010" y="496" width="530" height="204" rx="10" fill="#f2e6c8" stroke="#16202b" stroke-width="2.5"/>
+  <circle cx="1470" cy="546" r="24" fill="none" stroke="#3b4652" stroke-width="2"/>
+  <path d="M1458 546 h24 M1470 534 v24" stroke="#3b4652" stroke-width="2"/>
+  <text x="1038" y="540" font-size="19" font-weight="600" fill="#16202b">ГОСТЕВАЯ КАРТА 14-Г</text>
+  <text x="1038" y="572" font-size="16" fill="#3b4652">бесконтактная, эмблема кооператива</text>
+  <text x="1038" y="606" font-size="17" fill="#16202b">Владелец по листу: Хабардин Г. С.</text>
+  <text x="1038" y="632" font-size="17" fill="#16202b">Знак автомобиля: К 108 НВ 716</text>
+  <text x="1038" y="662" font-size="17" fill="#a8321f">Назначение: бокс № 24, гость</text>
+
+  <!-- ============ BOTTOM NOTES ============ -->
+  <rect x="60" y="726" width="920" height="138" rx="6" fill="none" stroke="#a8321f" stroke-width="2"/>
+  <text x="88" y="762" font-size="17" font-weight="600" fill="#a8321f">Две шкалы на одном снимке</text>
+  <text x="88" y="792" font-size="16" fill="#3b4652">Лист конторы: выдача 19:01, возврат от руки 20:31. Экран: принята 19:01:12,</text>
+  <text x="88" y="816" font-size="16" fill="#3b4652">закрыта 19:25:44. Часы терминала отстают от поясного на одну минуту —</text>
+  <text x="88" y="842" font-size="16" fill="#3b4652">по поясному это 19:02:12 и 19:26:44.</text>
+
+  <rect x="1010" y="726" width="530" height="138" rx="6" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="1038" y="762" font-size="17" font-weight="600" fill="#16202b">Чего на листе нет</text>
+  <text x="1038" y="792" font-size="16" fill="#3b4652">Строк на фамилию Гнилорыбова</text>
+  <text x="1038" y="816" font-size="16" fill="#3b4652">К. Е. нет ни в одной из четырёх</text>
+  <text x="1038" y="842" font-size="16" fill="#3b4652">прорезей; 14-Е зачёркнута 20.10.</text>
+</svg>

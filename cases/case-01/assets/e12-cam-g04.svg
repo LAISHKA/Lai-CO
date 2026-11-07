@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g12" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#7f97a4" stroke-opacity=".1" stroke-width="1"/>
+    </pattern>
+    <clipPath id="shoe12"><rect x="1000" y="620" width="480" height="220" rx="10"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect width="1600" height="900" fill="url(#g12)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3d4e5c" stroke-width="2.5"/>
+
+  <polygon points="1540,120 1540,860 760,860 900,120" fill="#cfe3e8" fill-opacity=".05"/>
+  <text x="60" y="70" font-size="25" fill="#cfe3e8">Схема 8 · зона разгрузки −1, контейнер № 3, кадр 23:03:22</text>
+  <text x="60" y="100" font-size="19" fill="#7f97a4">камера G-04, объектив 2,8 мм · в кадре служебная дверь SD-1 и рольставня грузового лифта</text>
+
+  <!-- рольставня -->
+  <g stroke="#cfe3e8" stroke-width="2.4" fill="#16202b">
+    <rect x="60" y="200" width="230" height="470"/>
+  </g>
+  <g stroke="#7f97a4" stroke-width="2" stroke-opacity=".7">
+    <line x1="60" y1="240" x2="290" y2="240"/><line x1="60" y1="280" x2="290" y2="280"/>
+    <line x1="60" y1="320" x2="290" y2="320"/><line x1="60" y1="360" x2="290" y2="360"/>
+    <line x1="60" y1="400" x2="290" y2="400"/><line x1="60" y1="440" x2="290" y2="440"/>
+    <line x1="60" y1="480" x2="290" y2="480"/><line x1="60" y1="520" x2="290" y2="520"/>
+    <line x1="60" y1="560" x2="290" y2="560"/><line x1="60" y1="600" x2="290" y2="600"/>
+  </g>
+  <text x="60" y="188" font-size="19" fill="#7f97a4">рольставня грузового лифта (закрыта)</text>
+
+  <!-- дверь SD-1 -->
+  <rect x="330" y="230" width="150" height="440" fill="#16202b" stroke="#cfe3e8" stroke-width="2.8"/>
+  <path d="M330 670 A150 150 0 0 0 480 520" fill="none" stroke="#1f6f8f" stroke-width="2.6" stroke-dasharray="12 8"/>
+  <text x="330" y="216" font-size="19" fill="#7f97a4">SD-1 · открыта кодом PROM-3</text>
+  <text x="330" y="700" font-size="19" fill="#1f6f8f">21:58:11 вход · 23:03:18 выход</text>
+
+  <!-- пол -->
+  <line x1="60" y1="760" x2="960" y2="760" stroke="#cfe3e8" stroke-width="3.4"/>
+  <g stroke="#7f97a4" stroke-width="2" stroke-opacity=".55">
+    <line x1="200" y1="760" x2="160" y2="800"/><line x1="480" y1="760" x2="440" y2="800"/>
+    <line x1="760" y1="760" x2="720" y2="800"/>
+  </g>
+  <text x="660" y="836" font-size="19" fill="#7f97a4">бетон, сухо, разметка погрузочной рамп</text>
+
+  <!-- контейнер -->
+  <g fill="#16202b" stroke="#cfe3e8" stroke-width="3">
+    <path d="M560 520 L600 760 H900 L940 520 Z"/>
+  </g>
+  <path d="M560 520 l-40 -26 M940 520 l40 -26" stroke="#cfe3e8" stroke-width="2.6"/>
+  <text x="600" y="480" font-size="20" fill="#cfe3e8">контейнер № 3 (крышка откинута)</text>
+
+  <!-- фигура наклонилась -->
+  <g transform="translate(700,384)">
+    <path d="M-10 122 q-56 -14 -80 44 q-18 46 12 54 q56 -18 104 -20 z" fill="#1f3d5c" stroke="#cfe3e8" stroke-width="2.6"/>
+    <path d="M-92 78 q34 -62 96 -56 q56 6 58 62 l-24 96 q-56 16 -112 -4 z" fill="#8e2b1c" stroke="#cfe3e8" stroke-width="2.6"/>
+    <circle cx="-58" cy="24" r="34" fill="#7a2418" stroke="#cfe3e8" stroke-width="2.6"/>
+    <path d="M-100 44 q22 -34 58 -22" fill="none" stroke="#cfe3e8" stroke-width="2.2"/>
+    <path d="M104 158 l18 128" stroke="#cfe3e8" stroke-width="3"/>
+    <path d="M78 178 l-12 108" stroke="#cfe3e8" stroke-width="3"/>
+    <path d="M88 286 h34 M110 286 h34" stroke="#cfe3e8" stroke-width="6"/>
+    <!-- red object falling -->
+    <ellipse cx="-6" cy="240" rx="30" ry="20" fill="#8e2b1c" stroke="#cfe3e8" stroke-width="2.2" transform="rotate(-24 -6 240)"/>
+  </g>
+  <text x="404" y="252" font-size="21" fill="#cfe3e8">жилет без рукавов поверх</text>
+  <text x="404" y="278" font-size="21" fill="#cfe3e8">красного пуховика, капюшон снят</text>
+
+  <!-- выноска баллона -->
+  <rect x="1000" y="180" width="70" height="180" rx="32" fill="#b8352a" stroke="#cfe3e8" stroke-width="2.6" transform="rotate(18 1035 270)"/>
+  <text x="1100" y="216" font-size="20" fill="#cfe3e8">вслед за пуховиком — ОП-5</text>
+  <text x="1100" y="242" font-size="20" fill="#cfe3e8">баллон уходит в контейнер</text>
+
+  <!-- врезка обуви -->
+  <rect x="1000" y="620" width="480" height="220" rx="10" fill="#101820" stroke="#cfe3e8" stroke-width="3"/>
+  <g clip-path="url(#shoe12)">
+    <path d="M1040 780 q10 -64 90 -70 q60 -4 92 22 q40 6 96 8 q46 2 46 34 l0 20 h-420 z"
+          fill="#2b3946" stroke="#cfe3e8" stroke-width="2.6"/>
+    <path d="M1040 796 h420" stroke="#e8c33a" stroke-width="4"/>
+    <path d="M1130 710 q40 -18 84 -6" fill="none" stroke="#cfe3e8" stroke-width="2.2" stroke-opacity=".6"/>
+  </g>
+  <text x="1000" y="606" font-size="20" fill="#cfe3e8">увеличение: обувь левой ноги</text>
+  <text x="1012" y="866" font-size="19" fill="#e8c33a">кожаный рант, каблук 2 см · след 43-го</text>
+  <g stroke="#cfe3e8" stroke-width="1.8" stroke-dasharray="9 7">
+    <line x1="1050" y1="806" x2="1010" y2="836"/><line x1="1420" y1="800" x2="1466" y2="836"/>
+  </g>
+  <text x="1120" y="560" font-size="19" fill="#7f97a4">пунктиром — где должен быть композитный носок</text>
+  <path d="M1120 574 q120 20 200 44" fill="none" stroke="#7f97a4" stroke-width="1.8" stroke-dasharray="9 7"/>
+
+  <text x="60" y="136" font-size="20" fill="#cfe3e8">Опознание по силуэту невозможно; ориентировка по одежде и обуви — единственный читаемый признак кадра.</text>
+</svg>

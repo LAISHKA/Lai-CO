@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#3b4652" stroke-width="1.6" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Коридор пятого этажа: камера 21, замок 507 и лестница</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Регистратор без синхронизации с 02.09.2025 (акт 96-А), отставание от сервера минус 12 секунд. Замок 507 по акту 118-П отстаёт на 47 секунд.</text>
+
+  <!-- corridor -->
+  <g>
+    <rect x="120" y="260" width="1000" height="240" fill="#f2ecdf" stroke="#16202b" stroke-width="4"/>
+    <!-- lift -->
+    <rect x="120" y="260" width="150" height="240" fill="url(#hatch)" stroke="#16202b" stroke-width="3"/>
+    <text x="136" y="300" font-size="17" fill="#16202b">лифт Б</text>
+    <!-- stair -->
+    <rect x="120" y="530" width="150" height="110" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="136" y="566" font-size="16" fill="#16202b">лестница</text>
+    <text x="136" y="590" font-size="15" fill="#3b4652">дверь на глухой защёлке</text>
+    <!-- doors -->
+    <g stroke="#16202b" stroke-width="2.6" fill="#ded7c6">
+      <rect x="330" y="260" width="10" height="60"/>
+      <rect x="480" y="260" width="10" height="60"/>
+      <rect x="630" y="260" width="10" height="60"/>
+      <rect x="780" y="260" width="10" height="60"/>
+      <rect x="930" y="260" width="10" height="60"/>
+    </g>
+    <g font-size="16" fill="#16202b">
+      <text x="316" y="248">505</text>
+      <text x="466" y="248">507</text>
+      <text x="616" y="248">509</text>
+      <text x="766" y="248">511</text>
+      <text x="916" y="248">512</text>
+    </g>
+    <!-- 507 highlighted -->
+    <rect x="466" y="256" width="40" height="72" fill="none" stroke="#a8321f" stroke-width="3"/>
+    <text x="512" y="232" font-size="16" fill="#a8321f">замок 507: журнал, шаг 1 секунда</text>
+    <!-- laundry -->
+    <rect x="1000" y="260" width="120" height="120" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1012" y="292" font-size="16" fill="#16202b">прачечная</text>
+    <text x="1012" y="316" font-size="15" fill="#3b4652">тележки, приёмный стол</text>
+    <!-- camera sector -->
+    <circle cx="200" cy="470" r="9" fill="none" stroke="#a8321f" stroke-width="2.6"/>
+    <path d="M200 470 L1120 300 L1120 500 z" fill="#a8321f" opacity=".07"/>
+    <text x="216" y="496" font-size="16" fill="#a8321f">камера 21: лифт, 507—512, лестница, прачечная в конце</text>
+    <!-- metric scale -->
+    <g stroke="#3b4652" stroke-width="1.6">
+      <line x1="270" y1="440" x2="1120" y2="440"/>
+      <line x1="270" y1="432" x2="270" y2="448"/>
+      <line x1="420" y1="434" x2="420" y2="446"/>
+      <line x1="570" y1="434" x2="570" y2="446"/>
+      <line x1="720" y1="434" x2="720" y2="446"/>
+      <line x1="870" y1="434" x2="870" y2="446"/>
+      <line x1="1020" y1="434" x2="1020" y2="446"/>
+    </g>
+    <text x="270" y="470" font-size="15" fill="#3b4652">0</text>
+    <text x="565" y="470" font-size="15" fill="#3b4652">5 м</text>
+    <text x="1010" y="470" font-size="15" fill="#3b4652">10 м</text>
+    <!-- walk path -->
+    <path d="M240 380 L470 330" stroke="#a8321f" stroke-width="2.6" fill="none"/>
+    <path d="M470 340 L240 560 L200 520" stroke="#a8321f" stroke-width="2.2" fill="none" stroke-dasharray="8 6"/>
+    <text x="300" y="366" font-size="15" fill="#a8321f">к 507</text>
+    <text x="286" y="404" font-size="15" fill="#a8321f">обратно — не к лифту, а к лестнице</text>
+  </g>
+
+  <!-- timeline -->
+  <g>
+    <line x1="1200" y1="170" x2="1200" y2="700" stroke="#16202b" stroke-width="2.5"/>
+    <g font-size="17" fill="#3b4652">
+      <text x="1220" y="200" font-size="19" font-weight="600" fill="#16202b">Кадры камеры 21</text>
+      <text x="1220" y="236">23:11:59 — из лифта выходит</text>
+      <text x="1220" y="258">женщина в пиджаке.</text>
+      <text x="1220" y="288">23:12:26 — прикладывается к замку 507.</text>
+      <text x="1220" y="310">23:12:41 — дверь открыта,</text>
+      <text x="1220" y="332">23:12:44 — она внутри, коридор пуст.</text>
+      <text x="1220" y="368">23:31:07 — выходит из 507: в руке бокал,</text>
+      <text x="1220" y="390">в другой скомканный платок.</text>
+      <text x="1220" y="420">23:32:10 — входит в лифт.</text>
+      <text x="1220" y="456">00:43:20 — из лифта выходят двое:</text>
+      <text x="1220" y="478">в пиджаке и в халате стойки.</text>
+      <text x="1220" y="508">00:57:12 — те же двое к лифту,</text>
+      <text x="1220" y="530">у старшей пакет, халат расстёгнут.</text>
+      <text x="1220" y="566">09:04 — горничная с тележкой.</text>
+      <text x="1220" y="596">11:06 — мужчина с ремнём через плечо,</text>
+      <text x="1220" y="618">в кадре 9 секунд.</text>
+    </g>
+    <g fill="#a8321f">
+      <circle cx="1192" cy="230" r="6"/>
+      <circle cx="1192" cy="362" r="6"/>
+      <circle cx="1192" cy="450" r="6"/>
+      <circle cx="1192" cy="502" r="6"/>
+    </g>
+  </g>
+
+  <g font-size="17" fill="#16202b">
+    <text x="60" y="710" font-size="19" font-weight="600">Три шкалы одной ночи</text>
+  </g>
+  <g font-size="17" fill="#3b4652">
+    <text x="60" y="742">Камера 21 отстаёт от сервера на 12 секунд, замок 507 — на 47. Одна и та же минута в этих двух журналах — не одно и то же время: секунды между ними не складывают.</text>
+    <text x="60" y="772">Точку отсчёта держат по серверу стойки: к нему привязан журнал лифта Б, и только он даёт время без поправки.</text>
+    <text x="60" y="802">Расхождение кадров камеры 21 с журналом лифта — до шестидесяти секунд: регистратор коридора без синхронизации, об этом акт 96-А от 02.09.2025.</text>
+    <text x="60" y="832">Поверку замков делал 13.10.2025 инженер Кутырин Т. С., акт 118-П, допуск по паспорту прибора — 10 секунд.</text>
+  </g>
+
+  <text x="60" y="868" font-size="16" fill="#3b4652">Схема секторов и расстояний — приложение к выгрузке архива камеры 21 за 14—15.10.2025. Шаг сетки коридора — 1 метр.</text>
+</svg>

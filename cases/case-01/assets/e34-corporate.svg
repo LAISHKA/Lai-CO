@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g34" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#5c7286" stroke-opacity=".14" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch34" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#a8321f" stroke-width="2.4" stroke-opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#g34)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <!-- лист фотобумаги -->
+  <g transform="translate(120,140)">
+    <rect x="0" y="0" width="1000" height="640" fill="#f6f2e7" stroke="#16202b" stroke-width="3"/>
+    <rect x="40" y="40" width="920" height="500" fill="#dfe6ea" stroke="#3b4652" stroke-width="2.4"/>
+
+    <!-- сцена -->
+    <rect x="40" y="40" width="920" height="150" fill="#c9d6de"/>
+    <line x1="40" y1="190" x2="960" y2="190" stroke="#3b4652" stroke-width="2.6"/>
+    <text x="60" y="176" font-size="26" fill="#3b4652" font-style="italic">«Аргус · 10 лет»</text>
+    <!-- мишура -->
+    <path d="M60 250 q160 60 320 8 q170 -54 320 6 q160 56 250 -8" fill="none" stroke="#1f6f8f" stroke-width="4" stroke-opacity=".4"/>
+
+    <!-- фигуры (лица не читаются) -->
+    <g fill="#5c7286" stroke="#16202b" stroke-width="2.2">
+      <g transform="translate(150,250)"><circle cx="0" cy="40" r="34"/><path d="M-44 96 q44 -30 88 0 l12 190 h-112 z"/></g>
+      <g transform="translate(280,262)"><circle cx="0" cy="40" r="32"/><path d="M-42 94 q42 -28 84 0 l10 186 h-104 z"/></g>
+      <g transform="translate(420,244)"><circle cx="0" cy="40" r="34"/><path d="M-46 96 q46 -30 92 0 l12 194 h-116 z"/></g>
+      <g transform="translate(700,252)"><circle cx="0" cy="40" r="33"/><path d="M-44 96 q44 -28 88 0 l10 188 h-108 z"/></g>
+      <g transform="translate(840,266)"><circle cx="0" cy="40" r="31"/><path d="M-40 92 q40 -26 80 0 l10 184 h-100 z"/></g>
+    </g>
+
+    <!-- фигура в красном пуховике -->
+    <g transform="translate(560,236)">
+      <circle cx="0" cy="42" r="34" fill="#8e6f5c" stroke="#16202b" stroke-width="2.2"/>
+      <path d="M-50 100 q50 -32 100 0 l14 200 h-128 z" fill="#b8352a" stroke="#16202b" stroke-width="2.4"/>
+      <path d="M-50 100 q-16 60 -8 116 l30 -8 z" fill="#a82f24" stroke="#16202b" stroke-width="2.2"/>
+      <path d="M50 100 q18 58 10 116 l-32 -8 z" fill="#a82f24" stroke="#16202b" stroke-width="2.2"/>
+      <path d="M-30 6 q30 -34 60 -6 q4 22 -30 26 q-32 0 -30 -20 z" fill="#7f2418" stroke="#16202b" stroke-width="2.2"/>
+      <!-- бокал -->
+      <path d="M62 128 l16 0 l-4 34 q-4 10 -8 0 z" fill="#f6f2e7" stroke="#16202b" stroke-width="2"/>
+      <!-- манжета и запонка -->
+      <circle cx="44" cy="168" r="7" fill="#e8c33a" stroke="#16202b" stroke-width="2"/>
+    </g>
+
+    <!-- силуэт Смолина в очках -->
+    <g transform="translate(420,244)">
+      <path d="M-18 34 h14 M6 34 h14 M-4 34 v6" stroke="#f6f2e7" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- дамская рука с телефоном: блик -->
+    <rect x="40" y="540" width="920" height="14" fill="#c9d6de" stroke="#3b4652" stroke-width="2"/>
+
+    <!-- красный карандаш: обвели фигуру -->
+    <ellipse cx="560" cy="392" rx="118" ry="196" fill="none" stroke="#a8321f" stroke-width="5" stroke-dasharray="22 12" transform="rotate(-3 560 392)"/>
+    <path d="M660 250 q120 -80 210 -96" fill="none" stroke="#a8321f" stroke-width="4"/>
+    <text x="700" y="128" font-size="30" fill="#a8321f" transform="rotate(-6 700 128)" font-style="italic">Илья, пуховик р. 50</text>
+    <text x="700" y="164" font-size="26" fill="#a8321f" transform="rotate(-6 700 164)" font-style="italic">по бирке, 25.12.2024</text>
+
+    <!-- дата в углу -->
+    <text x="660" y="512" font-size="30" fill="#c8811f" font-family="'Consolas',monospace" opacity=".9">25 12 19:44</text>
+  </g>
+
+  <!-- выноски справа -->
+  <g font-size="21" fill="#16202b">
+    <text x="1170" y="220">1 — Рощин И. Э.: красный</text>
+    <text x="1170" y="246">   пуховик с чёрной тесьмой</text>
+    <text x="1170" y="272">   капюшона, поверх рубашки</text>
+    <line x1="1160" y1="240" x2="678" y2="404" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="9 7"/>
+
+    <text x="1170" y="360">2 — Смолин Г. А. в очках,</text>
+    <text x="1170" y="386">   без пиджака, слева от него</text>
+    <line x1="1160" y1="372" x2="466" y2="292" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="9 7"/>
+
+    <text x="1170" y="470">3 — на левом манжете та же</text>
+    <text x="1170" y="496">   пара запонок, что изъята</text>
+    <text x="1170" y="522">   в 23-14 (правая отсутствует)</text>
+    <line x1="1160" y1="486" x2="608" y2="408" stroke="#3b4652" stroke-width="1.6" stroke-dasharray="9 7"/>
+
+    <text x="1170" y="606">Копия распечатана со следственного</text>
+    <text x="1170" y="632">эксперимента 09.02.2025; оригинал —</text>
+    <text x="1170" y="658">в чате «Аргус | Новый год», сохранён</text>
+    <text x="1170" y="684">в телефоне Гриценко П. Ю.</text>
+  </g>
+
+  <!-- метки -->
+  <g font-size="24" font-weight="600" text-anchor="middle" fill="#16202b">
+    <path d="M598 424 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="618" y="420">1</text>
+    <path d="M406 300 l20 -36 l20 36 z" fill="#e8c33a" stroke="#16202b" stroke-width="2"/><text x="426" y="296">2</text>
+    <path d="M600 380 l0 0 l0 0 z"/>
+  </g>
+
+  <!-- основная надпись -->
+  <g transform="translate(1150,822)">
+    <rect x="-410" y="-96" width="410" height="96" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="-410" y1="-50" x2="0" y2="-50" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="-260" y1="-50" x2="-260" y2="0" stroke="#16202b" stroke-width="1.8"/>
+    <text x="-396" y="-66" font-size="21" font-weight="600">Схема 9: фототаблица, лист 3</text>
+    <text x="-396" y="-18" font-size="18">копия, печать 09.02.2025</text>
+    <text x="-246" y="-18" font-size="18">приобщена к делу № 1</text>
+  </g>
+</svg>

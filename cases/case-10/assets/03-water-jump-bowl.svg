@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid103" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <marker id="arr103" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid103)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Чаша водоёма и тело у осевой метки: план с севера</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Сектор «Б», препятствие № 6. Съёмка следователя с понятыеми 21:41—22:03, девять кадров, линейка в каждом кадре.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="440" fill="#16202b"/>
+    <rect x="72" y="152" width="776" height="416" fill="#2f4258"/>
+
+    <rect x="170" y="176" width="520" height="366" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+    <rect x="200" y="236" width="460" height="244" fill="#24506b" stroke="#8fa3b5" stroke-width="2"/>
+    <path d="M200 430 h 460 v 50 h -460 Z" fill="#2f6183"/>
+    <path d="M212 262 h 120 M212 286 h 60" stroke="#7fb0cd" stroke-width="1.4" opacity=".7"/>
+    <text x="356" y="266" font-size="13" fill="#dfe6ea">глубина 70 см у дальней бровки</text>
+    <text x="356" y="470" font-size="13" fill="#dfe6ea">24 см у ближней бровки</text>
+    <text x="176" y="222" font-size="13" fill="#c9d4de">дальняя бровка, бетон</text>
+
+    <path d="M430 344 v 136" stroke="#f2e6c8" stroke-width="3" stroke-dasharray="8 6"/>
+    <path d="M430 344 h 236" stroke="#f2e6c8" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <text x="560" y="336" font-size="13" fill="#f2e6c8">осевая метка, мел свежий</text>
+    <text x="560" y="354" font-size="12" fill="#c9d4de">обрывается в метре от бровки</text>
+
+    <g transform="rotate(-14 400 380)">
+      <ellipse cx="402" cy="392" rx="26" ry="58" fill="#dfe6ea" stroke="#16202b" stroke-width="1.6"/>
+      <circle cx="398" cy="330" r="16" fill="#dfe6ea" stroke="#16202b" stroke-width="1.6"/>
+      <path d="M380 356 l -34 -12" stroke="#dfe6ea" stroke-width="7" stroke-linecap="round"/>
+      <path d="M410 448 l -8 46 M420 448 l 12 44" stroke="#dfe6ea" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <text x="452" y="404" font-size="13" fill="#a8321f">тело на левом боку, голова в воде</text>
+    <path d="M346 342 L 208 330" stroke="#a8321f" stroke-width="1.4" marker-end="url(#arr103)"/>
+    <text x="216" y="318" font-size="12" fill="#a8321f">правая рука под бровкой, пальцы в илу</text>
+
+    <g fill="none" stroke="#16202b" stroke-width="1.6">
+      <circle cx="500" cy="206" r="9"/>
+      <circle cx="524" cy="206" r="9"/>
+      <path d="M509 206 h 6"/>
+      <path d="M491 202 h -8 M491 210 h -8 M451 214 h 44"/>
+    </g>
+    <text x="546" y="212" font-size="12" fill="#c9d4de">очки без стёкол, 30 см от головы</text>
+
+    <g fill="#16202b" opacity=".8">
+      <path d="M244 190 q 10 -12 20 0 l 3 22 q -13 7 -26 0 Z"/>
+      <path d="M312 200 q 10 -12 20 0 l 3 22 q -13 7 -26 0 Z"/>
+    </g>
+    <circle cx="256" cy="206" r="3" fill="#e08a2e"/>
+    <circle cx="324" cy="216" r="3" fill="#e08a2e"/>
+    <text x="212" y="172" font-size="12" fill="#c9d4de">каблук с металлической набойкой, шаг 62 см</text>
+
+    <g stroke="#8fa3b5" stroke-width="1.6">
+      <rect x="556" y="404" width="86" height="56" fill="#2f4258"/>
+      <path d="M556 418 h 86 M556 432 h 86 M556 446 h 86 M578 404 v 56 M600 404 v 56 M622 404 v 56"/>
+    </g>
+    <text x="540" y="480" font-size="12" fill="#c9d4de">решётка слива: ил и трава, слив закрыт</text>
+
+    <path d="M430 542 v -50" stroke="#e08a2e" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr103)"/>
+    <text x="352" y="560" font-size="12" fill="#e08a2e">пологий вход со стороны дорожки</text>
+
+    <path d="M640 556 q 12 -18 30 -18 q 18 0 30 18 l -8 6 q -8 -12 -22 -12 q -14 0 -22 12 Z" fill="#16202b" stroke="#8fa3b5" stroke-width="1.4"/>
+    <text x="600" y="536" font-size="12" fill="#c9d4de">подкова переднего правого копыта</text>
+
+    <text x="88" y="182" font-size="16" fill="#e8e2d4">26.09.2026  21:41</text>
+    <text x="90" y="204" font-size="13" fill="#8fa3b5">масштаб: 1 м — 96 px</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Что показывает съёмка</text>
+    <line x1="920" y1="200" x2="920" y2="620" stroke="#16202b" stroke-width="2"/>
+    <g font-size="14" fill="#3b4652">
+      <circle cx="920" cy="216" r="5" fill="#2f4258"/>
+      <text x="940" y="220">Кадр 1 — чаша с севера: бетонное корыто, бровка без разрушений</text>
+      <circle cx="920" cy="256" r="5" fill="#2f4258"/>
+      <text x="940" y="260">Кадр 2 — вода держится 70 см, на решётке слива ил и трава</text>
+      <circle cx="920" cy="296" r="5" fill="#2f4258"/>
+      <text x="940" y="300">Кадр 3 — осевая меловая метка по дну, правленая свежим мелом</text>
+      <circle cx="920" cy="336" r="5" fill="#a8321f"/>
+      <text x="940" y="340" fill="#16202b">Кадр 4 — тело на левом боку, голова в воде, правая рука под бровкой</text>
+      <circle cx="920" cy="376" r="5" fill="#a8321f"/>
+      <text x="940" y="380" fill="#16202b">Кадр 5 — пальцы в илу, сапог потерпевшего следа на бетоне не оставил</text>
+      <circle cx="920" cy="416" r="5" fill="#2f4258"/>
+      <text x="940" y="420">Кадр 6 — очки в оправе без стёкол на сухой полосе бетона</text>
+      <circle cx="920" cy="456" r="5" fill="#a8321f"/>
+      <text x="940" y="460" fill="#16202b">Кадр 7 — два отпечатка каблука с набойкой в шахматном порядке,</text>
+      <text x="940" y="480" fill="#16202b">развёрнутые к дорожке; сапог потерпевшего такого следа не оставил</text>
+      <circle cx="920" cy="516" r="5" fill="#2f4258"/>
+      <text x="940" y="520">Кадр 8 — кусок мела в правой руке, грани скруглены</text>
+      <circle cx="920" cy="556" r="5" fill="#2f4258"/>
+      <text x="940" y="560">Кадр 9 — носовой платок в кармане: меловая пыль и капля бурого цвета</text>
+      <circle cx="920" cy="596" r="5" fill="#2f4258"/>
+      <text x="940" y="600">Погода на съёмке: дождь прекратился, освещение ровное</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="648" x2="860" y2="648" stroke="#16202b" stroke-width="2"/>
+  <line x1="900" y1="648" x2="1560" y2="648" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="686" font-size="19" font-weight="600" fill="#16202b">Замеры и изъятое</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="718">Чаша: бетонное корыто 4,2 × 2,6 м, пологий вход со стороны дорожки.</text>
+      <text x="60" y="742">Вода: 70 см у дальней бровки, 24 см у ближней; сливное отверстие закрыто решёткой.</text>
+      <text x="60" y="766">Мел в руке: 40 × 30 мм, грани скруглены, тот же, что на разметке сектора.</text>
+      <text x="60" y="790">Отпечатки каблука: шаг 62 см, вес приходится на носок, глубина 2 мм в песке.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="60" y="826">Изъяты мел, очки и носовой платок; правый сапог с ноги не снимался.</text>
+      <text x="60" y="850">На воротнике белая полоса мела с левой стороны, размыта водой до уровня плеча.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="686" font-size="19" font-weight="600" fill="#16202b">Особые отметки</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="900" y="718">На дорожке перед чашей — отпечаток подковы переднего правого копыта «Грозы-3».</text>
+      <text x="900" y="742">На платке — следы той же меловой пыли и капля бурого цвета</text>
+      <text x="900" y="766">не человеческого происхождения; платок изъят при осмотре.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="900" y="802">Освещение сектора «Б» гасло в 21:11:06 и включилось в 21:15:19.</text>
+      <text x="900" y="826">Слив по указанию принимающего не открывали до окончания дня.</text>
+      <text x="900" y="850">При полуденной приёмке в чаше держалось 58 см воды.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="g20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#5c7286" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+    <pattern id="burn1" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="11" stroke="#a8321f" stroke-width="3" stroke-opacity=".5"/>
+    </pattern>
+    <pattern id="soot1" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-32)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#16202b" stroke-width="2" stroke-opacity=".38"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#g20)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="72" font-size="26" fill="#16202b">Схема 1 · цех № 4: зона термических повреждений</text>
+  <text x="60" y="102" font-size="19" fill="#3b4652">вид сверху, М 1:100 · красная штриховка — сквозной прогар, тёмная — копоть и оплывина пола</text>
+
+  <!-- габарит цеха -->
+  <rect x="170" y="190" width="690" height="540" fill="#ded7c6" fill-opacity=".5"/>
+  <path d="M170 190 H860 V730 H170 Z" fill="none" stroke="#16202b" stroke-width="7"/>
+  <text x="186" y="222" font-size="20" fill="#3b4652">объём цеха под кровлей: прогар 320 м², шлейф 2/1</text>
+
+  <!-- щитовая -->
+  <rect x="600" y="190" width="260" height="120" fill="#e8e2d4" stroke="#16202b" stroke-width="5"/>
+  <rect x="612" y="228" width="26" height="70" fill="none" stroke="#1f6f8f" stroke-width="2.6"/>
+  <text x="648" y="248" font-size="19" fill="#16202b">панель ЩУ-4</text>
+  <text x="648" y="272" font-size="18" fill="#3b4652">дверь открыта, внутри</text>
+  <text x="648" y="292" font-size="18" fill="#a8321f">сажи нет, кабель цел</text>
+
+  <!-- бытовка 4-12 -->
+  <rect x="330" y="470" width="270" height="160" fill="#e8e2d4" stroke="#16202b" stroke-width="5"/>
+  <text x="344" y="500" font-size="20" fill="#16202b">бытовка 4-12</text>
+  <text x="344" y="524" font-size="18" fill="#3b4652">отделка не тронута</text>
+  <text x="344" y="546" font-size="18" fill="#a8321f">копоть только на пороге</text>
+  <path d="M600 560 h-4 M600 560 A46 46 0 0 1 554 514" fill="none" stroke="#1f6f8f" stroke-width="2.4" stroke-dasharray="10 7"/>
+
+  <!-- тамбур 4-7 -->
+  <rect x="600" y="430" width="260" height="200" fill="url(#burn1)" stroke="#16202b" stroke-width="6"/>
+  <text x="612" y="618" font-size="20" fill="#16202b">тамбур 4-7, 3,4 × 2,6 м</text>
+  <rect x="790" y="500" width="70" height="130" fill="url(#soot1)" stroke="#a8321f" stroke-width="3"/>
+
+  <!-- склад ЛКМ -->
+  <rect x="860" y="430" width="300" height="240" fill="url(#burn1)" stroke="#16202b" stroke-width="6"/>
+  <text x="878" y="462" font-size="20" fill="#16202b">склад ЛКМ (пом. 4-8)</text>
+  <text x="878" y="486" font-size="18" fill="#3b4652">стеллажи деформированы,</text>
+  <text x="878" y="506" font-size="18" fill="#3b4652">запас пропитки 14 бочек</text>
+  <path d="M860 540 v6" stroke="#16202b" stroke-width="6"/>
+  <path d="M860 546 A54 54 0 0 0 914 600" fill="none" stroke="#1f6f8f" stroke-width="2.4" stroke-dasharray="10 7"/>
+  <text x="872" y="646" font-size="17" fill="#1f6f8f">дверь склада: магнитоконтакт 2/4</text>
+
+  <!-- клиновидный прогар у двери склада -->
+  <polygon points="858,530 700,452 700,608" fill="url(#soot1)" stroke="#a8321f" stroke-width="2.6" stroke-dasharray="12 8"/>
+  <text x="618" y="446" font-size="17" fill="#a8321f">прогар клином: вершина у пола,</text>
+  <text x="618" y="672" font-size="17" fill="#a8321f">раскрытие 1,8 м — розлив жидкости</text>
+
+  <!-- волочение и контур тела -->
+  <g stroke-dasharray="9 8" stroke="#16202b" stroke-width="2.2" fill="none">
+    <path d="M604 552 H744"/><path d="M604 566 H744"/>
+    <ellipse cx="790" cy="540" rx="26" ry="52"/>
+    <circle cx="790" cy="476" r="15"/>
+  </g>
+  <text x="612" y="540" font-size="17" fill="#16202b">волочение 6,3 м</text>
+  <text x="726" y="648" font-size="17" fill="#16202b">контур тела</text>
+
+  <!-- размер цеха -->
+  <g stroke="#1f6f8f" stroke-width="2" fill="#1f6f8f" font-size="19">
+    <line x1="170" y1="770" x2="860" y2="770"/>
+    <line x1="170" y1="758" x2="170" y2="782"/><line x1="860" y1="758" x2="860" y2="782"/>
+    <text x="470" y="800">42,0 м</text>
+    <line x1="120" y1="190" x2="120" y2="730"/>
+    <line x1="108" y1="190" x2="132" y2="190"/><line x1="108" y1="730" x2="132" y2="730"/>
+    <text x="60" y="470">28,5 м</text>
+  </g>
+
+  <!-- легенда -->
+  <g font-size="18" fill="#16202b">
+    <rect x="170" y="820" width="46" height="26" fill="url(#burn1)" stroke="#16202b" stroke-width="2"/>
+    <text x="228" y="840">зона прогара и розлива</text>
+    <rect x="470" y="820" width="46" height="26" fill="url(#soot1)" stroke="#16202b" stroke-width="2"/>
+    <text x="528" y="840">копоть, оплывина пола</text>
+    <polygon points="760,822 782,846 738,846" fill="#e8c33a" stroke="#16202b" stroke-width="2"/>
+    <text x="794" y="840">ориентир север — вверх</text>
+  </g>
+
+  <!-- примечания -->
+  <g font-size="19" fill="#16202b">
+    <text x="1192" y="212">1. Очаг — тамбур и склад,</text>
+    <text x="1192" y="236">а не щитовая: щит цел изнутри.</text>
+    <text x="1192" y="272">2. Клин у двери склада =</text>
+    <text x="1192" y="296">розлив, а не электропроводка.</text>
+    <text x="1192" y="332">3. В бытовке 4-12 потёки копоти</text>
+    <text x="1192" y="356">только на пороге со стороны тамбура.</text>
+    <text x="1192" y="392">4. Из смены дым увидели в 23:52;</text>
+    <text x="1192" y="416">тревога цеха — лишь в 23:56.</text>
+    <text x="1192" y="452" fill="#a8321f">5. Извещатель тамбура —</text>
+    <text x="1192" y="476" fill="#a8321f">под колпаком, он молчал.</text>
+  </g>
+
+  <!-- штамп -->
+  <g transform="translate(1150,872)">
+    <rect x="-410" y="-96" width="410" height="96" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <line x1="-410" y1="-50" x2="0" y2="-50" stroke="#16202b" stroke-width="1.8"/>
+    <line x1="-260" y1="-50" x2="-260" y2="0" stroke="#16202b" stroke-width="1.8"/>
+    <text x="-396" y="-66" font-size="21" font-weight="600">Схема 1 к протоколу осмотра места происшествия</text>
+    <text x="-396" y="-18" font-size="18">М 1:100 · 15.03.2025, 06:10</text>
+    <text x="-246" y="-18" font-size="18">фабрика «Дубрава», цех № 4</text>
+  </g>
+</svg>

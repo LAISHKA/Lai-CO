@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridPocket08" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridPocket08)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Предметы, изъятые из карманов Быкадорова И. Т.</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Фототаблица от 23.08.2026. Макронасадка, масштабная линейка 50 мм в каждом кадре. Содержимое правого переднего кармана извлечено на белый лист.</text>
+
+  <g>
+    <rect x="60" y="150" width="470" height="320" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="76" y="180" font-size="17" font-weight="600" fill="#16202b">Кадр 2. Чек терминала «Полдень»</text>
+    <rect x="150" y="198" width="180" height="230" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="162" y="222" font-size="12" fill="#16202b">№ 7-43  22.08.2026</text>
+    <text x="162" y="242" font-size="12" fill="#16202b">22:07:19</text>
+    <text x="162" y="266" font-size="12" fill="#3b4652">американо    65,00</text>
+    <text x="162" y="284" font-size="12" fill="#3b4652">американо    65,00</text>
+    <text x="162" y="306" font-size="12" fill="#16202b">ИТОГО       130,00</text>
+    <text x="162" y="326" font-size="11" fill="#3b4652">оплата картой, </text>
+    <text x="162" y="342" font-size="11" fill="#3b4652">оканч. на 0307</text>
+    <text x="162" y="366" font-size="11" fill="#a8321f">возврат по поз. 2</text>
+    <text x="162" y="382" font-size="11" fill="#a8321f">22:07:41  65,00</text>
+    <path d="M150 428 l 22 -16" stroke="#3b4652" stroke-width="1.5"/>
+    <text x="344" y="240" font-size="12" fill="#3b4652">37-й км трассы Р 218,</text>
+    <text x="344" y="260" font-size="12" fill="#3b4652">загиб левого нижнего</text>
+    <text x="344" y="278" font-size="12" fill="#3b4652">угла, пакет № 7</text>
+    <rect x="344" y="330" width="160" height="10" fill="none" stroke="#16202b" stroke-width="1"/>
+    <text x="344" y="356" font-size="11" fill="#16202b">масштаб 50 мм</text>
+    <text x="76" y="452" font-size="13" fill="#a8321f">Вторая позиция возвращена двадцатью двумя секундами позже.</text>
+  </g>
+
+  <g>
+    <rect x="560" y="150" width="470" height="320" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="576" y="180" font-size="17" font-weight="600" fill="#16202b">Кадр 3. Жетон гардероба</text>
+    <rect x="640" y="206" width="200" height="120" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="656" y="234" font-size="13" fill="#16202b">«Жар-Птица»</text>
+    <text x="656" y="278" font-size="34" font-weight="700" fill="#16202b">407</text>
+    <text x="760" y="312" font-size="11" fill="#a8321f" transform="rotate(-14 760 312)">выдан</text>
+    <text x="576" y="366" font-size="12" fill="#3b4652">Бумажный, не промаркированный, фамилии нет. Пакет № 8.</text>
+    <text x="576" y="390" font-size="12" fill="#3b4652">Выдано 104 жетона, возвращено 97; на стойке осталось семь.</text>
+    <text x="576" y="414" font-size="12" fill="#16202b">Рядом на полу у стойки — второй, не промаркированный.</text>
+    <text x="576" y="446" font-size="13" fill="#a8321f">В 20:38:52 мужчина в сером пальто берёт жетон у стойки.</text>
+  </g>
+
+  <g>
+    <rect x="1060" y="150" width="480" height="320" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="1076" y="180" font-size="17" font-weight="600" fill="#16202b">Кадр 4. Записная книжка, лист от 22.08</text>
+    <rect x="1100" y="200" width="250" height="200" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M1100 200 V400" stroke="#a8321f" stroke-width="2"/>
+    <text x="1116" y="228" font-size="13" fill="#16202b">Гости — 118?</text>
+    <text x="1116" y="254" font-size="13" fill="#16202b">Бронь — 96</text>
+    <text x="1116" y="280" font-size="13" fill="#16202b">рыба М-4071 — 37,6</text>
+    <text x="1116" y="306" font-size="13" fill="#a8321f">Итого возвраты:</text>
+    <text x="1116" y="326" font-size="13" fill="#a8321f">3 386 400</text>
+    <text x="1116" y="356" font-size="12" fill="#3b4652">счёт …71</text>
+    <text x="1370" y="228" font-size="12" fill="#3b4652">Обложка: «Сытый Барин,</text>
+    <text x="1370" y="248" font-size="12" fill="#3b4652">инв. 3». Пакет № 9.</text>
+    <text x="1370" y="286" font-size="12" fill="#16202b">Цифры считаны руками</text>
+    <text x="1370" y="306" font-size="12" fill="#16202b">на банкетном вечере</text>
+    <text x="1370" y="326" font-size="12" fill="#16202b">в чужом шатре.</text>
+    <text x="1076" y="446" font-size="13" fill="#a8321f">Сумма в блокноте равна итогу по 26 кассовым возвратам.</text>
+  </g>
+
+  <g>
+    <rect x="60" y="500" width="730" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="76" y="530" font-size="17" font-weight="600" fill="#16202b">Кадр 5. Левый нарукавный карман: два чека парковки</text>
+    <rect x="110" y="556" width="180" height="150" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="124" y="582" font-size="12" fill="#16202b">усадьба, 19:52</text>
+    <text x="124" y="606" font-size="12" fill="#16202b">Р 218 ТТ 716</text>
+    <text x="124" y="630" font-size="12" fill="#3b4652">карта «Продснаб-Мыс»</text>
+    <text x="124" y="656" font-size="12" fill="#3b4652">пакет № 11</text>
+    <rect x="330" y="556" width="180" height="150" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <text x="344" y="582" font-size="12" fill="#16202b">усадьба, 20:04</text>
+    <text x="344" y="606" font-size="12" fill="#16202b">Р 218 ТТ 716</text>
+    <text x="344" y="630" font-size="12" fill="#3b4652">карта «Продснаб-Мыс»</text>
+    <text x="344" y="656" font-size="12" fill="#3b4652">пакет № 11</text>
+    <text x="560" y="582" font-size="12" fill="#3b4652">Лёгковой Р 218 ТТ 716 стоит</text>
+    <text x="560" y="602" font-size="12" fill="#3b4652">на стоянке персонала, кадр 6</text>
+    <text x="560" y="622" font-size="12" fill="#3b4652">фототаблицы площадки.</text>
+    <text x="76" y="752" font-size="13" fill="#a8321f">Оба чека оплачены картой поставщика, а не картой владельца машины.</text>
+    <text x="76" y="782" font-size="13" fill="#16202b">Владелец «Сытого Барина» утверждает, что продал автомобиль в июне.</text>
+    <text x="76" y="812" font-size="13" fill="#16202b">На теле найдены только чеки: оплата стоянок шла до начала банкета.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="500" width="720" height="330" fill="none" stroke="#16202b" stroke-width="2.5"/>
+    <text x="836" y="530" font-size="17" font-weight="600" fill="#16202b">Кадр 6 и кадр 1. Телефон и место изъятия</text>
+    <rect x="880" y="556" width="130" height="230" fill="#f3efe4" stroke="#16202b" stroke-width="1.5"/>
+    <path d="M880 556 l 130 120" stroke="#3b4652" stroke-width="1" opacity=".6"/>
+    <text x="894" y="600" font-size="11" fill="#16202b">папка «Видео»</text>
+    <text x="894" y="622" font-size="11" fill="#16202b">3 файла</text>
+    <text x="894" y="642" font-size="11" fill="#a8321f">2 пустых ярлыка</text>
+    <text x="894" y="700" font-size="11" fill="#3b4652">экран с трещиной,</text>
+    <text x="894" y="718" font-size="11" fill="#3b4652">пакет № 10</text>
+    <text x="1050" y="580" font-size="12" fill="#16202b">Осмотр 23.08 в 11:30 протоколом;</text>
+    <text x="1050" y="600" font-size="12" fill="#16202b">код доступа не сообщался.</text>
+    <text x="1050" y="634" font-size="12" fill="#a8321f">Справка оператора от 24.08:</text>
+    <text x="1050" y="654" font-size="12" fill="#a8321f">станция СМ-37, 37-й км,</text>
+    <text x="1050" y="674" font-size="12" fill="#a8321f">22:07:44;</text>
+    <text x="1050" y="694" font-size="12" fill="#a8321f">следующая регистрация — 00:51.</text>
+    <text x="836" y="752" font-size="13" fill="#16202b">Кадр 1: правый передний карман куртки, содержимое на белом листе,</text>
+    <text x="836" y="776" font-size="13" fill="#16202b">пакеты № 7 — № 11. Куртка и бумажник на теле не найдены.</text>
+    <text x="836" y="806" font-size="13" fill="#a8321f">К 00:31 кузов микроавтобуса Н 904 МР 716 во дворе был открыт.</text>
+  </g>
+</svg>

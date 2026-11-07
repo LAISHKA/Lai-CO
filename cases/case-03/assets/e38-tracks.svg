@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Три следа одной поездки: трекер, тахограф, весы</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Ось времени растянута на окно 20:26—20:48. Вертикаль — верста по тракту Р-118: чем ниже, тем западнее, ближе к Ветрогорску.</text>
+
+  <!-- axes -->
+  <g stroke="#3b4652" stroke-width="1.6">
+    <line x1="160" y1="150" x2="160" y2="700"/>
+    <line x1="160" y1="700" x2="1150" y2="700"/>
+  </g>
+  <g stroke="#8d8676" stroke-width="1" stroke-dasharray="5 7">
+    <line x1="160" y1="200" x2="1150" y2="200"/>
+    <line x1="160" y1="300" x2="1150" y2="300"/>
+    <line x1="160" y1="400" x2="1150" y2="400"/>
+    <line x1="160" y1="500" x2="1150" y2="500"/>
+    <line x1="160" y1="600" x2="1150" y2="600"/>
+  </g>
+  <g font-size="17" fill="#3b4652" text-anchor="end">
+    <text x="150" y="206">46-я</text>
+    <text x="150" y="306">45-я</text>
+    <text x="150" y="406">44-я</text>
+    <text x="150" y="506">43-я</text>
+    <text x="150" y="606">42-я</text>
+    <text x="150" y="706">41-я</text>
+  </g>
+  <text x="1160" y="606" font-size="17" fill="#3b4652">обочина,</text>
+  <text x="1160" y="628" font-size="17" fill="#3b4652">стоянка до 21:41</text>
+
+  <!-- time ticks -->
+  <g font-size="16" fill="#3b4652" text-anchor="middle">
+    <text x="160" y="726">20:26</text>
+    <text x="299" y="726">20:29</text>
+    <text x="421" y="726">20:31</text>
+    <text x="626" y="726">20:36</text>
+    <text x="834" y="726">20:41</text>
+    <text x="967" y="726">20:44</text>
+    <text x="1150" y="726">20:48</text>
+  </g>
+  <g stroke="#3b4652" stroke-width="1.4">
+    <line x1="299" y1="700" x2="299" y2="708"/>
+    <line x1="421" y1="700" x2="421" y2="708"/>
+    <line x1="626" y1="700" x2="626" y2="708"/>
+    <line x1="834" y1="700" x2="834" y2="708"/>
+    <line x1="967" y1="700" x2="967" y2="708"/>
+  </g>
+
+  <!-- trace: tachograph + CAN (solid) -->
+  <polyline points="160,200 299,400 370,470 421,300 626,300 875,400 967,600 1150,600"
+            fill="none" stroke="#16202b" stroke-width="4"/>
+  <!-- trace: GPS tracker (dashed, with dead gap) -->
+  <polyline points="160,206 299,406 370,476" fill="none" stroke="#a8321f" stroke-width="3"/>
+  <polyline points="370,476 834,406 875,406 967,606 1150,606" fill="none" stroke="#a8321f"
+            stroke-width="3" stroke-dasharray="9 9" opacity=".65"/>
+  <rect x="370" y="380" width="464" height="96" fill="none" stroke="#a8321f" stroke-width="1.6" stroke-dasharray="4 6"/>
+  <text x="404" y="368" font-size="17" fill="#a8321f">трекер молчит 10 мин 32 с: 20:30:40 — 20:41:12</text>
+
+  <!-- stop plateau marker -->
+  <g fill="#16202b">
+    <circle cx="421" cy="300" r="6"/>
+    <circle cx="626" cy="300" r="6"/>
+    <circle cx="299" cy="400" r="6"/>
+    <circle cx="875" cy="400" r="6"/>
+    <circle cx="967" cy="600" r="6"/>
+    <circle cx="370" cy="470" r="6"/>
+  </g>
+  <g fill="#a8321f">
+    <circle cx="485" cy="300" r="6"/>
+    <circle cx="566" cy="300" r="6"/>
+  </g>
+  <line x1="421" y1="286" x2="626" y2="286" stroke="#16202b" stroke-width="1.6"/>
+  <text x="428" y="270" font-size="17" fill="#16202b">стоянка 4 мин 51 с, с 20:33:10 — прочие работы</text>
+
+  <!-- lock events -->
+  <g font-size="16" fill="#a8321f">
+    <text x="452" y="252">20:33:07</text>
+    <text x="534" y="252">20:34:55</text>
+    <text x="452" y="232">замок открыт</text>
+    <text x="534" y="232">замок закрыт</text>
+    <text x="452" y="212">брелоком 02, 1 мин 48 с внутри</text>
+  </g>
+
+  <!-- ANPR passes -->
+  <g font-size="17" fill="#3b4652">
+    <text x="212" y="440">20:29:12 — 5 640 кг на запад</text>
+    <text x="392" y="180">20:31:20 — тот же борт на восток</text>
+    <text x="812" y="440">20:41:57 — 5 544 кг на запад</text>
+  </g>
+  <polygon points="946,420 958,398 970,420" fill="#3b4652"/>
+  <text x="884" y="474" font-size="17" fill="#3b4652">20:43:36 — «Газель» 3 074 кг (+94)</text>
+
+  <!-- arrow of travel -->
+  <g stroke="#3b4652" stroke-width="2" fill="none">
+    <line x1="1200" y1="400" x2="1200" y2="520"/>
+  </g>
+  <path d="M1200 532 L1191 512 L1209 512 Z" fill="#3b4652"/>
+  <text x="1216" y="470" font-size="17" fill="#3b4652">запад</text>
+
+  <!-- side notes -->
+  <g font-size="18" fill="#16202b">
+    <text x="1210" y="184" font-size="19" font-weight="600">Что сложилось</text>
+  </g>
+  <g font-size="17" fill="#3b4652">
+    <text x="1210" y="216">1. Борт свернул восточнее рамки</text>
+    <text x="1228" y="238">и вернулся через 10 минут.</text>
+    <text x="1210" y="268">2. Разница проездов рамки:</text>
+    <text x="1228" y="290">минус 96 кг у «Соболя»,</text>
+    <text x="1228" y="312">плюс 94 кг у «Газели».</text>
+    <text x="1210" y="342">3. Паспорт контейнера — 96 кг.</text>
+    <text x="1210" y="372">4. Купюры весят 2,4 кг: весы</text>
+    <text x="1228" y="394">их не видят, контейнер — да.</text>
+    <text x="1210" y="424">5. С 20:44 до 21:41 борт стоит</text>
+    <text x="1228" y="446">на 42-й с нулевой скоростью.</text>
+  </g>
+  <g font-size="17" fill="#a8321f">
+    <text x="1210" y="486">Погрешность рамки ±1,5 %,</text>
+    <text x="1210" y="508">повторяемость ±23 кг:</text>
+    <text x="1210" y="530">потеря в 96 кг на неё не списывается.</text>
+  </g>
+
+  <text x="160" y="800" font-size="18" fill="#16202b">Легенда: сплошная — тахограф и данные CAN; красная пунктирная — спутниковый трекер «Омни-5» (на разрыве точек нет);</text>
+  <text x="160" y="826" font-size="18" fill="#3b4652">треугольник — проезд другой машины. Нанесено по акту «Омни-Телематика» № 88-О, выгрузке тахографа 4417-Т и журналу АПВР «Долгое».</text>
+  <text x="160" y="856" font-size="16" fill="#3b4652">Расхождение: одометр CAN дал 9,4 км, по трассе с учётом петли — 9,6 км.</text>
+</svg>

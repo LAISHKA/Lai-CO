@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1907" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".14"/>
+    </pattern>
+    <pattern id="deck1907" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 0h18M0 6h18M0 12h18" stroke="#6e7d8b" stroke-width="0.7" opacity=".5"/>
+      <path d="M0 0v18M6 0v18M12 0v18" stroke="#4d5a66" stroke-width="0.5" opacity=".4"/>
+    </pattern>
+    <marker id="arr1907" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e08a2e"/>
+    </marker>
+    <marker id="arr1907b" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+      <path d="M10 0 L0 5 L10 10 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1907)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Камера «Ц-3»: пролёт от чана № 2 к тамбуру мойки, семь меток ленты</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема к копии архива от 14.03, 14:00. Лента от 22:45 до 00:07. Поле кадра — 14 метров настила: кромка чана № 2, пролёт, тамбур «ЦМТ-2», угол щита ЩМ-3.</text>
+
+  <g>
+    <rect x="60" y="134" width="1180" height="392" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+    <rect x="72" y="146" width="1156" height="368" fill="#1b2430"/>
+
+    <rect x="72" y="440" width="1156" height="74" fill="url(#deck1907)"/>
+    <path d="M72 440h1156" stroke="#7e8b98" stroke-width="1.6"/>
+
+    <g>
+      <rect x="92" y="216" width="118" height="224" fill="#222c37" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M92 216h118" stroke="#c9d4de" stroke-width="3"/>
+      <text x="102" y="246" font-size="14" fill="#c9d4de">выход из цеха</text>
+      <rect x="220" y="238" width="40" height="62" rx="4" fill="#2d3945" stroke="#c9d4de" stroke-width="1.6"/>
+      <rect x="228" y="252" width="24" height="9" rx="2" fill="#54d17a"/>
+      <rect x="228" y="270" width="24" height="16" rx="2" fill="#131a22" stroke="#7e8b98" stroke-width="1"/>
+      <text x="212" y="322" font-size="14" fill="#e08a2e">читалка «Ц-1»</text>
+      <path d="M212 232 L250 200" stroke="#e08a2e" stroke-width="1.4" stroke-dasharray="5 4"/>
+    </g>
+
+    <g>
+      <path d="M360 300v140h236V300" fill="#232e39" stroke="#94a4b4" stroke-width="2"/>
+      <ellipse cx="478" cy="300" rx="118" ry="34" fill="#2c3946" stroke="#c9d4de" stroke-width="2"/>
+      <ellipse cx="478" cy="300" rx="46" ry="15" fill="#0e141a" stroke="#c9d4de" stroke-width="1.6"/>
+      <path d="M524 292l52-26" stroke="#94a4b4" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="586" cy="262" rx="30" ry="11" fill="#38475a" stroke="#c9d4de" stroke-width="1.6"/>
+      <text x="378" y="352" font-size="16" fill="#dfe6ea">чан № 2</text>
+      <text x="378" y="374" font-size="13" fill="#9fb0c0">кромка заторного люка</text>
+      <g stroke="#7e8b98" stroke-width="2" fill="none">
+        <path d="M340 300v140M340 322h276M340 356h276"/>
+      </g>
+      <text x="330" y="424" font-size="13" fill="#8fa3b5">ограждение платформы</text>
+    </g>
+
+    <g>
+      <rect x="836" y="206" width="212" height="234" fill="#222c37" stroke="#94a4b4" stroke-width="2"/>
+      <rect x="856" y="232" width="112" height="208" fill="#161f28" stroke="#c9d4de" stroke-width="2"/>
+      <circle cx="956" cy="336" r="5" fill="#c9d4de"/>
+      <text x="846" y="196" font-size="15" fill="#dfe6ea">тамбур «ЦМТ-2»</text>
+      <path d="M988 232v208" stroke="#e08a2e" stroke-width="1.4" stroke-dasharray="6 5"/>
+      <path d="M1004 232v208" stroke="#e08a2e" stroke-width="1.4"/>
+      <path d="M1004 232l-16 0M1004 440l-16 0" stroke="#e08a2e" stroke-width="1.4"/>
+      <text x="1012" y="342" font-size="14" fill="#e08a2e">2,05 м</text>
+      <rect x="1064" y="240" width="146" height="200" fill="#1e2833" stroke="#7e8b98" stroke-width="1.6"/>
+      <path d="M1064 240l-14 198" fill="none" stroke="#7e8b98" stroke-width="1.4" stroke-dasharray="4 4"/>
+      <text x="1076" y="266" font-size="14" fill="#9fb0c0">щит ЩМ-3</text>
+      <text x="1076" y="288" font-size="13" fill="#9fb0c0">дверца открыта</text>
+      <rect x="1084" y="306" width="96" height="112" rx="4" fill="#2d3945" stroke="#8fa3b5" stroke-width="1.2"/>
+    </g>
+
+    <g>
+      <path d="M120 470h1058" stroke="#e08a2e" stroke-width="1.6" marker-start="url(#arr1907b)" marker-end="url(#arr1907)"/>
+      <text x="560" y="462" font-size="14" fill="#e08a2e">14 метров настила в поле кадра</text>
+    </g>
+
+    <g opacity=".95">
+      <circle cx="1188" cy="252" r="26" fill="#f0d68a" opacity=".18"/>
+      <circle cx="1188" cy="252" r="8" fill="#f0d68a"/>
+      <text x="1104" y="184" font-size="13" fill="#9fb0c0">лампа тамбура</text>
+    </g>
+    <text x="88" y="184" font-size="15" fill="#8fa3b5">Камера «Ц-3», варочный цех, поворотная, фиксирована на пролёт</text>
+    <text x="940" y="500" font-size="14" fill="#7e8b98">шкала в кадре — поясное время регистратора</text>
+  </g>
+
+  <g>
+    <rect x="1270" y="134" width="270" height="392" rx="8" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+    <text x="1288" y="168" font-size="18" font-weight="600" style="fill:var(--paper-ink,#16202b)">Паспорт ленты</text>
+    <g font-size="15" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1288" y="204">Архив регистратора — 24 часа.</text>
+      <text x="1288" y="228">Копии семи меток сняты</text>
+      <text x="1288" y="248">14.03 в 14:00.</text>
+      <text x="1288" y="286">Шкала — поясное время,</text>
+      <text x="1288" y="306">сверка с контроллером</text>
+      <text x="1288" y="326">мойки не проводилась.</text>
+      <text x="1288" y="364">Высота дверцы тамбура</text>
+      <text x="1288" y="384">в кадре — 2,05 метра.</text>
+      <text x="1288" y="422">Фигура у борта чана № 2</text>
+      <text x="1288" y="442">по разметке проёма —</text>
+      <text x="1288" y="462">165—168 сантиметров.</text>
+      <text x="1288" y="500">В пролёте свет платформы</text>
+      <text x="1288" y="520">гаснет целиком, без вспышек.</text>
+    </g>
+  </g>
+
+  <g>
+    <path d="M60 556h1480" stroke="#16202b" stroke-width="2"/>
+    <g fill="#16202b">
+      <circle cx="110" cy="556" r="5"/><circle cx="330" cy="556" r="5"/><circle cx="550" cy="556" r="5"/>
+      <circle cx="770" cy="556" r="5"/><circle cx="990" cy="556" r="5"/><circle cx="1210" cy="556" r="5"/>
+      <circle cx="1430" cy="556" r="5"/>
+    </g>
+    <g font-size="15" font-weight="600" style="fill:var(--paper-ink,#16202b)" text-anchor="middle">
+      <text x="110" y="546">22:45:11</text><text x="330" y="546">22:46:38</text><text x="550" y="546">22:47:19</text>
+      <text x="770" y="546">23:26:04</text><text x="990" y="546">23:36:52</text><text x="1210" y="546">23:38:41</text>
+      <text x="1430" y="546">00:06:31</text>
+    </g>
+  </g>
+
+  <g font-size="14">
+    <g>
+      <rect x="60" y="576" width="196" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <rect x="72" y="596" width="34" height="52" rx="3" fill="#2d3945" stroke="#c9d4de" stroke-width="1.2"/>
+      <rect x="78" y="606" width="22" height="7" rx="2" fill="#54d17a"/>
+      <path d="M150 700v-52a12 12 0 0 1 24 0v52" fill="#3a4652"/>
+      <circle cx="162" cy="630" r="13" fill="#3a4652"/>
+      <path d="M120 700h120" stroke="#6e7d8b" stroke-width="2"/>
+      <path d="M196 660h44" stroke="#e08a2e" stroke-width="2" marker-end="url(#arr1907)"/>
+      <text x="72" y="744" fill="#dfe6ea">силуэт прикладывает</text>
+      <text x="72" y="764" fill="#dfe6ea">карту, индикатор</text>
+      <text x="72" y="784" fill="#54d17a">зелёный; идёт к выходу</text>
+    </g>
+
+    <g>
+      <rect x="278" y="576" width="196" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <rect x="392" y="600" width="66" height="132" fill="#1b2430" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M392 600l-30 6v120l30-6" fill="#2d3945" stroke="#c9d4de" stroke-width="1.2"/>
+      <path d="M300 732v-60a13 13 0 0 1 26 0v60z" fill="#39424a"/>
+      <circle cx="313" cy="656" r="14" fill="#39424a"/>
+      <path d="M330 682h26" stroke="#39424a" stroke-width="9" stroke-linecap="round"/>
+      <path d="M292 648h14" stroke="#4b5a7a" stroke-width="14" stroke-linecap="round"/>
+      <path d="M348 700h40" stroke="#e08a2e" stroke-width="2" marker-end="url(#arr1907)"/>
+      <text x="290" y="758" fill="#dfe6ea">куртка цвета индиго,</text>
+      <text x="290" y="778" fill="#dfe6ea">капюшон за спиной,</text>
+      <text x="290" y="798" fill="#dfe6ea">правая рука прижата</text>
+    </g>
+
+    <g>
+      <rect x="496" y="576" width="196" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <rect x="600" y="600" width="70" height="132" fill="#1b2430" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M600 600v132" stroke="#c9d4de" stroke-width="2.4"/>
+      <path d="M516 606l-16 4v118l16-4" fill="#2d3945" stroke="#c9d4de" stroke-width="1.2"/>
+      <text x="508" y="640" fill="#9fb0c0">дверца</text>
+      <text x="508" y="658" fill="#9fb0c0">щита</text>
+      <text x="508" y="676" fill="#9fb0c0">открыта</text>
+      <path d="M556 690h96" stroke="#6e7d8b" stroke-width="2"/>
+      <text x="508" y="758" fill="#dfe6ea">тамбур закрыт,</text>
+      <text x="508" y="778" fill="#dfe6ea">в пролёте ни одной</text>
+      <text x="508" y="798" fill="#dfe6ea">фигуры</text>
+    </g>
+
+    <g>
+      <rect x="714" y="576" width="196" height="212" fill="#04070a" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <circle cx="874" cy="632" r="46" fill="#f0d68a" opacity=".14"/>
+      <circle cx="874" cy="632" r="14" fill="#f0d68a" opacity=".55"/>
+      <path d="M714 726h196" stroke="#2b3540" stroke-width="2"/>
+      <text x="726" y="758" fill="#9fb0c0">свет платформы гаснет,</text>
+      <text x="726" y="778" fill="#9fb0c0">кадр уходит в черноту</text>
+      <text x="726" y="798" fill="#9fb0c0">с засветкой от лампы</text>
+    </g>
+
+    <g>
+      <rect x="932" y="576" width="196" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <path d="M944 660v72h112v-72" fill="#232e39" stroke="#94a4b4" stroke-width="1.6"/>
+      <ellipse cx="1000" cy="660" rx="56" ry="16" fill="#2c3946" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M1052 700v-46a11 11 0 0 1 22 0v46z" fill="#39424a"/>
+      <circle cx="1063" cy="640" r="12" fill="#39424a"/>
+      <path d="M1044 664l-16 10" stroke="#39424a" stroke-width="8" stroke-linecap="round"/>
+      <path d="M1026 676l-30 18" stroke="#f0d68a" stroke-width="2"/>
+      <path d="M1026 676l-34 6l4 24z" fill="#f0d68a" opacity=".3"/>
+      <text x="944" y="758" fill="#dfe6ea">человек 165—168 см</text>
+      <text x="944" y="778" fill="#dfe6ea">у борта чана № 2 спиной,</text>
+      <text x="944" y="798" fill="#dfe6ea">фонарь в левой руке</text>
+    </g>
+
+    <g>
+      <rect x="1150" y="576" width="196" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <path d="M1162 700h172" stroke="#6e7d8b" stroke-width="2"/>
+      <rect x="1176" y="686" width="46" height="14" rx="6" fill="#f0d68a" stroke="#16202b" stroke-width="1"/>
+      <path d="M1222 692l52-16v32z" fill="#f0d68a" opacity=".38"/>
+      <ellipse cx="1300" cy="664" rx="30" ry="11" fill="#38475a" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M1270 662l52-24" stroke="#94a4b4" stroke-width="5" stroke-linecap="round"/>
+      <text x="1162" y="758" fill="#dfe6ea">фонарь лежит на настиле,</text>
+      <text x="1162" y="778" fill="#dfe6ea">светит вбок; крышка люка</text>
+      <text x="1162" y="798" fill="#dfe6ea">в прежнем положении</text>
+    </g>
+
+    <g>
+      <rect x="1368" y="576" width="172" height="212" fill="#131a22" style="stroke:var(--paper-ink,#16202b)" stroke-width="1.6"/>
+      <rect x="1380" y="600" width="62" height="128" fill="#1b2430" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M1470 728v-58a12 12 0 0 1 24 0v58z" fill="#39424a"/>
+      <circle cx="1482" cy="656" r="13" fill="#39424a"/>
+      <path d="M1460 648h12" stroke="#4b5a7a" stroke-width="13" stroke-linecap="round"/>
+      <path d="M1498 676h26" stroke="#e08a2e" stroke-width="2" marker-end="url(#arr1907)"/>
+      <text x="1380" y="758" fill="#dfe6ea">выходит у дверцы</text>
+      <text x="1380" y="778" fill="#dfe6ea">тамбура, к читалке</text>
+      <text x="1380" y="798" fill="#dfe6ea">рукой не тянется</text>
+    </g>
+  </g>
+</svg>

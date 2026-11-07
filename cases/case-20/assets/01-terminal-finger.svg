@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid20a" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <g id="fp20">
+      <ellipse cx="0" cy="0" rx="34" ry="46" fill="#1d2b38" stroke="#8fa3b5" stroke-width="1.4"/>
+      <path d="M-22 24 C -26 -6 -14 -30 0 -32 C 14 -30 26 -6 22 24" fill="none" stroke="#c9d4de" stroke-width="1.5"/>
+      <path d="M-15 26 C -19 2 -10 -22 0 -24 C 10 -22 19 2 15 26" fill="none" stroke="#c9d4de" stroke-width="1.5"/>
+      <path d="M-8 27 C -11 6 -6 -14 0 -16 C 6 -14 11 6 8 27" fill="none" stroke="#c9d4de" stroke-width="1.5"/>
+      <path d="M-2 -15 C 2 -12 3 -4 1 4" fill="none" stroke="#c9d4de" stroke-width="1.5"/>
+      <path d="M-24 -12 L -34 -20" stroke="#e08a2e" stroke-width="1.6"/>
+      <circle cx="-24" cy="-12" r="3" fill="#e08a2e"/>
+      <path d="M4 -30 L 4 -22" stroke="#e08a2e" stroke-width="1.8"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid20a)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Экран терминала явки «ТЯ-4М» на съёмке 19.04 в 11:42</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Режим «Просмотр архива», участок выборки 07:58:00 — 08:04:16. Съёмка экрана специалистом связи, копия заверена понятыми.</text>
+  <text x="1540" y="130" font-size="14" fill="#3b4652" text-anchor="end">заводской номер 60128 · тамбур общежития № 2</text>
+
+  <rect x="70" y="140" width="1000" height="560" rx="10" fill="#16202b"/>
+  <rect x="88" y="158" width="964" height="524" fill="#243444" stroke="#5c7286" stroke-width="1.4"/>
+
+  <rect x="88" y="158" width="964" height="36" fill="#2f4258"/>
+  <text x="104" y="184" font-size="16" fill="#c9d4de">АРХИВ ОТМЕТОК · ОТРЯД № 4 · ОБЩЕЖИТИЕ № 2</text>
+  <text x="760" y="184" font-size="16" fill="#c9d4de">часы прибора 08:04:16</text>
+
+  <g stroke="#5c7286" stroke-width="1.2" fill="none">
+    <path d="M88 214 H1052"/>
+  </g>
+  <g font-size="14" fill="#8fa3b5">
+    <text x="104" y="238">СТРОКА</text>
+    <text x="186" y="238">ВРЕМЯ</text>
+    <text x="300" y="238">ТАБЕЛЬНЫЙ</text>
+    <text x="430" y="238">ФАМИЛИЯ</text>
+    <text x="562" y="238">РЕЖИМ</text>
+    <text x="700" y="238">СВЕРКА</text>
+    <text x="836" y="238">ОБРАЗ ПАЛЬЦА</text>
+  </g>
+
+  <g font-size="17" fill="#c9d4de">
+    <text x="104" y="286">39</text>
+    <text x="186" y="286">07:58:29</text>
+    <text x="300" y="286">4-102</text>
+    <text x="430" y="286">Лещуков</text>
+    <text x="562" y="286">по пальцу</text>
+    <text x="700" y="286">совпадение 41</text>
+  </g>
+  <g font-size="17" fill="#c9d4de">
+    <text x="104" y="344">40</text>
+    <text x="186" y="344">07:59:02</text>
+    <text x="300" y="344">4-163</text>
+    <text x="430" y="344">Панько</text>
+    <text x="562" y="344">по пальцу</text>
+    <text x="700" y="344">совпадение 40</text>
+  </g>
+
+  <rect x="88" y="366" width="964" height="180" fill="#3b4c60" opacity=".55"/>
+  <g font-size="17" fill="#f0ece0">
+    <text x="104" y="402">41</text>
+    <text x="186" y="402">07:59:41</text>
+    <text x="300" y="402">4-133</text>
+    <text x="430" y="402">Должиков</text>
+    <text x="562" y="402">ЯВКА ПО ЖЕТОНУ</text>
+    <text x="700" y="402">не проверялось</text>
+    <text x="104" y="460">42</text>
+    <text x="186" y="460">08:00:07</text>
+    <text x="300" y="460">4-121</text>
+    <text x="430" y="460">Загоскин</text>
+    <text x="562" y="460">ЯВКА ПО ЖЕТОНУ</text>
+    <text x="700" y="460">не проверялось</text>
+    <text x="104" y="518">43</text>
+    <text x="186" y="518">08:00:22</text>
+    <text x="300" y="518">4-118</text>
+    <text x="430" y="518">Ермохин</text>
+    <text x="562" y="518">ЯВКА ПО ЖЕТОНУ</text>
+    <text x="700" y="518">не проверялось</text>
+  </g>
+
+  <g font-size="17" fill="#c9d4de">
+    <text x="104" y="576">44</text>
+    <text x="186" y="576">08:01:14</text>
+    <text x="300" y="576">4-149</text>
+    <text x="430" y="576">Троекуров</text>
+    <text x="562" y="576">по пальцу</text>
+    <text x="700" y="576">совпадение 39</text>
+  </g>
+
+  <use href="#fp20" x="906" y="396"/>
+  <use href="#fp20" x="906" y="454"/>
+  <use href="#fp20" x="906" y="512"/>
+  <rect x="856" y="360" width="100" height="182" fill="none" stroke="#e08a2e" stroke-width="1.8" stroke-dasharray="7 5"/>
+
+  <rect x="88" y="602" width="964" height="80" fill="#1d2b38" stroke="#3b4652" stroke-width="1.4"/>
+  <text x="104" y="632" font-size="15" fill="#8fa3b5">служебная строка прибора</text>
+  <text x="104" y="660" font-size="17" fill="#c9d4de">образ сохранён в архив отпечатков, запись 07:59:41 / 08:00:07 / 08:00:22 · оператор сеанса 4-77</text>
+
+  <g>
+    <text x="1110" y="176" font-size="18" font-weight="600" fill="#16202b">Что сверяет глаз на копии</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1110" y="206">Три окна образа справа относятся к строкам</text>
+      <text x="1110" y="228">41, 42 и 43. Рисунок папиллярных линий</text>
+      <text x="1110" y="250">во всех трёх окнах один и тот же:</text>
+      <text x="1110" y="272">дельта слева, общий счётчик минутных</text>
+      <text x="1110" y="294">точек 71, обрыв линии в верхней трети</text>
+      <text x="1110" y="316">на одном и том же месте.</text>
+      <text x="1110" y="352">Строки 41—43 прибор ведёт в режиме</text>
+      <text x="1110" y="374">«ЯВКА ПО ЖЕТОНУ», графа сверки</text>
+      <text x="1110" y="396">по ним заполняется служебным текстом</text>
+      <text x="1110" y="418">«не проверялось».</text>
+      <text x="1110" y="454">Соседние строки 39, 40 и 44 проведены</text>
+      <text x="1110" y="476">сверкой с шаблоном; у строки 44 сеанс</text>
+      <text x="1110" y="498">ведёт табельный 4-102.</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="734" x2="1540" y2="734" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="774" font-size="18" font-weight="600" fill="#16202b">Условия съёмки</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="802">Экран снят специалистом связи 19.04 в 11:42, на момент съёмки</text>
+      <text x="60" y="824">часы прибора показывали 08:04:16. Время прибора сетевое, синхронизация</text>
+      <text x="60" y="846">от сервера ФКУ УИИ-7, расхождение за сутки 0 секунд.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="820" y="774" font-size="18" font-weight="600" fill="#16202b">Хранение образов</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="820" y="802">Архив отпечатков терминала хранится 90 суток, стирание записей</text>
+      <text x="820" y="824">не предусмотрено. Носитель снят 19.04 в 12:05, копия экрана</text>
+      <text x="820" y="846">заверена понятыми; в выборке 6 строк, из них 3 в режиме по жетону.</text>
+    </g>
+  </g>
+</svg>

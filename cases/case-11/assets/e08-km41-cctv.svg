@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1108" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <linearGradient id="fog1108" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#8fa3b5" stop-opacity=".34"/>
+      <stop offset="1" style="stop-color:#8fa3b5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1108)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Камера № 4 «Створ 41-й км», правый берег: семь кадров ночи</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема по протоколу осмотра регистратора инспекции ГИМС. Метки времени — береговой эталон, источник ГЛОНАСС; вахтенный журнал ведётся по судовым часам.</text>
+
+  <g>
+    <rect x="60" y="140" width="880" height="430" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="72" y="152" width="756" height="406" fill="#243444"/>
+    <rect x="72" y="152" width="756" height="150" fill="url(#fog1108)"/>
+
+    <path d="M72 300 H828" stroke="#8fa3b5" stroke-width="1.6" opacity=".55"/>
+    <path d="M72 300 C 200 292 320 306 440 298 S 700 306 828 298" stroke="#4a7ea0" stroke-width="1.2" fill="none" opacity=".5"/>
+    <path d="M72 340 H828 M72 384 H828 M72 430 H828" stroke="#4a7ea0" stroke-width="1" opacity=".22"/>
+
+    <path d="M72 470 C 170 452 300 462 420 452 L420 558 H72 Z" fill="#2b3a48" stroke="#8fa3b5" stroke-width="1.6"/>
+    <text x="96" y="500" font-size="14" fill="#c9d4de">правый берег</text>
+    <text x="96" y="522" font-size="13" fill="#8fa3b5">пристань 41-го км, у кромки свая</text>
+
+    <g>
+      <rect x="286" y="436" width="9" height="62" fill="#8fa3b5" opacity=".8"/>
+    </g>
+
+    <g>
+      <path d="M300 424 C 322 440 402 440 424 424 L414 410 H310 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M316 410 v -12 h 74 v 12" fill="#24506b" stroke="#8fa3b5" stroke-width="1.4"/>
+      <rect x="330" y="386" width="16" height="14" rx="3" fill="#dfe6ea" stroke="#16202b" stroke-width="1.2"/>
+      <path d="M338 400 l 8 10 M338 400 l -8 10" stroke="#dfe6ea" stroke-width="2.2"/>
+      <text x="300" y="370" font-size="14" fill="#f2e6c8">катер Б 617 ОР 716 у сваи</text>
+      <text x="300" y="390" font-size="13" fill="#8fa3b5">на банке один человек в тёмной куртке</text>
+    </g>
+
+    <g>
+      <path d="M556 246 h 196 l 22 22 v 30 H548 v -30 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.8"/>
+      <rect x="600" y="216" width="62" height="30" fill="#3a4f66" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M620 208 h 22 v 8 h -22 Z" fill="#24506b" stroke="#8fa3b5" stroke-width="1.2"/>
+      <rect x="574" y="284" width="30" height="16" rx="3" fill="#24506b" stroke="#8fa3b5" stroke-width="1.2"/>
+      <text x="540" y="200" font-size="14" fill="#f2e6c8">сухогруз «Первоцвет», проект РВС-160</text>
+      <text x="540" y="320" font-size="13" fill="#8fa3b5">на корме катер в креплении на штатном месте</text>
+      <circle cx="700" cy="232" r="4" fill="#e08a2e"/>
+    </g>
+
+    <g stroke="#a8321f" stroke-width="2.2" stroke-dasharray="7 5" fill="none">
+      <path d="M338 400 C 380 350 470 320 548 300"/>
+    </g>
+    <text x="386" y="352" font-size="14" style="fill:var(--danger,#a8321f)">03:11:05 — огонь судна ниже створа, хода нет</text>
+
+    <text x="86" y="176" font-size="14" fill="#c9d4de">CAM-04 СТВОР 41-й КМ / ПРАВЫЙ БЕРЕГ</text>
+    <text x="654" y="176" font-size="14" fill="#c9d4de">22.10.2026 03:36:02</text>
+    <text x="86" y="546" font-size="13" fill="#8fa3b5">1920×1080, 12 к/с, ИК-подсветка включена с 23:10</text>
+    <text x="682" y="546" font-size="13" fill="#e08a2e">REC · туман, дальность 300—400 м</text>
+  </g>
+
+  <line x1="60" y1="600" x2="1540" y2="600" style="stroke:var(--paper-ink,#16202b)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="646" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Журнал кадров регистратора</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="60" y="684">02:48:12 — у сваи стоит катер под мотором, на палубе один человек в тёмной куртке, свет на корме</text>
+      <text x="60" y="712">03:11:05 — в створе ниже по течению огонь судна, хода нет; судно держится на одном месте 6 минут</text>
+      <text x="60" y="740">03:19:44 — тот же огонь начинает смещаться ниже по течению</text>
+      <text x="60" y="768">03:20:30 — на причале 41-го км никого; катер у сваи, человек в тёмной куртке сидит на банке</text>
+      <text x="60" y="796">03:36:02 — сухогруз проходит створ: смещение около полутора узлов, бушприт без людей, катер на корме</text>
+      <text x="60" y="824">03:41:20 — катер у сваи снялся и ушёл вверх по течению; 04:04:55 — створ пуст</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="60" y="856">На кадрах с 02:40 по 04:00 спуска маломерного средства с кормы «Первоцвета» не зафиксировано</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1020" y="176" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Две шкалы одного вечера</text>
+    <g stroke-width="2.4" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="1020" y="200" width="460" height="86"/>
+      <rect x="1020" y="300" width="460" height="86"/>
+    </g>
+    <text x="1040" y="232" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Вахтенный журнал, судовые часы</text>
+    <text x="1040" y="258" font-size="16" style="fill:var(--fg-dim,#3b4652)">03:20 — «стал у правого берега»,</text>
+    <text x="1040" y="278" font-size="16" style="fill:var(--fg-dim,#3b4652)">спущен катер, Носырев сошёл на берег</text>
+    <text x="1040" y="332" font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">Камера ГИМС, береговой эталон</text>
+    <text x="1040" y="358" font-size="16" style="fill:var(--fg-dim,#3b4652)">03:20:30 — причал пуст, у сваи чужой катер,</text>
+    <text x="1040" y="378" font-size="16" style="fill:var(--fg-dim,#3b4652)">штатный — на корме судна в креплении</text>
+
+    <g stroke-width="2.6" style="stroke:var(--danger,#a8321f)" fill="none">
+      <path d="M1250 286 v 14"/>
+      <path d="M1244 296 l 6 8 l 6 -8"/>
+    </g>
+    <text x="1020" y="414" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">Акт № 14-ГИМС от 22.10, 06:40:</text>
+    <text x="1020" y="438" font-size="17" font-weight="600" style="fill:var(--danger,#a8321f)">судовые часы отстают на 2 минуты 40 секунд</text>
+    <text x="1020" y="464" font-size="16" style="fill:var(--fg-dim,#3b4652)">коррекции за навигацию не было, значит</text>
+    <text x="1020" y="486" font-size="16" style="fill:var(--fg-dim,#3b4652)">«03:20» журнала — это 03:22:40 по камере</text>
+
+    <line x1="1020" y1="512" x2="1480" y2="512" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+    <text x="1020" y="548" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что на записи после 03:36</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1020" y="584">сухогруз проходит створ правым бортом</text>
+      <text x="1020" y="608">в поле кадра, смещение ниже по течению</text>
+      <text x="1020" y="632">около полутора узлов, след воды слабый</text>
+      <text x="1020" y="668">на баке различим человек в светлой</text>
+      <text x="1020" y="692">штормовке, тент трюма № 2 обжат</text>
+      <text x="1020" y="728">катер у сваи снялся в 03:41:20 и ушёл</text>
+      <text x="1020" y="752">вверх по течению; в 04:04:55 створ пуст</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="1020" y="792">Запись журнала «03:20» и кадр 03:20:30</text>
+      <text x="1020" y="816">лежат в одной минуте, а береговой</text>
+      <text x="1020" y="840">эквивалент журнальной строки — 03:22:40</text>
+      <text x="1020" y="864">по акту сверки № 14-ГИМС</text>
+    </g>
+  </g>
+</svg>

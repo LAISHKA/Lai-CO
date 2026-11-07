@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid13e" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="night13" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 16 L16 0" stroke="#3b4652" stroke-width="0.7" opacity=".35"/>
+    </pattern>
+    <marker id="arrC13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#a8321f"/>
+    </marker>
+    <marker id="dimC13" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 2 L10 5 L0 8 Z" fill="#3b4652"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid13e)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера № 2: арка служебного КПП за ночь</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Архив регистратора, инфракрасная подсветка, 1280 на 720 при двенадцати кадрах в секунду. Время наносит регистратор.</text>
+
+  <rect x="60" y="150" width="760" height="400" fill="#232f3b"/>
+  <rect x="60" y="150" width="760" height="400" fill="url(#night13)"/>
+  <rect x="60" y="150" width="760" height="400" fill="none" stroke="#16202b" stroke-width="3"/>
+
+  <path d="M60 420 H820" stroke="#5c7286" stroke-width="2" opacity=".6"/>
+  <text x="72" y="412" font-size="13" fill="#8fa3b5">проезжая часть</text>
+
+  <g stroke="#c9d4de" stroke-width="3" fill="none">
+    <path d="M250 200 V420"/>
+    <path d="M620 200 V420"/>
+  </g>
+  <path d="M250 214 H620" stroke="#c9d4de" stroke-width="4" fill="none"/>
+  <text x="330" y="206" font-size="15" fill="#c9d4de">арка служебного входа</text>
+
+  <rect x="270" y="300" width="230" height="26" fill="#33465c" stroke="#8fa3b5" stroke-width="1.6"/>
+  <g stroke="#8fa3b5" stroke-width="1.4">
+    <path d="M296 300 V326 M322 300 V326 M348 300 V326 M374 300 V326 M400 300 V326 M426 300 V326 M452 300 V326 M478 300 V326"/>
+  </g>
+  <text x="272" y="348" font-size="14" fill="#8fa3b5">весовая рампа, тринадцать тонн</text>
+
+  <g fill="#33465c" stroke="#c9d4de" stroke-width="2">
+    <rect x="540" y="356" width="150" height="62"/>
+  </g>
+  <text x="548" y="382" font-size="14" fill="#c9d4de">будка</text>
+  <text x="548" y="400" font-size="14" fill="#c9d4de">дежурного</text>
+
+  <g fill="#33465c" stroke="#c9d4de" stroke-width="2">
+    <rect x="130" y="352" width="96" height="66"/>
+  </g>
+  <path d="M130 386 H226" stroke="#c9d4de" stroke-width="2"/>
+  <g stroke="#c9d4de" stroke-width="1.6">
+    <path d="M150 352 V344 M178 352 V344 M206 352 V344"/>
+  </g>
+  <text x="118" y="440" font-size="14" fill="#8fa3b5">турникет</text>
+
+  <rect x="112" y="196" width="112" height="80" fill="#33465c" stroke="#c9d4de" stroke-width="2"/>
+  <text x="124" y="232" font-size="13" fill="#c9d4de">бытовка,</text>
+  <text x="124" y="250" font-size="13" fill="#c9d4de">торец</text>
+  <path d="M112 276 H224 L240 352 H96 Z" fill="#a8321f" opacity=".26"/>
+  <text x="66" y="300" font-size="13" fill="#a8321f">слепая</text>
+  <text x="66" y="316" font-size="13" fill="#a8321f">зона</text>
+
+  <path d="M500 244 H586" stroke="#e08a2e" stroke-width="5"/>
+  <circle cx="500" cy="244" r="6" fill="#e08a2e"/>
+  <text x="452" y="238" font-size="13" fill="#e08a2e">шлагбаум</text>
+  <path d="M232 386 L286 386" stroke="#2c7a3f" stroke-width="3" marker-end="url(#arrC13)"/>
+  <text x="232" y="378" font-size="13" fill="#2c7a3f">калитка</text>
+
+  <g font-size="15" fill="#c9d4de">
+    <text x="300" y="486">С 911 НУ 716</text>
+    <text x="560" y="486">В 704 КТ 716</text>
+  </g>
+  <g stroke="#a8321f" stroke-width="2" fill="none">
+    <path d="M350 470 V452 H420" marker-end="url(#arrC13)"/>
+  </g>
+  <text x="72" y="524" font-size="13" fill="#a8321f">у арки с 23:52:40, уходит в 00:12:30</text>
+  <text x="436" y="548" font-size="13" fill="#a8321f">въезд 02:19:40 — 02:24:30, карта на турникете 02:26:20</text>
+
+  <text x="72" y="182" font-size="14" fill="#c9d4de">KPP2 · 12.01.2026 · 00:41:00</text>
+  <rect x="756" y="164" width="52" height="18" fill="#a8321f" opacity=".8"/>
+  <text x="762" y="178" font-size="12" fill="#e8e2d4">Запись</text>
+
+  <rect x="860" y="150" width="660" height="400" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="2.5"/>
+  <text x="884" y="184" font-size="17" font-weight="600" fill="#16202b">Лента кадров архива</text>
+  <g stroke="#3b4652" stroke-width="1.2">
+    <path d="M900 204 V520"/>
+  </g>
+  <g font-size="14" fill="#3b4652">
+    <text x="884" y="228">23:52:40</text><text x="975" y="228">С 911 НУ 716 у арки, кабина открыта</text>
+    <text x="884" y="256">23:58:12</text><text x="975" y="256">машина начинает движение к весовой рампе</text>
+    <text x="884" y="284">00:03:55</text><text x="975" y="284">на весах, в кабине один человек</text>
+    <text x="884" y="312">00:12:30</text><text x="975" y="312">уход от весов к складу химии</text>
+    <text x="884" y="340">00:41:00</text><text x="975" y="340" fill="#a8321f">арка пуста, дежурный проходит с фонарём</text>
+    <text x="884" y="368">00:58:05</text><text x="975" y="368">трое в рабочей одежде проходят турникет</text>
+    <text x="884" y="396">01:47:10</text><text x="975" y="396">человек в тёмной куртке, лицо не читается</text>
+    <text x="884" y="424">02:19:40</text><text x="975" y="424">В 704 КТ 716 перед шлагбаумом</text>
+    <text x="884" y="452">02:22:15</text><text x="975" y="452">человек в пальто выходит, идёт к будке</text>
+    <text x="884" y="480">02:24:30</text><text x="975" y="480">шлагбаум поднят, машина въезжает</text>
+    <text x="884" y="508">02:26:20</text><text x="975" y="508">та же фигура прикладывает карту к турникету</text>
+  </g>
+  <text x="884" y="536" font-size="14" fill="#3b4652">Дальше: 02:44:10 — к КПП выбегает человек в куртке</text>
+  <text x="884" y="558" font-size="14" fill="#3b4652">начальника блока; 02:56:30 — въезжает скорая помощь.</text>
+
+  <line x1="60" y1="586" x2="1540" y2="586" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="628" font-size="17" font-weight="600" fill="#16202b">Что охватывает кадр</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="656">Камера охватывает весы, турникет</text>
+      <text x="60" y="678">и будку дежурного; в слепой зоне</text>
+      <text x="60" y="700">остаётся участок у торца бытовки —</text>
+      <text x="60" y="722">человек за торцом в кадр не попадает.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="560" y="628" font-size="17" font-weight="600" fill="#16202b">Часы регистратора</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="560" y="656">Отставание от сетевого времени — две</text>
+      <text x="560" y="678">минуты, установлено при проверке</text>
+      <text x="560" y="700">оборудования 12.12.2025, корректировка</text>
+      <text x="560" y="722">не проводилась. Кадр «00:41» — это 00:43.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1060" y="628" font-size="17" font-weight="600" fill="#16202b">Целостность записи</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1060" y="656">Повреждений нет. Интервал 02:30—02:32</text>
+      <text x="1060" y="678">отсутствует: регистратор перезаписывал</text>
+      <text x="1060" y="700">буфер. Контрольная сумма файла в деле,</text>
+      <text x="1060" y="722">копия снята 12.01 в 11:20, оригинал на месте.</text>
+    </g>
+  </g>
+
+  <path d="M60 760 H1540" stroke="#16202b" stroke-width="1.4" stroke-dasharray="10 6"/>
+  <text x="60" y="792" font-size="15" fill="#a8321f">На кадрах 00:41:00 и 00:43:20 арка и весы пусты, хотя в книге учёта транспорта на этот же час</text>
+  <text x="60" y="814" font-size="15" fill="#a8321f">стоит запись о въезде С 911 НУ 716; позднее она зачёркнута, поверх вписано другое время.</text>
+  <text x="60" y="848" font-size="15" fill="#3b4652">Люди в кадре опознаны дежурным Приваловым С. И.: Кадильщиков, звено подкормки,</text>
+  <text x="60" y="870" font-size="15" fill="#3b4652">Засолутдинов. Копия записи снята 12.01 в 11:20, оригинал оставлен на регистраторе.</text>
+</svg>

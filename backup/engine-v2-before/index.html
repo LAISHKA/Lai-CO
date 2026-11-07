@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Служебное расследование — детективная игра</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+
+<!-- ───────────────────────── ТИТУЛЬНЫЙ ЭКРАН ───────────────────────── -->
+<section id="view-menu" class="view">
+  <div class="menu-wrap">
+    <header class="brand">
+      <div class="brand-mark">СР</div>
+      <div>
+        <h1>Служебное расследование</h1>
+        <p class="brand-sub">Детективная игра для компании · 18+ · офисный нуар</p>
+      </div>
+    </header>
+
+    <p class="menu-lede">
+      Перед вами материалы дела: пропуска, переписка, камеры, допросы.
+      Найдите, где показания расходятся с документами, — и назовите убийцу.
+    </p>
+
+    <div id="case-list" class="case-list"></div>
+
+    <section class="rules">
+      <h2>Как играть</h2>
+      <ol class="rules-list">
+        <li><b>Читайте всё.</b> Каждая улика существует не просто так. Смотрите, кто, где и во сколько.</li>
+        <li><b>Ищите противоречия.</b> Отметьте две улики значком&nbsp;<span class="inline-link">🔗</span> и нажмите «Сравнить». Если они не стыкуются — на доске появится вывод.</li>
+        <li><b>Пользуйтесь доской.</b> Подозреваемые, таймлайн и ваши заметки — справа.</li>
+        <li><b>Сдавайте дело.</b> Нужно назвать убийцу, место, время, орудие и мотив. Вердикт откроет всю подоплёку — только когда решите, что готовы.</li>
+        <li><b>Подсказки</b> уменьшают итоговую репутацию детектива, но дают их столько, сколько нужно.</li>
+      </ol>
+      <div class="keys">
+        <span><kbd>←</kbd><kbd>→</kbd> листать улики</span>
+        <span><kbd>Пробел</kbd> заметка</span>
+        <span><kbd>L</kbd> сравнить</span>
+        <span><kbd>H</kbd> подсказка</span>
+        <span><kbd>F</kbd> полный экран</span>
+        <span><kbd>Esc</kbd> назад</span>
+        <span><kbd>?</kbd> помощь</span>
+      </div>
+    </section>
+
+    <footer class="menu-foot">
+      <button class="btn ghost" id="btn-erase">Стереть прогресс</button>
+      <span class="ver">прототип · движок v0.1</span>
+    </footer>
+  </div>
+</section>
+
+<!-- ───────────────────────── ЭКРАН РАССЛЕДОВАНИЯ ───────────────────────── -->
+<section id="view-case" class="view hidden">
+  <header class="topbar">
+    <button class="btn ghost sm" id="btn-back">← Выход</button>
+    <div class="topbar-title">
+      <strong id="tb-title">—</strong>
+      <span id="tb-sub" class="muted"></span>
+    </div>
+    <div class="topbar-tools">
+      <button class="btn ghost sm" id="btn-scope" title="Сводка дела (G)">Сводка</button>
+      <span class="meter meter-links" title="Найдено противоречий из всех в деле">
+        <i class="meter-fill"></i><span class="meter-txt"><span id="tb-found">0</span>/<span id="tb-total">0</span> связей</span>
+      </span>
+      <span class="meter meter-read" title="Прочитано материалов">
+        <i class="meter-fill"></i><span class="meter-txt"><span id="tb-read">0 / 0</span> прочитано</span>
+      </span>
+      <span class="stat clock" id="tb-clock" title="Время в деле">00:00</span>
+      <button class="btn ghost sm" id="btn-theme" title="Светлая/тёмная тема (T)">◐</button>
+      <button class="btn ghost sm" id="btn-board" title="Доска (B)">☰</button>
+      <button class="btn ghost sm" id="btn-hint">Подсказка</button>
+      <button class="btn primary sm" id="btn-accuse">Сдать дело</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- колонка улик -->
+    <aside class="col col-evidence">
+      <div class="col-head">
+        <h2>Улики</h2>
+        <div class="col-head-tools">
+          <button class="mini" id="btn-unread" aria-pressed="false" title="Только непрочитанное">не прочитано</button>
+          <button class="mini" id="btn-density" aria-pressed="false" title="Плотный список">плотно</button>
+        </div>
+        <input id="ev-search" class="search" type="search" placeholder="поиск по названию…" autocomplete="off">
+      </div>
+      <div class="filters" id="ev-filters"></div>
+      <div id="ev-list" class="ev-list"></div>
+      <div class="tray" id="tray">
+        <div class="tray-label">Сравнить:</div>
+        <div class="tray-items" id="tray-items"><span class="muted">не выбрано</span></div>
+        <button class="btn sm" id="btn-compare" disabled>Сравнить улики</button>
+      </div>
+    </aside>
+
+    <!-- колонка просмотр -->
+    <section class="col col-reader">
+      <div class="reader-bar">
+        <button class="btn ghost xs" id="ev-prev">←</button>
+        <span id="reader-title" class="reader-title">Выберите улику слева</span>
+        <span id="reader-idx" class="muted xs"></span>
+        <button class="btn ghost xs" id="ev-next">→</button>
+        <button class="mini" id="btn-focus" aria-pressed="false" title="Режим чтения: спрятать боковые колонки (R)">Чтение</button>
+      </div>
+      <div class="reader-scroll" id="reader"><div class="empty">Откройте любую улику. Всё, что вы прочитали, помечается ✓.</div></div>
+    </section>
+
+    <!-- колонка доски -->
+    <aside class="col col-board">
+      <div class="tabs" id="board-tabs">
+        <button class="tab active" data-tab="persons">Люди<span class="tab-badge"></span></button>
+        <button class="tab" data-tab="clues">Выводы<span class="tab-badge"></span></button>
+        <button class="tab" data-tab="timeline">Время<span class="tab-badge"></span></button>
+        <button class="tab" data-tab="notes">Заметки<span class="tab-badge"></span></button>
+      </div>
+      <div class="board-scroll">
+        <div class="panel active" id="panel-persons"></div>
+        <div class="panel" id="panel-clues">
+          <p class="panel-hint">Здесь появятся выводы, когда вы найдёте противоречие между двумя уликами.</p>
+        </div>
+        <div class="panel" id="panel-timeline"></div>
+        <div class="panel" id="panel-notes">
+          <textarea id="notes-area" placeholder="Заметки команды. Сохраняются автоматически."></textarea>
+        </div>
+      </div>
+    </aside>
+  </main>
+</section>
+
+<!-- ───────────────────────── ОВЕРЛЕИ ───────────────────────── -->
+<div id="overlay" class="overlay hidden"><div class="overlay-inner" id="overlay-body"></div></div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="js/00-store.js"></script>
+<script src="cases/case-01/01-core.js"></script>
+<script src="cases/case-01/02-evidence.js"></script>
+<script src="cases/case-01/03-evidence.js"></script>
+<script src="cases/case-01/04-evidence.js"></script>
+<script src="cases/case-01/05-evidence.js"></script>
+<script src="cases/case-01/06-evidence.js"></script>
+<script src="cases/case-01/07-links.js"></script>
+<script src="cases/case-01/08-final.js"></script>
+<script src="cases/case-02/01-core.js"></script>
+<script src="cases/case-02/02-evidence.js"></script>
+<script src="cases/case-02/03-evidence.js"></script>
+<script src="cases/case-02/04-evidence.js"></script>
+<script src="cases/case-02/05-evidence.js"></script>
+<script src="cases/case-02/06-evidence.js"></script>
+<script src="cases/case-02/07-links.js"></script>
+<script src="cases/case-02/08-final.js"></script>
+<script src="cases/case-03/01-core.js"></script>
+<script src="cases/case-03/02-evidence.js"></script>
+<script src="cases/case-03/03-evidence.js"></script>
+<script src="cases/case-03/04-evidence.js"></script>
+<script src="cases/case-03/05-evidence.js"></script>
+<script src="cases/case-03/06-evidence.js"></script>
+<script src="cases/case-03/07-links.js"></script>
+<script src="cases/case-03/08-final.js"></script>
+<script src="cases/case-04/01-core.js"></script>
+<script src="cases/case-04/02-evidence.js"></script>
+<script src="cases/case-04/03-evidence.js"></script>
+<script src="cases/case-04/04-evidence.js"></script>
+<script src="cases/case-04/05-evidence.js"></script>
+<script src="cases/case-04/06-evidence.js"></script>
+<script src="cases/case-04/07-links.js"></script>
+<script src="cases/case-04/08-final.js"></script>
+<script src="cases/case-05/01-core.js"></script>
+<script src="cases/case-05/02-evidence.js"></script>
+<script src="cases/case-05/03-evidence.js"></script>
+<script src="cases/case-05/04-evidence.js"></script>
+<script src="cases/case-05/05-evidence.js"></script>
+<script src="cases/case-05/06-evidence.js"></script>
+<script src="cases/case-05/07-links.js"></script>
+<script src="cases/case-05/08-final.js"></script>
+<script src="cases/case-06/01-core.js"></script>
+<script src="cases/case-06/02-evidence.js"></script>
+<script src="cases/case-06/03-evidence.js"></script>
+<script src="cases/case-06/04-evidence.js"></script>
+<script src="cases/case-06/05-evidence.js"></script>
+<script src="cases/case-06/06-evidence.js"></script>
+<script src="cases/case-06/07-links.js"></script>
+<script src="cases/case-06/08-final.js"></script>
+<script src="cases/case-07/01-core.js"></script>
+<script src="cases/case-07/02-evidence.js"></script>
+<script src="cases/case-07/03-evidence.js"></script>
+<script src="cases/case-07/04-evidence.js"></script>
+<script src="cases/case-07/05-evidence.js"></script>
+<script src="cases/case-07/06-evidence.js"></script>
+<script src="cases/case-07/07-links.js"></script>
+<script src="cases/case-07/08-final.js"></script>
+<script src="cases/case-08/01-core.js"></script>
+<script src="cases/case-08/02-evidence.js"></script>
+<script src="cases/case-08/03-evidence.js"></script>
+<script src="cases/case-08/04-evidence.js"></script>
+<script src="cases/case-08/05-evidence.js"></script>
+<script src="cases/case-08/06-evidence.js"></script>
+<script src="cases/case-08/07-links.js"></script>
+<script src="cases/case-08/08-final.js"></script>
+<script src="cases/case-09/01-core.js"></script>
+<script src="cases/case-09/02-evidence.js"></script>
+<script src="cases/case-09/03-evidence.js"></script>
+<script src="cases/case-09/04-evidence.js"></script>
+<script src="cases/case-09/05-evidence.js"></script>
+<script src="cases/case-09/06-evidence.js"></script>
+<script src="cases/case-09/07-links.js"></script>
+<script src="cases/case-09/08-final.js"></script>
+<script src="cases/case-10/01-core.js"></script>
+<script src="cases/case-10/02-evidence.js"></script>
+<script src="cases/case-10/03-evidence.js"></script>
+<script src="cases/case-10/04-evidence.js"></script>
+<script src="cases/case-10/05-evidence.js"></script>
+<script src="cases/case-10/06-evidence.js"></script>
+<script src="cases/case-10/07-links.js"></script>
+<script src="cases/case-10/08-final.js"></script>
+<script src="cases/case-11/01-core.js"></script>
+<script src="cases/case-11/02-evidence.js"></script>
+<script src="cases/case-11/03-evidence.js"></script>
+<script src="cases/case-11/04-evidence.js"></script>
+<script src="cases/case-11/05-evidence.js"></script>
+<script src="cases/case-11/06-evidence.js"></script>
+<script src="cases/case-11/07-links.js"></script>
+<script src="cases/case-11/08-final.js"></script>
+<script src="cases/case-12/01-core.js"></script>
+<script src="cases/case-12/02-evidence.js"></script>
+<script src="cases/case-12/03-evidence.js"></script>
+<script src="cases/case-12/04-evidence.js"></script>
+<script src="cases/case-12/05-evidence.js"></script>
+<script src="cases/case-12/06-evidence.js"></script>
+<script src="cases/case-12/07-links.js"></script>
+<script src="cases/case-12/08-final.js"></script>
+<script src="cases/case-13/01-core.js"></script>
+<script src="cases/case-13/02-evidence.js"></script>
+<script src="cases/case-13/03-evidence.js"></script>
+<script src="cases/case-13/04-evidence.js"></script>
+<script src="cases/case-13/05-evidence.js"></script>
+<script src="cases/case-13/06-evidence.js"></script>
+<script src="cases/case-13/07-links.js"></script>
+<script src="cases/case-13/08-final.js"></script>
+<script src="cases/case-14/01-core.js"></script>
+<script src="cases/case-14/02-evidence.js"></script>
+<script src="cases/case-14/03-evidence.js"></script>
+<script src="cases/case-14/04-evidence.js"></script>
+<script src="cases/case-14/05-evidence.js"></script>
+<script src="cases/case-14/06-evidence.js"></script>
+<script src="cases/case-14/07-links.js"></script>
+<script src="cases/case-14/08-final.js"></script>
+<script src="cases/case-15/01-core.js"></script>
+<script src="cases/case-15/02-evidence.js"></script>
+<script src="cases/case-15/03-evidence.js"></script>
+<script src="cases/case-15/04-evidence.js"></script>
+<script src="cases/case-15/05-evidence.js"></script>
+<script src="cases/case-15/06-evidence.js"></script>
+<script src="cases/case-15/07-links.js"></script>
+<script src="cases/case-15/08-final.js"></script>
+<script src="cases/case-16/01-core.js"></script>
+<script src="cases/case-16/02-evidence.js"></script>
+<script src="cases/case-16/03-evidence.js"></script>
+<script src="cases/case-16/04-evidence.js"></script>
+<script src="cases/case-16/05-evidence.js"></script>
+<script src="cases/case-16/06-evidence.js"></script>
+<script src="cases/case-16/07-links.js"></script>
+<script src="cases/case-16/08-final.js"></script>
+<script src="cases/case-17/01-core.js"></script>
+<script src="cases/case-17/02-evidence.js"></script>
+<script src="cases/case-17/03-evidence.js"></script>
+<script src="cases/case-17/04-evidence.js"></script>
+<script src="cases/case-17/05-evidence.js"></script>
+<script src="cases/case-17/06-evidence.js"></script>
+<script src="cases/case-17/07-links.js"></script>
+<script src="cases/case-17/08-final.js"></script>
+<script src="cases/case-18/01-core.js"></script>
+<script src="cases/case-18/02-evidence.js"></script>
+<script src="cases/case-18/03-evidence.js"></script>
+<script src="cases/case-18/04-evidence.js"></script>
+<script src="cases/case-18/05-evidence.js"></script>
+<script src="cases/case-18/06-evidence.js"></script>
+<script src="cases/case-18/07-links.js"></script>
+<script src="cases/case-18/08-final.js"></script>
+<script src="cases/case-19/01-core.js"></script>
+<script src="cases/case-19/02-evidence.js"></script>
+<script src="cases/case-19/03-evidence.js"></script>
+<script src="cases/case-19/04-evidence.js"></script>
+<script src="cases/case-19/05-evidence.js"></script>
+<script src="cases/case-19/06-evidence.js"></script>
+<script src="cases/case-19/07-links.js"></script>
+<script src="cases/case-19/08-final.js"></script>
+<script src="cases/case-20/01-core.js"></script>
+<script src="cases/case-20/02-evidence.js"></script>
+<script src="cases/case-20/03-evidence.js"></script>
+<script src="cases/case-20/04-evidence.js"></script>
+<script src="cases/case-20/05-evidence.js"></script>
+<script src="cases/case-20/06-evidence.js"></script>
+<script src="cases/case-20/07-links.js"></script>
+<script src="cases/case-20/08-final.js"></script>
+<script src="js/10-docs.js"></script>
+<script src="js/20-app.js"></script>
+</body>
+</html>

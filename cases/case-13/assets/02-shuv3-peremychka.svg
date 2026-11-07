@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid13b" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="rail13" width="14" height="20" patternUnits="userSpaceOnUse">
+      <path d="M4 0 V20" stroke="#5c7286" stroke-width="2" opacity=".45"/>
+    </pattern>
+    <marker id="lead13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#a8321f"/>
+    </marker>
+    <marker id="dot13" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6" orient="auto">
+      <circle cx="3" cy="3" r="2.6" fill="#a8321f"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid13b)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Шкаф ШУВ-3: колодка Х2 и проводник между Х2:4 и Х2:5</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Съёмка специалиста при дневном освещении, макрообъектив, масштабная линейка в кадре. Кадры 14—19.</text>
+
+  <rect x="90" y="160" width="420" height="500" rx="8" fill="#ded7c6" stroke="#16202b" stroke-width="3.5"/>
+  <rect x="106" y="176" width="388" height="468" fill="none" stroke="#3b4652" stroke-width="1.8"/>
+  <text x="118" y="206" font-size="16" fill="#16202b">дверца шкафа, ключ МЕСТО / ОТЛ / ВКЛ</text>
+  <circle cx="452" cy="200" r="9" fill="none" stroke="#16202b" stroke-width="2"/>
+
+  <rect x="130" y="230" width="150" height="62" rx="4" fill="#16202b"/>
+  <rect x="140" y="240" width="130" height="42" rx="2" fill="#243444"/>
+  <text x="150" y="270" font-size="22" fill="#c9d4de" letter-spacing="1">1 284</text>
+  <text x="132" y="312" font-size="14" fill="#3b4652">таймер наработки, часы</text>
+  <text x="132" y="330" font-size="14" fill="#3b4652">кадр 18</text>
+
+  <rect x="300" y="230" width="180" height="62" rx="4" fill="none" stroke="#3b4652" stroke-width="2"/>
+  <text x="312" y="254" font-size="14" fill="#3b4652">КМ1 — контактор,</text>
+  <text x="312" y="272" font-size="14" fill="#3b4652">обратный сигнал</text>
+  <text x="312" y="288" font-size="14" fill="#3b4652">на панель пульта</text>
+  <rect x="312" y="300" width="156" height="40" fill="none" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="318" y="326" font-size="13" fill="#3b4652">геркон СМ-1 на двери</text>
+
+  <rect x="130" y="360" width="350" height="118" fill="url(#rail13)" stroke="#3b4652" stroke-width="1.6"/>
+  <text x="136" y="494" font-size="14" fill="#3b4652">Крепёжная рейка, колодки Х1 — Х3</text>
+
+  <rect x="130" y="520" width="350" height="104" rx="4" fill="none" stroke="#a8321f" stroke-width="2.4"/>
+  <g font-size="14" fill="#3b4652">
+    <text x="142" y="544">кадр 19: наклейка 40 на 20 мм</text>
+    <text x="142" y="564">на внутренней стороне крышки,</text>
+    <text x="142" y="584">от руки — адрес поста и слово,</text>
+    <text x="142" y="604">принятый комиссией за пароль</text>
+  </g>
+
+  <rect x="580" y="176" width="470" height="300" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="3"/>
+  <text x="596" y="206" font-size="17" font-weight="600" fill="#16202b">Колодка Х2 — кадр 14</text>
+
+  <rect x="606" y="250" width="418" height="98" fill="#c9d4de" opacity=".45" stroke="#a8321f" stroke-width="2.2"/>
+  <g>
+    <circle cx="650" cy="298" r="11" fill="none" stroke="#16202b" stroke-width="2.2"/>
+    <path d="M644 292 L656 304 M656 292 L644 304" stroke="#16202b" stroke-width="1.6"/>
+    <text x="632" y="242" font-size="15" fill="#16202b">Х2:4</text>
+    <circle cx="742" cy="298" r="11" fill="none" stroke="#16202b" stroke-width="2.2"/>
+    <path d="M736 292 L748 304 M748 292 L736 304" stroke="#16202b" stroke-width="1.6"/>
+    <text x="724" y="242" font-size="15" fill="#16202b">Х2:5</text>
+    <circle cx="834" cy="298" r="11" fill="none" stroke="#3b4652" stroke-width="2"/>
+    <circle cx="926" cy="298" r="11" fill="none" stroke="#3b4652" stroke-width="2"/>
+    <path d="M606 348 H1024" stroke="#16202b" stroke-width="2.6"/>
+    <g stroke="#3b4652" stroke-width="1.4">
+      <path d="M640 348 V372 M732 348 V372 M824 348 V372 M916 348 V372"/>
+    </g>
+    <g font-size="13" fill="#3b4652">
+      <text x="608" y="392">2 следа</text>
+      <text x="700" y="392">скол, порошок</text>
+      <text x="792" y="392">2 следа</text>
+      <text x="884" y="392">без сколов</text>
+    </g>
+  </g>
+
+  <path d="M650 298 C 664 264 722 262 742 298" fill="none" stroke="#a8321f" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M650 298 C 664 264 722 262 742 298" fill="none" stroke="#e8e2d4" stroke-width="1.4" stroke-dasharray="2 7"/>
+  <path d="M742 298 C 772 250 828 268 848 306" fill="none" stroke="#a8321f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="836" y="300" width="26" height="16" rx="3" fill="#a8321f" opacity=".8"/>
+  <path d="M849 320 V436 H826" stroke="#a8321f" stroke-width="1.4" fill="none"/>
+  <text x="596" y="458" font-size="15" font-weight="600" fill="#a8321f">провод ПВ-1, 0,75 кв. мм, длина 0,32 м</text>
+  <path d="M700 372 L614 466" stroke="#a8321f" stroke-width="1.6" marker-start="url(#dot13)"/>
+
+  <g stroke="#3b4652" stroke-width="1.6" fill="none">
+    <path d="M556 298 H580" marker-end="url(#lead13)"/>
+    <path d="M1050 298 H1090" marker-start="url(#lead13)"/>
+  </g>
+  <text x="1092" y="292" font-size="14" fill="#3b4652">к клеммнику</text>
+  <text x="1092" y="310" font-size="14" fill="#3b4652">цепи блокировки</text>
+  <text x="566" y="292" font-size="14" fill="#3b4652" text-anchor="end">реле блокировки</text>
+  <text x="566" y="310" font-size="14" fill="#3b4652" text-anchor="end">ПДК</text>
+
+  <rect x="1090" y="386" width="430" height="150" rx="6" fill="none" stroke="#16202b" stroke-width="2.4"/>
+  <text x="1110" y="416" font-size="16" font-weight="600" fill="#16202b">Кадр 17: жало отвёртки</text>
+  <rect x="1110" y="434" width="200" height="16" rx="3" fill="#3b4652"/>
+  <path d="M1310 434 L1370 438 L1370 446 L1310 450 Z" fill="#8fa3b5" stroke="#16202b" stroke-width="1.4"/>
+  <path d="M1322 436 L1366 439 M1322 448 L1366 445" stroke="#5c7286" stroke-width="2.4"/>
+  <g font-size="14" fill="#3b4652">
+    <text x="1110" y="480">плоская отвёртка 4 мм, на жале</text>
+    <text x="1110" y="500">серая порошковая краска</text>
+    <text x="1110" y="520">той же фракции, что и в шлице</text>
+  </g>
+
+  <line x1="60" y1="620" x2="1540" y2="620" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="660" font-size="18" font-weight="600" fill="#16202b">Проводник между Х2:4 и Х2:5</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="690">Концы зачищены на 12 мм, опрессовки</text>
+      <text x="60" y="712">нет, жилы залужены. Заложен под винт</text>
+      <text x="60" y="734">со стороны лотка и не затянут до конца:</text>
+      <text x="60" y="756">между жилой и контактом зазор 0,5 мм.</text>
+      <text x="60" y="786">Второй конец отмотан ПВХ-лентой,</text>
+      <text x="60" y="808">лежал в том же лотке — кадр 16.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="560" y="660" font-size="18" font-weight="600" fill="#16202b">Крепёж колодки</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="560" y="690">Четыре болта М6 на 16 под шлиц.</text>
+      <text x="560" y="712">На трёх шлицах свежие сколы кромки</text>
+      <text x="560" y="734">до 1,5 мм, металл светлый, без</text>
+      <text x="560" y="756">следов окисления.</text>
+      <text x="560" y="786">У двух болтов по два следа отворота;</text>
+      <text x="560" y="808">в одном шлице зажат серый порошок.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1040" y="660" font-size="18" font-weight="600" fill="#16202b">Что было в шкафу</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1040" y="690">Пакет формуляров, плоская отвёртка</text>
+      <text x="1040" y="712">4 мм, моток провода ПВ-1 сечением</text>
+      <text x="1040" y="734">0,75 кв. мм длиной 1,9 м, три</text>
+      <text x="1040" y="756">запасных болта М6.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1040" y="800" font-size="18" font-weight="600" fill="#16202b">Состояние перед съёмкой</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1040" y="830">Дверь закрыта, пломба отсутствует,</text>
+      <text x="1040" y="852">лампа цепи управления горит, ключ «ОТЛ».</text>
+    </g>
+  </g>
+</svg>

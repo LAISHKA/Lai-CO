@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid23" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid23)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера ворот базы «Гейзер»: Мельничная, 24</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Объектив 2,8 мм, угол 108°, ИК-подсветка, запись непрерывная, хранение 14 суток.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="420" fill="#16202b" stroke="#16202b" stroke-width="3"/>
+    <rect x="72" y="152" width="776" height="396" fill="#243444"/>
+    <path d="M72 420 L848 384 L848 548 L72 548 Z" fill="#2f4258"/>
+
+    <path d="M96 300 h 300 v 120 h -300 Z" fill="#33465c" stroke="#4a6076" stroke-width="2"/>
+    <path d="M96 300 l 150 -46 l 150 46" fill="#2f4258" stroke="#4a6076" stroke-width="2"/>
+    <text x="104" y="286" font-size="15" fill="#8fa3b5">ангар, бокс мойки</text>
+
+    <path d="M700 168 h 120 v 300 h -120 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="3"/>
+    <g stroke="#8fa3b5" stroke-width="2">
+      <path d="M700 200 h 120 M700 232 h 120 M700 264 h 120 M700 296 h 120 M700 328 h 120 M700 360 h 120"/>
+    </g>
+    <text x="686" y="156" font-size="15" fill="#c9d4de">ворота базы, створ 6 м</text>
+
+    <g>
+      <rect x="560" y="196" width="48" height="34" fill="#1d2b38" stroke="#8fa3b5" stroke-width="1.6"/>
+      <text x="544" y="248" font-size="13" fill="#8fa3b5">будка охраны</text>
+    </g>
+
+    <g>
+      <path d="M380 402 h 210 v 52 h -210 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M420 402 v -30 h 120 v 30" fill="#2f4258" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="412" cy="466" r="20" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="548" cy="466" r="20" fill="#16202b" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M590 430 l 60 -12 v 24 h -60 Z" fill="#3a4f66" stroke="#8fa3b5" stroke-width="2"/>
+      <text x="380" y="384" font-size="15" fill="#c9d4de">ПУМ-503, А 316 ЕМ 716, ковш поднят</text>
+    </g>
+
+    <g>
+      <path d="M150 456 q 14 -20 30 0 l 4 36 q -18 8 -36 0 Z" fill="#e08a2e" stroke="#8fa3b5" stroke-width="1.6"/>
+      <circle cx="165" cy="442" r="10" fill="#dfe6ea" stroke="#8fa3b5" stroke-width="1.6"/>
+      <path d="M154 450 h 24" stroke="#f2e6c8" stroke-width="3"/>
+      <text x="118" y="516" font-size="14" fill="#c9d4de">силуэт в светлых полосах</text>
+      <path d="M232 420 l 40 -10 v 22 l -40 8 Z" fill="#f2e6c8" opacity=".8"/>
+      <text x="228" y="404" font-size="13" fill="#f2e6c8">переносная лампа</text>
+    </g>
+
+    <text x="88" y="180" font-size="16" fill="#e8e2d4">14.01.2026  23:44:20</text>
+    <circle cx="826" cy="530" r="7" fill="#a8321f"/>
+    <text x="760" y="526" font-size="14" fill="#a8321f">кадр 4</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Раскадровка архива</text>
+    <line x1="920" y1="200" x2="920" y2="700" stroke="#16202b" stroke-width="2"/>
+    <g font-size="16" fill="#3b4652">
+      <circle cx="920" cy="222" r="5" fill="#2f4258"/>
+      <text x="940" y="218">18:10:22 — ПУМ-503 проходит ворота на въезд,</text>
+      <text x="940" y="240">кабина освещена, машинист один</text>
+      <circle cx="920" cy="270" r="5" fill="#2f4258"/>
+      <text x="940" y="266">18:12:05 — машина ставится в ряд у ангара, свет гаснет</text>
+      <circle cx="920" cy="300" r="5" fill="#a8321f"/>
+      <text x="940" y="296" fill="#16202b">23:41:30 — через ворота заходит легковой автомобиль,</text>
+      <text x="940" y="318">фары выключены, дежурный из будки не выходит</text>
+      <circle cx="920" cy="348" r="5" fill="#a8321f"/>
+      <text x="940" y="344" fill="#16202b">23:44:20 — у ангара включается переносная лампа,</text>
+      <text x="940" y="366">силуэт в рабочей куртке, второй у кабины</text>
+      <circle cx="920" cy="396" r="5" fill="#a8321f"/>
+      <text x="940" y="392" fill="#16202b">23:55:40 — ПУМ-503 идёт к воротам задним ходом,</text>
+      <text x="940" y="414">кузов пустой, ковш поднят, разворачивается и выезжает</text>
+      <circle cx="920" cy="444" r="5" fill="#2f4258"/>
+      <text x="940" y="440">00:06:35 — тот же легковой выезжает за ворота</text>
+      <circle cx="920" cy="474" r="5" fill="#2f4258"/>
+      <text x="940" y="470">06:20:11 — ПУМ-503 возвращается, машинист один,</text>
+      <text x="940" y="492">ковш опущен до земли</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="612" x2="860" y2="612" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="658" font-size="19" font-weight="600" fill="#16202b">Сверка с документами базы</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="60" y="696">Путевой лист № 1184 закрыт 14.01 в 18:10 и сдан в бухгалтерию</text>
+      <text x="60" y="718">15.01. Строка «23:55 — выезд вне листа» внесена механиком позже.</text>
+      <text x="60" y="754">В журнале пропусков 15.01 выезда ПУМ-503 нет; дежурный смены</text>
+      <text x="60" y="776">Соломатин Е. П. отсутствие выезда подтвердил письменно.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="60" y="818">Заправок после 07:40 (90 л, чек 4418) по карте</text>
+      <text x="60" y="840">предприятия нет: на ночь ушло бы 12—18 л.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="940" y="658" font-size="19" font-weight="600" fill="#16202b">Что читается и что нет</text>
+    <g font-size="16" fill="#3b4652">
+      <text x="940" y="696">Госномер легкового автомобиля в кадре 23:41:30</text>
+      <text x="940" y="718">разобран только частично: читается «Т 300 ЕК 7».</text>
+      <text x="940" y="754">Машинист Хлюпин А. Ф. в объяснениях заявил,</text>
+      <text x="940" y="776">что в ту ночь техники на базе не было.</text>
+    </g>
+    <g font-size="16" fill="#a8321f">
+      <text x="940" y="818">Наряд № 4 зарегистрирован 15.01 в 07:55</text>
+      <text x="940" y="840">при времени начала работ 00:30.</text>
+    </g>
+  </g>
+</svg>

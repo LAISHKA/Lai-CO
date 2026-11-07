@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid1138" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="scrap1138" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 18 L18 0 M-4 4 L4 -4 M14 22 L22 14" stroke="#5c7286" stroke-width="2" opacity=".35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect width="1600" height="900" fill="url(#grid1138)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Трюм № 2, вид сверху: щит лебёдки, край брезента и отпечаток подошвы</text>
+  <text x="60" y="106" font-size="19" style="fill:var(--fg-dim,#3b4652)">Схема к фототаблице 24.10, 10:20 — 11:10, до подъёма вязанок. В каждом кадре масштабная линейка, четыре снимка — контрольные отпечатки.</text>
+
+  <g>
+    <rect x="60" y="140" width="900" height="470" fill="#d9cfb8" stroke="#16202b" stroke-width="3"/>
+
+    <rect x="96" y="170" width="200" height="410" fill="url(#scrap1138)" stroke="#16202b" stroke-width="2.4"/>
+    <text x="112" y="200" font-size="15" style="fill:var(--paper-ink,#16202b)">штабель вязанок лома</text>
+    <text x="112" y="222" font-size="14" style="fill:var(--fg-dim,#3b4652)">бирка 840 килограммов</text>
+
+    <path d="M330 170 H930 V580 H330" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.4"/>
+    <text x="344" y="196" font-size="14" style="fill:var(--fg-dim,#3b4652)">крышка трюма, левый борт слева по ходу</text>
+
+    <g>
+      <rect x="600" y="220" width="290" height="150" fill="#33465c" stroke="#16202b" stroke-width="3"/>
+      <circle cx="690" cy="295" r="42" fill="#243444" stroke="#8fa3b5" stroke-width="2.4"/>
+      <path d="M690 253 v 84 M648 295 h 84" stroke="#8fa3b5" stroke-width="2"/>
+      <rect x="756" y="258" width="112" height="74" fill="#3a4f66" stroke="#16202b" stroke-width="2.4"/>
+      <text x="766" y="286" font-size="14" fill="#e8e2d4">щит лебёдки</text>
+      <text x="766" y="308" font-size="13" fill="#c9d4de">торцевая планка</text>
+      <text x="606" y="208" font-size="15" style="fill:var(--paper-ink,#16202b)">барабан грузовой лебёдки у переборки</text>
+      <path d="M820 300 l 30 -14 v 28 Z" fill="#a8321f"/>
+      <text x="786" y="356" font-size="14" style="fill:var(--danger,#a8321f)">рукоятка «траверз», выключатель включён</text>
+    </g>
+
+    <g>
+      <path d="M360 402 H930 V560 H360 Z" fill="#5c6a52" stroke="#16202b" stroke-width="2.6" opacity=".85"/>
+      <path d="M360 402 H930" style="stroke:var(--danger,#a8321f)" stroke-width="4"/>
+      <text x="372" y="432" font-size="15" fill="#f2e6c8">брезент штатного тента, приспущен по левому борту</text>
+      <text x="372" y="454" font-size="14" fill="#dfe6ea">обжат шкентелем 14 мм в 4,5 оборота, конец на барабане</text>
+      <g style="stroke:var(--danger,#a8321f)" stroke-width="2.4" fill="none">
+        <path d="M900 402 v 30 M886 424 h 28"/>
+      </g>
+      <text x="770" y="452" font-size="15" style="fill:var(--danger,#a8321f)">свес 25 см</text>
+      <g stroke-width="3" style="stroke:var(--danger,#a8321f)">
+        <path d="M420 470 h 10 M420 486 h 10"/>
+      </g>
+      <text x="440" y="484" font-size="14" style="fill:var(--danger,#a8321f)">две нити тёмно-синей пряжи с кромки</text>
+    </g>
+
+    <g>
+      <path d="M520 486 c 26 -12 62 -10 84 4 c 14 10 10 34 -8 44 c -26 14 -66 12 -86 -2 c -14 -10 -12 -34 10 -46 Z" fill="#efe7d3" stroke="#16202b" stroke-width="2.6"/>
+      <path d="M596 500 c 16 4 26 14 24 26 c -2 14 -20 20 -36 16" fill="#efe7d3" stroke="#16202b" stroke-width="2.2"/>
+      <g stroke="#8fa3b5" stroke-width="1.4" opacity=".9">
+        <path d="M534 496 q 22 12 44 6 M530 514 q 24 12 50 4 M536 530 q 20 8 40 2"/>
+      </g>
+      <text x="470" y="574" font-size="15" style="fill:var(--danger,#a8321f)">кадр 6 · отпечаток подошвы на слое угольной пыли: кабук с набойкой,</text>
+      <text x="470" y="594" font-size="15" style="fill:var(--danger,#a8321f)">стелька 275 миллиметров, глубина 2 миллиметра, носок к киповой планке</text>
+    </g>
+
+    <g stroke-width="2.6" style="stroke:var(--danger,#a8321f)" fill="none">
+      <path d="M360 520 H500 M360 508 v 24"/>
+      <path d="M604 402 V344 H756" stroke-dasharray="8 6"/>
+    </g>
+    <text x="366" y="504" font-size="15" style="fill:var(--danger,#a8321f)">40 см от борта</text>
+    <text x="614" y="336" font-size="15" style="fill:var(--danger,#a8321f)">частичный отпечаток левой ладони на планке щита</text>
+
+    <g stroke-width="2.2" style="stroke:var(--paper-ink,#16202b)" fill="none">
+      <path d="M700 372 V392 M700 500 H930 M920 490 v 20"/>
+    </g>
+    <text x="790" y="524" font-size="15" style="fill:var(--paper-ink,#16202b)">1,1 метра от планки до штабеля</text>
+  </g>
+
+  <g>
+    <text x="1010" y="176" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Что сопоставлено экспертом</text>
+    <g stroke-width="2" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="1010" y="198" width="470" height="150"/>
+      <path d="M1010 248 H1480 M1010 298 H1480"/>
+    </g>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1026" y="230">след обуви на площадке</text>
+      <text x="1026" y="280">ладонь на торцевой планке</text>
+      <text x="1026" y="330">волокна на кромке тента</text>
+    </g>
+    <g font-size="16" font-weight="600" style="fill:var(--paper-ink,#16202b)">
+      <text x="1330" y="230">42-й размер</text>
+      <text x="1330" y="280">левая</text>
+      <text x="1330" y="330">тёмно-синяя</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="1010" y="386">Контрольный отпечаток обуви 42-го размера, изъятой</text>
+      <text x="1010" y="408">у Кобелева: рисунок протектора и износ каблука совпали</text>
+      <text x="1010" y="446">У боцмана обувь 43-го, а штормовка светлая</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1010" y="500" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Изъято с площадки</text>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1010" y="538">бита в пакете № 1, снималась с биркой номера</text>
+      <text x="1010" y="562">контрольный след обуви 42-го на бетонке</text>
+      <text x="1010" y="586">две нити тёмно-синей пряжи с кромки брезента</text>
+      <text x="1010" y="610">ключ от щита лебёдки с кольцом и биркой</text>
+    </g>
+    <line x1="1010" y1="636" x2="1480" y2="636" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="1010" y="672">Снимки 7—9: контрольные отпечатки обуви 42-го</text>
+      <text x="1010" y="694">с носка и каблука, ладони с торцевой планки</text>
+      <text x="1010" y="716">и бирки инвентарного номера на рукоятке</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="60" y="676" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Кто оставил эти следы</text>
+    <g stroke-width="2.4" fill="none" style="stroke:var(--paper-ink,#16202b)">
+      <rect x="60" y="700" width="880" height="130"/>
+    </g>
+    <g font-size="16" style="fill:var(--fg-dim,#3b4652)">
+      <text x="80" y="734">У щита лебёдки стоял левша сорок второго размера: ладонь на планке,</text>
+      <text x="80" y="758">отпечаток носком к киповой планке, нити с чужой тёмно-синей вещи.</text>
+      <text x="80" y="786">Ключом от щита в эту ночь боцман не пользовался — утром старший механик</text>
+      <text x="80" y="810">видел, что Носырев ключа при себе не имел, а щит был включён</text>
+    </g>
+    <g font-size="16" style="fill:var(--danger,#a8321f)">
+      <text x="980" y="734">На кольце ключа —</text>
+      <text x="980" y="758">следы двух рук: Носырева,</text>
+      <text x="980" y="782">что штатно, и Мокрушина</text>
+      <text x="980" y="806">сверх случайного касания</text>
+    </g>
+  </g>
+</svg>

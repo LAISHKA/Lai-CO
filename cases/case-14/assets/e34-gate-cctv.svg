@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <rect width="1600" height="900" style="fill:var(--paper,#e8e2d4)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" style="stroke:var(--paper-ink,#16202b)" stroke-width="2.5"/>
+
+  <text x="60" y="74" font-size="26" font-weight="600" style="fill:var(--paper-ink,#16202b)">Камера КПП-1: четыре кадра протокола осмотра записи</text>
+  <text x="60" y="104" font-size="18" style="fill:var(--fg-dim,#3b4652)">1280 на 720, 12,5 кадра в секунду, инфракрасная подсветка, режим записи по датчику движения. Метки в углах кадров — таймер регистратора.</text>
+
+  <g>
+    <rect x="60" y="140" width="700" height="290" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="70" y="150" width="680" height="270" fill="#243444"/>
+    <path d="M70 330 L750 300" stroke="#4a5f72" stroke-width="1.4" opacity=".6"/>
+    <path d="M70 372 L750 352" stroke="#4a5f72" stroke-width="1.4" opacity=".4"/>
+    <path d="M300 300 L340 150 M470 300 L430 150" stroke="#3d5162" stroke-width="1.6" opacity=".5"/>
+    <path d="M286 152 h 26 v 148 h -26 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.4"/>
+    <path d="M486 152 h 26 v 148 h -26 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.4"/>
+    <path d="M312 196 H486" stroke="#8fa3b5" stroke-width="3" opacity=".7"/>
+    <g>
+      <path d="M330 300 h 96 l 16 -26 h 44 l 14 26 v 34 h -170 Z" fill="#41586e" stroke="#c9d4de" stroke-width="1.6"/>
+      <path d="M356 274 v -22 h 58 v 22" fill="#2c4257" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M444 262 l 34 -22 l 12 12 l -8 26 Z" fill="#41586e" stroke="#c9d4de" stroke-width="1.4"/>
+      <circle cx="360" cy="338" r="14" fill="#1b2833" stroke="#c9d4de" stroke-width="1.6"/>
+      <circle cx="452" cy="338" r="14" fill="#1b2833" stroke="#c9d4de" stroke-width="1.6"/>
+      <text x="352" y="322" font-size="15" fill="#f2e6c8">17</text>
+    </g>
+    <text x="82" y="176" font-size="14" fill="#c9d4de">CAM-01 КПП-1 / СЕВЕРНЫЙ ВЪЕЗД</text>
+    <text x="560" y="176" font-size="17" fill="#c9d4de" font-family="'Consolas',monospace">19:02:41</text>
+    <text x="82" y="410" font-size="15" fill="#8fa3b5" opacity=".9">кадр 1: ворота открыты, миксер № 09 с бортовым номером 17 на выезде с объекта</text>
+  </g>
+
+  <g>
+    <rect x="780" y="140" width="700" height="290" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="790" y="150" width="680" height="270" fill="#243444"/>
+    <path d="M790 336 L1470 336" stroke="#4a5f72" stroke-width="1.4" opacity=".6"/>
+    <path d="M1010 150 L990 336 M1250 150 L1270 336" stroke="#3d5162" stroke-width="1.6" opacity=".5"/>
+    <g>
+      <path d="M1088 300 h 74 l 12 -20 h 34 l 10 20 v 26 h -130 Z" fill="#41586e" stroke="#c9d4de" stroke-width="1.6"/>
+      <path d="M1108 280 v -16 h 44 v 16" fill="#2c4257" stroke="#c9d4de" stroke-width="1.4"/>
+      <path d="M1150 262 l 26 -16 l 9 9 l -6 19 Z" fill="#41586e" stroke="#c9d4de" stroke-width="1.4"/>
+      <circle cx="1110" cy="328" r="10" fill="#1b2833" stroke="#c9d4de" stroke-width="1.4"/>
+      <circle cx="1180" cy="328" r="10" fill="#1b2833" stroke="#c9d4de" stroke-width="1.4"/>
+    </g>
+    <path d="M1216 250 c 20 6 30 22 26 44" stroke="#7fc4e8" stroke-width="2.4" fill="none" opacity=".9"/>
+    <path d="M1242 294 l 6 14 M1250 290 l 8 12 M1258 286 l 8 10" stroke="#7fc4e8" stroke-width="1.6" opacity=".7"/>
+    <text x="1276" y="284" font-size="14" fill="#7fc4e8">открытый бункер,</text>
+    <text x="1276" y="302" font-size="14" fill="#7fc4e8">остаточная смесь, струя воды</text>
+    <text x="802" y="176" font-size="14" fill="#c9d4de">CAM-01 КПП-1 / СЕВЕРНЫЙ ВЪЕЗД</text>
+    <text x="1280" y="176" font-size="17" fill="#c9d4de" font-family="'Consolas',monospace">19:07:12</text>
+    <text x="802" y="410" font-size="15" fill="#8fa3b5" opacity=".9">кадр 2: тот же борт уходит вдаль, в бункере остаток смеси, из шланга идёт вода</text>
+  </g>
+
+  <g>
+    <rect x="60" y="450" width="700" height="290" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="70" y="460" width="680" height="270" fill="#20303c"/>
+    <path d="M70 640 L750 640" stroke="#4a5f72" stroke-width="1.4" opacity=".55"/>
+    <path d="M300 462 v 178 M470 462 v 178" stroke="#8fa3b5" stroke-width="4" opacity=".8"/>
+    <path d="M300 500 H470 M300 546 H470 M300 592 H470" stroke="#8fa3b5" stroke-width="2.6" opacity=".7"/>
+    <path d="M368 546 h 34 v 22 h -34 Z" fill="none" stroke="#e08a2e" stroke-width="2.4"/>
+    <text x="406" y="566" font-size="13" fill="#e08a2e">навесной замок</text>
+    <rect x="560" y="520" width="150" height="120" fill="#2b3a48" stroke="#8fa3b5" stroke-width="1.6"/>
+    <rect x="600" y="548" width="42" height="92" fill="#e8d79a" opacity=".85"/>
+    <path d="M616 604 c 0 -14 12 -14 12 0 v 36 h -12 Z" fill="#1b2833" opacity=".9"/>
+    <text x="536" y="512" font-size="13" fill="#f2e6c8">проём бытовки № 3, свет внутри</text>
+    <text x="82" y="486" font-size="14" fill="#c9d4de">CAM-01 КПП-1 / СЕВЕРНЫЙ ВЪЕЗД</text>
+    <text x="560" y="486" font-size="17" fill="#c9d4de" font-family="'Consolas',monospace">02:50:04</text>
+    <text x="82" y="720" font-size="15" fill="#8fa3b5" opacity=".9">кадр 3: ворота закрыты на навесной замок, в проёме бытовки № 3 свет, у двери силуэт человека</text>
+  </g>
+
+  <g>
+    <rect x="780" y="450" width="700" height="290" style="fill:var(--paper-ink,#16202b)"/>
+    <rect x="790" y="460" width="680" height="270" fill="#20303c"/>
+    <path d="M790 660 L1470 620" stroke="#4a5f72" stroke-width="1.4" opacity=".55"/>
+    <path d="M790 600 L1470 574" stroke="#4a5f72" stroke-width="1.2" opacity=".35"/>
+    <g stroke="#8fa3b5" stroke-width="2" opacity=".55" fill="none">
+      <path d="M960 660 c 10 -14 26 -14 36 0 c 10 14 26 14 36 0 c 10 -14 26 -14 36 0"/>
+      <path d="M1090 700 c 10 -14 26 -14 36 0 c 10 14 26 14 36 0"/>
+    </g>
+    <text x="1180" y="672" font-size="14" fill="#c9d4de">свежий след протектора поперёк дороги</text>
+    <text x="802" y="486" font-size="14" fill="#c9d4de">CAM-01 КПП-1 / СЕВЕРНЫЙ ВЪЕЗД</text>
+    <text x="1280" y="486" font-size="17" fill="#c9d4de" font-family="'Consolas',monospace">05:58:19</text>
+    <text x="802" y="720" font-size="15" fill="#8fa3b5" opacity=".9">кадр 4: проезд пуст, ни одной машины в кадре, на снегу след через всю дорогу</text>
+  </g>
+
+  <line x1="60" y1="760" x2="1140" y2="760" style="stroke:var(--paper-line,#cbbfa8)" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="754" font-size="15" style="fill:var(--danger,#a8321f)">дату съёмки кадров протокол не указывает; при расчётах метки регистратора уменьшаются на четыре минуты</text>
+    <text x="60" y="796" font-size="19" font-weight="600" style="fill:var(--paper-ink,#16202b)">Сверка таймера с отметкой контроллера ворот: регистратор спешит</text>
+    <g font-size="17" font-family="'Consolas',monospace" style="fill:var(--paper-ink,#16202b)">
+      <text x="60" y="832">19:02:41 - 18:58:41</text>
+      <text x="360" y="832">19:07:12 - 19:03:12</text>
+      <text x="660" y="832">02:50:04 - 02:46:04</text>
+      <text x="960" y="832">05:58:19 - 05:54:19</text>
+    </g>
+    <text x="60" y="866" font-size="16" style="fill:var(--fg-dim,#3b4652)">слева метка кадра по таймеру регистратора, справа то же событие по сетевой шкале объекта, расхождение 4 минуты</text>
+  </g>
+</svg>

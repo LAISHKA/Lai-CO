@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid164" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="wood164" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+      <path d="M0 0 h 14" stroke="#5c7286" stroke-width="0.8" opacity=".28"/>
+    </pattern>
+    <marker id="arr164" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#a8321f"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid164)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Пломба номер 6114 на дуге заднего борта прицепа</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Файл IMG_0614-2, снято сотрудником службы безопасности на стоянке подрядчика. Изъята 06.06 в 10:05, понятный — кладовщик стоянки.</text>
+
+  <g>
+    <rect x="70" y="150" width="760" height="420" fill="#1d2b38" stroke="#16202b" stroke-width="3"/>
+    <rect x="86" y="166" width="728" height="388" fill="#2b3d4c"/>
+    <rect x="86" y="420" width="728" height="134" fill="#3a4f66"/>
+    <rect x="86" y="420" width="728" height="134" fill="url(#wood164)"/>
+    <path d="M86 420 h 728" stroke="#9fb3c4" stroke-width="2"/>
+
+    <g stroke="#c9d4de" stroke-width="3" fill="none">
+      <circle cx="300" cy="404" r="26"/>
+      <circle cx="520" cy="404" r="26"/>
+    </g>
+    <text x="236" y="466" font-size="13" fill="#9fb3c4">проушина дуги</text>
+    <text x="482" y="466" font-size="13" fill="#9fb3c4">проушина борта</text>
+
+    <path d="M300 404 C 300 300, 380 250, 410 250" stroke="#e6d7c4" stroke-width="5" fill="none"/>
+    <path d="M470 250 C 500 250, 520 300, 520 404" stroke="#e6d7c4" stroke-width="5" fill="none"/>
+    <path d="M392 250 l -14 -10 M392 258 l -16 4" stroke="#e6d7c4" stroke-width="3"/>
+    <text x="250" y="236" font-size="13" fill="#a8321f">обрывы троса: смык плоских губок, след 1,4 мм, осевой заусенец</text>
+
+    <g>
+      <rect x="392" y="236" width="96" height="150" rx="14" fill="#c9402f" stroke="#16202b" stroke-width="2.6"/>
+      <rect x="404" y="252" width="72" height="118" rx="8" fill="#e05a45"/>
+      <text x="410" y="300" font-size="30" font-weight="700" fill="#f4f7fa">6114</text>
+      <path d="M406 316 h 68 M406 330 h 68" stroke="#8f2a1e" stroke-width="2"/>
+      <circle cx="440" cy="366" r="9" fill="#8f2a1e" stroke="#16202b" stroke-width="1.4"/>
+      <text x="366" y="410" font-size="13" fill="#e6d7c4">корпус пломбы: трещин нет, замок сухой внутри</text>
+    </g>
+
+    <g>
+      <rect x="600" y="196" width="184" height="130" rx="6" fill="#22303c" stroke="#9fb3c4" stroke-width="2"/>
+      <text x="612" y="222" font-size="13" fill="#9fb3c4">номерная площадка, увеличение</text>
+      <text x="622" y="276" font-size="40" font-weight="700" fill="#f2e6c8">6114</text>
+      <path d="M624 288 l 14 -26 M650 288 l 12 -26 M676 288 l 14 -26 M704 288 l 12 -26" stroke="#a8321f" stroke-width="1.2" opacity=".9"/>
+      <text x="606" y="344" font-size="12" fill="#a8321f">грани свежие, лак по бокам не тронут</text>
+    </g>
+
+    <path d="M690 336 L 640 392" stroke="#a8321f" stroke-width="1.8" marker-end="url(#arr164)"/>
+    <text x="96" y="200" font-size="13" fill="#e8e2d4">06.06.2026  09:20  ·  стоянка «Пятый Порт»</text>
+    <circle cx="792" cy="536" r="7" fill="#a8321f"/>
+    <text x="742" y="532" font-size="14" fill="#a8321f">кадр 2</text>
+  </g>
+
+  <g>
+    <text x="880" y="176" font-size="19" font-weight="600" fill="#16202b">Что показывает осмотр</text>
+    <line x1="900" y1="196" x2="900" y2="562" stroke="#16202b" stroke-width="2"/>
+    <g font-size="13" fill="#3b4652">
+      <circle cx="900" cy="208" r="4.5" fill="#2f4258"/>
+      <text x="918" y="212">тип: номерная пластиковая пломба со стальным тросом-проволокой</text>
+      <circle cx="900" cy="244" r="4.5" fill="#2f4258"/>
+      <text x="918" y="248">крепление: проушины дуги заднего борта, один узел</text>
+      <circle cx="900" cy="280" r="4.5" fill="#a8321f"/>
+      <text x="918" y="284" fill="#16202b">перекус со стороны кабины, губки плоские, след смыка 1,4 мм</text>
+      <circle cx="900" cy="316" r="4.5" fill="#a8321f"/>
+      <text x="918" y="320" fill="#16202b">узел прохода троса не сорван: пломба снята перекусом, а не разжимом</text>
+      <circle cx="900" cy="352" r="4.5" fill="#a8321f"/>
+      <text x="918" y="356" fill="#16202b">грани номерной площадки после правки, царапины на теле старше</text>
+      <circle cx="900" cy="388" r="4.5" fill="#2f4258"/>
+      <text x="918" y="392">партия: серия 6100—6250, поступила на склад 14.04.2026</text>
+      <circle cx="900" cy="424" r="4.5" fill="#2f4258"/>
+      <text x="918" y="428">хранение до изъятия: опечатанный конверт с подписью понятного</text>
+      <circle cx="900" cy="460" r="4.5" fill="#a8321f"/>
+      <text x="918" y="464" fill="#16202b">на кадре В-2 в 03:15:40 номер не читается, читается только узел</text>
+      <circle cx="900" cy="496" r="4.5" fill="#2f4258"/>
+      <text x="918" y="500">в камере корпуса следов смазки из разъёма нет: замок не разжимали</text>
+      <circle cx="900" cy="532" r="4.5" fill="#2f4258"/>
+      <text x="918" y="536">повреждений тента и бортов вокруг проушин на снимке не видно</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="620" x2="820" y2="620" stroke="#16202b" stroke-width="2"/>
+  <line x1="880" y1="620" x2="1540" y2="620" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="658" font-size="19" font-weight="600" fill="#16202b">Отметки на обороте конверта</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="690">Изъята при осмотре прицепа на стоянке подрядчика, до разбора груза.</text>
+      <text x="60" y="714">Приобщена к акту осмотра в опечатанном конверте, подпись понятного на шве.</text>
+      <text x="60" y="738">Концы проволоки направленному исследованию не подвергались до 09.06.</text>
+    </g>
+    <text x="60" y="774" font-size="15" fill="#a8321f">На повторную выдачу не ставилась: лежала в мешке возвращённых пломб.</text>
+  </g>
+
+  <g>
+    <text x="880" y="658" font-size="19" font-weight="600" fill="#16202b">Сверка по журналу склада</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="880" y="690">Выдача по рейсу 4390 закрыта 05.06 в 08:12: пломба цела, принята кладовщиком.</text>
+      <text x="880" y="714">Повторной выдачи под номером 6114 в июне нет; 6110—6120 шли по порядку.</text>
+      <text x="880" y="738">Испорченные пломбы сдаются с актом, номера остаются занятыми до списания.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="880" y="774">Досчёт 06.06 в 09:40 расхождений по номерам не выявил: корпус в мешке не числился.</text>
+      <text x="880" y="798">Ночью 05—06.06 пломбы со склада не выдавались: отгрузка шла без пломбировки.</text>
+      <text x="880" y="822">Ключ от кладовой пломб с 05.06 08:12 в журнале не открывался.</text>
+    </g>
+  </g>
+</svg>

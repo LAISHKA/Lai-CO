@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid13d" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="palm13" width="7" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 3 Q 3.5 0 7 3" fill="none" stroke="#5c7286" stroke-width="0.7" opacity=".5"/>
+    </pattern>
+    <marker id="dimB13" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 2 L10 5 L0 8 Z" fill="#3b4652"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid13d)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Перчатки КЩС с клеймом «Б-5»: разворот, измерения, дефекты</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Фототаблица от 12.01.2026, шесть кадров. Съёмка при рассеянном свете на белом фоне, в кадре масштабная линейка.</text>
+
+  <rect x="60" y="150" width="300" height="320" rx="6" fill="none" stroke="#a8321f" stroke-width="2.2"/>
+  <text x="60" y="140" font-size="16" font-weight="600" fill="#a8321f">Клеймо и вложения у манжеты правой</text>
+  <rect x="86" y="180" width="112" height="56" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/>
+  <text x="100" y="220" font-size="30" font-weight="700" fill="#16202b" letter-spacing="2">Б-5</text>
+  <g font-size="14" fill="#3b4652">
+    <text x="86" y="262">штамп выбит на манжете,</text>
+    <text x="86" y="280">цифры прокрашены изнутри;</text>
+    <text x="86" y="298">вторая цифра читается как 5</text>
+  </g>
+  <g transform="translate(86 320)">
+    <rect x="0" y="0" width="60" height="16" rx="4" fill="#c9d4de" stroke="#3b4652" stroke-width="1.6"/>
+    <g stroke="#3b4652" stroke-width="0.9">
+      <path d="M6 16 V26 M14 16 V28 M22 16 V25 M30 16 V27 M38 16 V26 M46 16 V28 M54 16 V25"/>
+    </g>
+    <rect x="0" y="40" width="52" height="15" rx="4" fill="#c9d4de" stroke="#3b4652" stroke-width="1.6"/>
+    <g stroke="#3b4652" stroke-width="0.9">
+      <path d="M6 55 V64 M14 55 V66 M22 55 V63 M30 55 V65 M38 55 V64 M46 55 V66"/>
+    </g>
+    <g font-size="14" fill="#3b4652">
+      <text x="72" y="14">у шва манжеты — два лоскута</text>
+      <text x="72" y="32">клейкой ленты с хлопковым</text>
+      <text x="72" y="50">ворсом; второй конец ленты</text>
+      <text x="72" y="68">лежал в том же пакете</text>
+    </g>
+  </g>
+  <g transform="translate(86 420)">
+    <path d="M0 0 L58 -26" stroke="#a8321f" stroke-width="9" opacity=".5" stroke-linecap="round"/>
+    <path d="M0 0 L58 -26" stroke="#a8321f" stroke-width="2"/>
+    <g stroke="#a8321f" stroke-width="1.4" fill="none">
+      <path d="M8 6 L14 16 M22 -1 L28 9 M36 -7 L42 3"/>
+    </g>
+    <g font-size="14" fill="#a8321f">
+      <text x="76" y="-14">разрыв 14 мм по первой фаланге</text>
+      <text x="76" y="4">указательного пальца правой;</text>
+      <text x="76" y="22">края разрыва вывернуты наружу</text>
+    </g>
+  </g>
+
+  <g transform="translate(566 200) scale(-0.8 0.8)">
+    <rect x="0" y="170" width="120" height="72" rx="8" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <rect x="6" y="60" width="108" height="118" rx="22" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <g fill="#ded7c6" stroke="#16202b" stroke-width="2.4">
+      <rect x="10" y="8" width="24" height="66" rx="12"/>
+      <rect x="38" y="0" width="24" height="74" rx="12"/>
+      <rect x="66" y="6" width="24" height="68" rx="12"/>
+      <rect x="92" y="26" width="22" height="50" rx="11"/>
+    </g>
+    <g transform="rotate(-34 -2 108)"><rect x="-34" y="96" width="58" height="25" rx="12" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/></g>
+    <g fill="#8a5a3b" opacity=".8">
+      <ellipse cx="34" cy="112" rx="12" ry="8"/>
+      <ellipse cx="66" cy="140" rx="9" ry="6"/>
+      <ellipse cx="30" cy="196" rx="7" ry="10"/>
+    </g>
+  </g>
+
+  <g transform="translate(640 200) scale(0.8 0.8)">
+    <rect x="0" y="170" width="120" height="72" rx="8" fill="#ded7c6" stroke="#16202b" stroke-width="2.6"/>
+    <rect x="6" y="60" width="108" height="118" rx="22" fill="url(#palm13)" stroke="#16202b" stroke-width="2.6"/>
+    <g fill="url(#palm13)" stroke="#16202b" stroke-width="2.4">
+      <rect x="10" y="8" width="24" height="66" rx="12"/>
+      <rect x="38" y="0" width="24" height="74" rx="12"/>
+      <rect x="66" y="6" width="24" height="68" rx="12"/>
+      <rect x="92" y="26" width="22" height="50" rx="11"/>
+    </g>
+    <g transform="rotate(34 122 108)"><rect x="116" y="96" width="58" height="25" rx="12" fill="url(#palm13)" stroke="#16202b" stroke-width="2.4"/></g>
+    <path d="M12 32 L32 22" stroke="#a8321f" stroke-width="7" opacity=".5" stroke-linecap="round"/>
+    <path d="M12 32 L32 22" stroke="#a8321f" stroke-width="2"/>
+    <ellipse cx="50" cy="26" rx="8" ry="5" fill="#8a5a3b" opacity=".85"/>
+    <ellipse cx="50" cy="46" rx="7" ry="4" fill="#8a5a3b" opacity=".7"/>
+  </g>
+
+  <g font-size="16" fill="#16202b">
+    <text x="490" y="460" text-anchor="middle">левая, тыльная сторона</text>
+    <text x="712" y="460" text-anchor="middle">правая, внутренняя сторона</text>
+  </g>
+
+  <g stroke="#3b4652" stroke-width="1.6" fill="none">
+    <path d="M806 200 V336" marker-start="url(#dimB13)" marker-end="url(#dimB13)"/>
+    <path d="M798 200 H814 M798 336 H814"/>
+    <path d="M580 484 H708"/>
+    <path d="M580 478 V490 M612 480 V488 M644 480 V488 M676 480 V488 M708 478 V490"/>
+  </g>
+  <g font-size="14" fill="#3b4652">
+    <text x="824" y="256">240 мм — внутренняя</text>
+    <text x="824" y="274">линия от запястья до</text>
+    <text x="824" y="292">кончика среднего пальца</text>
+    <text x="824" y="330">изделие маркировано</text>
+    <text x="824" y="348">пятым размером</text>
+    <text x="580" y="508">масштабная линейка в кадре</text>
+  </g>
+
+  <rect x="990" y="150" width="530" height="176" rx="6" fill="#ded7c6" stroke="#16202b" stroke-width="2.5"/>
+  <text x="1012" y="182" font-size="17" font-weight="600" fill="#16202b">Размер против маркировки</text>
+  <g stroke="#3b4652" stroke-width="1.3" fill="none">
+    <path d="M1012 198 H1496 M1012 228 H1496 M1012 258 H1496"/>
+    <path d="M1012 198 V258 M1210 198 V258 M1290 198 V258 M1496 198 V258"/>
+  </g>
+  <g font-size="14" fill="#16202b">
+    <text x="1024" y="218">маркировка на изделии</text>
+    <text x="1250" y="218" font-weight="700" text-anchor="middle">5</text>
+    <text x="1300" y="218">пятый размер</text>
+    <text x="1024" y="248">внутренняя линия 240 мм</text>
+    <text x="1250" y="248" font-weight="700" text-anchor="middle">7</text>
+    <text x="1300" y="248">размер по таблицам</text>
+  </g>
+  <text x="1012" y="278" font-size="14" fill="#3b4652">Размерная таблица относит 240 мм</text>
+  <text x="1012" y="296" font-size="14" fill="#3b4652">к седьмому размеру.</text>
+  <text x="1012" y="318" font-size="14" fill="#3b4652">Пара хранилась в полимерном пакете;</text>
+  <text x="1012" y="336" font-size="14" fill="#3b4652">на снимках — до изъятия.</text>
+
+  <g>
+    <text x="990" y="384" font-size="17" font-weight="600" fill="#16202b">Пятна и отпечатки</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="990" y="404">Три бурых пятна на тыльной стороне</text>
+      <text x="990" y="426">левой перчатки, два — на указательном</text>
+      <text x="990" y="448">пальце правой.</text>
+      <text x="990" y="476">Папиллярный рисунок читается на среднем</text>
+      <text x="990" y="498">и безымянном пальцах правой перчатки;</text>
+      <text x="990" y="520">дактилоскопическая плёнка снята с</text>
+      <text x="990" y="542">внутренней поверхности до отправки.</text>
+    </g>
+  </g>
+
+  <g transform="translate(300 540)">
+    <ellipse cx="0" cy="0" rx="54" ry="36" fill="none" stroke="#16202b" stroke-width="2"/>
+    <g fill="none" stroke="#3b4652" stroke-width="1.3">
+      <path d="M-26 10 Q 0 -22 26 10"/>
+      <path d="M-19 16 Q 0 -8 19 16"/>
+      <path d="M-12 20 Q 0 4 12 20"/>
+      <path d="M-5 24 Q 0 15 5 24"/>
+    </g>
+    <text x="70" y="-4" font-size="14" fill="#3b4652">След папиллярного рисунка</text>
+    <text x="70" y="14" font-size="14" fill="#3b4652">с внутренней поверхности</text>
+  </g>
+
+  <line x1="60" y1="640" x2="1540" y2="640" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="682" font-size="18" font-weight="600" fill="#16202b">Кадры фототаблицы</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="712">1 и 2 — пара перчаток целиком.</text>
+      <text x="60" y="734">3 — клеймо на манжете.</text>
+      <text x="60" y="756">4 — разрыв указательного пальца правой.</text>
+      <text x="60" y="778">5 — внутренняя поверхность с отпечатками.</text>
+      <text x="60" y="800">6 — зона бурых пятен и линейка у манжеты.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="560" y="682" font-size="18" font-weight="600" fill="#16202b">Что описано в постановке кадра</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="560" y="712">Края разрыва вывернуты наружу, длина по</text>
+      <text x="560" y="734">первой фаланге 14 мм. Клеймо «Б-5» выбито</text>
+      <text x="560" y="756">штампом, цифры прокрашены изнутри.</text>
+      <text x="560" y="778">Изделие в полимерном пакете, на белом фоне,</text>
+      <text x="560" y="800">при рассеянном свете, с линейкой в кадре.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="1060" y="682" font-size="18" font-weight="600" fill="#16202b">Куда предметы дальше</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="1060" y="712">Перчатки, лоскуты ленты и дактилоплёнка</text>
+      <text x="1060" y="734">направлены на исследования; изъятие</text>
+      <text x="1060" y="756">протоколировано отдельно от съёмки.</text>
+      <text x="1060" y="780">Контрольный смыв взят с клетки хранения,</text>
+      <text x="1060" y="802">где хранилась пара.</text>
+    </g>
+  </g>
+</svg>

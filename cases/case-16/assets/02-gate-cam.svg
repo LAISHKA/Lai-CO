@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid162" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <marker id="arr162" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid162)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Камера В-2: ворота № 2, выезд со стороны зоны С</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Пульт видеонаблюдения, архиватор № 2, файл 2606-0314-v2. Метка времени наносится серверным часом склада.</text>
+
+  <g>
+    <rect x="60" y="140" width="800" height="430" fill="#101820"/>
+    <rect x="72" y="152" width="776" height="406" fill="#1d2b38"/>
+
+    <path d="M72 470 L 848 470 L 848 558 L 72 558 Z" fill="#26343f"/>
+    <path d="M72 470 L 848 470" stroke="#4a6076" stroke-width="1.4"/>
+    <path d="M120 558 L 430 330" stroke="#8fa3b5" stroke-width="1.2" stroke-dasharray="8 8" opacity=".5"/>
+    <path d="M300 558 L 520 330" stroke="#8fa3b5" stroke-width="1.2" stroke-dasharray="8 8" opacity=".5"/>
+
+    <rect x="470" y="196" width="300" height="274" fill="#141d26" stroke="#8fa3b5" stroke-width="3"/>
+    <rect x="486" y="212" width="268" height="240" fill="#0d151c"/>
+    <text x="480" y="188" font-size="13" fill="#c9d4de">полотно створа № 2, привод в положении «принудительно»</text>
+
+    <g>
+      <rect x="330" y="252" width="330" height="150" rx="8" fill="#2f4258" stroke="#c9d4de" stroke-width="2.2"/>
+      <path d="M330 252 q 165 -30 330 0" fill="none" stroke="#c9d4de" stroke-width="2"/>
+      <path d="M336 300 h 318 M336 344 h 318" stroke="#4a6076" stroke-width="1.4"/>
+      <rect x="250" y="286" width="86" height="116" rx="6" fill="#33465c" stroke="#c9d4de" stroke-width="2"/>
+      <rect x="262" y="298" width="62" height="40" fill="#141d26"/>
+      <path d="M286 318 l 14 0" stroke="#e08a2e" stroke-width="3"/>
+      <circle cx="300" cy="402" r="17" fill="#101820" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="400" cy="402" r="17" fill="#101820" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="500" cy="402" r="17" fill="#101820" stroke="#8fa3b5" stroke-width="2"/>
+      <circle cx="600" cy="402" r="17" fill="#101820" stroke="#8fa3b5" stroke-width="2"/>
+      <path d="M660 300 l 26 12 l 0 60 l -26 8 Z" fill="#33465c" stroke="#c9d4de" stroke-width="1.6"/>
+      <text x="330" y="244" font-size="13" fill="#e08a2e">тент натянут, борта на подвеске без зазора</text>
+      <text x="336" y="440" font-size="13" fill="#c9d4de">У 441 КС 716</text>
+      <path d="M652 322 h 22" stroke="#f2e6c8" stroke-width="2.5"/>
+      <circle cx="648" cy="322" r="4" fill="none" stroke="#f2e6c8" stroke-width="1.6"/>
+      <text x="610" y="466" font-size="13" fill="#f2e6c8">проволока пломбы на дуге борта</text>
+    </g>
+
+    <g>
+      <rect x="110" y="300" width="120" height="150" fill="#243444" stroke="#8fa3b5" stroke-width="2.2"/>
+      <rect x="122" y="318" width="44" height="56" fill="#141d26" stroke="#8fa3b5" stroke-width="1.4"/>
+      <rect x="176" y="318" width="44" height="56" fill="#141d26" stroke="#8fa3b5" stroke-width="1.4"/>
+      <path d="M110 300 L 230 300 L 240 282 L 100 282 Z" fill="#33465c" stroke="#8fa3b5" stroke-width="1.4"/>
+      <circle cx="238" cy="276" r="9" fill="#f2e6c8" stroke="#16202b" stroke-width="1.4"/>
+      <path d="M238 276 L 300 236" stroke="#f2e6c8" stroke-width="1.2" opacity=".5"/>
+      <text x="96" y="474" font-size="13" fill="#c9d4de">будка дежурного по воротам: окно, лампа</text>
+      <text x="96" y="494" font-size="13" fill="#a8321f">в окне и у двери людей нет</text>
+    </g>
+
+    <path d="M690 452 h 140" stroke="#f2e6c8" stroke-width="3"/>
+    <text x="676" y="446" font-size="12" fill="#f2e6c8">стоп-линия, поднята</text>
+
+    <text x="88" y="182" font-size="16" fill="#e8e2d4">06.06.2026  03:15:40</text>
+    <circle cx="826" cy="538" r="7" fill="#a8321f"/>
+    <text x="770" y="534" font-size="14" fill="#a8321f">кадр 5</text>
+  </g>
+
+  <g>
+    <text x="900" y="176" font-size="19" font-weight="600" fill="#16202b">Ход кадра по меткам архиватора</text>
+    <line x1="920" y1="196" x2="920" y2="628" stroke="#16202b" stroke-width="2"/>
+    <g font-size="13" fill="#3b4652">
+      <circle cx="920" cy="208" r="4.5" fill="#2f4258"/>
+      <text x="938" y="212">03:13:07 — двор пуст, лампа над будкой горит, створ закрыт</text>
+      <circle cx="920" cy="244" r="4.5" fill="#2f4258"/>
+      <text x="938" y="248">03:14:26 — в дальнем конце двора включают свет у дока 4, машины не видно</text>
+      <circle cx="920" cy="280" r="4.5" fill="#a8321f"/>
+      <text x="938" y="284" fill="#16202b">03:15:30 — гружёный У 441 КС 716 подходит к створу, у будки никого</text>
+      <circle cx="920" cy="316" r="4.5" fill="#a8321f"/>
+      <text x="938" y="320" fill="#16202b">03:15:38 — створ начинает открываться, привод в положении «принудительно»</text>
+      <circle cx="920" cy="352" r="4.5" fill="#a8321f"/>
+      <text x="938" y="356" fill="#16202b">03:15:40 — кадр на останове: борт в створе, на дуге прицепа проволока пломбы</text>
+      <circle cx="920" cy="388" r="4.5" fill="#2f4258"/>
+      <text x="938" y="392">03:15:52 — борт набирает ход, в кабине один силуэт, вторая спинка пуста</text>
+      <circle cx="920" cy="424" r="4.5" fill="#2f4258"/>
+      <text x="938" y="428">03:16:10 — борт за стоп-линией, стоп-линия не опущена</text>
+      <circle cx="920" cy="460" r="4.5" fill="#2f4258"/>
+      <text x="938" y="464">03:16:44 — лампа над будкой гаснет, в проёме ворот пусто</text>
+      <circle cx="920" cy="496" r="4.5" fill="#2f4258"/>
+      <text x="938" y="500">03:16:52 — створ закрывается, включается дежурный свет двора</text>
+      <circle cx="920" cy="532" r="4.5" fill="#a8321f"/>
+      <text x="938" y="536" fill="#16202b">03:19:05 — в будку входит дежурный по воротам, в руке стакан, на груди карта</text>
+      <circle cx="920" cy="568" r="4.5" fill="#2f4258"/>
+      <text x="938" y="572">между 03:13:07 и 03:19:05 других людей и машин в поле камеры нет</text>
+      <circle cx="920" cy="604" r="4.5" fill="#2f4258"/>
+      <text x="938" y="608">внешний постат открывания у створа в кадре не задет ни одной рукой</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="648" x2="860" y2="648" stroke="#16202b" stroke-width="2"/>
+  <line x1="900" y1="648" x2="1560" y2="648" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="686" font-size="19" font-weight="600" fill="#16202b">Привязка кадра</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="718">Ворота № 2 с внешним постатом, будка дежурного левее створа, прожектор на козырьке.</text>
+      <text x="60" y="742">Стоп-линия опускается ручкой из будки; в кадре она поднята всё время выезда.</text>
+      <text x="60" y="766">Освещение двора рабочее у доков 1—3, у ворот только прожектор будки.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="60" y="802">Номер пломбы в этом кадре не читается: виден только узел крепления на дуге.</text>
+      <text x="60" y="826">Восемь минут от подхода борта до ухода створа у будки в кадре никого нет.</text>
+      <text x="60" y="850">Лица в кабине не различимы: лобовое стекло даёт засветку от прожектора.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="900" y="686" font-size="19" font-weight="600" fill="#16202b">Служебная часть канала</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="900" y="718">Файл 2606-0314-v2: 1920 на 1080, восемь кадров в секунду, битрейт постоянный.</text>
+      <text x="900" y="742">Счётчик кадров непрерывен с 03:13:07 по 03:19:05, пропусков между кадрами нет.</text>
+      <text x="900" y="766">Метка архиватора сверялась с сервером учётной системы при выгрузке 06.06 в 03:47.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="900" y="802">Выгрузку произвёл сотрудник службы безопасности по своей карте с пульта.</text>
+      <text x="900" y="826">Журнал контролера ставит отпирание створа в 03:15:38 — ту же секунду, что и кадр.</text>
+      <text x="900" y="850">Кнопка будки и постат у створа сигналов в эту минуту не давали.</text>
+    </g>
+  </g>
+</svg>

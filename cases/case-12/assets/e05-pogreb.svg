@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="gridP12" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#gridP12)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Погребица дома № 6 по улице Пивоварной: разрез ячейки Клубова</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Фототаблица к акту осмотра от 12.02.2026: один вход, чугунная крышка лаза, вода у дальней стены.</text>
+
+  <g>
+    <rect x="60" y="200" width="880" height="14" fill="#8fa3b5" stroke="#16202b" stroke-width="2"/>
+    <text x="60" y="188" font-size="16" fill="#3b4652">Земля двора, уровень 0</text>
+    <text x="800" y="188" font-size="16" fill="#3b4652" text-anchor="end">Кирпичная погребица, 14 ячеек, вход один</text>
+
+    <rect x="190" y="214" width="750" height="426" fill="#2f4258" stroke="#16202b" stroke-width="3"/>
+    <rect x="204" y="228" width="722" height="398" fill="#e8e2d4"/>
+
+    <line x1="204" y1="600" x2="926" y2="600" stroke="#8fa3b5" stroke-width="2"/>
+    <rect x="600" y="560" width="326" height="40" fill="#4a6076" stroke="#16202b" stroke-width="2"/>
+    <line x1="600" y1="560" x2="926" y2="560" stroke="#dfe6ea" stroke-width="2"/>
+    <text x="762" y="586" font-size="17" fill="#dfe6ea" text-anchor="middle">Вода 12 см, зеркало 1,9 × 2,4 м, плюс 4 градуса</text>
+    <text x="916" y="548" font-size="15" fill="#3b4652" text-anchor="end">Мутная, у дальней стены</text>
+
+    <g stroke="#16202b" stroke-width="2" fill="#c9d4de">
+      <rect x="240" y="336" width="150" height="24"/>
+      <rect x="264" y="360" width="126" height="24"/>
+      <rect x="288" y="384" width="102" height="24"/>
+      <rect x="312" y="408" width="78" height="24"/>
+      <rect x="336" y="432" width="54" height="24"/>
+      <rect x="360" y="456" width="30" height="24"/>
+      <rect x="384" y="480" width="30" height="24"/>
+      <rect x="408" y="504" width="30" height="24"/>
+      <rect x="432" y="528" width="30" height="24"/>
+      <rect x="456" y="552" width="30" height="24"/>
+      <rect x="480" y="576" width="30" height="24"/>
+    </g>
+    <text x="228" y="330" font-size="16" fill="#16202b" text-anchor="end">11 ступеней:</text>
+    <text x="228" y="350" font-size="16" fill="#3b4652" text-anchor="end">нижние четыре мокрые</text>
+
+    <rect x="462" y="558" width="20" height="14" fill="#a8321f" stroke="#16202b" stroke-width="1.5"/>
+    <line x1="472" y1="565" x2="560" y2="510" stroke="#a8321f" stroke-width="1.5"/>
+    <text x="566" y="506" font-size="16" fill="#a8321f">Третья ступень от низа:</text>
+    <text x="566" y="524" font-size="16" fill="#a8321f">смазанный след подошвы</text>
+
+    <rect x="600" y="286" width="8" height="60" fill="#8fa3b5" stroke="#16202b" stroke-width="1.5"/>
+    <rect x="608" y="338" width="300" height="12" fill="#8fa3b5" stroke="#16202b" stroke-width="1.5"/>
+    <text x="612" y="278" font-size="16" fill="#3b4652">Очки в оправе, вторая ступень, выше уровня воды</text>
+
+    <rect x="212" y="534" width="240" height="12" fill="#33465c" stroke="#16202b" stroke-width="2"/>
+    <rect x="222" y="546" width="10" height="54" fill="#33465c"/>
+    <rect x="432" y="546" width="10" height="54" fill="#33465c"/>
+    <line x1="330" y1="524" x2="330" y2="534" stroke="#a8321f" stroke-width="1.5"/>
+    <line x1="410" y1="524" x2="410" y2="534" stroke="#a8321f" stroke-width="1.5"/>
+    <line x1="330" y1="528" x2="410" y2="528" stroke="#a8321f" stroke-width="1.5"/>
+    <text x="370" y="520" font-size="17" fill="#a8321f" text-anchor="middle">Отпечаток 25,5 см</text>
+    <text x="216" y="510" font-size="16" fill="#16202b">Дубовая полка, 45 см от пола:</text>
+    <text x="216" y="492" font-size="16" fill="#a8321f">рисунок «ёлочка», левый след</text>
+
+    <g>
+      <ellipse cx="540" cy="606" rx="40" ry="30" fill="#33465c" stroke="#16202b" stroke-width="2"/>
+      <rect x="560" y="586" width="200" height="44" rx="16" fill="#3b4652" stroke="#16202b" stroke-width="2"/>
+      <ellipse cx="790" cy="596" rx="60" ry="22" fill="#3b4652" stroke="#16202b" stroke-width="2" transform="rotate(-12 790 596)"/>
+      <line x1="524" y1="600" x2="500" y2="592" stroke="#16202b" stroke-width="3"/>
+      <text x="656" y="656" font-size="16" fill="#16202b" text-anchor="middle">Тело: лицом вниз, голова в воде, таз выше уровня</text>
+    </g>
+
+    <path d="M240 214 L148 150" stroke="#16202b" stroke-width="6" fill="none"/>
+    <text x="146" y="140" font-size="16" fill="#16202b" text-anchor="end">Крышка откинута на 70 градусов</text>
+    <circle cx="228" cy="206" r="6" fill="#a8321f"/>
+    <text x="244" y="248" font-size="16" fill="#a8321f">На кромке — свежая глина с волокном плёнки</text>
+
+    <rect x="980" y="300" width="120" height="90" fill="#33465c" stroke="#16202b" stroke-width="2"/>
+    <text x="1040" y="348" font-size="15" fill="#dfe6ea" text-anchor="middle">Полка у входа:</text>
+    <text x="1040" y="368" font-size="15" fill="#dfe6ea" text-anchor="middle">сапоги 43</text>
+    <text x="1040" y="410" font-size="16" fill="#16202b">Подошвы сухие</text>
+
+    <rect x="980" y="470" width="130" height="60" fill="#4a6076" stroke="#16202b" stroke-width="2"/>
+    <line x1="1045" y1="470" x2="1045" y2="530" stroke="#dfe6ea" stroke-width="1.5"/>
+    <text x="1045" y="552" font-size="16" fill="#16202b" text-anchor="middle">Плёнка 18 × 12 см</text>
+    <text x="1045" y="572" font-size="16" fill="#a8321f" text-anchor="middle">Пакет № 1 у лестницы</text>
+  </g>
+
+  <g>
+    <text x="980" y="188" font-size="19" font-weight="600" fill="#16202b">Что разминулось на схеме</text>
+    <line x1="980" y1="200" x2="1540" y2="200" stroke="#8fa3b5" stroke-width="1.5"/>
+
+    <rect x="980" y="216" width="560" height="120" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="996" y="244" font-size="17" font-weight="600" fill="#16202b">След на полке — 25,5 см</text>
+    <text x="996" y="268" font-size="16" fill="#3b4652">Обувь 40 размера, рисунок «ёлочка».</text>
+    <text x="996" y="290" font-size="16" fill="#3b4652">Сапоги потерпевшего — 43 размера, стоят</text>
+    <text x="996" y="312" font-size="16" fill="#3b4652">на сухой полке у входа, подошвы сухие.</text>
+
+    <rect x="980" y="352" width="560" height="120" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="996" y="380" font-size="17" font-weight="600" fill="#16202b">Рост у лаза — 168 см</text>
+    <text x="996" y="404" font-size="16" fill="#3b4652">Кадр выхода из лаза в 23:26. Потерпевший</text>
+    <text x="996" y="426" font-size="16" fill="#3b4652">— 171 см, водитель морговозки — 179 см.</text>
+    <text x="996" y="448" font-size="16" fill="#3b4652">Походка широкая, встаёт с опорой на руки.</text>
+
+    <rect x="980" y="488" width="560" height="140" fill="none" stroke="#a8321f" stroke-width="2"/>
+    <text x="996" y="516" font-size="17" font-weight="600" fill="#a8321f">Вода — 12 см</text>
+    <text x="996" y="540" font-size="16" fill="#3b4652">Голова легла в воду при начавшемся</text>
+    <text x="996" y="562" font-size="16" fill="#3b4652">окоченении; очки и сапоги сухие.</text>
+    <text x="996" y="584" font-size="16" fill="#3b4652">Барботажа нет, диатомей в костном мозге</text>
+    <text x="996" y="606" font-size="16" fill="#3b4652">ноль при обилии в контрольной пробе.</text>
+
+    <rect x="980" y="644" width="560" height="130" fill="none" stroke="#8fa3b5" stroke-width="1.5"/>
+    <text x="996" y="672" font-size="17" font-weight="600" fill="#16202b">Глина с кромки крышки</text>
+    <text x="996" y="696" font-size="16" fill="#3b4652">Совпадает с частицами под ногтями</text>
+    <text x="996" y="718" font-size="16" fill="#3b4652">правой руки: держался за крышку</text>
+    <text x="996" y="740" font-size="16" fill="#3b4652">изнутри, то есть спускался живым</text>
+    <text x="996" y="762" font-size="16" fill="#3b4652">и выходил наверх уже мёртвым телом.</text>
+  </g>
+
+  <g>
+    <rect x="60" y="680" width="880" height="26" fill="#8fa3b5" stroke="#16202b" stroke-width="1.5"/>
+    <text x="66" y="699" font-size="15" fill="#16202b">0,5 м</text>
+    <text x="934" y="699" font-size="15" fill="#16202b" text-anchor="end">2,6 м</text>
+    <text x="500" y="699" font-size="15" fill="#16202b" text-anchor="middle">Разрез по продольной оси ячейки, съёмка 12.02.2026, 08:40—10:05</text>
+
+    <line x1="60" y1="760" x2="940" y2="760" stroke="#16202b" stroke-width="2"/>
+    <text x="60" y="736" font-size="17" font-weight="600" fill="#16202b">Отметки времени по кадрам камеры PO-017 и объяснению соседа</text>
+    <g fill="#16202b">
+      <circle cx="120" cy="760" r="6"/>
+      <circle cx="290" cy="760" r="6"/>
+      <circle cx="400" cy="760" r="6"/>
+      <circle cx="500" cy="760" r="6"/>
+      <circle cx="660" cy="760" r="6"/>
+      <circle cx="830" cy="760" r="6"/>
+      <circle cx="920" cy="760" r="6"/>
+    </g>
+    <circle cx="580" cy="760" r="8" fill="#a8321f"/>
+    <circle cx="760" cy="760" r="8" fill="#a8321f"/>
+    <text x="120" y="790" font-size="15" fill="#3b4652" text-anchor="middle">20:04</text>
+    <text x="290" y="790" font-size="15" fill="#3b4652" text-anchor="middle">22:22</text>
+    <text x="400" y="790" font-size="15" fill="#3b4652" text-anchor="middle">22:26</text>
+    <text x="500" y="790" font-size="15" fill="#3b4652" text-anchor="middle">22:30</text>
+    <text x="580" y="790" font-size="15" fill="#a8321f" text-anchor="middle">22:35</text>
+    <text x="660" y="790" font-size="15" fill="#3b4652" text-anchor="middle">22:41</text>
+    <text x="760" y="790" font-size="15" fill="#a8321f" text-anchor="middle">23:26</text>
+    <text x="830" y="790" font-size="15" fill="#3b4652" text-anchor="middle">23:31</text>
+    <text x="920" y="790" font-size="15" fill="#3b4652" text-anchor="middle">23:33</text>
+    <text x="120" y="816" font-size="15" fill="#3b4652" text-anchor="middle">мешок</text>
+    <text x="290" y="816" font-size="15" fill="#3b4652" text-anchor="middle">машина</text>
+    <text x="400" y="816" font-size="15" fill="#3b4652" text-anchor="middle">спуск</text>
+    <text x="500" y="816" font-size="15" fill="#3b4652" text-anchor="middle">крышка</text>
+    <text x="580" y="816" font-size="15" fill="#a8321f" text-anchor="middle">вторая</text>
+    <text x="660" y="816" font-size="15" fill="#3b4652" text-anchor="middle">сосед</text>
+    <text x="760" y="816" font-size="15" fill="#a8321f" text-anchor="middle">выход</text>
+    <text x="830" y="816" font-size="15" fill="#3b4652" text-anchor="middle">щель</text>
+    <text x="920" y="816" font-size="15" fill="#3b4652" text-anchor="middle">уезд</text>
+    <text x="60" y="846" font-size="16" fill="#16202b">Красным — подход к лазу и выход из него; между этими двумя кадрами в ячейке были двое.</text>
+  </g>
+</svg>

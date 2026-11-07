@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid165" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5c7286" stroke-width="0.6" opacity=".16"/>
+    </pattern>
+    <pattern id="film165" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0 v 10" stroke="#8fa3b5" stroke-width="0.9" opacity=".5"/>
+    </pattern>
+    <marker id="arr165" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#16202b"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#e8e2d4"/>
+  <rect width="1600" height="900" fill="url(#grid165)"/>
+  <rect x="18" y="18" width="1564" height="864" fill="none" stroke="#16202b" stroke-width="2.5"/>
+
+  <text x="60" y="76" font-size="26" font-weight="600" fill="#16202b">Схема осмотра прохода С-14: юнит 12 и паллет П-2207</text>
+  <text x="60" y="106" font-size="19" fill="#3b4652">Составлена следователем на месте 06.06 с 05:10 по 06:10. Освещение включено, щит Щ-7 в положении «в работе».</text>
+
+  <g>
+    <text x="60" y="158" font-size="19" font-weight="600" fill="#16202b">План: проход с торца у дока 4</text>
+    <rect x="60" y="176" width="760" height="300" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/>
+
+    <g fill="#b9c6d1" stroke="#16202b" stroke-width="2.2">
+      <rect x="76" y="192" width="40" height="268"/>
+      <rect x="762" y="192" width="40" height="268"/>
+    </g>
+    <text x="72" y="484" font-size="13" fill="#3b4652">стойка юнита 12</text>
+    <text x="726" y="484" font-size="13" fill="#3b4652">стойка юнита 13</text>
+
+    <path d="M116 300 h 646" stroke="#16202b" stroke-width="1.4" stroke-dasharray="10 8"/>
+    <text x="120" y="292" font-size="12" fill="#3b4652">осевая линия проезда</text>
+
+    <g fill="#c9a888" stroke="#16202b" stroke-width="1.8">
+      <rect x="170" y="212" width="112" height="76"/><rect x="170" y="312" width="112" height="76"/>
+      <rect x="292" y="212" width="112" height="76"/><rect x="292" y="312" width="112" height="76"/>
+      <rect x="414" y="212" width="112" height="76"/><rect x="414" y="312" width="112" height="76"/>
+      <rect x="536" y="212" width="112" height="76"/><rect x="536" y="312" width="112" height="76"/>
+      <rect x="658" y="312" width="96" height="76"/>
+    </g>
+    <rect x="658" y="212" width="96" height="76" fill="url(#film165)" stroke="#16202b" stroke-width="1.8"/>
+    <text x="174" y="206" font-size="12" fill="#3b4652">25 паллетов в два ряда поперёк прохода, стретч-плёнка</text>
+
+    <rect x="126" y="398" width="126" height="62" fill="#a8321f" opacity=".2" stroke="#a8321f" stroke-width="2"/>
+    <text x="130" y="452" font-size="12" fill="#a8321f">зона пылевого оседания, около 1,5 м</text>
+
+    <g stroke="#16202b" stroke-width="1.4">
+      <path d="M76 200 h 40 M96 192 v 16"/>
+    </g>
+    <text x="118" y="392" font-size="12" fill="#a8321f">смещение стойки внутрь прохода — 90 мм</text>
+    <text x="360" y="440" font-size="13" fill="#16202b">П-2207</text>
+
+    <g fill="none" stroke="#16202b" stroke-width="1.6">
+      <path d="M120 420 v -34 M736 420 v -34"/>
+      <path d="M120 402 h 616" marker-start="url(#arr165)" marker-end="url(#arr165)"/>
+    </g>
+    <text x="392" y="398" font-size="13" fill="#16202b">3,2 м между стойками</text>
+    <text x="60" y="512" font-size="13" fill="#3b4652">длина прохода 34 м; юниты 11—13; два светильника группы «С-13 — С-16»</text>
+  </g>
+
+  <g>
+    <text x="860" y="158" font-size="19" font-weight="600" fill="#16202b">Разрез юнита 12: третий ярус</text>
+    <rect x="860" y="176" width="680" height="300" fill="#ded7c6" stroke="#16202b" stroke-width="2.4"/>
+    <g fill="#b9c6d1" stroke="#16202b" stroke-width="2.2">
+      <rect x="884" y="196" width="26" height="260"/>
+      <rect x="1486" y="196" width="26" height="260"/>
+    </g>
+    <g stroke="#16202b" stroke-width="2.4">
+      <path d="M884 250 L 1486 250"/>
+      <path d="M884 262 q 300 78 602 6"/>
+      <path d="M884 340 L 1486 340"/>
+      <path d="M884 428 L 1486 428"/>
+    </g>
+    <text x="1180" y="242" font-size="12" fill="#3b4652">первая полка — цела</text>
+    <text x="1180" y="332" font-size="12" fill="#3b4652">вторая полка — цела, четыре паллета</text>
+    <text x="1180" y="420" font-size="12" fill="#3b4652">пол основания</text>
+
+    <g fill="#c9a888" stroke="#16202b" stroke-width="1.6">
+      <rect x="930" y="214" width="86" height="34"/>
+      <rect x="1030" y="214" width="86" height="34"/>
+      <rect x="1130" y="214" width="86" height="34"/>
+      <rect x="930" y="304" width="86" height="34"/>
+      <rect x="1030" y="304" width="86" height="34"/>
+      <rect x="1130" y="304" width="86" height="34"/>
+      <rect x="1230" y="304" width="86" height="34"/>
+    </g>
+    <g fill="#c9a888" stroke="#16202b" stroke-width="1.6" opacity=".9">
+      <rect x="930" y="392" width="86" height="34"/>
+      <rect x="1030" y="392" width="86" height="34"/>
+    </g>
+
+    <rect x="930" y="392" width="120" height="36" fill="url(#film165)" stroke="#a8321f" stroke-width="2"/>
+    <text x="900" y="386" font-size="12" fill="#a8321f">прогнутая полка, остаточный прогиб замка 12 мм</text>
+
+    <g>
+      <path d="M1156 452 q 34 -22 74 -10 q 34 12 30 36 q -6 30 -50 30 q -54 0 -66 -30 q -6 -16 12 -26" fill="#8fa3b5" stroke="#16202b" stroke-width="2" opacity=".85"/>
+      <circle cx="1266" cy="452" r="16" fill="#8fa3b5" stroke="#16202b" stroke-width="2"/>
+      <path d="M1160 464 h 92" stroke="#f2e6c8" stroke-width="3"/>
+      <text x="1130" y="522" font-size="12" fill="#a8321f">контур тела у основания стойки: лёжа на спине, поворот влево</text>
+    </g>
+
+    <g stroke="#a8321f" stroke-width="2.6">
+      <path d="M1486 232 l 26 -8 M1486 268 l 26 -8 M1486 304 l 26 -8"/>
+    </g>
+    <text x="1444" y="216" font-size="12" fill="#a8321f">следы краски вил</text>
+    <g stroke="#16202b" stroke-width="1.4">
+      <path d="M884 470 h 602"/>
+      <path d="M884 462 v 16 M1486 462 v 16"/>
+    </g>
+    <text x="1090" y="492" font-size="12" fill="#3b4652">вдавление на стойке 100 на 60 мм, центр на высоте 3,9 м</text>
+  </g>
+
+  <line x1="60" y1="540" x2="1540" y2="540" stroke="#16202b" stroke-width="2"/>
+
+  <g>
+    <text x="60" y="578" font-size="19" font-weight="600" fill="#16202b">Замеры, снятые на месте</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="60" y="610">Высота вил в момент удара по контроллеру машины — 3,9 м, это третий ярус юнита 12.</text>
+      <text x="60" y="634">Полосы на одежде: ширина 45 мм, просвет 210 мм — профиль обрешётки паллета.</text>
+      <text x="60" y="658">Масса придавившего груза — около 1 400 кг нетто, паллет груз на себе не разрушил.</text>
+      <text x="60" y="682">Оттиск протектора у торца прохода: длина стельки 300 мм, рисунок «ёлочка».</text>
+      <text x="60" y="706">Термометр воздуха в зоне +21 градус, вентиляция зоны С работала.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="60" y="742">Следы краски на стойке тождественны покрытию вил ЭП-240 по послойному сравнению.</text>
+      <text x="60" y="766">Проход по дорожной карте склада числится проездом: стоянка паллетов запрещена.</text>
+      <text x="60" y="790">На второй полке четыре паллета, на третьей — два: груз сместился к торцу.</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="860" y="578" font-size="19" font-weight="600" fill="#16202b">Ход осмотра и изъятие</text>
+    <g font-size="15" fill="#3b4652">
+      <text x="860" y="610">05:10 — проход обследован в плане, замеры сняты рулеткой и уровнями по стойкам.</text>
+      <text x="860" y="634">05:35 — изъять предложено обломок замка полки и пломбу стеллажа.</text>
+      <text x="860" y="658">05:50 — замок третьего яруса промерен уровнем, прогиб записан в схему разреза.</text>
+      <text x="860" y="682">06:10 — схема закрыта подписями понятных, фотопротокол приложен отдельной описью.</text>
+    </g>
+    <g font-size="15" fill="#a8321f">
+      <text x="860" y="718">Паллет П-2207 оставлен на месте: масса не позволяет снять его без техники.</text>
+      <text x="860" y="742">Правок стеллажа и замков полки до ночи не было: пломба полки цела до обвала.</text>
+      <text x="860" y="766">Свет в проходе на момент осмотра горел: рубильник Щ-7 переведён в «в работе» утром.</text>
+      <text x="860" y="790">Повторный осмотр 09.06: смещение стойки и следы краски зафиксированы без изменений.</text>
+    </g>
+  </g>
+</svg>
