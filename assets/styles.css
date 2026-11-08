@@ -2445,3 +2445,129 @@ button.summon:hover {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------- 18. ЖУРНАЛ ОТЧЁТА (js/30-report.js, заказ T2) ---------- */
+
+.rp-who-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0 14px;
+  margin: 10px 0 14px;
+}
+.rp-fl {
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+  margin-bottom: .6em;
+  font-size: var(--fs-12);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--fg-mute);
+}
+.rp-in, .rp-csv {
+  padding: .5em .7em;
+  font-family: inherit;
+  font-size: var(--fs-14);
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--fg);
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+}
+.rp-in:focus, .rp-csv:focus { outline: none; border-color: var(--accent); }
+.rp-csv { width: 100%; font-family: ui-monospace, Consolas, monospace; font-size: var(--fs-12); }
+
+.rp-sum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0 0 12px;
+  padding: 9px 12px;
+  font-size: var(--fs-13);
+  color: var(--fg-dim);
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-sm);
+}
+.rp-sum b { color: var(--fg); }
+
+.rp-scroll { overflow: auto; max-height: 46vh; border: 1px solid var(--line); border-radius: var(--r-sm); }
+.rp-table { width: 100%; border-collapse: collapse; font-size: var(--fs-13); }
+.rp-table th, .rp-table td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.rp-table th {
+  position: sticky; top: 0; z-index: 1;
+  font-size: var(--fs-12); letter-spacing: .06em; text-transform: uppercase;
+  color: var(--fg-mute); background: var(--bg-2);
+}
+.rp-num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rp-bad { color: var(--bad, #b4483c); }
+.rp-stall-c { max-width: 320px; color: var(--fg-dim); }
+.rp-act { white-space: nowrap; }
+
+.rp-note { margin: 12px 0 0; font-size: var(--fs-12); color: var(--fg-mute); }
+.rp-none { font-size: var(--fs-13); color: var(--fg-mute); font-style: italic; }
+.rp-foot-btns { flex-wrap: wrap; }
+
+.rp-wrap { margin-top: 6px; }
+.rp-card {
+  padding: 18px 20px;
+  color: var(--fg);
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+}
+.rp-head { border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 10px; }
+.rp-org { font-size: var(--fs-12); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-mute); }
+.rp-h { margin: 2px 0 0; font-size: var(--fs-21); }
+.rp-sub { font-size: var(--fs-13); color: var(--fg-dim); }
+.rp-who { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px 14px; font-size: var(--fs-13); }
+.rp-l { color: var(--fg-mute); }
+.rp-h3 { margin: 14px 0 6px; font-size: var(--fs-14); letter-spacing: .06em; text-transform: uppercase; color: var(--fg-mute); }
+.rp-kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin-top: 10px; }
+.rp-kpi-i { padding: 8px 10px; background: var(--bg-3); border: 1px solid var(--line); border-radius: var(--r-sm); }
+.rp-kpi-i b { display: block; font-size: var(--fs-18, 18px); }
+.rp-kpi-i span { font-size: var(--fs-12); color: var(--fg-mute); }
+.rp-stall { margin: 0; font-size: var(--fs-13); }
+.rp-facts { width: 100%; border-collapse: collapse; font-size: var(--fs-13); }
+.rp-facts th { text-align: left; font-weight: 400; color: var(--fg-mute); padding: 3px 10px 3px 0; }
+.rp-facts td { padding: 3px 0; }
+.rp-tl { margin: 0; padding: 0 0 0 1.1em; font-size: var(--fs-13); }
+.rp-tl-i { padding: 2px 0; }
+.rp-tl-c { display: inline-block; min-width: 6.2em; font-variant-numeric: tabular-nums; color: var(--fg-mute); }
+.rp-tl-m { display: inline-block; min-width: 6.2em; color: var(--fg-dim); }
+.rp-tl-x { display: inline; }
+.rp-tl-i blockquote { margin: 2px 0 4px; padding-left: 8px; border-left: 2px solid var(--line-2); color: var(--fg-dim); }
+.rp-foot {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  margin-top: 14px; padding-top: 8px; border-top: 1px solid var(--line);
+  font-size: var(--fs-12); color: var(--fg-mute);
+}
+.rp-sign { white-space: nowrap; }
+
+/* то, что печатаем, на экране не показывается */
+#rp-print { display: none; }
+
+/* ---------- 18А. ПЕЧАТЬ ЖУРНАЛА ОТЧЁТА ---------- */
+
+@media print {
+  body.rp-print #view-menu,
+  body.rp-print #view-case,
+  body.rp-print #view-verdict,
+  body.rp-print #overlay,
+  body.rp-print #toast { display: none !important; }
+  body.rp-print #rp-print { display: block !important; }
+  body.rp-print { background: #fff; color: #000; }
+  #rp-print .rp-card {
+    color: #000;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  #rp-print .rp-head { border-bottom: 2px solid #000; }
+  #rp-print .rp-kpi-i { border: 1px solid #999; background: #fff; }
+  #rp-print .rp-tl-i, #rp-print .rp-kpi-i, #rp-print .rp-facts tr { break-inside: avoid; }
+  #rp-print .rp-l, #rp-print .rp-org, #rp-print .rp-h3, #rp-print .rp-note, #rp-print .rp-foot { color: #444; }
+}

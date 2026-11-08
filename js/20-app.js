@@ -157,6 +157,7 @@
 
   function toMenu() {
     stopClock();
+    if (root.REPORT && S.def) root.REPORT.act(S.def.id, 'pause');
     S.def = null; S.st = null; S.cur = null; S.tray = [];
     document.body.classList.remove('board-open');
     if (ui.verdict) ui.verdict.classList.add('hidden');
@@ -228,6 +229,7 @@
     ui.readerTitle.textContent = 'Выберите документ слева';
     ui.readerIdx.textContent = '';
     startClock();
+    if (root.REPORT) root.REPORT.act(id, 'start');
     if (!S.st.read.length) showBriefing();
   }
 
@@ -480,6 +482,7 @@
     if (!e) return;
     if (!S.avail[id]) return toast('Этот материал ещё не поступил в дело. Основание — ходатайство по прочитанному документу.', 'cool');
     S.cur = id;
+    if (root.REPORT) root.REPORT.act(S.def.id, 'doc', id);
     S.quote = '';
     hideHookBar();
     ui.reader.innerHTML = DOCS.render(e);
@@ -948,6 +951,7 @@
     if (cur === v) delete S.st.suspects[pid];
     else S.st.suspects[pid] = v;
     patch({ suspects: S.st.suspects });
+    if (root.REPORT) root.REPORT.act(S.def.id, 'flag', { pid: pid, v: S.st.suspects[pid] || '' });
     renderPersons();
     if (fromCard) showPerson(pid);
   }
@@ -1049,6 +1053,7 @@
     var hints = S.def.hints || [];
     var n = Math.min(S.st.hints, hints.length - 1);
     patch({ hints: S.st.hints + 1 });
+    if (root.REPORT) root.REPORT.act(S.def.id, 'hint', { n: S.st.hints });
     var h = hints[n];
     var lockedNote = (!S.st.revealAll && lockedCount())
       ? '<p class="muted xs">Если нужного документа нет в папке дела — он ещё не поступил: подайте ходатайство о проверке по выделенному фрагменту прочитанного. '
@@ -1190,6 +1195,7 @@
     else { badge = 'lose'; text = S.def.verdict.lose; }
 
     patch({ verdict: { win: badge === 'win', hits: hits, fields: f.length, score: score, answer: answer, at: Date.now() } });
+    if (root.REPORT) root.REPORT.act(S.def.id, 'submit', { score: score, win: badge === 'win' });
     stopClock();
     /* после сдачи открываем дело целиком: можно дочитать и добрать связи */
     S.st.revealAll = true;
@@ -1235,6 +1241,7 @@
     STORE.save(st);
     var def = S.def;
     toMenu();
+    if (root.REPORT) root.REPORT.forget(def.id);
     startCase(def.id);
   }
 

@@ -204,9 +204,11 @@ js/15-hook-engine.js  правила расследования (window.HOOKS): 
                       что и когда поступает, волны людей, повестки, автоклапан
 js/20-app.js          движок: папка дела, читалка с грифом, ходатайства, сравнение,
                       доска, журнал «Ход», постановление, часы
+js/30-report.js       журнал отчёта (window.REPORT): события прохода в sr.journal.v1,
+                      «дошёл до ядра / где встал», CSV на группу, печатная карточка
 tools/check.mjs       8 гейтов приёмки одной командой
-tools/live/           живые проверки (CDP): play.cjs, sweep.cjs, gate.cjs, audits;
-                      отчёты и скриншоты — в tools/live/out/
+tools/live/           живые проверки (CDP): play.cjs, sweep.cjs, gate.cjs, audits,
+                      probe-report.cjs (журнал отчёта); отчёты и скриншоты — в tools/live/out/
 backup/               копия движка до переделки механики (engine-v2-before/)
 cases/case-01/        дело № 1, восемь файлов (см. ниже)
 cases/case-02/        дело № 2, та же структура
