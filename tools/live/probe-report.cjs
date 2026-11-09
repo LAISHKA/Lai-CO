@@ -15,7 +15,9 @@ const T = path.join(__dirname, 'out') + path.sep;
 fs.mkdirSync(T, { recursive: true });
 const ROOT = path.resolve(__dirname, '..', '..').replace(/\\+/g, '/');
 const OUT = T + 'probe-report.txt';
-const PAGE = 'file:///' + ROOT + '/Lai_CO.html';
+/* Артефакт T8 проверяют так: SR_PAGE=file:///…/index.html node tools/live/probe-report.cjs
+   Публичный режим включён в самом файле, поэтому форма «кто работает» не появится — это ожидаемо. */
+const PAGE = process.env.SR_PAGE || ('file:///' + ROOT + '/Lai_CO.html');
 const PORT = 9358;
 const RUNDIR = path.join(os.tmpdir(), 'chrome-probe-' + Date.now());
 const CHROME = [process.env.CHROME, 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
@@ -253,11 +255,16 @@ async function main() {
   fs.writeFileSync(OUT, L.join('\n'), 'utf8');
   try { ws.close(); } catch (e) { }
   try { process.kill(-chrome.pid); } catch (e) { try { chrome.kill(); } catch (e2) { } }
-  console.log('DONE ' + L.length + ' lines');
+  const bad = L.filter((x) => x.startsWith('FAIL')).length + errs.length;
+  say('ИТОГ: падений шага ' + L.filter((x) => x.startsWith('FAIL')).length + ', ошибок страницы ' + errs.length);
+  fs.writeFileSync(OUT, L.join('\n'), 'utf8');
+  console.log(bad ? 'Падений: ' + bad : 'DONE ' + L.length + ' lines');
+  if (bad) process.exit(1);
 }
 
 main().catch((e) => {
   L.push('FATAL ' + ((e && e.stack) || e));
   fs.writeFileSync(OUT, L.join('\n'), 'utf8');
   console.log('FATAL ' + ((e && e.message) || e));
+  process.exit(1);
 });

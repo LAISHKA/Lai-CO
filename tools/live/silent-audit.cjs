@@ -78,3 +78,4 @@ rep.push('');
 out.forEach((l) => rep.push(l));
 fs.writeFileSync(T + 'silent4.txt', rep.join('\n'), 'utf8');
 console.log(rep.slice(0, 4).join('\n'));
+if (out.length) process.exit(1);   /* молчаливая потеря контента = падение проверки */

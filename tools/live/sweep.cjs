@@ -233,5 +233,7 @@ async function main() {
   ws.close();
   chromeProc.kill();
   console.log(n ? 'замечания: ' + n : 'чисто');
+  /* замечание или ошибка страницы = падение проверки, иначе exit 0 вранье */
+  if (n || errs.length) process.exit(1);
 }
 main().catch((e) => { log.push('FATAL ' + e.message); fs.writeFileSync(T + 'sweep.txt', log.join('\n'), 'utf8'); process.exit(1); });

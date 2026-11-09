@@ -9,3 +9,5 @@ docs/ANON-BANNED.txt
 Thumbs.db
 Desktop.ini
 *.log
+# Рабочий черновик текста дела 20 (не артефакт, в репозитории не нужен)
+/clen.txt

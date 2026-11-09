@@ -386,9 +386,10 @@ async function main() {
   await send('Emulation.setDeviceMetricsOverride', { width: 1680, height: 1000, deviceScaleFactor: 1, mobile: false });
   await send('Page.navigate', { url: PAGE });
   await sleep(2200);
+  let failed = 0;
   const phase = async (label, fn) => {
     try { await fn(); log.push('FASE OK: ' + label); }
-    catch (e) { log.push('FASE FAIL: ' + label + ' :: ' + e.message); }
+    catch (e) { failed++; log.push('FASE FAIL: ' + label + ' :: ' + e.message); }
   };
   const need = (r, what) => { if (r.err) throw new Error(what + ' :: ' + r.err); return r.v; };
 
@@ -728,8 +729,12 @@ async function main() {
 
   log.push('ОШИБКИ СТРАНИЦЫ (' + errs.length + '):');
   errs.slice(0, 12).forEach((e) => log.push('  ' + e));
+  const okPhases = log.filter((l) => l.startsWith('FASE OK')).length;
+  log.push('ИТОГ ФАЗ: OK ' + okPhases + ', FAIL ' + failed + ', ошибок страницы ' + errs.length);
   fs.writeFileSync(T + 'play.txt', log.join('\n'), 'utf8');
   ws.close(); chrome.kill();
   console.log(log.find((l) => l.startsWith('FASE')) || 'готово');
+  /* падение любой фазы = падение проверки: без этого run.cjs всегда даёт exit 0 */
+  if (failed || errs.length) process.exit(1);
 }
 main().catch((e) => { log.push('FATAL ' + e.message); fs.writeFileSync(T + 'play.txt', log.join('\n'), 'utf8'); chrome.kill(); process.exit(1); });

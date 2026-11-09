@@ -6,8 +6,8 @@ import { join, extname } from 'node:path';
 
 const ROOT = process.cwd();
 const LIST = 'docs/ANON-BANNED.txt';
-const DIRS = ['cases', 'cases-wip', 'briefs', 'docs', 'js', 'assets', 'rules', 'outreach'];
-const FILES = ['README.md', 'corp_game.html', 'Lai_CO.html', 'AGENTS.md'];
+const DIRS = ['cases', 'cases-wip', 'briefs', 'docs', 'js', 'assets', 'rules', 'outreach', 'biz', 'backup'];
+const FILES = ['README.md', 'corp_game.html', 'Lai_CO.html', 'AGENTS.md', 'clen.txt'];
 const EXT = new Set(['.js', '.md', '.html', '.css', '.svg', '.json', '.txt']);
 
 const banned = readFileSync(join(ROOT, LIST), 'utf8')

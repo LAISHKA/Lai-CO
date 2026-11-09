@@ -39,3 +39,4 @@ for (const c of CASES) {
 out.push('дел: ' + CASES.length + ', logline дублируется в брифинге: ' + dup + ', уникальная: ' + uniq + ', самая длинная: ' + maxlen);
 fs.writeFileSync(T + 'logline.txt', out.join('\n'), 'utf8');
 console.log('ok');
+if (dup) process.exit(1);   /* logline дословно повторяет брифинг = падение проверки */
