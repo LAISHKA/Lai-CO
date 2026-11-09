@@ -12,7 +12,8 @@
 2. Полоса работает только в `cases-wip/case-NN/` и `Temp\opencode\laneNN`
    (подробности — `docs/PARALLEL.md`).
 3. Следующая волна стартует только после зелёного гейта по всем делам текущей.
-4. Приёмку (перенос в `cases/`, правки `index.html`, `README.md`, `docs/*`) веду
+4. Приёмку (перенос в `cases/`, правки входных html — `corp_game.html`/`Lai_CO.html`,
+   `README.md`, `docs/*`) веду
    один, последовательно, по одному делу.
 
 ## Гейт волны (что проверяю по каждому делу)
@@ -46,7 +47,7 @@
 
 - `tools/check.mjs` — 8 гейтов: validate, **check-hook**, check-dom, check-css,
   check-lookalike, check-svg, isolation, smoke. Обязаны проходить после любой правки
-  движка (`index.html`, `assets/styles.css`, `js/10-docs.js`, `js/15-hook-engine.js`,
+  движка (`corp_game.html`, `Lai_CO.html`, `assets/styles.css`, `js/10-docs.js`, `js/15-hook-engine.js`,
   `js/20-app.js`), независимо от того, какая волна дел сейчас в работе.
 - `tools/check-hook.mjs` (новый) — правила расследования на живых данных 20 дел:
   на старте открыты только корневые материалы (184), прочтение доступного не открывает
@@ -200,7 +201,7 @@ Get-ChildItem cases-wip\case-09 -Recurse -File | Sort-Object LastWriteTime -Desc
    было в деле 20 (`e25`, табель отряда № 4): `check-case.mjs` этого не видит, нашёл
    только `audit_final.cjs`.
 - ПОРЯДОК ДЕЛ В МЕНЮ задаётся порядком тегов: `js/20-app.js:103` выводит `CASES.map(…)`
-   без сортировки, то есть как дело зарегистрировано тегами `<script src>` в `index.html`.
+   без сортировки, то есть как дело зарегистрировано тегами `<script src>` во входном html контура.
    `index_insert.cjs` ставит новый блок в конец, и после волн 3—4 меню шло
    1…13, 16, 14, 15, 19, 17, 18, 20. 04.11.2026 теги отсортированы по номеру дела
    (`sortindex.cjs`: правит только теги дел, движок не тронут) — после каждой приёмки
@@ -270,7 +271,7 @@ Get-ChildItem cases-wip\case-09 -Recurse -File | Sort-Object LastWriteTime -Desc
    перенесены: связи сформулированы нейтрально по материалу пары, стороны не выбраны.
 
 Про `tools/validate.mjs`, чтобы полосы не пугались: он читает реестр `window.CASES`,
-который собирается тегами в `index.html`, поэтому на черновике из `cases-wip/` он
+который собирается тегами во входном html контура, поэтому на черновике из `cases-wip/` он
 падает честно — это не дефект дела. Для черновика единственный судья — `check-case.mjs`.
 Имена глобалов в черновике — `root.CASE08`, `root.CASE09`, … как в принятых делах
 (`root.CASE07`); ничего переименовывать при приёмке не нужно.
@@ -281,7 +282,7 @@ Get-ChildItem cases-wip\case-09 -Recurse -File | Sort-Object LastWriteTime -Desc
 1. Перенести `cases-wip/case-NN` → `cases/case-NN` и в перенесённых файлах заменить
    пути вложений `cases-wip/case-NN/` → `cases/case-NN/` (полосы пишут `img:`
    от черновика; в принятых делах путь обязан вести в `cases/`).
-2. В `index.html` — 8 тегов `<script src>` перед `js/10-docs.js`.
+2. Во входной html контура (`corp_game.html`, для продажных дел — `Lai_CO.html`) — 8 тегов `<script src>` перед `js/10-docs.js`.
 3. `node tools/check-case.mjs case-NN`, затем `node tools/check.mjs` (7+ дел, изоляция).
 4. `node tools/map-case.mjs case-NN` — прочитать волны и глубину.
 5. Обновить `README.md` (таблица дел, число схем) и `docs/MECHANICS.md`

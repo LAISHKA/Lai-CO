@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* Создаёт скелет дела из docs/ROADMAP.json: 8 js-файлов + DESIGN.md + assets/.
-   В index.html ничего не вписывает — это делает интеграционный шаг (docs/PARALLEL.md).
+   В corp_game.html / Lai_CO.html ничего не вписывает — это делает интеграционный шаг (docs/PARALLEL.md).
    Использование: node tools/new-case.mjs case-08 [case-09 ...] */
 'use strict';
 import fs from 'node:fs';

@@ -2,7 +2,8 @@
 /* ============================================================
    tools/validate.mjs — проверка данных дел без браузера и без npm.
 
-   Загрузка: читает index.html, берёт <script src="…"> по порядку
+   Загрузка: читает входные страницы (corp_game.html, Lai_CO.html), берёт <script src="…">
+   по порядку
    (кроме движка js/20-app.js) и выполняет каждый файл в stub-объекте
    вместо window. Дальше — проверки целостности дела.
 
@@ -15,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 const here = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(here, '..');
 const SKIP = ['js/20-app.js'];
+const PAGES = ['corp_game.html', 'Lai_CO.html'];
 
 const problems = [];
 const warnings = [];
@@ -23,7 +25,7 @@ const warn = (where, msg) => warnings.push(`${where}: ${msg}`);
 
 /* ---------- загрузка ---------- */
 function loadScripts() {
-  const html = readFileSync(join(rootDir, 'index.html'), 'utf8');
+  const html = PAGES.map((p) => readFileSync(join(rootDir, p), 'utf8')).join('\n');
   const re = /<script\s+[^>]*src="([^"]+)"[^>]*><\/script>/g;
   const win = {};
   win.localStorage = {
@@ -33,9 +35,11 @@ function loadScripts() {
     removeItem(k) { delete this._d[k]; }
   };
   let m, count = 0;
+  const seen = new Set();
   while ((m = re.exec(html))) {
     const rel = m[1];
-    if (SKIP.includes(rel)) continue;
+    if (SKIP.includes(rel) || seen.has(rel)) continue;
+    seen.add(rel);
     const src = readFileSync(join(rootDir, rel), 'utf8');
     try {
       // eslint-disable-next-line no-new-func

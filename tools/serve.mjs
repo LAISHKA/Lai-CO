@@ -44,7 +44,16 @@ const server = createServer(async (req, res) => {
   try {
     const url = new URL(req.url, 'http://localhost');
     let pathname = decodeURIComponent(url.pathname);
-    if (pathname.endsWith('/')) pathname += 'index.html';
+    if (pathname === '/') {
+      const body = Buffer.from(
+        '<!doctype html><meta charset="utf-8"><title>Служебное расследование</title>' +
+        '<body style="font:16px/1.5 system-ui;background:#111;color:#eee;padding:2rem">' +
+        '<h1>Служебное расследование</h1><ul>' +
+        '<li><a href="corp_game.html">corp_game.html — тимбилдинг, дела № 1–20</a></li>' +
+        '<li><a href="Lai_CO.html">Lai_CO.html — охрана труда, дело № 21</a></li></ul>', 'utf8');
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'content-length': body.length });
+      return res.end(body);
+    }
 
     const target = normalize(join(ROOT, pathname));
     if (target !== ROOT && !target.startsWith(ROOT + sep)) {

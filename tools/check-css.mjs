@@ -17,7 +17,7 @@ function walk(p, out) {
 
 const used = new Map(); // class -> [где]
 /* список файлов берём из папки js/, чтобы новый файл движка не остался без контроля */
-const files = ['index.html'].concat(readdirSync('js').filter((f) => /\.js$/.test(f)).map((f) => join('js', f)));
+const files = ['corp_game.html', 'Lai_CO.html'].concat(readdirSync('js').filter((f) => /\.js$/.test(f)).map((f) => join('js', f)));
 for (const f of files) {
   const src = readFileSync(f, 'utf8');
   src.split(/\r?\n/).forEach((line, i) => {

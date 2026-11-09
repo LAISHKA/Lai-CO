@@ -102,10 +102,12 @@ node %LOCALAPPDATA%\Temp\opencode\scan-glue.mjs cases\case-05 docs AGENTS.md
 
 ## Архив и отправка
 
-Сборка архива — `Temp\build-zip.ps1`: копирует `index.html`, `README.md`, `js`,
-`assets`, `cases`, `tools` во временную папку, жмёт `Compress-Archive` (внутри `index.html`
-в корне — двойной клик сразу играет), кладёт копию на Рабочий стол, печатает размер,
-число файлов и SHA-256 обеих копий (должны совпасть).
+Сборка демо-архива — `node tools/pack-demo.mjs --cases case-21 --out dist/demo-ot.zip --note "…"`.
+Инструмент берёт входной html того контура, где лежит первое запрошенное дело (для дела № 21 это
+`Lai_CO.html`; теги невыбранных дел вырезаются), кладёт в zip методом STORE (без сжатия — открывает
+любая Windows): `Lai_CO.html`, `NOTE.txt`, `js/`, `assets/`, `cases/case-21/`. Проверка состава:
+`Expand-Archive` во временную папку; SHA-256 печатает `Get-FileHash` — цифры вписываются в
+`outreach/REESTR-PISEM.md`. Старый `Temp\build-zip.ps1` (полный репозиторий с `index.html`) не используется.
 
 Почта: рассылка — только вручную с личной почты. Рабочий домен работодателя не используется
 ни для писем, ни для календаря, ни для задач (`biz/REDLINES.md`). Из агента — через COM

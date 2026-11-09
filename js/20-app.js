@@ -122,7 +122,7 @@
      ============================================================ */
   function renderMenu() {
     if (!CASES || !CASES.length) {
-      ui.list.innerHTML = '<p class="muted">Дела не подключены. Проверьте теги &lt;script&gt; в index.html.</p>';
+      ui.list.innerHTML = '<p class="muted">Дела не подключены. Проверьте теги &lt;script&gt; в corp_game.html или Lai_CO.html.</p>';
       return;
     }
     ui.list.innerHTML = CASES.map(function (c) {

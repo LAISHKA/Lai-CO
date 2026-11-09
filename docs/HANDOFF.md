@@ -25,7 +25,9 @@
 - Движок: `js/00-store.js` (сейвы, ключ `sr.save.v1`), `js/10-docs.js` (печатает документы),
   `js/15-hook-engine.js` (`window.HOOKS` — правила расследования), `js/20-app.js` (оболочка),
   `js/30-report.js` (`window.REPORT` — журнал отчёта, ключ `sr.journal.v1`, добавлен 09.11.2026),
-  `index.html`, `assets/styles.css` (+ 8 woff2: Golos Text и PT Serif, есть `fonts-*.css`
+  `corp_game.html` (дела № 1–20, тимбилдинг) и `Lai_CO.html` (дело № 21, охрана труда —
+  продажный слой; с 09.11.2026 входных файла два, `index.html` удалён), `assets/styles.css`
+  (+ 8 woff2: Golos Text и PT Serif, есть `fonts-*.css`
   для отката на системные шрифты).
 - `biz/` — бизнес-контур: `STATE.md` (счётчики и следующий шаг, читать первым),
   `briefs/README.md` (инвентарь заказов T1—T5; заказ технарь берёт **только** оттуда),
@@ -111,7 +113,7 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
 
 ## 5. Границы правок
 
-- Можно: `index.html`, `assets/styles.css`, `js/10-docs.js`, `js/15-hook-engine.js`,
+- Можно: `corp_game.html`, `Lai_CO.html`, `assets/styles.css`, `js/10-docs.js`, `js/15-hook-engine.js`,
   `js/20-app.js`, `js/30-report.js`, `tools/*`, `docs/*`, реестры.
 - Нельзя без явного запроса: `js/00-store.js` (формат сейва) и всё в `cases/**` (принятый
   контент; правка дела = новый раунд приёмки дела).
@@ -144,8 +146,9 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
 
 ## 6. Если понадобится новое дело (конвейер закрыт, правила живы)
 
-Теги дел в `index.html` встают **между** `<script src="js/00-store.js">` и
-`<script src="js/10-docs.js">` (8 тегов на дело: `01-core`, `02..06-evidence`, `07-links`,
+Теги дел встают **между** `<script src="js/00-store.js">` и
+`<script src="js/10-docs.js">` во входном html своего контура: дела № 1–20 — в
+`corp_game.html`, продажные (охрана труда) — в `Lai_CO.html` (8 тегов на дело: `01-core`, `02..06-evidence`, `07-links`,
 `08-final`). Точка входа: `briefs/case-NN.md` и `tools/new-case.mjs`; нормы — `limits`
 в `docs/ROADMAP.json` и `docs/PLAYBOOK.md` §1.
 
@@ -157,7 +160,7 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
    закрытому материалу должно вести направление из НАПЕЧАТАННОГО текста основания.
 2. Перенос: `fs.cpSync('cases-wip/case-NN','cases/case-NN',{recursive:true})`, затем во всех
    `.js`/`.svg`/`.md` заменить `cases-wip/case-NN/` → `cases/case-NN/`.
-3. Теги в `index.html`, затем `node tools/check.mjs` → «проверено дел: 21».
+3. Теги во входной html контура (`corp_game.html` / `Lai_CO.html`), затем `node tools/check.mjs` → «проверено дел: 21».
 4. `node tools/map-case.mjs case-NN`, `node tools/smoke.mjs`, `node tools/isolation.mjs`
    (пересечение вымышленной фирмы — переименовать в позднем деле).
 5. Реестры: `README.md` (таблица дел, структура, число схем, «Юридическое»),
@@ -168,7 +171,7 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
 Промпт полосы `fixer` (проверен, брать целиком): читать `briefs/case-NN.md`,
 `docs/PARALLEL.md`, `docs/PLAYBOOK.md` §1—§5 и эталон профиля (talky `case-08`, dense
 `case-09`, mass `case-10`, classic `case-07`/`case-11`); писать ТОЛЬКО в `cases-wip/case-NN/`
-и `%TEMP%\opencode\laneNN`; запрет на `index.html`, `js/`, `css/`, `cases/`, `docs/`,
+и `%TEMP%\opencode\laneNN`; запрет на `corp_game.html`/`Lai_CO.html`, `js/`, `css/`, `cases/`, `docs/`,
 реестры, `tools/`, git; порядок `DESIGN.md` → `01-core.js` → `02..06-evidence.js` по 6—8
 материалов за `write` → `07-links.js` → `08-final.js` → SVG; связи в `C.contradictions`
 (НЕ `C.links`), `crime.at` в ЧЧ:ММ, `objective` = intro + `fields:[{id,label,options,correct,

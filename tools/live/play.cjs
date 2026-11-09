@@ -8,7 +8,7 @@ require('fs').mkdirSync(T, { recursive: true });
 const { spawnSync, spawn } = require('child_process');
 const fs = require('fs');
 const SHOTS = T + 'shots-play/';
-const PAGE = 'file:///' + ROOTDIR.replace(/\\+/g, '/') + '/index.html';
+const PAGE = 'file:///' + ROOTDIR.replace(/\\+/g, '/') + '/corp_game.html';
 const CHROME = [process.env.CHROME, 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', 'C:/Program Files/Google/Chrome/Application/chrome.exe'].filter(Boolean).find((p) => fs.existsSync(p));
 const PORT = 9352;
 const log = [];

@@ -5,7 +5,7 @@
 мне при приёмке. Сюжетную карту дела описывает `DESIGN.md` внутри дела —
 этот файл про другое: про форму.
 
-Менять визуал можно в четырёх файлах: `index.html`, `assets/styles.css`,
+Менять визуал можно в четырёх местах: входные html (`corp_game.html`, `Lai_CO.html`), `assets/styles.css`,
 `js/10-docs.js`, `js/20-app.js`. Файлы дел вёрстки не содержат и не должны
 содержать (§6).
 
@@ -185,7 +185,7 @@ doc: { bar: 'Мессенджер, 21:14', msgs: [
 | `--k-paper/ink/rule/form/hand/lens/screen` | цвета «лиц» типов | §2 |
 
 Шрифты self-hosted в `assets/fonts/` (8 файлов woff2, 226 КБ, подмножества
-cyrillic + latin, лицензия OFL). Игрок открывает `index.html` двойным
+cyrillic + latin, лицензия OFL). Игрок открывает `corp_game.html` или `Lai_CO.html` двойным
 кликом — шрифты должны грузиться и с `file://`, поэтому пути относительные
 (`url('fonts/golos-400-700-normal-cyrillic.woff2')`).
 

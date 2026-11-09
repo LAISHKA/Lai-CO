@@ -84,7 +84,7 @@ function render(c) {
   out.push('');
   out.push('## Чего не трогать');
   out.push('');
-  out.push('- `index.html`, `js/`, `css/`, `README.md`, `docs/` — их правит один интеграционный шаг после приёмки.');
+  out.push('- Входные html (`corp_game.html`, `Lai_CO.html`), `js/`, `css/`, `README.md`, `docs/` — их правит один интеграционный шаг после приёмки.');
   out.push('- `cases/` — там лежат принятые дела; свой черновик держи в `cases-wip/' + c.dir + '/`. Чужие дела не читай и не трогай (в том числе ради имён — фамилии бери из списка выше).');
   out.push('- `tools/` — если проверке не хватает правила, напиши об этом в отчёте, не правь чужой инструмент.');
   out.push('- git: никаких `init`, `add`, `commit`.');
@@ -103,7 +103,7 @@ function render(c) {
   out.push('- [ ] `node tools/check-case.mjs ' + c.dir + '` → «все проверки пройдены»');
   out.push('- [ ] `node tools/check-lookalike.mjs cases-wip/' + c.dir + '` → 0');
   out.push('- [ ] файлов 8 + `DESIGN.md` + ' + s.svg + ' SVG в `assets/`');
-  out.push('- [ ] в отчёте: 8 тегов `<script src>` для `index.html`, строка в таблицу `README.md`, строки в `docs/MECHANICS.md` §1 и §2, снимаемые строки в §3/§3.1');
+  out.push('- [ ] в отчёте: 8 тегов `<script src>` для входного html контура (`corp_game.html`/`Lai_CO.html`), строка в таблицу `README.md`, строки в `docs/MECHANICS.md` §1 и §2, снимаемые строки в §3/§3.1');
   out.push('- [ ] прочитанное время уложилось в ' + (s.playtimeMin || c.playtimeMin) + ' ± 15 минут');
   out.push('');
   return out.join('\n') + '\n';

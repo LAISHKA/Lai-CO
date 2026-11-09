@@ -1,4 +1,4 @@
-/* Дым-тест: загружает все скрипты index.html в Node с заглушкой DOM.
+/* Дым-тест: загружает все скрипты входных страниц (corp_game.html, Lai_CO.html) в Node с заглушкой DOM.
    Ловит ошибки времени загрузки и сборки HTML (меню, рендереры документов).
    Запуск: node tools/smoke.mjs */
 import { readFileSync } from 'node:fs';
@@ -6,8 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const html = readFileSync(join(root, 'index.html'), 'utf8');
-const srcs = [...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map((m) => m[1]);
+const html = ['corp_game.html', 'Lai_CO.html']
+  .map((p) => readFileSync(join(root, p), 'utf8')).join('\n');
+const srcs = [...new Set([...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map((m) => m[1]))];
 
 function el(tag = 'div') {
   const store = {

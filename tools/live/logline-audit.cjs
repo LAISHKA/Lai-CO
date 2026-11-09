@@ -10,14 +10,17 @@ function elStub() {
   return { className: '', textContent: '', innerHTML: '', appendChild() {}, setAttribute() {}, addEventListener() {}, style: {} };
 }
 function loadCases() {
-  const html = fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8');
+  const html = ['corp_game.html', 'Lai_CO.html']
+    .map((p) => fs.readFileSync(path.join(rootDir, p), 'utf8')).join('\n');
   const re = /<script\s+[^>]*src="([^"]+)"[^>]*><\/script>/g;
+  const seen = new Set();
   const win = {};
   win.localStorage = { _d: {}, getItem(k) { return Object.prototype.hasOwnProperty.call(this._d, k) ? this._d[k] : null; }, setItem(k, v) { this._d[k] = String(v); }, removeItem(k) { delete this._d[k]; } };
   win.document = { createElement: elStub, createDocumentFragment: elStub, querySelector: () => null, querySelectorAll: () => [], getElementById: () => null, addEventListener() {}, documentElement: { classList: { add() {}, remove() {} } }, head: elStub(), body: Object.assign(elStub(), { classList: { add() {}, remove() {} } }) };
   let m;
   while ((m = re.exec(html))) {
-    if (m[1] === 'js/20-app.js') continue;
+    if (m[1] === 'js/20-app.js' || seen.has(m[1])) continue;
+    seen.add(m[1]);
     new Function('window', 'document', 'localStorage', fs.readFileSync(path.join(rootDir, m[1]), 'utf8'))(win, win.document, win.localStorage);
   }
   return win.CASES || [];

@@ -15,7 +15,7 @@ const T = path.join(__dirname, 'out') + path.sep;
 fs.mkdirSync(T, { recursive: true });
 const ROOT = path.resolve(__dirname, '..', '..').replace(/\\+/g, '/');
 const OUT = T + 'probe-report.txt';
-const PAGE = 'file:///' + ROOT + '/index.html';
+const PAGE = 'file:///' + ROOT + '/Lai_CO.html';
 const PORT = 9358;
 const RUNDIR = path.join(os.tmpdir(), 'chrome-probe-' + Date.now());
 const CHROME = [process.env.CHROME, 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',

@@ -160,7 +160,7 @@
    1 неупомянутое лицо (`case-06 dyuzhak`), 100 % материалов / связей / лиц,
    ложное направление обязано давать отказ «Оснований не вижу».
 3. `Temp/opencode/silent4.cjs` — 0 молчаливых потерь контента из 742 материалов.
-4. `tools/check-dom.mjs`: каждый `id` из `index.html` используется в js и наоборот.
+4. `tools/check-dom.mjs`: каждый `id` из входных html (`corp_game.html` + `Lai_CO.html`) используется в js и наоборот.
 5. `tools/check-css.mjs` ВСЕГДА exit 0 — читать вывод: каждый класс из js обязан быть
    описан в `assets/styles.css`.
 6. Живой прогон `Temp/opencode/play.cjs` (CDP, `file://`, порт 9352, отчёт `play.txt`):
@@ -176,8 +176,8 @@
 
 ## 10. Откат и границы
 
-- Править МОЖНО: `index.html`, `assets/styles.css`, `js/10-docs.js`, `js/20-app.js`,
-  `js/15-hook-engine.js`, `tools/*`.
+- Править МОЖНО: входные html (`corp_game.html`, `Lai_CO.html`), `assets/styles.css`, `js/10-docs.js`,
+  `js/20-app.js`, `js/15-hook-engine.js`, `tools/*`.
 - Править НЕЛЬЗЯ: `js/00-store.js`, всё в `cases/**`, реестры `README.md`, `AGENTS.md`.
 - Git нет. Бэкап ДО этой переделки: `Temp/opencode/engine-v2-before/` (+ `V2BEFORE.md5.txt`,
   4 файла: styles.css 35cc488e…, index.html 4ecb2671…, 10-docs.js 03a6a65a…, 20-app.js 7603fdf8…).

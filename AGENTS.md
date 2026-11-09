@@ -32,8 +32,10 @@
 
 - Движок: `js/00-store.js` (сейвы), `js/10-docs.js` (печать документов),
   `js/15-hook-engine.js` (`window.HOOKS` — правила расследования), `js/20-app.js`
-  (оболочка), `index.html`, `assets/styles.css`. **Трогать нельзя** без явной просьбы
-  пользователя — на нём едут двадцать принятых дел; при правке движка `cases/**` и
+  (оболочка), `corp_game.html`, `Lai_CO.html`, `assets/styles.css`. **Трогать нельзя** без явной просьбы
+  пользователя — на нём едут двадцать одно принятое дело. Входных файлов два с 09.11.2026 (T6):
+  `corp_game.html` — дела № 1–20 (тимбилдинг), `Lai_CO.html` — дело № 21 (контур охраны труда,
+  продажный слой); при правке движка `cases/**` и
   `js/00-store.js` не меняются никогда.
 - 09.11.2026 (заказ `biz/briefs/T2-export-zhurnala.md`) добавлен слой доставки
   `js/30-report.js` (`window.REPORT` — журнал отчёта: события в `sr.journal.v1`,
@@ -111,12 +113,13 @@
    `02..06-evidence.js`, `07-links.js`, `08-final.js`. Глобальная переменная
    `root.CASENN`, в конце `08-final.js` — `registerCase(C)`.
 4. `node tools/check-case.mjs case-NN` — до зелёного состояния. Тулза не трогает
-   `index.html` и чужие дела, поэтому ею пользуются три сессии сразу. Дополнительно
+   входные html и чужие дела, поэтому ею пользуются три сессии сразу. Дополнительно
    `node tools/check-lookalike.mjs cases-wip/case-NN` после каждой крупной записи.
 5. Прогнать глазами цепочки: `node tools/map-case.mjs case-NN` работает только
    после приёмки; в лэйне волны и глубину показывает `check-case.mjs`.
 6. **(шаг приёмки)** Перенести `cases-wip/case-NN` в `cases/case-NN` и вписать
-   8 тегов `<script src="cases/case-NN/0X-….js">` в `index.html` между
+   8 тегов `<script src="cases/case-NN/0X-….js">` во входной html своего контура —
+   `corp_game.html` (дела № 1–20) либо `Lai_CO.html` (продажное дело по охране труда) — между
    `js/00-store.js` и `js/10-docs.js` (порядок: `00-store` → теги дел по номерам →
    `10-docs` → `15-hook-engine` → `20-app`).
 7. **(шаг приёмки)** `node tools/check.mjs` — до зелёного состояния, включая
@@ -218,7 +221,7 @@
 - Дела № 8—20 делаются **параллельными сессиями по три волнами**
   (8-9-10 → 11-12-13 → 14-15-16 → 17-18-19 → 20): лэйн работает только в
   `cases-wip/case-NN/` и своей папке `Temp\opencode\laneNN`, проверяется только
-  `node tools/check-case.mjs case-NN`, общие файлы (`index.html`, `README.md`,
+  `node tools/check-case.mjs case-NN`, общие файлы (`corp_game.html`, `Lai_CO.html`, `README.md`,
   `docs/*`, `AGENTS.md`, `js/`, `css/`, `cases/`) не трогает. Приёмка — одна
   сессия, порядок в `docs/PARALLEL.md`, гейт между волнами — `docs/PIPELINE.md`.
 - Свой город, свои фирмы, свои фамилии; ни одного имени из реестра §2 и из

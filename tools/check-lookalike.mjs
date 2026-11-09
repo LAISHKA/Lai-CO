@@ -24,7 +24,7 @@ function walk(p, out) {
 }
 
 const targets = process.argv.slice(2);
-const roots = targets.length ? targets : ['index.html', 'assets', 'js', 'cases', 'README.md', 'AGENTS.md', 'docs'];
+const roots = targets.length ? targets : ['corp_game.html', 'Lai_CO.html', 'assets', 'js', 'cases', 'README.md', 'AGENTS.md', 'docs'];
 const files = roots.flatMap((f) => walk(f, [])).filter((f) => !f.includes('check-lookalike'));
 /* Служебные md (AGENTS.md, docs/) — техническая проза, там английские термины
    законны. Для них остаётся только проверка на символы чужих письменностей. */

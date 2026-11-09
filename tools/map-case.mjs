@@ -6,8 +6,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const html = readFileSync(join(root, 'index.html'), 'utf8');
-const srcs = [...html.matchAll(/<script src="([^"]+)"/g)].map((m) => m[1]);
+const html = ['corp_game.html', 'Lai_CO.html']
+  .map((p) => readFileSync(join(root, p), 'utf8')).join('\n');
+const srcs = [...new Set([...html.matchAll(/<script src="([^"]+)"/g)].map((m) => m[1]))];
 
 const win = { localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} } };
 for (const s of srcs) {
@@ -20,7 +21,7 @@ const BY_ID = {};
 const want = process.argv.slice(2);
 const ids = (want.length ? want : Object.keys(BY_ID)).filter((id) => {
   if (BY_ID[id]) return true;
-  console.log(`!! дело ${id} не найдено: проверьте id в 01-core.js и теги <script src> в index.html`);
+  console.log(`!! дело ${id} не найдено: проверьте id в 01-core.js и теги <script src> в corp_game.html / Lai_CO.html`);
   return false;
 });
 let bad = 0;

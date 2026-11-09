@@ -1,5 +1,5 @@
 /* Поиск азиатских артефактов в кириллических файлах + проверка синтаксиса js/cjs/mjs.
-   Использование: node tools/live/cjk-check.cjs index.html assets/styles.css js/20-app.js */
+   Использование: node tools/live/cjk-check.cjs Lai_CO.html assets/styles.css js/20-app.js */
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');

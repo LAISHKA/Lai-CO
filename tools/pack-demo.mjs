@@ -1,7 +1,8 @@
-/* Сборка демо-архива: статический пакет с index.html в корне.
+/* Сборка демо-архива: статический пакет с одним входным файлом в корне
+   (Lai_CO.html — продажа по охране труда, corp_game.html — тимбилдинг).
    Usage:
-     node tools/pack-demo.mjs --cases case-21[,case-07] [--out dist/demo.zip] [--note текст]
-   Внутри только то, что нужно игре: index.html (теги нероизбранных дел вырезаны),
+     node tools/pack-demo.mjs --cases case-21 [--out dist/demo.zip] [--note текст]
+   Внутри только то, что нужно игре: входной html (теги невыбранных дел вырезаны),
    js/, assets/, cases/case-NN/. Метод хранения — STORE (без сжатия): архив
    любой size открывает и Windows, и консоль Яндекс Игр.
    Проверка: node tools/pack-demo.mjs --cases case-21 && powershell -c "Expand-Archive dist/demo.zip d:\tmp\z" */
@@ -44,14 +45,19 @@ for (const c of cases) {
   walk(join(ROOT, 'cases', c), ROOT);
 }
 
-/* index.html: оставляем теги только выбранных дел */
+/* Входной html контура: оставляем теги только выбранных дел
+   (с 09.11.2026 слоёв два: corp_game.html — дела 1—20, Lai_CO.html — дело 21;
+    архив собирается вокруг того файла, где лежит первое запрошенное дело) */
 const wanted = new RegExp('src="cases/(' + cases.join('|') + ')/');
 const skip = /<script src="cases\/case-\d+\//;
-const html = readFileSync(join(ROOT, 'index.html'), 'utf8')
+const PAGES = ['corp_game.html', 'Lai_CO.html'];
+const probe = 'cases/' + cases[0] + '/';
+const pageName = PAGES.find((p) => readFileSync(join(ROOT, p), 'utf8').includes(probe)) || 'Lai_CO.html';
+const html = readFileSync(join(ROOT, pageName), 'utf8')
   .split('\n')
   .filter((line) => !(skip.test(line) && !wanted.test(line)))
   .join('\n');
-files.push({ text: html, inZip: 'index.html' });
+files.push({ text: html, inZip: pageName });
 
 if (note) files.push({ text: note + '\n', inZip: 'NOTE.txt' });
 
