@@ -28,12 +28,14 @@ const files = [];
 function add(abs, inZip) {
   files.push({ abs, inZip: inZip.split('\\').join('/') });
 }
+/* DESIGN.md — внутренний документ с развязкой: в клиентский пакет не кладётся. */
+const IGNORE = /(^|\/)DESIGN\.md$/;
 function walk(dir, base) {
   for (const name of readdirSync(dir)) {
     const abs = join(dir, name);
     const rel = relative(base, abs).split(sep).join('/');
     if (statSync(abs).isDirectory()) walk(abs, base);
-    else add(abs, rel);
+    else if (!IGNORE.test(rel)) add(abs, rel);
   }
 }
 for (const d of ['js', 'assets']) walk(join(ROOT, d), ROOT);

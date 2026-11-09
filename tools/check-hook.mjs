@@ -223,10 +223,12 @@ else {
 }
 
 info.unshift(`автоклапан (материалов без словесного мостика): ${autoValveTotal}`);
-info.unshift(`корневых на старте: ${totalRoots} (ожидалось 192)`);
+/* 190 = 21 дело после сжатия case-21 до 12 материалов (заказ T7, 09.11.2026). */
+const EXPECTED_ROOTS = 190;
+info.unshift(`корневых на старте: ${totalRoots} (ожидалось ${EXPECTED_ROOTS})`);
 info.unshift(`нигде не упомянутые лица: ${strandedAll.length} (${strandedAll.join(' ') || '—'})`);
 
-if (totalRoots !== 192) fail('СВОДКА', `корневых ${totalRoots}, должно быть 192`);
+if (totalRoots !== EXPECTED_ROOTS) fail('СВОДКА', `корневых ${totalRoots}, должно быть ${EXPECTED_ROOTS}`);
 if (autoValveTotal > 60) fail('СВОДКА', `слишком много автоклапанов: ${autoValveTotal}`);
 
 if (problems.length) {
