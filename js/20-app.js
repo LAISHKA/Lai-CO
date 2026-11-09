@@ -583,6 +583,11 @@
     var q = S.quote || currentSelection();
     if (!q) return toast('Сначала выделите в документе фрагмент: фамилию, номер, время, странность.', 'bad');
     if (!S.cur) return;
+    /* цитата живёт в выделении, а оно живёт до первого клика:
+       пока открыт оверлей, mouseup не стреляет и S.quote пустеет.
+       Запоминаем её здесь, иначе submitHook ниже получит пустоту и
+       ходатайство закроется молча. */
+    S.quote = q;
     var e = evidenceById(S.cur);
     var dirs = HOOKS.pendingDirections(S.def, S.st, S.cur).filter(function (d) {
       return HOOKS.checkable(S.def, S.cur, d.cat);
@@ -646,8 +651,18 @@
   }
 
   function submitHook(cat, who) {
-    var q = S.quote;
-    if (!q || !S.cur) return closeOverlay();
+    if (!S.cur) return closeOverlay();
+    var q = S.quote || currentSelection();
+    if (!q) {
+      /* молча закрыть окно — худшее, что может быть: игрок жмёт направление и
+         не понимает, принято оно или нет. Отвечаем текстом. */
+      return openOverlay('<div class="gate-icon">🚫</div><h2 class="ov-title">Не вижу выделенного фрагмента</h2>'
+        + '<p class="ov-sub">' + esc(cat) + '</p>'
+        + '<div class="prose"><p>Ходатайство пишется на конкретные слова: фамилию, номер, время, странность.'
+        + ' Выделение потерялось, пока открыто это окно. Вернитесь в документ и выделите фрагмент заново.</p></div>'
+        + '<div class="ov-foot"><button class="btn primary" data-act="close-overlay" data-focus>Понятно</button></div>');
+    }
+    S.quote = q;
     var j = HOOKS.judge(S.def, S.cur, cat, q);
     var e = evidenceById(S.cur);
     if (!j.ok) {
