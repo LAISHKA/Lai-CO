@@ -1937,6 +1937,42 @@ html[data-theme='light'] .msg .bub { background: var(--bg-3); border-color: var(
   color: var(--fg);
 }
 
+/* ---------- 15А.1 КАНДИДАТЫ: ПОДЧЁРКНУТЫЙ УЗЕЛ В ТЕКСТЕ ---------- */
+
+/* Типовой узел (дата, время, номер, сумма, фамилия, место), по которому
+   можно подать ходатайство. Только подчёркивание и подложка при наведении:
+   ни padding, ни border, ни изменения шрифта — ширина строки не едет.
+   Бумага светлая в обеих темах, поэтому цвет — по currentColor,
+   а тон подчёркивания задан отдельно для тёмной и светлой темы. */
+.cand {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: text;
+  border-radius: 2px;
+}
+
+html[data-theme='dark'] .cand { text-decoration-color: rgba(27, 23, 18, .42); }
+html[data-theme='light'] .cand { text-decoration-color: rgba(27, 23, 18, .34); }
+
+.cand:hover {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.cand:focus-visible {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent);
+  outline: none;
+}
+
+@media print {
+  .cand {
+    text-decoration: none;
+    background: none;
+    box-shadow: none;
+  }
+}
+
 /* ---------- 15Б. ХОДАТАЙСТВО О ПРОВЕРКЕ (оверлей) ---------- */
 
 .hook-quote-box {
@@ -2173,6 +2209,104 @@ button.summon:hover {
   border-bottom: 1px dotted var(--line-2);
   font-style: italic;
   color: var(--fg-dim);
+}
+
+/* ---------- 15Ж. ЛЕНЦА: СХЕМА КРУПНЫМ ПЛАНОМ (лайтбокс) ---------- */
+
+/* Жалоба 10.11.2026 и разбор docs/QA-SVG-READABILITY.md: колонка читалки даёт
+   схеме ≈881 px из 1600 условных единиц (k=0,55), подписи в 12—16 единиц
+   печатаются 6,6—8,8 px. Кеглями в данных это не вывозится, поэтому лупа:
+   клик по съёмке открывает кадр в ШТАТНОМ оверлее (js/20-app.js, openLens)
+   на всю доступную ширину окна. Отсюда и всё общее: подложка .overlay, Esc,
+   закрытие кнопкой data-act="close-overlay", «нет на печати».
+   Никаких новых цветов: кадр лежит на том же #05070a, что и бокс съёмки в
+   читалке (.shot-img), полоски шапки и подсказки — профиль .reader-bar. */
+
+/* подложка та же, полей и центрирования нет: кадр идёт на всю ширину */
+.overlay.lens-open { padding: 0; place-items: stretch; }
+.overlay-inner.lens {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg);
+  border: 0;
+  border-radius: 0;
+}
+
+/* шапка: название материала слева, приборы зума и «Закрыть» справа */
+.lens-head {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line);
+}
+.lens-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: var(--fs-14);
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lens-tools { display: flex; flex: 0 0 auto; gap: 6px; }
+
+/* стекло: при 1× кадр = вся ширина окна; сдвиг зажат размером кадра */
+.lens-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  background: #05070a;
+  cursor: grab;
+  touch-action: none;
+}
+.lens-stage.dragging { cursor: grabbing; }
+.lens-stage img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* одна строка подсказки вместо кнопки «помощь» */
+.lens-hint {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  font-size: var(--fs-12);
+  color: var(--fg-mute);
+  text-align: center;
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+}
+
+/* съёмка в колонке подсказывает, что её можно рассмотреть; сама картинка
+   (object-fit: cover, aspect-ratio 16/9) ведёт себя ровно как раньше */
+.reader-scroll .shot-img.img-ok img { cursor: zoom-in; }
+
+@media (max-width: 860px) {
+  .lens-head { flex-wrap: wrap; }
+  .lens-title { flex: 1 1 100%; }
+}
+
+@media print {
+  /* лупа на бумагу не попадает: кадр и так печатается в материале дела
+     (в секции 15 скрыт .overlay, здесь явно закрыт и полноэкранный вариант) */
+  .overlay.lens-open { display: none !important; }
 }
 
 /* ---------- 16. КАРКАС: ПАПКА ДЕЛА, СТОЛ СЛЕДОВАТЕЛЯ, ПОСТАНОВЛЕНИЕ ---------- */

@@ -65,6 +65,8 @@
   var overlayCloser = null;
   function openOverlay(html, opts) {
     opts = opts || {};
+    /* лупа — этот же оверлей: любое другое окно открывается без полноэкранной подложки */
+    ui.overlay.classList.remove('lens-open');
     ui.overlayBody.className = 'overlay-inner' + (opts.wide ? ' wide' : '');
     ui.overlayBody.innerHTML = html;
     ui.overlay.classList.remove('hidden');
@@ -75,6 +77,10 @@
   }
   function closeOverlay() {
     ui.overlay.classList.add('hidden');
+    /* лупа больше не хозяин подложки: без этого следующее окно (например, форма
+       «Кто работает с делом» из js/30-report.js, которая показывает подложку
+       сама, минуя openOverlay) встанет растянутым на весь экран */
+    ui.overlay.classList.remove('lens-open');
     ui.overlayBody.innerHTML = '';
     if (overlayCloser) { var c = overlayCloser; overlayCloser = null; c(); }
   }
@@ -486,6 +492,16 @@
     S.quote = '';
     hideHookBar();
     ui.reader.innerHTML = DOCS.render(e);
+    /* Кандидаты: движок подчёркивает в тексте типовые узлы (дата, время,
+       номер, сумма, фамилия, место), по которым можно подать ходатайство.
+       Второй аргумент — ОБЪЕКТ ДЕЛА: у материала e отсылки к делу нет,
+       словарь лиц и мест модуль собирает из S.def. Третий аргумент —
+       штатный путь: клик по узлу выставляет браузерное выделение и зовёт
+       onSelectionMaybe с min = 1 (узел короче двенадцати знаков, для
+       выделения мышью лимит прежний). Сам клик ходатайство не подаёт:
+       дальше обычная панель, форма и судья. */
+    if (root.CANDIDATES) root.CANDIDATES.mark(ui.reader, S.def, function () { onSelectionMaybe(1); });
+    lensWire();
     paintGrif(e);
     ui.reader.scrollTop = 0;
     ui.readerTitle.textContent = e.title;
@@ -526,11 +542,17 @@
     S.quote = '';
   }
 
-  function currentSelection() {
+  /* Минимальная длина цитаты: 12 знаков для выделения мышью; клик по
+     подсвеченному узлу (js/17-candidates.js) зовёт путь с min = 1,
+     потому что дата или номер короче. Свободное выделение до 12 знаков
+     по-прежнему не показывает «Взять в разработку». */
+  function minQuote(v) { return typeof v === 'number' ? v : 12; }
+
+  function currentSelection(min) {
     var sel = root.getSelection ? root.getSelection() : null;
     if (!sel || sel.isCollapsed) return '';
     var text = String(sel.toString() || '').replace(/\s+/g, ' ').trim();
-    if (text.length < 12) return '';
+    if (text.length < minQuote(min)) return '';
     /* выделение должно быть внутри открытого документа */
     var node = sel.anchorNode;
     while (node && node !== ui.reader) node = node.parentNode;
@@ -538,9 +560,9 @@
     return text.slice(0, 400);
   }
 
-  function onSelectionMaybe() {
+  function onSelectionMaybe(min) {
     if (!S.cur || overlayOpen()) return;
-    var q = currentSelection();
+    var q = currentSelection(min);
     if (!q) { hideHookBar(); return; }
     S.quote = q;
     ui.hookQuote.textContent = '«' + (q.length > 90 ? q.slice(0, 90) + '…' : q) + '»';
@@ -1496,6 +1518,226 @@
       case '?': showHelp(); break;
     }
   });
+
+  /* ============================================================
+     ЛЕНЦА: СХЕМА КРУПНЫМ ПЛАНОМ
+
+     Жалоба 10.11.2026 (docs/QA-SVG-READABILITY.md): все 107 схем нарисованы
+     на холсте 1600×900 условных единиц, а колонка читалки даёт им ≈881 px,
+     то есть подписи в 12—16 единиц превращаются в 6,6—8,8 px. Кеглями в
+     данных это не лечится (в отчёте посчитан потолок), лечится только
+     интерфейсом: клик по схеме открывает её в ШТАТНОМ оверлее (#overlay) на
+     всю ширину окна, с зумом 1×–6× и сдвигом. Отсюда — ни новой подложки, ни
+     новой кнопки закрытия: Esc, клик мимо и data-act="close-overlay" уже
+     общие у лупы со всеми остальными окнами. Разметку картинки (js/10-docs.js)
+     не трогаем: в лупу клонируем узел <img>.
+
+     Масштабы: 1× = вся доступная ширина окна («по ширине»); «1:1» = одна
+     условная единица схемы на один экранник (при окне шире 1600 px это
+     по-прежнему 1×, при узком — больше 1×).
+
+     Все слушатели, кроме Esc (он штатный, на документе), висят на лупе:
+     клавиатура и перелистывание читалки под ней не ломаются.
+     ============================================================ */
+  var LENS = { z: 1, tx: 0, ty: 0, w: 0, h: 0 };
+  var LENS_MIN = 1, LENS_MAX = 6, LENS_STEP = 1.25, LENS_PAN = 60;
+
+  function lensBox() { return ui.overlayBody.querySelector('.lens-stage'); }
+  function lensClamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+
+  /* один пересчёт transform; заодно зажим сдвиг по размеру кадра —
+     уехать в бесконечность нельзя, за центр торчит ровно столько, сколько есть */
+  function lensPaint() {
+    var st = lensBox();
+    if (!st) return;
+    var im = st.querySelector('img');
+    if (!im) return;
+    var sw = st.clientWidth, sh = st.clientHeight;
+    LENS.w = im.offsetWidth || sw;
+    LENS.h = im.offsetHeight || Math.round(LENS.w * 9 / 16);
+    var w = LENS.w * LENS.z, h = LENS.h * LENS.z;
+    var mx = Math.max(0, (w - sw) / 2), my = Math.max(0, (h - sh) / 2);
+    LENS.tx = lensClamp(LENS.tx, -mx, mx);
+    LENS.ty = lensClamp(LENS.ty, -my, my);
+    im.style.transform = 'translate(-50%, -50%) translate(' + LENS.tx.toFixed(1) + 'px, '
+      + LENS.ty.toFixed(1) + 'px) scale(' + LENS.z.toFixed(3) + ')';
+  }
+
+  /* зум; если задана точка на экране — она должна остаться под курсором */
+  function lensZoom(z, cx, cy) {
+    var st = lensBox();
+    if (!st) return;
+    z = lensClamp(z, LENS_MIN, LENS_MAX);
+    if (cx == null) { LENS.z = z; lensPaint(); return; }
+    var r = st.getBoundingClientRect();
+    var w = LENS.w * LENS.z, h = LENS.h * LENS.z;
+    var left = r.left + r.width / 2 + LENS.tx - w / 2;
+    var top = r.top + r.height / 2 + LENS.ty - h / 2;
+    var fx = (cx - left) / w, fy = (cy - top) / h;
+    var w2 = LENS.w * z, h2 = LENS.h * z;
+    LENS.tx = cx - r.left - fx * w2 - r.width / 2 + w2 / 2;
+    LENS.ty = cy - r.top - fy * h2 - r.height / 2 + h2 / 2;
+    LENS.z = z;
+    lensPaint();
+  }
+
+  function lensStep(dir) { lensZoom(dir > 0 ? LENS.z * LENS_STEP : LENS.z / LENS_STEP); }
+  function lensFit() { LENS.z = 1; LENS.tx = 0; LENS.ty = 0; lensPaint(); }
+  /* «1:1»: ширина кадра на экране = ширине холста схемы, то есть одна условная
+     единица рисунка — один экранник. Холст у всех 107 схем 1600×900 (гейт
+     tools/check-svg.mjs), и брать его надо отсюда, а не из naturalWidth:
+     у svg без width/height браузер считает натуральный размер как 300×150
+     по умолчанию (на деле 267×150 для 16:9), и кнопка стала бы пустой. */
+  var LENS_CANVAS_W = 1600;
+  function lensNative() {
+    var st = lensBox();
+    if (!st) return;
+    var im = st.querySelector('img');
+    var nat = (im && im.naturalWidth > 500) ? im.naturalWidth : LENS_CANVAS_W;
+    lensZoom(nat / (LENS.w || st.clientWidth));
+  }
+
+  /* перетаскивание мышью и пальцем; нативное таскание картинки отключено атрибутом */
+  function lensDrag(st) {
+    var lx = 0, ly = 0, held = false;
+    st.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      held = true; lx = e.clientX; ly = e.clientY;
+      st.classList.add('dragging');
+      if (st.setPointerCapture) { try { st.setPointerCapture(e.pointerId); } catch (err) { } }
+    });
+    st.addEventListener('pointermove', function (e) {
+      if (!held) return;
+      LENS.tx += e.clientX - lx;
+      LENS.ty += e.clientY - ly;
+      lx = e.clientX; ly = e.clientY;
+      lensPaint();
+    });
+    function off(e) {
+      if (!held) return;
+      held = false;
+      st.classList.remove('dragging');
+      if (st.releasePointerCapture) { try { st.releasePointerCapture(e.pointerId); } catch (err) { } }
+    }
+    st.addEventListener('pointerup', off);
+    st.addEventListener('pointercancel', off);
+  }
+
+  function onLensResize() { if (lensBox()) lensPaint(); }
+
+  function openLens(src) {
+    var e = S.cur ? evidenceById(S.cur) : null;
+    var clone = src.cloneNode(false);
+    /* инлайновые onload/onerror из 10-docs.js клону не нужны: там они про
+       заглушку и про класс img-ok у родительского бокса */
+    clone.removeAttribute('onload');
+    clone.removeAttribute('onerror');
+    clone.removeAttribute('style');
+    clone.setAttribute('draggable', 'false');
+    if (!clone.alt) clone.alt = 'Схема крупным планом';
+
+    var box = openOverlay('<div class="lens-head">'
+      + '<span class="lens-title"></span>'
+      + '<span class="lens-tools">'
+      + '<button class="mini" data-lens="out" title="Отдалить (−)">−</button>'
+      + '<button class="mini" data-lens="in" title="Приблизить (+)">+</button>'
+      + '<button class="mini" data-lens="one" title="Одна единица схемы на экранник (1)">1:1</button>'
+      + '<button class="mini" data-lens="fit" title="Вся ширина окна (0)">по ширине</button>'
+      + '</span>'
+      + '<button class="btn ghost sm" data-act="close-overlay" title="Закрыть (Esc)">Закрыть</button>'
+      + '</div>'
+      + '<div class="lens-stage" tabindex="0" data-focus title="Двойной клик — приблизить к этому месту"></div>'
+      + '<div class="lens-hint">колесо с Ctrl — зум, перетаскивание — сдвиг, двойной клик — приблизить, Esc — закрыть</div>',
+      {
+        onClose: function () {
+          root.removeEventListener('resize', onLensResize);
+          if (src.isConnected) src.focus();
+        }
+      });
+    ui.overlay.classList.add('lens-open');
+    box.classList.add('lens');
+    box.querySelector('.lens-title').textContent = e ? e.title : ui.readerTitle.textContent;
+
+    var st = box.querySelector('.lens-stage');
+    st.appendChild(clone);
+    LENS.z = 1; LENS.tx = 0; LENS.ty = 0;
+    lensDrag(st);
+    st.addEventListener('dblclick', function (ev) {
+      lensZoom(LENS.z >= LENS_MAX - .01 ? 1 : Math.min(LENS_MAX, LENS.z * 2), ev.clientX, ev.clientY);
+    });
+    root.addEventListener('resize', onLensResize);
+    lensPaint();
+    if (!clone.complete) clone.addEventListener('load', lensPaint);
+  }
+
+  /* картинка в читалке — точка входа в лупу: фокус с клавиатуры без правки
+     js/10-docs.js (разметку съёмки не меняем) */
+  function lensWire() {
+    var list = ui.reader.querySelectorAll('.shot-img img');
+    for (var i = 0; i < list.length; i++) {
+      list[i].tabIndex = 0;
+      list[i].setAttribute('role', 'button');
+      list[i].setAttribute('aria-label', 'Рассмотреть схему крупным планом');
+      list[i].setAttribute('title', 'Клик или Enter — рассмотреть крупно');
+    }
+  }
+
+  var lensPress = null;
+  ui.reader.addEventListener('pointerdown', function (e) {
+    var im = e.target.closest ? e.target.closest('.shot-img img') : null;
+    lensPress = im ? { x: e.clientX, y: e.clientY } : null;
+  });
+  ui.reader.addEventListener('click', function (e) {
+    var im = e.target.closest ? e.target.closest('.shot-img img') : null;
+    if (!im || !im.parentNode.classList.contains('img-ok')) return;
+    /* растянутая мышью рамка вокруг картинки — не клик по схеме */
+    if (lensPress && (Math.abs(e.clientX - lensPress.x) > 6 || Math.abs(e.clientY - lensPress.y) > 6)) return;
+    openLens(im);
+  });
+  ui.reader.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var im = e.target.matches ? e.target.matches('.shot-img img') : false;
+    if (!im) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openLens(e.target);
+  });
+
+  /* приборы лупы: на живом элементе #overlay-body, чтобы не плодить слушателей
+     на каждый кадр и не стрелять по документу */
+  ui.overlayBody.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-lens]') : null;
+    if (!b || !lensBox()) return;
+    var a = b.getAttribute('data-lens');
+    if (a === 'in') lensStep(1);
+    else if (a === 'out') lensStep(-1);
+    else if (a === 'one') lensNative();
+    else if (a === 'fit') lensFit();
+  });
+  ui.overlayBody.addEventListener('keydown', function (e) {
+    if (!lensBox()) return;
+    var dx = 0, dy = 0;
+    if (e.key === 'ArrowLeft') dx = LENS_PAN;
+    else if (e.key === 'ArrowRight') dx = -LENS_PAN;
+    else if (e.key === 'ArrowUp') dy = LENS_PAN;
+    else if (e.key === 'ArrowDown') dy = -LENS_PAN;
+    else if (e.key === '+' || e.key === '=') lensStep(1);
+    else if (e.key === '-' || e.key === '_') lensStep(-1);
+    else if (e.key === '0') lensFit();
+    else if (e.key === '1') lensNative();
+    else return;
+    if (dx || dy) { LENS.tx += dx; LENS.ty += dy; lensPaint(); }
+    /* стрелки и цифры принадлежат лупе: читалка под ней не листает материал */
+    e.preventDefault();
+    e.stopPropagation();
+  });
+  ui.overlayBody.addEventListener('wheel', function (e) {
+    var st = lensBox();
+    if (!st || !e.ctrlKey || !st.contains(e.target)) return;
+    /* штатное масштабирование страницы вместо зума схемы */
+    e.preventDefault();
+    lensZoom(e.deltaY < 0 ? LENS.z * LENS_STEP : LENS.z / LENS_STEP, e.clientX, e.clientY);
+  }, { passive: false });
 
   /* ============================================================
      СТАРТ
