@@ -12,3 +12,10 @@
 # же документа»). Отчёт: docs/QA-TYPOS.md §5.
 #
 # mixed-alpha	cases/case-01/03-evidence.js	doc.attach	имя файла вложения: Гранит_сводка_v2
+
+double-space	cases/case-01/03-evidence.js	evidence[16].doc.body	письмо: абзацы разведены \n\n, HTML схлопывает их в один пробел — двух пробелов на экране нет
+no-space-after	cases/case-01/03-evidence.js	evidence[12].doc.table.rows	имя файла с расширением .docx в выгрузке журнала СЭД
+no-space-after	cases/case-01/03-evidence.js	evidence[16].doc.attach	вложения письма: имена файлов с расширениями .xlsx и .pdf
+no-space-after	cases/case-19/06-evidence.js	evidence[31].doc.attach	вложение: имя файла с расширением .pdf
+repeat-word	cases/case-20/05-evidence.js	evidence[24].doc.table.rows	табель учёта: однобуквенные отметки по дням недели (Я — смена, В — выходной), легенда в meta[0] того же документа
+straight-quote	cases/case-02/04-evidence.js	evidence[21].doc.body	размер присоединительного квадрата воротка 1/2" — техническое обозначение дюйма в номенклатуре изъятого, не кавычка
