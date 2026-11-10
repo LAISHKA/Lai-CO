@@ -513,6 +513,10 @@
     if (!e) return;
     if (!S.avail[id]) return toast('Этот материал ещё не поступил в дело. Основание — ходатайство по прочитанному документу.', 'cool');
     S.cur = id;
+    /* На узких экранах «Доска» — выезжающая панель поверх читалки. Открыли
+       документ — убрать её, иначе половина листа и весь клик по схеме
+       достаются панели. Вернуть можно кнопкой «Доска» или клавишей B. */
+    if (root.matchMedia && root.matchMedia('(max-width: 1180px)').matches) document.body.classList.remove('board-open');
     if (root.REPORT) root.REPORT.act(S.def.id, 'doc', id);
     S.quote = '';
     hideHookBar();
@@ -903,6 +907,7 @@
       openOverlay('<div class="gate-icon">⚖</div><h2 class="ov-title">Противоречие найдено</h2>'
         + '<p class="ov-sub">' + esc(ea.title) + ' ↔ ' + esc(eb.title) + '</p>'
         + '<div class="prose"><p>' + rvHtml(link.reveals) + '</p></div>'
+        + gapRow(link)
         + (extra ? '<p>' + extra + '</p>' : '')
         + (fresh.length ? '<div class="doc-note">По этому выводу в дело поступило материалов: <b>' + fresh.length + '</b> — они отмечены в списке как «новое».</div>' : '')
         + '<div class="ov-foot"><button class="btn ghost" data-act="show-evidence" data-id="' + a + '">К первой улике</button>'
@@ -999,7 +1004,7 @@
         + plural(pending.count, 'документ', 'документа', 'документов') + '.</div>'
         + '<div class="board-actions"><button class="btn primary sm" data-act="summon" data-id="' + esc(pid) + '">Вызвать на допрос</button></div>' : '')
       + (called[pid] ? '<div class="doc-note">Повестка выдана, ждём протокол.</div>' : '')
-      + (links.length ? '<div class="reveal-h">Найденные связи</div><div class="prose">' + links.map(function (c) { return '<p>' + rvHtml(c.reveals) + '</p>'; }).join('') + '</div>' : '')
+      + (links.length ? '<div class="reveal-h">Найденные связи</div><div class="prose">' + links.map(function (c) { return '<p>' + rvHtml(c.reveals) + '</p>' + gapRow(c); }).join('') + '</div>' : '')
       + (ev.length ? '<div class="reveal-h">Улики с участием</div><div class="prose">'
         + ev.map(function (e) {
           return '<p><button class="link-ev" data-act="show-evidence" data-id="' + e.id + '">' + esc(e.title) + '</button>'
@@ -1019,6 +1024,275 @@
   }
 
   /* ============================================================
+     РАЗНОЧТЕНИЕ: ПО КАКОМУ ЗНАЧЕНИЮ РАСХОДЯТСЯ ДВЕ УЛИКИ
+
+     Замечания № 1 и № 6 (docs/TASTE-BAR.md): на вывод вида «показания расходятся»
+     игроку не за что зацепиться — он не понимает, какое слово выделять.
+     Здесь из самой фразы связи достаются конкретные значения (время, дата,
+     номер, сумма) и каждому возвращается источник, то есть на доске печатается
+     пара: 21:40 «Журнал СКУД» ≠ 22:03 «Журнал СЭД».
+
+     Ничего не додумываем: берутся только значения, напечатанные в тексте
+     связи, и только те, чей источник следует из самих материалов.
+     Порядок такой:
+       1) значение есть в напечатанном тексте одной улики и нет в другой
+          -> источник ясен (own);
+       2) левее значения стоит слово из заголовка или места одной улики,
+          которого нет у второй -> считаем его оттуда (cue);
+       3) значение стоит в противительной части фразы («но», «а», «зато»,
+          «при этом» …), где своих якорей нет -> в противоположную сторону от
+          ближайшего якоря (adv).
+     Пара — два РАЗНЫХ значения одного класса, стоящие в одной фразе (GAP_NEAR
+     знаков) и оказавшиеся по разные стороны. Если второй стороны в фразе нет,
+     показываем одно значение: куда смотреть. Класс «место» не участвует —
+     совпадения вроде «коридор» дают ложные пары. Нет значений -> нет строки.
+     ============================================================ */
+  var GAP_KIND = { time: 'время', date: 'дата', sum: 'сумма', num: 'номер' };
+  var GAP_RANK = { time: 0, date: 1, sum: 2, num: 3 };
+  var GAP_NEAR = 200;      /* значения должны стоять в одной фразе */
+  var GAP_SOFT_NEAR = 110; /* то же, но если сторону пришлось догадываться */
+  var GAP_CUE = 90;        /* как далеко левее значения может стоять своё слово улики */
+  var GAP_TXT = {};
+  var GAP_CACHE = {};
+
+  function gapNorm(s) {
+    return String(s == null ? '' : s).toLowerCase().replace(/ё/g, 'е')
+      .replace(/[\s ]/g, '').replace(/[^a-zа-я0-9.:\/-]/g, '');
+  }
+
+  /* слова, по которым значение можно отнести к материалу: заголовок и место */
+  function gapWords(s, into) {
+    String(s == null ? '' : s).replace(/[A-Za-zА-Яа-яЁё0-9][A-Za-zА-Яа-яЁё0-9.\-]{3,}/g, function (w) {
+      var k = gapNorm(w);
+      if (k.length > 3) into[k] = 1;
+      return w;
+    });
+    return into;
+  }
+
+  function gapHay(rev) { return rev.toLowerCase().replace(/ё/g, 'е'); }
+
+  function gapHits(rev, set) {
+    var hay = gapHay(rev), res = [];
+    Object.keys(set).forEach(function (k) {
+      var i = hay.indexOf(k);
+      while (i >= 0) { res.push(i + k.length); i = hay.indexOf(k, i + 1); }
+    });
+    return res;
+  }
+
+  /* якорь этой стороны стоит левее значения в пределах окна? */
+  function gapBefore(list, pos, win) {
+    var hit = false;
+    list.forEach(function (end) { if (end <= pos + 3 && pos - end < win) hit = true; });
+    return hit;
+  }
+
+  function gapSeg(cuts, p) {
+    for (var i = 0; i < cuts.length - 1; i++) if (p >= cuts[i] && p < cuts[i + 1]) return i;
+    return 0;
+  }
+
+  /* какое значение показывать, если выбор за стороной: сначала названное
+   прямо (own), среди них время, потом дата, сумма, номер */
+  function gapRank(v) { return (v.how === 'own' ? 0 : 10) + GAP_RANK[v.t]; }
+
+  /* Два значения одного класса во фразе — ещё не спор двух бумаг. Рамка
+     («между 17:46 и 20:05», «не ранее 02:50 и не позднее 03:15») или череда
+     событий («в 03:33», а на следующий день «в 14:30») — не разночтение, и знак
+     «≠» тут солгал бы. Смотрим, что стоит между значениями. */
+  var GAP_CONJ = /^(?:и|да|или|до|по|через|вплоть до)(?![\wа-яё])/i;
+  var GAP_SEQ = /на\s+следующ(?:ий|ую)\s+(?:день|сутки|утро)|после\s+этого|затем(?![\wа-яё])|потом(?![\wа-яё])/i;
+  var GAP_TIGHT = 40;  /* рамка это когда между значениями почти ничего нет */
+  function gapSpans(rev, x, y, vals) {
+    var mid = String(rev.slice(x.e, y.s)).toLowerCase().replace(/[^a-zа-яё\s]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (mid.length <= GAP_TIGHT && GAP_CONJ.test(mid)) return true;
+    if (/(?:^|\s)между(?:\s|$)/.test(mid)) return true;
+    if (GAP_SEQ.test(mid)) return true;
+    /* между ними стоит третье значение того же класса — значит это не спор двух
+       бумаг, а перечисление («между 17:46 и 20:05 …, а в 17:35:40 камера …») */
+    for (var q = 0; q < vals.length; q++) {
+      var z = vals[q];
+      if (z === x || z === y || z.t !== x.t) continue;
+      if (z.s > x.e && z.s < y.s) return true;
+    }
+    return false;
+  }
+
+  /* одно и то же значение, просто названо с разной точностью: 21:40 и 21:40:33,
+     12.09 и 12.09.2025. Разночтением это быть не может. */
+  function gapSame(x, y) {
+    if (x.k === y.k) return true;
+    if (x.t !== 'time' && x.t !== 'date') return false;
+    var a = x.t === 'time' ? x.k.slice(0, 5) : x.k.split('.').slice(0, 2).join('.');
+    var b = y.t === 'time' ? y.k.slice(0, 5) : y.k.split('.').slice(0, 2).join('.');
+    return a === b;
+  }
+
+  /* напечатанный текст материала (движок кэширует сам) */
+  function gapSource(id) {
+    var key = (S.def.id || '') + '|' + id;
+    if (GAP_TXT[key] === undefined) {
+      var m = evidenceById(id);
+      GAP_TXT[key] = (m && root.HOOKS) ? root.HOOKS.ownText(S.def, m) : '';
+    }
+    return GAP_TXT[key];
+  }
+
+  function gapOf(c) {
+    var key = (S.def.id || '') + '|' + c.id;
+    if (GAP_CACHE[key] !== undefined) return GAP_CACHE[key];
+    var g = null;
+    var A = evidenceById(c.a), B = evidenceById(c.b);
+    var rev = [].concat(c.reveals || []).filter(Boolean).join(' ');
+    var ta = gapNorm(gapSource(c.a)), tb = gapNorm(gapSource(c.b));
+    if (A && B && rev && ta && tb && root.CANDIDATES) {
+      var i, j, v;
+      var vals = [], nodes = root.CANDIDATES.scan(rev, root.CANDIDATES.dictFor(S.def));
+      for (i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        if (!GAP_KIND[n.t]) continue;
+        var txt = rev.slice(n.start, n.end);
+        v = { t: n.t, text: txt, s: n.start, e: n.end, k: gapNorm(txt) };
+        /* значение внутри диапазона («21:35—22:15») — это граница окна, а не
+           показания прибора: два конца двух разных окон не спорят друг с другом */
+        v.range = /[-—–]\s*$/.test(rev.slice(Math.max(0, v.s - 3), v.s)) ||
+          /^\s*[-—–]\s*\d/.test(rev.slice(v.e, v.e + 3));
+        var dup = false;
+        for (j = 0; j < vals.length; j++) if (vals[j].t === v.t && vals[j].k === v.k) dup = true;
+        if (!dup && v.k) { v.own = null; v.how = ''; vals.push(v); }
+      }
+      for (i = 0; i < vals.length; i++) {
+        var ia = ta.indexOf(vals[i].k) >= 0, ib = tb.indexOf(vals[i].k) >= 0;
+        if (ia !== ib) { vals[i].own = ia ? 'A' : 'B'; vals[i].how = 'own'; }
+      }
+      var wa = gapWords(A.where, gapWords(A.title, {})), wb = gapWords(B.where, gapWords(B.title, {}));
+      Object.keys(wa).forEach(function (k) { if (wb[k]) { delete wa[k]; delete wb[k]; } });
+      var ha = gapHits(rev, wa), hb = gapHits(rev, wb);
+      for (i = 0; i < vals.length; i++) {
+        if (vals[i].own) continue;
+        var la = gapBefore(ha, vals[i].s, GAP_CUE), lb = gapBefore(hb, vals[i].s, GAP_CUE);
+        if (la !== lb) { vals[i].own = la ? 'A' : 'B'; vals[i].how = 'cue'; }
+      }
+      /* противительные части фразы: «но», «а», «зато», «при этом» … */
+      var cuts = [0], adv = /(?:^|[^\wа-яё])(?:но|зато|однако|тогда как|между тем|при этом|впрочем)(?![\wа-яё])|[^\wа-яё]а(?![\wа-яё])/gi, m2;
+      while ((m2 = adv.exec(rev))) cuts.push(m2.index);
+      cuts.push(rev.length);
+      cuts.sort(function (x, y) { return x - y; });
+      var side = [];
+      for (i = 0; i < cuts.length - 1; i++) side.push(null);
+      for (i = 0; i < vals.length; i++) {
+        if (vals[i].how !== 'own') continue;
+        v = vals[i];
+        var si = gapSeg(cuts, (v.s + v.e) / 2);
+        if (side[si] === null) side[si] = v.own;
+        else if (side[si] !== v.own) side[si] = '';
+      }
+      for (i = 0; i < vals.length; i++) {
+        v = vals[i];
+        if (v.own) continue;
+        var q, sg = gapSeg(cuts, (v.s + v.e) / 2), left = null, right = null;
+        for (q = sg - 1; q >= 0; q--) if (side[q]) { left = { d: sg - q, s: side[q] }; break; }
+        for (q = sg + 1; q < side.length; q++) if (side[q]) { right = { d: q - sg, s: side[q] }; break; }
+        var an = (left && right) ? (left.d <= right.d ? left : right) : (left || right);
+        if (an) { v.own = an.s === 'A' ? 'B' : 'A'; v.how = 'adv'; }
+      }
+      var pair = null, cands = [];
+      for (i = 0; i < vals.length; i++) {
+        for (j = i + 1; j < vals.length; j++) {
+          var x = vals[i], y = vals[j];
+          if (!x.own || !y.own || x.own === y.own || x.t !== y.t || gapSame(x, y)) continue;
+          if (x.range || y.range) continue;
+          var span = y.s - x.s, soft = (x.how === 'own' && y.how === 'own') ? 0 : 1;
+          if (span > GAP_NEAR || (soft && span > GAP_SOFT_NEAR)) continue;
+          if (gapSpans(rev, x, y, vals)) continue;
+          cands.push({ x: x, y: y, span: span, soft: soft });
+        }
+      }
+      cands.sort(function (p, r) { return (p.soft - r.soft) || (p.span - r.span); });
+      if (cands.length) {
+        pair = cands[0];
+        g = { pair: [pair.x, pair.y], clash: true };
+      } else {
+        /* пары нет: показываем одно самое цепкое значение с источником —
+           куда смотреть. Два значения без знака «≠» игрок прочёл бы как
+           разночтение, а это не так. */
+        var best = null;
+        vals.forEach(function (p) {
+          if (!p.own) return;
+          if (!best || gapRank(p) < gapRank(best)) best = p;
+        });
+        if (best) g = { pair: [best], clash: false };
+      }
+    }
+    GAP_CACHE[key] = g;
+    return g;
+  }
+
+  /* короткий источник: заголовок до самой ранней разделительной метки, но не
+     раньше восьми знаков — «СКУД:» само по себе ничего не объясняет. Дальше
+     можно убрать кавычную кличку, а не начало названия. */
+  function gapShort(m) {
+    var s = String((m && m.title) || (m && m.id) || '');
+    var re = /[:,·—–]/g, k;
+    while ((k = re.exec(s))) { if (k.index >= 8) { s = s.slice(0, k.index); break; } }
+    s = s.replace(/\s+/g, ' ').replace(/^ | $/g, '');
+    if (s.length > 26) s = s.replace(/\s*«[^»]*»/g, '');
+    if (s.length > 26) s = s.slice(0, 26).replace(/\s\S*$/, '');
+    /* оборванный предлог в конце читается как опечатка: «СКУД: экспорт из» */
+    s = s.replace(/\s+(?:из|на|по|за|от|до|при|без|для|над|под|об|во|о|в|к|у|с|и|а|но)$/, '');
+    return s || String((m && m.id) || '');
+  }
+
+  /* Различающий хвостик заголовка: номер бумаги, скобка с фамилией — а если ни
+     того ни другого, первое слово плюс конец строки. Нужен, когда две разные
+     бумаги сокращаются в одно слово («Заключение судебно-медицинской экспертизы
+     по Ивутину» и «по Хреновой» обе дают «Заключение»). */
+  function gapDisamb(m) {
+    var s = String((m && m.title) || (m && m.id) || '').replace(/\s+/g, ' ').replace(/^ | $/g, '');
+    var head = s.replace(/\s+.*$/, '');
+    var n = Math.max(s.lastIndexOf('№'), s.lastIndexOf('('));
+    if (n >= 0 && s.length - n >= 5) {
+      var t = s.slice(n);
+      if (head.length > 3 && t.slice(0, head.length) !== head) t = head + ' ' + t;
+      return t.length > 40 ? t.slice(0, 40).replace(/\s\S*$/, '') : t;
+    }
+    var tail = s.length > 26 ? s.slice(-24).replace(/^[^\s]*\s*/, '') : s;
+    return head.length > 3 && tail.slice(0, head.length) !== head ? head + ' … ' + tail : tail;
+  }
+
+  /* Строка разночтения: значение + источник, по строке на сторону связи, а знак
+     «≠» висит в левом поле между ними. Порядок строк совпадает с порядком улик
+     (первая — из первой улики), кегль значения моноширинный: 21:40 и 21:14
+     должны читаться как пара, а не как два разных слова. Кликать тут нечего:
+     кнопки «открыть улику» уже под текстом. */
+  function gapRow(c) {
+    var g = gapOf(c);
+    if (!g) return '';
+    var A = evidenceById(c.a), B = evidenceById(c.b);
+    var rows = g.pair.slice().sort(function (p, r) { return (p.own === 'A' ? 0 : 1) - (r.own === 'A' ? 0 : 1); });
+    var src = rows.map(function (p) { return p.own === 'A' ? A : B; });
+    /* Две разные бумаги с одинаковым началом заголовка («Заключение
+       судебно-медицинской экспертизы № 14-СМЭ (Тужилкин)» и № 15-СМЭ
+       (Таволжнов)) после gapShort дают «Заключение / Заключение» — читается как
+       баг и как будто это одна бумага. Тогда зовём бумаги по различающему
+       хвостику: номеру или скобке в конце заголовка. */
+    var lab = rows.map(function (p, i) { return gapShort(src[i]); });
+    if (lab.length > 1 && lab[0] === lab[1]) {
+      lab = rows.map(function (p, i) { return gapDisamb(src[i]); });
+    }
+    var html = '<div class="gap' + (g.clash ? '' : ' gap-one') + '">'
+      + '<span class="gap-m">' + (g.clash ? '≠' : '') + '</span>';
+    for (var i = 0; i < rows.length; i++) {
+      var mm = src[i];
+      var full = esc((mm && mm.title) || '').replace(/"/g, '&quot;');
+      html += '<b class="gap-v">' + esc(rows[i].text) + '</b>'
+        + '<i class="gap-s" title="' + full + '">' + esc(lab[i]) + '</i>';
+    }
+    return html + '</div>';
+  }
+
+  /* ============================================================
      ДОСКА: ВЫВОДЫ
      ============================================================ */
   function renderClues(newId) {
@@ -1031,8 +1305,9 @@
       .map(function (c) {
         var a = evidenceById(c.a), b = evidenceById(c.b);
         return '<div class="clue' + (newId === c.id ? ' new' : '') + '">'
-          + '<div class="clue-head"><span>связь ' + (S.st.found.indexOf(c.id) + 1) + '</span><span>' + esc(c.a) + ' ↔ ' + esc(c.b) + '</span></div>'
+          + '<div class="clue-head"><span>связь ' + (S.st.found.indexOf(c.id) + 1) + '</span></div>'
           + '<div class="clue-text">' + rvHtml(c.reveals) + '</div>'
+          + gapRow(c)
           + '<div class="board-actions"><button class="mini" data-act="show-evidence" data-id="' + c.a + '">' + esc(a ? a.title : c.a) + '</button>'
           + '<button class="mini" data-act="show-evidence" data-id="' + c.b + '">' + esc(b ? b.title : c.b) + '</button></div>'
           + '</div>';
@@ -1568,14 +1843,17 @@
   var LENS = { z: 1, tx: 0, ty: 0, w: 0, h: 0, out: null };
   var LENS_MIN = 1, LENS_MAX = 6, LENS_STEP = 1.25, LENS_PAN = 60;
 
-  /* Стартовый зум считается по медианному кеглю подписей дела. Кегли сняты офлайн
-     со всех 107 схем (сырьё — медиана по текстовым узлам каждой картинки): внутри
-     одного дела медианы картинок гуляют на ±1—2 условные единицы, это меньше шага
-     зума (×1,25), поэтому хватает одного числа на дело, а не таблицы на 107
-     строк. Число зашито здесь, а не тянется из файла: на file:// fetch не
-     работает, а ждать его перед первым кадром — значит открыть лупу мутной.
-     16 — медиана всех медиан, с ней же остаются дела, которых в таблице нет. */
-  var LENS_FS = { 1: 20, 2: 18, 3: 17, 4: 16, 5: 16, 6: 16, 7: 16, 8: 14, 9: 16, 10: 14, 11: 16, 12: 16, 13: 15, 14: 15, 15: 12, 16: 14, 17: 17, 18: 15, 19: 14, 20: 14, 21: 15 };
+  /* Стартовый зум считается по медианному кеглю подписей. Кегли сняты офлайн со
+     всех 107 схем; на дело берётся медиана САМОЙ МЕЛКОЙ его схемы (нижняя из двух
+     средних), а не средняя по делу: иначе в деле с разбросом (№ 8: 12 и 14) самая
+     мелкая картинка печаталась бы 11 px вместо 13. Пол лупы — это
+     max(читаемый, покрытие), поэтому на узком окне кадр бывает крупнее стекла
+     (№ 15 при 630 px: 2,8× против 1,8× для покрытия) — цена читаемости, весь
+     кадр остаётся кнопкой «по ширине». Числа зашиты здесь, а не тянутся из
+     файла: на file:// fetch не работает, а ждать его перед первым кадром —
+     значит открыть лупу мутной. 16 — медиана всех медиан, с ней же остаются
+     дела, которых в таблице нет. */
+  var LENS_FS = { 1: 20, 2: 17, 3: 17, 4: 17, 5: 16, 6: 16, 7: 16, 8: 12, 9: 14, 10: 13, 11: 15, 12: 12, 13: 14, 14: 15, 15: 12, 16: 13, 17: 15, 18: 14, 19: 14, 20: 14, 21: 15 };
   var LENS_FS_DEFAULT = 16;
   var LENS_READ_PX = 13;   /* подписи мельче этого с обычного расстояния не читаются */
 

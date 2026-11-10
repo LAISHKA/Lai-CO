@@ -1092,6 +1092,57 @@ body.compact-list .ev-kind { width: 22px; height: 22px; font-size: var(--fs-12);
 }
 .clue-text b { color: var(--accent); }
 
+/* Разночтение (gapRow в js/20-app.js): левое поле — знак «≠», он висит между
+   двумя строками; дальше значение и его источник. Три колонки: gutter,
+   значение, источник — цифры выстраиваются в столбик и сравниваются взглядом,
+   а заголовок улики не режет глаза посередине. Кегль значения моноширинный с
+   табличными разрядами: 21:40 и 21:14 должны читаться как пара. */
+.gap {
+  display: grid;
+  grid-template-columns: 13px max-content minmax(0, 1fr);
+  align-items: baseline;
+  gap: 2px 7px;
+  margin-top: 7px;
+  padding: 5px 8px 6px 6px;
+  background: var(--bg-3);
+  border: 1px dashed var(--line-2);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  font-size: var(--fs-13);
+  line-height: 1.35;
+}
+.gap-m {
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: var(--danger);
+}
+.gap-v {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--fg);
+  white-space: nowrap;
+}
+.gap-s {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--fg-dim);
+  font-size: var(--fs-12);
+  font-style: normal;
+}
+/* пары не сложилась: показано одно значение — куда смотреть, плашка тише */
+.gap-one {
+  border-left-color: var(--line-2);
+  background: transparent;
+}
+.gap-one .gap-m { grid-row: 1; }
+.gap-one .gap-v { color: var(--accent-2); }
+
 /* таймлайн: рельс слева */
 .tl { position: relative; padding-left: 16px; }
 .tl::before {
