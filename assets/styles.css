@@ -1751,6 +1751,20 @@ html[data-theme='light'] .msg .bub { background: var(--bg-3); border-color: var(
 .prose b { color: var(--accent); }
 .prose i { color: var(--fg-dim); }
 
+/* Первая фраза найденной связи — вывод, печатается отдельной строкой на шаг
+   крупнее остального текста; обоснование идёт под ней обычным кеглем (rvHtml в
+   js/20-app.js). Шаг относительный: тот же класс держит ступень и в протоколе
+   (13 px), и в выводе на доске (14), и в окне противоречия (16). Цвет не трогаем:
+   в .prose и .clue-text акцентный — занятие для <b> внутри бумаги, а не для
+   авторского голоса. */
+.rv-lead {
+  display: block;
+  margin-bottom: .34em;
+  font-size: 1.14em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
 .reveal-h {
   margin: 1.2em 0 .4em;
   font-size: var(--fs-12);
@@ -2236,6 +2250,8 @@ button.summon:hover {
   background: var(--bg);
   border: 0;
   border-radius: 0;
+  /* тени карточки на весь экран не видно, но и быть её не должно */
+  box-shadow: none;
 }
 
 /* шапка: название материала слева, приборы зума и «Закрыть» справа */
@@ -2258,6 +2274,20 @@ button.summon:hover {
   text-overflow: ellipsis;
 }
 .lens-tools { display: flex; flex: 0 0 auto; gap: 6px; }
+
+/* кратность зума — текстом в том же ряду приборов: ни новой кнопки, ни новой строки.
+   ширину держим, чтобы цифры не дёргали кнопки; табличные знаки — чтобы «2,4×»
+   не прыгало на «10×» */
+.lens-z {
+  flex: 0 0 auto;
+  align-self: center;
+  min-width: 3.6em;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-mute);
+}
 
 /* стекло: при 1× кадр = вся ширина окна; сдвиг зажат размером кадра */
 .lens-stage {

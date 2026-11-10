@@ -48,6 +48,31 @@
   function esc(str) { return String(str == null ? '' : str); }
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 
+  /* Первая фраза связи — это вывод, остальное — обоснование. Делим только при
+     печати: в 07-links.js reveals остаётся одной строкой как есть. Граница — [.!?]
+     (плюс закрывающая «лапка» или скобка) перед пробелом и большой буквы. Два
+     запрета: граница внутри нерасставленных кавычек/скобок («Разберусь сам.
+     Никому не отдавать. Г.») и граница после единицы измерения («около 180 см.
+     Смолин — 173 см…») — там предложение не кончается. Вывод длиннее 300 знаков
+     не поднимаем: такая строка уже не читается как заголовок. */
+  var RV_UNIT = /(?:^|[\s(«»",;:—–-])(см|км|кг|мм|мл|л|г|м|т|сут|мин|сек|час|руб|коп|ул|пр|др|напр|зав)\.\s*$/;
+  function rvHtml(text) {
+    var s = String(text == null ? '' : text);
+    var re = /[.!?][»”)]?(?=\s+[А-ЯЁA-Z])/g, m;
+    while ((m = re.exec(s))) {
+      var head = s.slice(0, m.index + m[0].length);
+      if (head.length > 300) break;
+      var lap = 0, br = 0;
+      for (var i = 0; i < head.length; i++) {
+        var c = head.charAt(i);
+        if (c === '«') lap++; else if (c === '»') lap--; else if (c === '(') br++; else if (c === ')') br--;
+      }
+      if (head.length < 24 || lap > 0 || br > 0 || RV_UNIT.test(head)) continue;
+      return '<span class="rv-lead">' + esc(head) + '</span>' + esc(s.slice(head.length).replace(/^\s+/, ''));
+    }
+    return esc(s);
+  }
+
   function fmtClock(ms) {
     var t = Math.max(0, Math.floor(ms / 1000));
     var h = Math.floor(t / 3600), m = Math.floor(t % 3600 / 60), s2 = t % 60;
@@ -766,7 +791,7 @@
       if (it.t === 'link') {
         var l = HOOKS.linkById(S.def, it.id);
         return '<div class="proto-row"><span class="proto-k">связь</span>'
-          + '<div class="proto-x">' + esc(l ? l.reveals : it.id) + '</div></div>';
+          + '<div class="proto-x">' + (l ? rvHtml(l.reveals) : esc(it.id)) + '</div></div>';
       }
       if (it.t === 'reveal') {
         return '<div class="proto-row"><span class="proto-k bad">выемка</span>'
@@ -877,7 +902,7 @@
       switchTab('clues');
       openOverlay('<div class="gate-icon">⚖</div><h2 class="ov-title">Противоречие найдено</h2>'
         + '<p class="ov-sub">' + esc(ea.title) + ' ↔ ' + esc(eb.title) + '</p>'
-        + '<div class="prose"><p>' + link.reveals + '</p></div>'
+        + '<div class="prose"><p>' + rvHtml(link.reveals) + '</p></div>'
         + (extra ? '<p>' + extra + '</p>' : '')
         + (fresh.length ? '<div class="doc-note">По этому выводу в дело поступило материалов: <b>' + fresh.length + '</b> — они отмечены в списке как «новое».</div>' : '')
         + '<div class="ov-foot"><button class="btn ghost" data-act="show-evidence" data-id="' + a + '">К первой улике</button>'
@@ -974,7 +999,7 @@
         + plural(pending.count, 'документ', 'документа', 'документов') + '.</div>'
         + '<div class="board-actions"><button class="btn primary sm" data-act="summon" data-id="' + esc(pid) + '">Вызвать на допрос</button></div>' : '')
       + (called[pid] ? '<div class="doc-note">Повестка выдана, ждём протокол.</div>' : '')
-      + (links.length ? '<div class="reveal-h">Найденные связи</div><div class="prose">' + links.map(function (c) { return '<p>' + c.reveals + '</p>'; }).join('') + '</div>' : '')
+      + (links.length ? '<div class="reveal-h">Найденные связи</div><div class="prose">' + links.map(function (c) { return '<p>' + rvHtml(c.reveals) + '</p>'; }).join('') + '</div>' : '')
       + (ev.length ? '<div class="reveal-h">Улики с участием</div><div class="prose">'
         + ev.map(function (e) {
           return '<p><button class="link-ev" data-act="show-evidence" data-id="' + e.id + '">' + esc(e.title) + '</button>'
@@ -1007,7 +1032,7 @@
         var a = evidenceById(c.a), b = evidenceById(c.b);
         return '<div class="clue' + (newId === c.id ? ' new' : '') + '">'
           + '<div class="clue-head"><span>связь ' + (S.st.found.indexOf(c.id) + 1) + '</span><span>' + esc(c.a) + ' ↔ ' + esc(c.b) + '</span></div>'
-          + '<div class="clue-text">' + c.reveals + '</div>'
+          + '<div class="clue-text">' + rvHtml(c.reveals) + '</div>'
           + '<div class="board-actions"><button class="mini" data-act="show-evidence" data-id="' + c.a + '">' + esc(a ? a.title : c.a) + '</button>'
           + '<button class="mini" data-act="show-evidence" data-id="' + c.b + '">' + esc(b ? b.title : c.b) + '</button></div>'
           + '</div>';
@@ -1527,9 +1552,10 @@
      то есть подписи в 12—16 единиц превращаются в 6,6—8,8 px. Кеглями в
      данных это не лечится (в отчёте посчитан потолок), лечится только
      интерфейсом: клик по схеме открывает её в ШТАТНОМ оверлее (#overlay) на
-     всю ширину окна, с зумом 1×–6× и сдвигом. Отсюда — ни новой подложки, ни
-     новой кнопки закрытия: Esc, клик мимо и data-act="close-overlay" уже
-     общие у лупы со всеми остальными окнами. Разметку картинки (js/10-docs.js)
+     всю ширину окна, сразу в масштабе, где подписи печатаются не мельче 13 px
+     (LENS_FS), с зумом 1×–6×, сдвигом и кратностью зума в шапке. Отсюда — ни новой
+     подложки, ни новой кнопки закрытия: Esc, клик мимо и data-act="close-overlay"
+     уже общие у лупы со всеми остальными окнами. Разметку картинки (js/10-docs.js)
      не трогаем: в лупу клонируем узел <img>.
 
      Масштабы: 1× = вся доступная ширина окна («по ширине»); «1:1» = одна
@@ -1539,11 +1565,30 @@
      Все слушатели, кроме Esc (он штатный, на документе), висят на лупе:
      клавиатура и перелистывание читалки под ней не ломаются.
      ============================================================ */
-  var LENS = { z: 1, tx: 0, ty: 0, w: 0, h: 0 };
+  var LENS = { z: 1, tx: 0, ty: 0, w: 0, h: 0, out: null };
   var LENS_MIN = 1, LENS_MAX = 6, LENS_STEP = 1.25, LENS_PAN = 60;
+
+  /* Стартовый зум считается по медианному кеглю подписей дела. Кегли сняты офлайн
+     со всех 107 схем (сырьё — медиана по текстовым узлам каждой картинки): внутри
+     одного дела медианы картинок гуляют на ±1—2 условные единицы, это меньше шага
+     зума (×1,25), поэтому хватает одного числа на дело, а не таблицы на 107
+     строк. Число зашито здесь, а не тянется из файла: на file:// fetch не
+     работает, а ждать его перед первым кадром — значит открыть лупу мутной.
+     16 — медиана всех медиан, с ней же остаются дела, которых в таблице нет. */
+  var LENS_FS = { 1: 20, 2: 18, 3: 17, 4: 16, 5: 16, 6: 16, 7: 16, 8: 14, 9: 16, 10: 14, 11: 16, 12: 16, 13: 15, 14: 15, 15: 12, 16: 14, 17: 17, 18: 15, 19: 14, 20: 14, 21: 15 };
+  var LENS_FS_DEFAULT = 16;
+  var LENS_READ_PX = 13;   /* подписи мельче этого с обычного расстояния не читаются */
 
   function lensBox() { return ui.overlayBody.querySelector('.lens-stage'); }
   function lensClamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+  function lensFs() {
+    var m = /case-0*(\d+)/.exec((S.def && S.def.id) || '');
+    return (m && LENS_FS[+m[1]]) || LENS_FS_DEFAULT;
+  }
+  /* во сколько раз раздуть схему, чтобы медианный кегль дела печатался не мельче
+     LENS_READ_PX: пиксели = условные единицы × (ширина на экране / 1600) */
+  function lensReadable(fs, w) { return LENS_READ_PX * LENS_CANVAS_W / ((fs || LENS_FS_DEFAULT) * (w || LENS_CANVAS_W)); }
+  function lensZoomText(z) { return (Math.round(z * 10) / 10).toFixed(1).replace('.', ',') + '×'; }
 
   /* один пересчёт transform; заодно зажим сдвиг по размеру кадра —
      уехать в бесконечность нельзя, за центр торчит ровно столько, сколько есть */
@@ -1561,6 +1606,7 @@
     LENS.ty = lensClamp(LENS.ty, -my, my);
     im.style.transform = 'translate(-50%, -50%) translate(' + LENS.tx.toFixed(1) + 'px, '
       + LENS.ty.toFixed(1) + 'px) scale(' + LENS.z.toFixed(3) + ')';
+    if (LENS.out) LENS.out.textContent = lensZoomText(LENS.z);
   }
 
   /* зум; если задана точка на экране — она должна остаться под курсором */
@@ -1623,9 +1669,40 @@
     st.addEventListener('pointercancel', off);
   }
 
-  function onLensResize() { if (lensBox()) lensPaint(); }
+  /* нижний край масштаба: максимум из «читаемого» (медианный кегль дела не мельче
+     LENS_READ_PX) и такого, при котором кадр закрывает стекло целиком — иначе в
+     узком окне схема висит посреди чёрных полос */
+  function lensFloor(st) {
+    var sw = st.clientWidth, sh = st.clientHeight;
+    var w = LENS.w || sw, h = LENS.h || Math.round(w * 9 / 16);
+    return { w: w, h: h, z: lensClamp(Math.max(lensReadable(lensFs(), w), Math.max(sw / w, sh / h)), LENS_MIN, LENS_MAX) };
+  }
 
-  function openLens(src) {
+  /* при сужении окна подписи не должны уезжать ниже читаемого: пол поднимаем
+     следом за размером. Вниз зум не откатываем — игрок видит, что приблизил сам */
+  function onLensResize() {
+    var st = lensBox();
+    if (!st) return;
+    lensPaint();
+    var f = lensFloor(st);
+    if (f.z > LENS.z + .001) lensZoom(f.z);
+  }
+
+  /* Открытие: стекло ставится на нижний край масштаба и наводится на точку, по
+     которой ударили, — искать глазами то, на что уже посмотрел в читалке, незачем. */
+  function lensOpen(st, fx, fy) {
+    var f = lensFloor(st);
+    lensZoom(f.z);
+    if (fx != null && isFinite(fx)) {
+      if (fy == null || !isFinite(fy)) fy = .5;
+      LENS.tx = -(lensClamp(fx, 0, 1) - .5) * f.w * LENS.z;
+      LENS.ty = -(lensClamp(fy, 0, 1) - .5) * f.h * LENS.z;
+    }
+    lensPaint();
+  }
+
+  /* fx, fy — доля ширины и высоты схемы в месте клика; без них — в центр кадра */
+  function openLens(src, fx, fy) {
     var e = S.cur ? evidenceById(S.cur) : null;
     var clone = src.cloneNode(false);
     /* инлайновые onload/onerror из 10-docs.js клону не нужны: там они про
@@ -1639,6 +1716,7 @@
     var box = openOverlay('<div class="lens-head">'
       + '<span class="lens-title"></span>'
       + '<span class="lens-tools">'
+      + '<span class="lens-z" title="Масштаб: 1× — схема во всю ширину окна"></span>'
       + '<button class="mini" data-lens="out" title="Отдалить (−)">−</button>'
       + '<button class="mini" data-lens="in" title="Приблизить (+)">+</button>'
       + '<button class="mini" data-lens="one" title="Одна единица схемы на экранник (1)">1:1</button>'
@@ -1651,6 +1729,7 @@
       {
         onClose: function () {
           root.removeEventListener('resize', onLensResize);
+          LENS.out = null;
           if (src.isConnected) src.focus();
         }
       });
@@ -1661,13 +1740,17 @@
     var st = box.querySelector('.lens-stage');
     st.appendChild(clone);
     LENS.z = 1; LENS.tx = 0; LENS.ty = 0;
+    LENS.out = box.querySelector('.lens-z');
     lensDrag(st);
     st.addEventListener('dblclick', function (ev) {
       lensZoom(LENS.z >= LENS_MAX - .01 ? 1 : Math.min(LENS_MAX, LENS.z * 2), ev.clientX, ev.clientY);
     });
     root.addEventListener('resize', onLensResize);
-    lensPaint();
-    if (!clone.complete) clone.addEventListener('load', lensPaint);
+    /* размер кадра известен только после раскладки, а у svg ещё и после загрузки:
+       стартуем по тому, что есть, и повторяем, когда svg досчитается */
+    function lensStart() { if (lensBox()) { lensPaint(); lensOpen(st, fx, fy); } }
+    lensStart();
+    if (!clone.complete) clone.addEventListener('load', lensStart);
   }
 
   /* картинка в читалке — точка входа в лупу: фокус с клавиатуры без правки
@@ -1692,7 +1775,9 @@
     if (!im || !im.parentNode.classList.contains('img-ok')) return;
     /* растянутая мышью рамка вокруг картинки — не клик по схеме */
     if (lensPress && (Math.abs(e.clientX - lensPress.x) > 6 || Math.abs(e.clientY - lensPress.y) > 6)) return;
-    openLens(im);
+    /* доли кадра, по которому ударили, — чтобы лупа открылась этим местом */
+    var r = im.getBoundingClientRect();
+    openLens(im, r.width ? (e.clientX - r.left) / r.width : null, r.height ? (e.clientY - r.top) / r.height : null);
   });
   ui.reader.addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' && e.key !== ' ') return;
