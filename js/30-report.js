@@ -342,6 +342,20 @@
       if (e.t === 'submit' && verdict && culprit && verdict.answer && verdict.answer.culprit === culprit) { coreTs = e.ts; break; }
     }
 
+    /* Первая зацепка и первая связь — плановый критерий «за 5 минут игрок сам
+       делает первую зацепку и находит первую связь». Берём из склеенной
+       хронологии: ходатайство попадает в st.protocol только когда ПРИНЯТО
+       (js/20-app.js submitHook, ветка j.ok), связь — только когда реально
+       найдена впервые (compare, ветка !found). Отказы «Оснований не вижу»
+       нигде не фиксируются, поэтому firstHookMs = первая УСПЕШНАЯ зацепка. */
+    var hookTs = 0, linkTs = 0;
+    for (var h = 0; h < tl.length; h++) {
+      var q = tl[h];
+      if (!hookTs && q.t === 'hook') hookTs = q.ts;
+      else if (!linkTs && q.t === 'link') linkTs = q.ts;
+      if (hookTs && linkTs) break;
+    }
+
     var fields = fieldsOf(def);
     var near = 0;
     if (verdict && verdict.answer) {
@@ -370,6 +384,8 @@
       clockMs: clockMs,
       reached: !!coreTs,
       coreMs: coreTs ? coreTs - start : 0,
+      firstHookMs: hookTs ? Math.max(0, hookTs - start) : 0,
+      firstLinkMs: linkTs ? Math.max(0, linkTs - start) : 0,
       submitMs: verdict ? verdict.at - start : 0,
       submitted: !!verdict,
       win: !!(verdict && verdict.win),
@@ -403,7 +419,10 @@
   var CSV_HEAD = ['Сотрудник', 'Группа', 'Дело', 'Старт', 'Финиш', 'Время в деле, мин',
     'Дошёл до ядра', 'Время до ядра, мин', 'Где встал', 'Материалов прочитано', 'Материалов в деле',
     'Связей найдено', 'Связей в деле', 'Ходатайств', 'Повесток', 'Подсказок',
-    'Полей верно', 'Полей близко', 'Балл'];
+    'Полей верно', 'Полей близко', 'Балл',
+    /* 20—21: дописаны поверх старых 19 — порядок первых 19 не трогаем,
+       иначе прежние выгрузки перестанут читаться */
+    'Первая зацепка, мин', 'Первая связь, мин'];
 
   function csvCell(v) {
     var s = String(v == null ? '' : v);
@@ -428,7 +447,8 @@
         m.hooks, m.summons, m.hints,
         m.submitted ? m.hits : '',
         m.submitted ? m.near : '',
-        m.score === null ? '' : m.score
+        m.score === null ? '' : m.score,
+        mins(m.firstHookMs), mins(m.firstLinkMs)
       ].map(csvCell).join(';'));
     }
     return '\ufeff' + lines.join('\r\n') + '\r\n';
@@ -469,6 +489,8 @@
   function factsBlock(m) {
     var rows = [
       ['Связей найдено', m.linksFound + ' из ' + m.linksTotal],
+      ['Первая зацепка', m.firstHookMs ? mins(m.firstHookMs) + ' мин' : 'не было'],
+      ['Первая связь', m.firstLinkMs ? mins(m.firstLinkMs) + ' мин' : 'не было'],
       ['Ходатайств подано', String(m.hooks)],
       ['Повесток выдано', String(m.summons)],
       ['Подсказок взято', String(m.hints)],
@@ -604,10 +626,17 @@
     var done = rows.filter(function (m) { return m.submitted; });
     var reached = rows.filter(function (m) { return m.reached; });
     var med = median(reached.map(function (m) { return m.coreMs; }));
+    /* медиана по проходам, где событие реально было (пустые не тянем нулями) */
+    var withHook = rows.filter(function (m) { return m.firstHookMs > 0; });
+    var withLink = rows.filter(function (m) { return m.firstLinkMs > 0; });
+    var medHook = median(withHook.map(function (m) { return m.firstHookMs; }));
+    var medLink = median(withLink.map(function (m) { return m.firstLinkMs; }));
     return '<div class="rp-sum">'
       + '<span>Проходов: <b>' + rows.length + '</b></span>'
       + '<span>Дошли до ядра: <b>' + reached.length + ' / ' + rows.length + '</b></span>'
       + '<span>Медиана времени до ядра: <b>' + (med ? mins(med) + ' мин' : '—') + '</b></span>'
+      + '<span>Первая зацепка (медиана): <b>' + (medHook ? mins(medHook) + ' мин' : '—') + '</b></span>'
+      + '<span>Первая связь (медиана): <b>' + (medLink ? mins(medLink) + ' мин' : '—') + '</b></span>'
       + '<span>Сдали постановление: <b>' + done.length + '</b></span>'
       + '</div>';
   }

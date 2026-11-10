@@ -2,7 +2,9 @@
    Играет в case-21 реальными кликами: вход в дело → форма «кто работает» → материалы →
    подсказка → доска → уход/возврат со страницы → смена ответов в бланке → сдача.
    Доказательство: sr.journal.v1 пишется корректно (1 start, ре-визиты, дедуп, resume),
-   метрики «дошёл до ядра / где встал / читал» сходятся, CSV 19 колонок с BOM и «;»,
+   метрики «дошёл до ядра / где встал / читал» сходятся, CSV в 21 колонку (19 прежних
+   + «Первая зацепка, мин» + «Первая связь, мин») с BOM и «;», зацепка и связь
+   добываются реальными кликами (ходатайство принято, противоречие найдено),
    карточка экранирована, экран отчёта и сбор ФИО выключены в публичной сборке (?public=1).
    Запуск: node tools/live/probe-report.cjs  →  читать tools/live/out/probe-report.txt
    Chrome НЕ убивается силовыми средствами (в отличие от play.cjs). */
@@ -41,6 +43,39 @@ function evs(){ return run().events||[]; }
 function etypes(){ return evs().map(function(e){ return e.t; }); }
 function setSel(id,val){ var e=$i(id); if(!e) return 0; e.value=val; e.dispatchEvent(new Event('change',{bubbles:true})); return 1; }
 function put(k,v){ localStorage.setItem(k, JSON.stringify(v)); return 1; }
+/* разбор строки CSV с учётом кавычек: в «Где встал» бывают ; внутри кавычек */
+function splitCsv(line){ var out=[],cur='',q=false; for(var i=0;i<line.length;i++){ var ch=line.charAt(i);
+  if(q){ if(ch==='"'){ if(line.charAt(i+1)==='"'){cur+='"';i++;} else q=false; } else cur+=ch; }
+  else if(ch==='"') q=true; else if(ch===';'){ out.push(cur); cur=''; } else cur+=ch; }
+  out.push(cur); return out; }
+function ovTitle(){ var h=document.querySelector('#overlay-body .ov-title'); return h?h.textContent:''; }
+function clickDir(cat){ return click('.hook-dirs .hook-dir[data-dir="' + cat.replace(/"/g,'') + '"]'); }
+/* выделение по offset'ам textContent читалки (тот же приём, что в play.cjs) */
+function selR(el,s,e){ var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),n,pos=0,a=null,b=null,r=document.createRange();
+  while((n=w.nextNode())){ var len=n.textContent.length; if(!a&&s<=pos+len)a={n:n,o:s-pos}; if(!b&&e<=pos+len){b={n:n,o:e-pos};break;} pos+=len; }
+  if(!a||!b) return false; r.setStart(a.n,a.o); r.setEnd(b.n,b.o);
+  var sel=getSelection(); sel.removeAllRanges(); sel.addRange(r); return true; }
+/* первое предложение прочитанного документа со словом направления -> выделить -> mouseup -> панель зацепки */
+function mkQuote(cat){ var d=cs21(); var on=document.querySelector('.ev-item.on'); var cur=on?on.getAttribute('data-ev'):'';
+  if(!cur) return {ok:0,why:'нет открытого материала'};
+  var dir=HOOKS.directions(d,cur).filter(function(x){return x.cat===cat;})[0];
+  if(!dir) return {ok:0,why:'нет направления «'+cat+'» в '+cur};
+  var words=HOOKS.words(cat+' '+Object.keys(dir.words).join(' '));
+  var el=document.getElementById('reader'); var raw=el.textContent||'',norm='',map=[],i;
+  for(i=0;i<raw.length;i++){ var ch=raw.charAt(i);
+    if(/\\s/.test(ch)){ if(norm.charAt(norm.length-1)!==' '){ norm+=' '; map.push(i); } continue; }
+    norm+=ch; map.push(i); }
+  var ss=norm.match(/[^.!?;]+[.!?;]+[^.!?;\\"]*/g)||[];
+  for(var k=0;k<ss.length;k++){ var sent=ss[k].trim(); if(sent.length<14) continue;
+    var sw=HOOKS.words(sent),hit=false; for(var w in sw) if(words[w]){ hit=true; break; }
+    if(!hit) continue;
+    var p=norm.indexOf(sent); if(p<0) continue;
+    if(!selR(el,map[p],map[Math.min(p+sent.length-1,map.length-1)]+1)) continue;
+    var got=String(getSelection().toString()||'').replace(/\\s+/g,' ').trim();
+    if(got.length<12){ getSelection().removeAllRanges(); continue; }
+    el.dispatchEvent(new MouseEvent('mouseup',{bubbles:true}));
+    return {ok:1,quote:got.slice(0,120)}; }
+  return {ok:0,why:'нет предложения со словом направления «'+cat+'»'}; }
 `;
 
 async function main() {
@@ -115,6 +150,75 @@ async function main() {
   await step('тот же материал после 1.6 с → новое doc', 'var r=(est().read||[])[0]; var el=document.querySelector("#ev-list [data-ev=\\""+r+"\\"]"); if(el) el.click(); return JSON.stringify({docs:etypes().filter(function(t){return t==="doc";}).length, read:(est().read||[]).length});');
   await step('тот же материал СРАЗУ → дедуп (docs не растёт)', 'var r=(est().read||[])[0]; var el=document.querySelector("#ev-list [data-ev=\\""+r+"\\"]"); if(el) el.click(); if(el) el.click(); return JSON.stringify({docs:etypes().filter(function(t){return t==="doc";}).length, read:(est().read||[]).length});');
 
+  say('--- 3б. первая зацепка и первая связь через интерфейс (нужны для firstHookMs/firstLinkMs) ---');
+  await step('зацепка: найти материал с направлением', `
+    var ids = [], it = document.querySelectorAll('#ev-list [data-ev]');
+    for (var i = 0; i < it.length; i++) ids.push(it[i].getAttribute('data-ev'));
+    var out = null, d = cs21();
+    for (var k = 0; k < ids.length && !out; k++) {
+      var el = document.querySelector('#ev-list [data-ev="' + ids[k] + '"]');
+      if (!el) continue;
+      el.click();
+      var ds = HOOKS.pendingDirections(d, est(), ids[k]).filter(function (x) { return HOOKS.checkable(d, ids[k], x.cat); });
+      if (ds.length) out = { id: ids[k], cat: ds[0].cat };
+    }
+    if (!out) throw new Error('нет доступного материала с направлениями проверки');
+    window.__pk = out;
+    return JSON.stringify(out);
+  `);
+  await sleep(400);
+  await step('зацепка: выделение цитаты', 'var m = mkQuote(window.__pk.cat); if (!m.ok) throw new Error("зацепка: " + m.why); return JSON.stringify(m);');
+  await sleep(300);
+  await step('зацепка: форма ходатайства', 'var n = click("#btn-hook"); if (!n) throw new Error("кнопка ходатайства не найдена"); return "opened";');
+  await sleep(500);
+  await step('зацепка: форма открыта', 'var t = ovTitle(); if (!/ходатайство/i.test(t)) throw new Error("форма не открылась: " + t); return t;');
+  await step('зацепка: подать направление', 'var n = clickDir(window.__pk.cat); if (!n) throw new Error("кнопка направления «" + window.__pk.cat + "» не найдена"); return "dir clicked";');
+  await sleep(500);
+  await step('зацепка: лицо (если спросят)', 'if (ovTitle().indexOf("Направление:") === 0) { var n = click(".hook-dirs .hook-dir[data-who]"); if (!n) throw new Error("спросили лицо, но кнопки нет"); return "who clicked"; } return "не спрашивали";');
+  await sleep(500);
+  await step('зацепка: принята + событие hook в протоколе', `
+    var t = ovTitle();
+    if (t !== 'Ходатайство принято') throw new Error('зацепка не принята: ' + t);
+    var hk = (est().protocol || []).filter(function (e) { return e.t === 'hook'; });
+    if (!hk.length) throw new Error('в st.protocol нет события hook');
+    return JSON.stringify({ title: t, hookEvents: hk.length, firstHookTs: hk[0].ts });
+  `);
+  await step('закрыть окно зацепки', 'return String(clickIn($i("overlay-body"), "[data-act=\\"close-overlay\\"]"));');
+  await sleep(300);
+  await step('связь: положить доступную пару в лоток', `
+    var d = cs21();
+    var shown = {};
+    [].forEach.call(document.querySelectorAll('#ev-list [data-link]'), function (b) { shown[b.getAttribute('data-link')] = 1; });
+    var pair = null, list = d.contradictions || [];
+    for (var i = 0; i < list.length && !pair; i++) {
+      var c = list[i];
+      if (shown[c.a] && shown[c.b] && (est().found || []).indexOf(c.id) < 0) pair = c;
+    }
+    if (!pair) throw new Error('нет доступной пары материалов для сличения');
+    window.__pl = pair.id;
+    var ba = document.querySelector('#ev-list [data-link="' + pair.a + '"]');
+    if (!ba) throw new Error('кнопки лотка нет в списке: ' + pair.a);
+    ba.click();
+    /* первый клик перерисовывает список: вторую кнопку берём ЗАНОВО, клик по
+       отсоединённому узлу ничего бы не добавил в лоток */
+    var bb = document.querySelector('#ev-list [data-link="' + pair.b + '"]');
+    if (!bb) throw new Error('кнопки лотка нет в списке после перерисовки: ' + pair.b);
+    bb.click();
+    if ($i('btn-compare').disabled) throw new Error('лоток не принял пару');
+    return JSON.stringify({ id: pair.id, a: pair.a, b: pair.b });
+  `);
+  await step('связь: сравнить', '$i("btn-compare").click(); return ovTitle();');
+  await sleep(400);
+  await step('связь: найдена + событие link в протоколе', `
+    var t = ovTitle();
+    if (t !== 'Противоречие найдено') throw new Error('связь не найдена: ' + t);
+    var lk = (est().protocol || []).filter(function (e) { return e.t === 'link'; });
+    if (!lk.length) throw new Error('в st.protocol нет события link');
+    return JSON.stringify({ title: t, linkEvents: lk.length, firstLinkTs: lk[0].ts, found: (est().found || []).length });
+  `);
+  await step('закрыть окно связи', 'return String(clickIn($i("overlay-body"), "[data-act=\\"close-overlay\\"]"));');
+  await sleep(300);
+
   say('--- 4. подсказка, доска, уход со страницы ---');
   await step('подсказка (шлюз+да)', 'click("#btn-hint"); return "ok";');
   await sleep(400);
@@ -159,8 +263,27 @@ async function main() {
   await step('submit + вердикт', 'return JSON.stringify({hasSubmit:etypes().indexOf("submit")>=0, finish:!!run().finish, verdict:(function(){var v=est().verdict||{}; return {win:v.win,hits:v.hits,score:v.score,culprit:v.answer&&v.answer.culprit};})(), screen:!$i("view-verdict").classList.contains("hidden")});');
 
   say('--- 6. метрики реального прохода ---');
-  await step('метрики', 'var m=REPORT.runs(); var x=m[m.length-1]; return JSON.stringify({rows:m.length, reached:x.reached, coreMin:Math.round(x.coreMs/60000), submitted:x.submitted, win:x.win, read:x.read, total:x.total, hints:x.hints, hits:x.hits, near:x.near, fields:x.fields, stall:x.stall, clockMs:x.clockMs, name:x.name, group:x.group});');
-  await step('CSV (реальный проход)', 'var t=REPORT.csv().replace(/^\\ufeff/,""); var p=t.split("\\r\\n"); var c=p[1].split(";"); return JSON.stringify({bom:REPORT.csv().charCodeAt(0)===65279, cols:p[0].split(";").length, nrows:p.length-1, sep:p[1].indexOf(";")>0, minutes:c[5], core:c[7], head:p[0].slice(0,120), row:p[1].slice(0,260)});');
+  await step('метрики', `
+    var m = REPORT.runs(); var x = m[m.length - 1];
+    if (!(x.firstHookMs > 0)) throw new Error('firstHookMs не посчитан: ' + x.firstHookMs);
+    if (!(x.firstLinkMs > 0)) throw new Error('firstLinkMs не посчитан: ' + x.firstLinkMs);
+    return JSON.stringify({ rows: m.length, reached: x.reached, coreMin: Math.round(x.coreMs / 60000),
+      firstHookSec: Math.round(x.firstHookMs / 1000), firstLinkSec: Math.round(x.firstLinkMs / 1000),
+      firstHookMs: x.firstHookMs, firstLinkMs: x.firstLinkMs,
+      submitted: x.submitted, win: x.win, read: x.read, total: x.total, hints: x.hints,
+      hits: x.hits, near: x.near, fields: x.fields, stall: x.stall, clockMs: x.clockMs, name: x.name, group: x.group });
+  `);
+  await step('CSV (реальный проход)', `
+    var t = REPORT.csv().replace(/^\\ufeff/, ""); var p = t.split("\\r\\n");
+    var h = p[0].split(";"); var c = splitCsv(p[1]);
+    if (h.length !== 21) throw new Error("CSV колонок " + h.length + ", ожидалось 21");
+    if (h[19] !== "Первая зацепка, мин" || h[20] !== "Первая связь, мин") throw new Error("заголовки 20-21 не те: " + h[19] + " | " + h[20]);
+    if (!/^\\d+(,\\d)?$/.test(c[19]) || !c[19]) throw new Error("«Первая зацепка, мин» пуста или не в формате 0,6: [" + c[19] + "]");
+    if (!/^\\d+(,\\d)?$/.test(c[20]) || !c[20]) throw new Error("«Первая связь, мин» пуста или не в формате 0,6: [" + c[20] + "]");
+    return JSON.stringify({ bom: REPORT.csv().charCodeAt(0) === 65279, cols: h.length, nrows: p.length - 1,
+      sep: p[1].indexOf(";") > 0, minutes: c[5], core: c[7], hook: c[19], link: c[20],
+      head: p[0].slice(0, 120), row: p[1].slice(0, 260) });
+  `);
   await step('карточка (HTML)', 'var h=REPORT.card(REPORT.runs().length-1); return JSON.stringify({len:h.length, who:h.indexOf("Летестов")>=0, chrono:h.indexOf("rp-tl-i")>=0, kpi:h.indexOf("rp-kpi-i")>=0, facts:h.indexOf("rp-facts")>=0, sign:h.indexOf("rp-sign")>=0, noscript:h.indexOf("<script")===-1});');
 
   say('--- 7. экран отчёта ---');
@@ -196,14 +319,25 @@ async function main() {
     var j = { who:{name:'Синтетиков А. В.', group:'Цех N'}, runs:[{caseId:'case-21', start:T0, finish:T0+340000, left:0, who:{name:'Синтетиков А. В.', group:'Цех N'}, events:events}] };
     put('sr.journal.v1', j);
     var s = sv(); var c = s.cases['case-21'];
-    c.started = T0; c.clockMs = 340000; c.read = [a,b2]; c.hints = 1; c.found = []; c.hooks = []; c.calls = []; c.protocol = [];
+    c.started = T0; c.clockMs = 340000; c.read = [a,b2]; c.hints = 1; c.found = []; c.hooks = []; c.calls = [];
+    /* зацепка и связь живут только в протоколе сейва (submitHook/compare пишут их лишь при успехе) —
+       так проверка firstHookMs/firstLinkMs не зависит от кликов */
+    c.protocol = [{ t:'hook', ts:T0+60000, ev:a, dir:'Место', quote:'в 20:52', who:'' },
+                  { t:'link', ts:T0+120000, id:((d.contradictions||[])[0]||{}).id }];
     c.verdict = { win:true, hits:4, fields:5, score:71, answer:{culprit:'mochalov', place:'x', window:'y', weapon:'z', motive:'both'}, at:T0+340000 };
     put('sr.save.v1', s);
     return 'written';
   `);
-  await step('метрики синтетики', 'var m=REPORT.runs(); var x=m[0]; return JSON.stringify({name:x.name, reached:x.reached, coreMs:x.coreMs, coreMin:Math.round(x.coreMs/60000), stallMs:x.stallMs, stallMin:Math.round(x.stallMs/60000), stall:x.stall, read:x.read, hints:x.hints, hits:x.hits, near:x.near, score:x.score, clockMin:Math.round(x.clockMs/60000)});');
+  await step('метрики синтетики', 'var m=REPORT.runs(); var x=m[0]; if(x.firstHookMs!==60000||x.firstLinkMs!==120000) throw new Error("синтетика: ждём firstHookMs=60000 firstLinkMs=120000, получили " + x.firstHookMs + "/" + x.firstLinkMs); return JSON.stringify({name:x.name, reached:x.reached, coreMs:x.coreMs, coreMin:Math.round(x.coreMs/60000), firstHookMs:x.firstHookMs, firstLinkMs:x.firstLinkMs, stallMs:x.stallMs, stallMin:Math.round(x.stallMs/60000), stall:x.stall, read:x.read, hints:x.hints, hits:x.hits, near:x.near, score:x.score, clockMin:Math.round(x.clockMs/60000)});');
   await step('хронология синтетики (карточка)', 'var h=REPORT.card(0); var b=document.createElement("div"); b.innerHTML=h; return JSON.stringify([].map.call(b.querySelectorAll(".rp-tl-x"),function(s){return s.textContent;}));');
-  await step('CSV синтетики', 'var t=REPORT.csv().replace(/^\\ufeff/,"").split("\\r\\n"); return JSON.stringify({row:t[1] ? t[1].slice(0,220) : null});');
+  await step('CSV синтетики', `
+    var t = REPORT.csv().replace(/^\\ufeff/, "").split("\\r\\n");
+    if (!t[1]) throw new Error("нет строки синтетики");
+    var c = splitCsv(t[1]);
+    if (c.length !== 21) throw new Error("колонок " + c.length + ", ожидалось 21");
+    if (c[19] !== "1" || c[20] !== "2") throw new Error("синтетика: ждём «1;2» на 20-21, получили [" + c[19] + "][" + c[20] + "]");
+    return JSON.stringify({ cols: c.length, hook: c[19], link: c[20], row: t[1].slice(0, 220) });
+  `);
 
   say('--- 9б. resume: повторный вход в незавершённый проход ---');
   await step('resume: 1 start и событие resume', `
