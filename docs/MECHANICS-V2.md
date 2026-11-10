@@ -153,8 +153,9 @@
 
 ## 9. Правила приёмки
 
-1. `node tools/check.mjs` обязан давать exit 0 (8 гейтов: validate, **check-hook**,
-   check-dom, check-css, check-lookalike, check-svg, isolation, smoke).
+1. `node tools/check.mjs` обязан давать exit 0 (11 гейтов: validate, **check-hook**,
+   smoke, check-dom, check-css, check-lookalike, **check-typos --gate**,
+   **check-candidates**, check-svg, check-anon, isolation).
 2. `tools/check-hook.mjs` — гейт механики (проверки A–G + полный прогон «идеальным
    игроком» по всем 20 делам): 184 корневых на старте, 558 закрытых, автоклапан 10,
    1 неупомянутое лицо (`case-06 dyuzhak`), 100 % материалов / связей / лиц,

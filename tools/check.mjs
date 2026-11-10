@@ -8,16 +8,18 @@ const steps = [
   ['обращения к DOM', 'tools/check-dom.mjs'],
   ['классы в стилях', 'tools/check-css.mjs'],
   ['артефакты текста', 'tools/check-lookalike.mjs'],
+  ['опечатки в текстах дел', 'tools/check-typos.mjs', ['--gate']],
+  ['плотность кандидатов выделения', 'tools/check-candidates.cjs'],
   ['целость SVG-схем', 'tools/check-svg.mjs'],
   ['обезличенность источников', 'tools/check-anon.mjs'],
   ['изолированность имён между делами', 'tools/isolation.mjs']
 ];
 
 let failed = 0;
-for (const [name, script] of steps) {
-  console.log(`\n=== ${name} (${script})`);
+for (const [name, script, args] of steps) {
+  console.log(`\n=== ${name} (${script}${args ? ' ' + args.join(' ') : ''})`);
   try {
-    execFileSync(process.execPath, [script], { stdio: 'inherit' });
+    execFileSync(process.execPath, [script, ...(args || [])], { stdio: 'inherit' });
   } catch (e) {
     failed++;
     console.log(`!! ${name}: код ${e.status}`);

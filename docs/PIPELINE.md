@@ -45,8 +45,9 @@
 
 ## Гейты движка (с 07.11 — редакция «механика зацепок»)
 
-- `tools/check.mjs` — 8 гейтов: validate, **check-hook**, check-dom, check-css,
-  check-lookalike, check-svg, isolation, smoke. Обязаны проходить после любой правки
+- `tools/check.mjs` — 11 гейтов: validate, **check-hook**, smoke, check-dom, check-css,
+  check-lookalike, **check-typos --gate**, **check-candidates**, check-svg, check-anon,
+  isolation. Обязаны проходить после любой правки
   движка (`corp_game.html`, `Lai_CO.html`, `assets/styles.css`, `js/10-docs.js`, `js/15-hook-engine.js`,
   `js/20-app.js`), независимо от того, какая волна дел сейчас в работе.
 - `tools/check-hook.mjs` (новый) — правила расследования на живых данных 20 дел:

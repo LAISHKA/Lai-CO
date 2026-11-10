@@ -40,8 +40,10 @@
 - Демо-архив `dist/demo-ot.zip` (вне git, в `.gitignore`): пересобран 09.11 с журналом —
   27 файлов, 597 557 байт, SHA-256 `FA1175E5122116C3AC73A4F668A5551E4F203017E78450BACCE79C682379C663`.
   Команда пересборки — в `outreach/REESTR-PISEM.md`.
-- `tools/` — 8 гейтов сборки (`check.mjs`) + `check-case.mjs`, `map-case.mjs`, `new-case.mjs`,
-  `limits.mjs`, `check-*.mjs`. `tools/live/` — живые CDP-проверки, отчёты в `tools/live/out/`.
+- `tools/` — 11 гейтов сборки (`check.mjs`) + `check-case.mjs`, `map-case.mjs`, `new-case.mjs`,
+  `limits.mjs`, `check-*.mjs`, `svg-audit.mjs` (отчёт по читаемости схем), `candidate-report.mjs`
+  (покрытие указывающих слов), `typos-allowlist.txt` (ложные срабатывания гейта опечаток).
+  `tools/live/` — живые CDP-проверки, отчёты в `tools/live/out/`.
 - `backup/engine-v2-before/` — копия движка ДО переделки механики (+ `V2BEFORE.md5.txt`).
 - Личный приватный git заведён 07.11.2026: в индексе нет файлов и имён рабочей среды; бан-лист `docs/ANON-BANNED.txt` и артефакты сборки исключены `.gitignore`. Откат движка — `backup/engine-v2-before/`.
 - Всё принято: сборка зелёная, живой прогон зелёный, свип зелёный, письмо с итогом и архивом
@@ -83,8 +85,9 @@
 ## 3. Чем прогонять приёмку
 
 ```bash
-node tools/check.mjs                             # 8 гейтов: validate, check-hook, check-dom,
-                                                 # check-css, check-lookalike, check-svg, isolation, smoke
+node tools/check.mjs                             # 11 гейтов: validate, check-hook, smoke, check-dom,
+                                                 # check-css, check-lookalike, check-typos --gate,
+                                                 # check-candidates, check-svg, check-anon, isolation
 node tools/live/run.cjs tools/live/gate.cjs      # то же, отчёт tools/live/out/chk8.txt
 node tools/live/run.cjs tools/live/play.cjs      # живой CDP-прогон case-01 (7 фаз), отчёт out/play.txt
 node tools/live/summarize.cjs                    # срез play.txt -> out/p2.txt
@@ -93,9 +96,12 @@ node tools/live/run.cjs tools/live/silent-audit.cjs   # молчаливые п�
 node tools/live/run.cjs tools/live/logline-audit.cjs  # аннотации дел -> out/logline.txt
 node tools/live/probe-report.cjs            # регресс журнала отчёта (T2) -> out/probe-report.txt
 node tools/live/cjk-check.cjs <файлы>            # иероглифы/латиница в русском тексте + node --check
+node tools/check-typos.mjs --paths cases/case-09 # опечатки одного дела (в гейте вызывается с --gate)
+node tools/svg-audit.mjs                         # читаемость подписей 107 схем -> out/svg-audit.txt
+node tools/candidate-report.mjs                  # покрытие ходатайств: недобываемые материалы, широкие слова
 ```
 
-Эталонные цифры зелёного состояния (пересчёт 09.11 вечер, после правки из § 11а): 8 гейтов exit 0;
+Эталонные цифры зелёного состояния (пересчёт 10.11, после врезки гейта опечаток): 11 гейтов exit 0;
 `play.cjs` — **8 фаз `FASE OK`, строка `ИТОГ ФАЗ: OK 8, FAIL 0, ошибок страницы 0`**, `read 38/38`,
 «не поступило (0)», 24 строки журнала «Ход», переполнений 0, ошибок страницы 0.
 Прежнее «7 фаз `FASE OK`» было неточным дважды: фаз в `play.cjs` восемь, и одна из них (зацепка)
@@ -109,8 +115,9 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
 на 07.11; сейчас 754 в 21 деле — сверять знаменатель). `tools/check-css.mjs` всегда возвращает exit 0 — его вывод читают глазами.
 `play.cjs` и `sweep.cjs` убивают все процессы браузера и не запускаются параллельно;
 `probe-report.cjs` — не убивает (его можно гонять при открытом браузере владельца).
-Эталон зелёного `probe-report.cjs` (09.11 вечер): 82 строки отчёта, все `ok`, «ошибки страницы: нет»,
-последняя строка — `ИТОГ: падений шага 0, ошибок страницы 0`;
+Эталон зелёного `probe-report.cjs` (10.11): **95 строк** отчёта, все `ok`, «ошибки страницы: нет»,
+последняя строка — `ИТОГ: падений шага 0, ошибок страницы 0`; CSV — **21 колонка**, из них 20-я
+«Первая зацепка, мин» и 21-я «Первая связь, мин» (метрики `firstHookMs`/`firstLinkMs`);
 в CSV `Время в деле` и `Время до ядра` = `0,2` при 11 секундах (было завышение в 10 раз — починено).
 Артефакт площадки проверяют тем же прогоном: `SR_PAGE=file:///…/index.html node tools/live/probe-report.cjs`
 (собранный `dist/yandex.zip` распаковывают и играют из него). В таком прогоне `pub:true` уже на
@@ -155,7 +162,7 @@ node tools/live/cjk-check.cjs <файлы>            # иероглифы/ла�
   `REPORT.open()` не открывает экран, форма ФИО не показывается, CSV без имён и групп.
 - Сбор ФИО — только локально в `sr.journal.v1`; в git не попадает (в пробах имя
   синтетическое). Регресс проверки: `node tools/live/probe-report.cjs` →
-  `tools/live/out/probe-report.txt` (82 строки, «ошибки страницы: нет»).
+  `tools/live/out/probe-report.txt` (95 строк, «ошибки страницы: нет»).
 
 ## 6. Если понадобится новое дело (конвейер закрыт, правила живы)
 
